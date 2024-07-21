@@ -12,8 +12,13 @@ export const useBosses = async () => {
   const bossesDone = await prisma.boss.count({ where: { userId: session?.user?.id, done: true } });
   const bossesByLocation = await prisma.boss.groupBy({
     by: ['location'],
+    where: { userId: session?.user?.id },
+    _count: true,
+  });
+  const bossesByLocationDone = await prisma.boss.groupBy({
+    by: ['location'],
     where: { userId: session?.user?.id, done: true },
     _count: true,
   });
-  return { bosses, bossesDone, bossesByLocation };
+  return { bosses, bossesDone, bossesByLocation, bossesByLocationDone };
 };

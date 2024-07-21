@@ -5,12 +5,13 @@ import { modal } from '@/components/Modal';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { cn } from '@/lib/utils';
 import { Boss } from '@prisma/client';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback } from 'react';
 import { useBosses } from './hooks/useBosses';
+import TypeaheadInput from './TypeaheadInput';
 
 const BossesTable: React.FC<{ bosses: Boss[] }> = ({ bosses }) => {
   return (
@@ -46,6 +47,7 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+
   const createQueryString = useCallback(
     (name: string, value: string) => {
       const params = new URLSearchParams(searchParams.toString());
@@ -67,7 +69,6 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
 
   return (
     <div className="flex flex-col gap-5 items-center">
-      <p>{JSON.stringify(data.bossesByLocation)}</p>
       <h1 className="text-3xl font-bold">Bosses {data.bossesDone + '/' + data.bosses.length}</h1>
       <div className="flex gap-5 items-center">
         <div className="flex items-center gap-1">
@@ -79,9 +80,18 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
             }}
           />
         </div>
-        <Input
+        <TypeaheadInput
+          className="w-[300px]"
+          datas={[...new Set(data.bosses.map((boss) => boss.name))]}
           placeholder="name"
-          onChange={(e) => {
+          defaultValue={searchParams.get('name') ?? ''}
+          onChange={(value) => {
+            if (value === '') router.push(pathname + '?' + createQueryString('name', ''));
+          }}
+          onSelect={(value) => {
+            router.push(pathname + '?' + createQueryString('name', value as string));
+          }}
+          onBlur={(e) => {
             router.push(pathname + '?' + createQueryString('name', e.target.value));
           }}
         />
@@ -101,14 +111,28 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
           Reset
         </Button>
       </div>
-      {Object.entries(filterBosses).map(([location, b], index) => (
-        <Accordion key={index} className="w-full" type="single" collapsible>
-          <AccordionItem value={location}>
-            <AccordionTrigger>{location}</AccordionTrigger>
-            <AccordionContent>{b && <BossesTable bosses={b} />}</AccordionContent>
-          </AccordionItem>
-        </Accordion>
-      ))}
+      {Object.entries(filterBosses)
+        .filter(([location, b]) => b !== undefined)
+        .map(([location, b], index) => {
+          const countDone = data.bossesByLocationDone.find((bosses) => bosses.location === location)?._count ?? 0;
+          const count = data.bossesByLocation.find((bosses) => bosses.location === location)?._count ?? 0;
+
+          return (
+            <Accordion key={index} className="w-full" type="single" collapsible>
+              <AccordionItem value={location}>
+                <AccordionTrigger className="flex gap-2">
+                  <div className={cn(count === countDone ? 'text-green-400' : '', 'flex justify-between w-full')}>
+                    <p>{location}</p>
+                    <p>
+                      {countDone}/{count}
+                    </p>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent>{b && <BossesTable bosses={b} />}</AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          );
+        })}
     </div>
   );
 };
