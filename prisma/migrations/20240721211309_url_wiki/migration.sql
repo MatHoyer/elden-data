@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE `boss` ADD COLUMN `imageUrl` VARCHAR(191) NULL,
+    ADD COLUMN `locationUrl` VARCHAR(191) NULL,
+    ADD COLUMN `wikiUrl` VARCHAR(191) NULL;

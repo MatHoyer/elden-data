@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE `boss` ADD COLUMN `major` BOOLEAN NOT NULL DEFAULT false,
+    MODIFY `inDlc` BOOLEAN NOT NULL DEFAULT false,
+    MODIFY `done` BOOLEAN NOT NULL DEFAULT false;

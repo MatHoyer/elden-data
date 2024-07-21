@@ -71,8 +71,11 @@ model Boss {
   id          String   @id @default(cuid())
   name        String
   location    String
-  inDlc       Boolean
-  done        Boolean
+  major       Boolean @default(false)
+  inDlc       Boolean @default(false)
+  done        Boolean @default(false)
+
+  locationUrl String?
 
   user        User     @relation(fields: [userId], references: [id])
   userId      String

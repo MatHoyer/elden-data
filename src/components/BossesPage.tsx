@@ -5,41 +5,53 @@ import { modal } from '@/components/Modal';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { bosses } from '@/lib/defaultBosses';
 import { cn } from '@/lib/utils';
 import { Boss } from '@prisma/client';
+import { BookOpen, MapPin } from 'lucide-react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback } from 'react';
 import { useBosses } from './hooks/useBosses';
 import TypeaheadInput from './TypeaheadInput';
+import { Card, CardTitle } from './ui/card';
+import { Label } from './ui/label';
 
-const BossesTable: React.FC<{ bosses: Boss[] }> = ({ bosses }) => {
+const BossesTable: React.FC<{ dbBosses: Boss[] }> = ({ dbBosses }) => {
   return (
-    <Table>
-      <TableHeader>
-        <TableRow>
-          <TableHead>Name</TableHead>
-          <TableHead>Location</TableHead>
-          <TableHead>Status</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        {bosses.map((boss) => (
-          <TableRow key={boss.id}>
-            <TableCell>{boss.name}</TableCell>
-            <TableCell>{boss.location}</TableCell>
-            <TableCell>
-              <Checkbox
-                defaultChecked={boss.done}
-                onCheckedChange={() => {
-                  toggleBossDone({ bossId: boss.id });
-                }}
-              />
-            </TableCell>
-          </TableRow>
-        ))}
-      </TableBody>
-    </Table>
+    <div className="grid grid-cols-3 gap-2">
+      {dbBosses.map((boss, index) => (
+        <Card
+          key={index}
+          style={{
+            backgroundImage: `url(${bosses.find((b) => b.name === boss.name)?.imageUrl})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+          className={cn('size-64 p-3', boss.done ? 'border-4 border-green-400' : 'border-4 border-background')}
+          onClick={() => {
+            toggleBossDone({ bossId: boss.id });
+          }}
+        >
+          <div className="flex flex-col justify-between h-full">
+            <div></div>
+            <CardTitle className={cn(boss.major && 'text-gold', 'bg-secondary/80 rounded-md')}>
+              <div className="flex flex-col items-center">
+                <div className="flex gap-3">
+                  <a target="_blank" href={boss.locationUrl || undefined}>
+                    <MapPin />
+                  </a>
+                  <a target="_blank" href={bosses.find((b) => b.name === boss.name)?.wikiUrl}>
+                    <BookOpen />
+                  </a>
+                </div>
+                <p className="text-center">{boss.name}</p>
+              </div>
+            </CardTitle>
+          </div>
+        </Card>
+      ))}
+    </div>
   );
 };
 
@@ -62,6 +74,7 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
     data.bosses.filter((boss) => {
       if (searchParams.has('dlc') && searchParams.get('dlc') === 'false' && boss.inDlc) return false;
       if (searchParams.has('name') && !boss.name.includes(searchParams.get('name') as string)) return false;
+      if (searchParams.has('major') && searchParams.get('major') === 'true' && !boss.major) return false;
       return true;
     }),
     (boss) => boss.location
@@ -72,11 +85,26 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
       <h1 className="text-3xl font-bold">Bosses {data.bossesDone + '/' + data.bosses.length}</h1>
       <div className="flex gap-5 items-center">
         <div className="flex items-center gap-1">
-          <p className="whitespace-nowrap">Show DLC</p>
+          <Label htmlFor="show-dlc" className="whitespace-nowrap">
+            Show DLC
+          </Label>
           <Checkbox
+            id="show-dlc"
             defaultChecked={searchParams.get('dlc') === 'true'}
             onCheckedChange={(checked) => {
               router.push(pathname + '?' + createQueryString('dlc', String(checked)));
+            }}
+          />
+        </div>
+        <div className="flex items-center gap-1">
+          <Label htmlFor="show-major" className="whitespace-nowrap">
+            Show only Major bosses
+          </Label>
+          <Checkbox
+            id="show-major"
+            defaultChecked={searchParams.get('major') === 'true'}
+            onCheckedChange={(checked) => {
+              router.push(pathname + '?' + createQueryString('major', String(checked)));
             }}
           />
         </div>
@@ -96,12 +124,21 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
           }}
         />
         <Button
+          variant={'secondary'}
+          onClick={async (e) => {
+            console.log('update');
+          }}
+        >
+          Update
+        </Button>
+        <Button
           variant={'destructive'}
           onClick={async (e) => {
             e.stopPropagation();
             const res = await modal.question({
               title: 'Reinitisaliser les données ?',
               message: 'Cette action est irreversible',
+              doubleConfirm: true,
             });
             if (res) {
               resetBosses();
@@ -128,7 +165,7 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
                     </p>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent>{b && <BossesTable bosses={b} />}</AccordionContent>
+                <AccordionContent>{b && <BossesTable dbBosses={b} />}</AccordionContent>
               </AccordionItem>
             </Accordion>
           );

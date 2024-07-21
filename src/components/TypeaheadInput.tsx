@@ -20,7 +20,6 @@ const TypeaheadInput: React.FC<
 
   const handleBLur = (e: React.FocusEvent<HTMLInputElement, Element>) => {
     onBlur?.(e);
-    setSuggestions([]);
   };
 
   return (
