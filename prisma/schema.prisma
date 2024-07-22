@@ -18,6 +18,7 @@ model User {
   Account       Account?
 
   bosses         Boss[]
+  items          Item[]
  
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -76,6 +77,24 @@ model Boss {
   done        Boolean @default(false)
 
   locationUrl String?
+
+  user        User     @relation(fields: [userId], references: [id])
+  userId      String
+ 
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+ 
+  @@index([userId])
+}
+
+model Item {
+  id          String   @id @default(cuid())
+  type        String
+  name        String  @unique
+  inDlc       Boolean @default(false)
+  done        Boolean @default(false)
+
+  sortableType String?
 
   user        User     @relation(fields: [userId], references: [id])
   userId      String

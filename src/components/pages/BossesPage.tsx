@@ -1,25 +1,23 @@
 'use client';
-import { resetBosses } from '@/app/actions/resetBosses';
-import { toggleBossDone } from '@/app/actions/toggleBossDone';
-import { updateBosses } from '@/app/actions/updateBosses';
+import { reset, toggleDone, update } from '@/app/actions/bosses';
 import { modal } from '@/components/Modal';
+import TypeaheadInput from '@/components/TypeaheadInput';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
-import { bosses } from '@/lib/defaultBosses';
+import { Card, CardTitle } from '@/components/ui/card';
+import { Checkbox } from '@/components/ui/checkbox';
+import { Label } from '@/components/ui/label';
+import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
+import { Switch } from '@/components/ui/switch';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { useBosses } from '@/hooks/useBosses';
+import { bosses } from '@/lib/defaultData/bosses';
 import { cn } from '@/lib/utils';
 import { Boss } from '@prisma/client';
 import { BookOpen, MapPin } from 'lucide-react';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import React, { useCallback } from 'react';
-import { useBosses } from './hooks/useBosses';
-import TypeaheadInput from './TypeaheadInput';
-import { Card, CardTitle } from './ui/card';
-import { Checkbox } from './ui/checkbox';
-import { Label } from './ui/label';
-import { RadioGroup, RadioGroupItem } from './ui/radio-group';
-import { Switch } from './ui/switch';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 
 const Filters: React.FC<{
   router: AppRouterInstance;
@@ -30,7 +28,7 @@ const Filters: React.FC<{
 }> = ({ router, pathname, searchParams, createQueryString, data }) => {
   return (
     <div className="flex flex-col items-center gap-2">
-      <p className="text-xl">Bosses filter</p>
+      <p className="text-xl">Filtres bosses</p>
       <div className="flex gap-3">
         <div className="flex flex-col items-end justify-center gap-3">
           <div className="flex items-center gap-2">
@@ -47,7 +45,7 @@ const Filters: React.FC<{
           </div>
           <div className="flex items-center gap-2">
             <Label htmlFor="show-major" className="whitespace-nowrap">
-              Only Major
+              Majeur
             </Label>
             <Checkbox
               id="show-major"
@@ -67,15 +65,15 @@ const Filters: React.FC<{
           >
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="all" id="all" />
-              <Label htmlFor="all">All</Label>
+              <Label htmlFor="all">Tous</Label>
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="done" id="done" />
-              <Label htmlFor="done">Done</Label>
+              <Label htmlFor="done">Fait</Label>
             </div>
             <div className="flex items-center space-x-2">
               <RadioGroupItem value="notdone" id="notdone" />
-              <Label htmlFor="notdone">Not done</Label>
+              <Label htmlFor="notdone">Pas fait</Label>
             </div>
           </RadioGroup>
         </div>
@@ -118,7 +116,7 @@ const BossesTable: React.FC<{ dbBosses: Boss[]; searchParams: ReadonlyURLSearchP
             height: '100%',
           }}
           onClick={() => {
-            toggleBossDone({ bossId: boss.id });
+            toggleDone({ bossId: boss.id });
           }}
         >
           <div className="flex flex-col justify-between h-full">
@@ -173,7 +171,7 @@ const BossesTable: React.FC<{ dbBosses: Boss[]; searchParams: ReadonlyURLSearchP
                 <Checkbox
                   defaultChecked={boss.done}
                   onCheckedChange={() => {
-                    toggleBossDone({ bossId: boss.id });
+                    toggleDone({ bossId: boss.id });
                   }}
                 />
               </TableCell>
@@ -241,7 +239,7 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
           <Button
             variant={'secondary'}
             onClick={async (e) => {
-              await updateBosses();
+              await update();
             }}
           >
             Update
@@ -256,7 +254,7 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
                 doubleConfirm: true,
               });
               if (res) {
-                resetBosses();
+                reset();
               }
             }}
           >

@@ -1,6 +1,6 @@
 import { LoginButton } from '@/components/AuthButtons';
-import BossesPage from '@/components/BossesPage';
-import { useBosses } from '@/components/hooks/useBosses';
+import BossesPage from '@/components/pages/BossesPage';
+import { useBosses } from '@/hooks/useBosses';
 import { auth } from '@/lib/auth';
 import { cn } from '@/lib/utils';
 

@@ -1,10 +1,10 @@
 'use server';
-import { bosses } from '@/lib/defaultBosses';
+import { bosses } from '@/lib/defaultData/bosses';
 import prisma from '@/lib/prisma';
 import { actionClient } from '@/lib/safe-action';
 import { revalidatePath } from 'next/cache';
 
-export const updateBosses = actionClient.action(async ({ ctx }) => {
+export const update = actionClient.action(async ({ ctx }) => {
   const { userId } = ctx;
   const dbBosses = await prisma.boss.findMany({ where: { userId } });
 

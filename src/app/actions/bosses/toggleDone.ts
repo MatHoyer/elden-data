@@ -9,7 +9,7 @@ const toggleSchema = z.object({
   bossId: z.string(),
 });
 
-export const toggleBossDone = actionClient
+export const toggleDone = actionClient
   .schema(toggleSchema, {
     handleValidationErrorsShape: (ve) => flattenValidationErrors(ve).fieldErrors,
   })

@@ -1,4 +1,4 @@
-import { resetBosses } from '@/app/actions/resetBosses';
+import { reset } from '@/app/actions/bosses';
 import { auth } from '@/lib/auth';
 import prisma from '@/lib/prisma';
 
@@ -6,7 +6,7 @@ export const useBosses = async () => {
   const session = await auth();
   let bosses = await prisma.boss.findMany({ where: { userId: session?.user?.id } });
   if (bosses.length === 0) {
-    await resetBosses();
+    await reset();
     bosses = await prisma.boss.findMany({ where: { userId: session?.user?.id } });
   }
   const bossesDone = await prisma.boss.count({ where: { userId: session?.user?.id, done: true } });
