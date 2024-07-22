@@ -18,23 +18,16 @@ import { Card, CardTitle } from './ui/card';
 import { Checkbox } from './ui/checkbox';
 import { Label } from './ui/label';
 import { RadioGroup, RadioGroupItem } from './ui/radio-group';
+import { Switch } from './ui/switch';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from './ui/table';
 
 const Filters: React.FC<{
   router: AppRouterInstance;
   pathname: string;
   searchParams: ReadonlyURLSearchParams;
+  createQueryString: (key: string, value: string) => string;
   data: Awaited<ReturnType<typeof useBosses>>;
-}> = ({ router, pathname, searchParams, data }) => {
-  const createQueryString = useCallback(
-    (name: string, value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
-      params.set(name, value);
-
-      return params.toString();
-    },
-    [searchParams]
-  );
-
+}> = ({ router, pathname, searchParams, createQueryString, data }) => {
   return (
     <div className="flex flex-col items-center gap-2">
       <p className="text-xl">Bosses filter</p>
@@ -106,8 +99,11 @@ const Filters: React.FC<{
   );
 };
 
-const BossesTable: React.FC<{ dbBosses: Boss[] }> = ({ dbBosses }) => {
-  return (
+const BossesTable: React.FC<{ dbBosses: Boss[]; searchParams: ReadonlyURLSearchParams }> = ({
+  dbBosses,
+  searchParams,
+}) => {
+  return searchParams.has('display-card') && searchParams.get('display-card') === 'true' ? (
     <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center">
       {dbBosses.map((boss, index) => (
         <Card
@@ -147,6 +143,45 @@ const BossesTable: React.FC<{ dbBosses: Boss[] }> = ({ dbBosses }) => {
         </Card>
       ))}
     </div>
+  ) : (
+    <Table>
+      <TableHeader>
+        <TableRow>
+          <TableHead>Name</TableHead>
+          <TableHead>Location</TableHead>
+          <TableHead>Wiki</TableHead>
+          <TableHead>Status</TableHead>
+        </TableRow>
+      </TableHeader>
+      <TableBody>
+        {dbBosses.map((boss) => {
+          const goodBoss = bosses.find((b) => b.locationUrl === boss.locationUrl);
+          return (
+            <TableRow key={boss.id}>
+              <TableCell>{boss.name}</TableCell>
+              <TableCell>
+                <a target="_blank" href={goodBoss?.locationUrl}>
+                  <MapPin />
+                </a>
+              </TableCell>
+              <TableCell>
+                <a target="_blank" href={goodBoss?.wikiUrl}>
+                  <BookOpen />
+                </a>
+              </TableCell>
+              <TableCell>
+                <Checkbox
+                  defaultChecked={boss.done}
+                  onCheckedChange={() => {
+                    toggleBossDone({ bossId: boss.id });
+                  }}
+                />
+              </TableCell>
+            </TableRow>
+          );
+        })}
+      </TableBody>
+    </Table>
   );
 };
 
@@ -154,6 +189,16 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+
+  const createQueryString = useCallback(
+    (name: string, value: string) => {
+      const params = new URLSearchParams(searchParams.toString());
+      params.set(name, value);
+
+      return params.toString();
+    },
+    [searchParams]
+  );
 
   const filterBosses = Object.groupBy(
     data.bosses.filter((boss) => {
@@ -174,9 +219,25 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
           Bosses {data.bossesDone}/{data.bosses.length}
         </h1>
         <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
-          <Filters router={router} pathname={pathname} searchParams={searchParams} data={data} />
+          <Filters
+            router={router}
+            pathname={pathname}
+            searchParams={searchParams}
+            createQueryString={createQueryString}
+            data={data}
+          />
         </div>
         <div className="flex gap-3">
+          <div className="flex items-center gap-2">
+            <Label htmlFor="switch-card">Display with card</Label>
+            <Switch
+              id="switch-card"
+              defaultChecked={searchParams.get('display-card') === 'true'}
+              onCheckedChange={(checked) => {
+                router.push(pathname + '?' + createQueryString('display-card', String(checked)));
+              }}
+            />
+          </div>
           <Button
             variant={'secondary'}
             onClick={async (e) => {
@@ -219,7 +280,7 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
                       </p>
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent>{b && <BossesTable dbBosses={b} />}</AccordionContent>
+                  <AccordionContent>{b && <BossesTable dbBosses={b} searchParams={searchParams} />}</AccordionContent>
                 </AccordionItem>
               </Accordion>
             );
