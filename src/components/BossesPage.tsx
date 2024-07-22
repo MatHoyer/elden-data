@@ -158,7 +158,7 @@ const BossesTable: React.FC<{ dbBosses: Boss[]; searchParams: ReadonlyURLSearchP
           const goodBoss = bosses.find((b) => b.locationUrl === boss.locationUrl);
           return (
             <TableRow key={boss.id}>
-              <TableCell>{boss.name}</TableCell>
+              <TableCell className={cn(boss.major && 'text-gold')}>{boss.name}</TableCell>
               <TableCell>
                 <a target="_blank" href={goodBoss?.locationUrl}>
                   <MapPin />
