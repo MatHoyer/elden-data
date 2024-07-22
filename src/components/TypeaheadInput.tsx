@@ -26,7 +26,7 @@ const TypeaheadInput: React.FC<
     <div className={className}>
       <Input value={value} onChange={handleChange} onBlur={handleBLur} {...props} />
       <div className="mt-2 relative w-full">
-        <div className="absolute z-2 rounded-lg w-full">
+        <div className="absolute z-10 rounded-lg w-full">
           {suggestions.map((suggestion, i) => (
             <div
               key={i}
