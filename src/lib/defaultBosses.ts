@@ -12,50 +12,50 @@ export const bosses = [
     location: 'Nécrolimbe',
     major: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_the_grafted_bosses_elden_ring_wiki_600px1-min.jpg',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_the_grafted_bosses_elden_ring_wiki_600px.jpg',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+the+Grafted',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164421',
   },
   {
     name: "Esprit d'arbre ulcéreux",
     location: 'Nécrolimbe',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit1-min.jpg',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165164',
   },
   {
     name: "Chien de garde de l'arbre des défunts",
     location: 'Nécrolimbe',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px1-min.jpg',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px.jpg',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164467',
   },
   {
     name: 'Chevalier du Creuset',
     location: 'Nécrolimbe',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-stormhill-3-min.jpg',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-stormhill-1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Knight',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164476',
   },
   {
     name: 'Homme-bête de Farum Azula',
     location: 'Nécrolimbe',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastman-of-farum-azula1.jpg',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastman-of-farum-azula-1-hq-elden-ring-wiki-guide.jpg',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Beastman+of+Farum+Azula',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164472',
   },
   {
     name: 'Assassin des couteaux noirs',
     location: 'Nécrolimbe',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-limgrave-2-min.jpg',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-limgrave-2.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Assassin',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164530',
   },
   {
     name: 'Volatile funéraire (Night)',
     location: 'Nécrolimbe',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbird_elden_ring_wiki_300px.jpg',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-bird-limgrave.jpg',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Deathbird',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165457',
   },
@@ -70,99 +70,104 @@ export const bosses = [
   {
     name: 'Duelliste Gardien du Tombeau',
     location: 'Nécrolimbe',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-warden-duelist-2-small1-min.jpg',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-warden-duelist-3.jpg',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Grave+Warden+Duelist',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164499',
   },
   {
     name: 'Troll fouisseur',
     location: 'Nécrolimbe',
-    imageUrl: '',
-    wikiUrl: '',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stonedigger_troll_bosses_elden_ring_wiki_600px.jpg',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Stonedigger+Troll',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164478',
   },
   {
     name: 'Cavalier Crépusculaire (Night)',
     location: 'Nécrolimbe',
-    imageUrl: '',
-    wikiUrl: '',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-limgrave.jpg',
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164488',
   },
   {
     name: 'Agheel le dragon volant',
     location: 'Nécrolimbe',
-    imageUrl: '',
-    wikiUrl: '',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flying_dragon_agheel_2_bosses_elden_ring_wiki_600px.jpg',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Flying+Dragon+Agheel',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164484',
   },
   {
     name: "Esprit d'arbre ulcéreux",
     location: 'Nécrolimbe',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit.png',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164143',
   },
   {
     name: 'Sentinelle de l’Arbre',
     location: 'Nécrolimbe',
-    imageUrl: '',
-    wikiUrl: '',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-sentinel-3.jpg',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164444',
   },
   {
     name: '2x Chef semi-humains',
     location: 'Nécrolimbe',
-    imageUrl: '',
-    wikiUrl: '',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/demihuman-chief-boss-enemy-elden-ring-wiki-guide.jpg',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Demi-Human+Chief',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164457',
   },
   {
     name: 'Soldat de Godrick',
     location: 'Nécrolimbe',
-    imageUrl: '',
-    wikiUrl: '',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/soldier-of-godrick-boss-elden-rings.jpg',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Soldier+of+Godrick',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164420',
   },
   {
     name: 'Darriwil Chevalier-limier',
     location: 'Nécrolimbe',
-    imageUrl: '',
-    wikiUrl: '',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound-knight-darriwil-boss-enemy-elden-ring-wiki-guide.jpg',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Darriwil',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164486',
   },
   {
     name: 'Tête de Citrouille',
     location: 'Nécrolimbe',
-    imageUrl: '',
-    wikiUrl: '',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mad-pumpkin-head.png',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mad+Pumpkin+Head',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164490',
   },
   {
     name: 'Nocher Diaphane',
     location: 'Nécrolimbe',
-    imageUrl: '',
-    wikiUrl: '',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibia-mariner-limgrave-small.jpg',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Tibia+Mariner',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164859',
   },
   {
     name: "Pat l'Affranchi",
     location: 'Nécrolimbe',
-    imageUrl: '',
-    wikiUrl: '',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/patches-npc-photo-elden-ring-wiki-guide-300px-min.jpg',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Patches',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164504',
   },
   {
     name: 'Chimère léonine',
     location: 'Péninsule Larmoyante',
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/misbegotten_warrior_enemies_elden_ring_wiki_300px.jpg',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-and-misbegotten-warrior-1-hq-elden-ring-wiki-guide.jpg',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Misbegotten+Warrior',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164812',
   },
   {
     name: 'Volatile funéraire (Night)',
     location: 'Péninsule Larmoyante',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbird_elden_ring_wiki_300px.jpg',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-bird-weeping-peninsula.jpg',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Deathbird',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166054',
   },
@@ -176,9 +181,8 @@ export const bosses = [
   {
     name: "Chien de garde de l'arbre des défunts",
     location: 'Péninsule Larmoyante',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165949',
   },
   {
@@ -191,16 +195,15 @@ export const bosses = [
   {
     name: 'Chimère Ecailleuse',
     location: 'Péninsule Larmoyante',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/scaly_misbegotten.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaly+Misbegotten',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165453',
   },
   {
     name: "Avatar de l'Arbre-Monde",
     location: 'Péninsule Larmoyante',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-weeping-peninsula-elden-rink-wiki-guide-1-small.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Avatar',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165321',
   },
   {
@@ -321,16 +324,15 @@ export const bosses = [
   {
     name: "Avatar de l'Arbre-Monde",
     location: 'Liurnia',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-weeping-peninsula-elden-rink-wiki-guide-1-small.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Avatar',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165595',
   },
   {
     name: 'Assassin des couteaux noirs',
     location: 'Liurnia',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-limgrave-2-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Assassin',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166482',
   },
   {
@@ -343,9 +345,8 @@ export const bosses = [
   {
     name: 'Volatile funéraire des cimes (Night)',
     location: 'Liurnia',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death_rite_bird_bosses_elden_ring_wiki_guide1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Rite+Bird',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166501',
   },
   {
@@ -379,9 +380,8 @@ export const bosses = [
   {
     name: "Avatar de l'Arbre-Monde",
     location: 'Liurnia',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-weeping-peninsula-elden-rink-wiki-guide-1-small.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Avatar',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165594',
   },
   {
@@ -408,8 +408,8 @@ export const bosses = [
   {
     name: 'Volatile funéraire (Night)',
     location: 'Liurnia',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbird_elden_ring_wiki_300px.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Deathbird',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165597',
   },
   {
@@ -436,9 +436,8 @@ export const bosses = [
   {
     name: "Chien de garde de l'arbre des défunts",
     location: 'Liurnia',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168517',
   },
   {
@@ -509,16 +508,15 @@ export const bosses = [
   {
     name: 'Avatar Putride',
     location: 'Caelid',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-1-elden-ring-wiki-guide.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Putrid+Avatar',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166512',
   },
   {
     name: "2x Chien de garde de l'arbre des défunts",
     location: 'Caelid',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166671',
   },
   {
@@ -531,9 +529,8 @@ export const bosses = [
   {
     name: 'Duelliste Frénétique',
     location: 'Caelid',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/frenzied-duelist-axe-elden-ring-wiki-guide-300px.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Frenzied+Duelist',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168033',
   },
   {
@@ -560,9 +557,8 @@ export const bosses = [
   {
     name: 'Volatile funéraire des cimes (Night)',
     location: 'Caelid',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death_rite_bird_bosses_elden_ring_wiki_guide1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Rite+Bird',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167019',
   },
   {
@@ -610,8 +606,8 @@ export const bosses = [
   {
     name: 'Chimère et Chevalier du Creuset',
     location: 'Caelid',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-stormhill-3-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Knight',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166176',
   },
   {
@@ -631,23 +627,22 @@ export const bosses = [
   {
     name: 'Avatar Putride',
     location: 'Caelid',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-1-elden-ring-wiki-guide.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Putrid+Avatar',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166615',
   },
   {
     name: 'Homme-bête de Farum Azula',
     location: 'Caelid',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastman-of-farum-azula1.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Beastman+of+Farum+Azula',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167916',
   },
   {
     name: 'Esprit d’arbre putride',
     location: 'Caelid',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/Putrid+Tree+Spirit',
-    wikiUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-tree-spirit-boss-elden-ring-wiki-guide-300px-min.jpeg',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167378',
   },
   {
@@ -730,8 +725,8 @@ export const bosses = [
   {
     name: 'Assassin des couteaux noirs',
     location: 'Plateau Altus',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-limgrave-2-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Assassin',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167676',
   },
   {
@@ -794,8 +789,8 @@ export const bosses = [
   {
     name: 'Assassin des couteaux noirs',
     location: 'Mont Gelmir',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-limgrave-2-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Assassin',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166678',
   },
   {
@@ -815,8 +810,8 @@ export const bosses = [
   {
     name: 'Parfumeuse Tricia et Chimère léonine',
     location: 'Mont Gelmir',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer-tricia-1-elden-ring-wiki-guide.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Tricia',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167394',
   },
   {
@@ -829,9 +824,8 @@ export const bosses = [
   {
     name: "Chien de garde de l'arbre des défunts",
     location: 'Mont Gelmir',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168513',
   },
   {
@@ -872,8 +866,8 @@ export const bosses = [
   {
     name: "Esprit d'arbre ulcéreux",
     location: 'Mont Gelmir',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167812',
   },
   {
@@ -945,14 +939,14 @@ export const bosses = [
   {
     name: 'Volatile funéraire (Night)',
     location: 'Leyndell, Capitale Royale',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbird_elden_ring_wiki_300px.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Deathbird',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167182',
   },
   {
     name: 'Margit le déchu',
     location: 'Leyndell, Capitale Royale',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/margit-1-boss-elden-ring-wiki.jpg',
+    imageUrl: '',
     wikiUrl: '',
     locationUrl: '',
   },
@@ -966,8 +960,8 @@ export const bosses = [
   {
     name: "Esprit d'arbre ulcéreux",
     location: 'Leyndell, Capitale Royale',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167586',
   },
   {
@@ -980,31 +974,29 @@ export const bosses = [
   {
     name: 'Duelliste Gardien du Tombeau',
     location: 'Leyndell, Capitale Royale',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-warden-duelist-2-small1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Grave+Warden+Duelist',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167018',
   },
   {
     name: 'Ordovis 2x Chevalier du Creuset',
     location: 'Leyndell, Capitale Royale',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_knight_ordovis_enemies_elden_ring_wiki_300px.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Knight+Ordovis',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167535',
   },
   {
     name: "Esprit d'arbre ulcéreux",
     location: 'Leyndell, Capitale Royale',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167141',
   },
   {
     name: "Avatar de l'Arbre-Monde",
     location: 'Leyndell, Capitale Royale',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-weeping-peninsula-elden-rink-wiki-guide-1-small.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Avatar',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168147',
   },
   {
@@ -1031,24 +1023,22 @@ export const bosses = [
   {
     name: 'Champions de Fia',
     location: 'Profondeurs de Fonderacine',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fias-champion-1-elden-ring-wiki-guide.jpg',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Fia's+champions",
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168424',
   },
   {
     name: 'Siluria du Creuset',
     location: 'Profondeurs de Fonderacine',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_knight_siluria_elden_ring_wiki_guide_300px.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Knight+Siluria',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168281',
   },
   {
     name: "Avatar de l'Arbre-Monde",
     location: 'Profondeurs de Fonderacine',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-weeping-peninsula-elden-rink-wiki-guide-1-small.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Avatar',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168442',
   },
   {
@@ -1091,16 +1081,15 @@ export const bosses = [
   {
     name: "Esprit d'arbre ulcéreux",
     location: 'Cimes des géants',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167668',
   },
   {
     name: 'Volatile funéraire des cimes',
     location: 'Cimes des géants',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death_rite_bird_bosses_elden_ring_wiki_guide1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Rite+Bird',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168010',
   },
   {
@@ -1113,9 +1102,8 @@ export const bosses = [
   {
     name: "Avatar de l'Arbre-Monde",
     location: 'Cimes des géants',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-weeping-peninsula-elden-rink-wiki-guide-1-small.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Avatar',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167138',
   },
   {
@@ -1149,9 +1137,8 @@ export const bosses = [
   {
     name: 'Volatile funéraire des cimes (Night)',
     location: 'Champs de neige consacrés',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death_rite_bird_bosses_elden_ring_wiki_guide1-min.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Rite+Bird',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168520',
   },
   {
@@ -1178,24 +1165,22 @@ export const bosses = [
   {
     name: 'Duelliste Gardien du Tombeau putride',
     location: 'Champs de neige consacrés',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-grave-warden-duelist-boss-elden-ring-wiki-guide.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Putrid+Grave+Warden+Duelist',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168389',
   },
   {
     name: 'Avatar Putride',
     location: 'Champs de neige consacrés',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-1-elden-ring-wiki-guide.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Putrid+Avatar',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168521',
   },
   {
     name: 'Chimère léonine',
     location: 'Champs de neige consacrés',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/misbegotten_warrior_enemies_elden_ring_wiki_300px.jpg',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Misbegotten+Warrior',
+    imageUrl: '',
+    wikiUrl: '',
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168661',
   },
   {

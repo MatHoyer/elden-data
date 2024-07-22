@@ -8,7 +8,10 @@ export const resetBosses = actionClient.action(async ({ ctx }) => {
   const { userId } = ctx;
   await prisma.boss.deleteMany({ where: { userId } });
   await prisma.boss.createMany({
-    data: bosses.map((boss) => ({ ...boss, userId })),
+    data: bosses.map((boss) => {
+      const { imageUrl, wikiUrl, ...rest } = boss;
+      return { ...rest, userId };
+    }),
   });
   revalidatePath('/');
 });
