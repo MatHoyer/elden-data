@@ -112,7 +112,7 @@ const BossesTable: React.FC<{ dbBosses: Boss[] }> = ({ dbBosses }) => {
       {dbBosses.map((boss, index) => (
         <Card
           key={index}
-          className={cn('p-3', boss.done ? 'border-4 border-green-400' : 'border-4 border-background')}
+          className={cn('p-3 cursor-pointer', boss.done ? 'border-4 border-green-400' : 'border-4 border-background')}
           style={{
             backgroundImage: `url(${bosses.find((b) => b.locationUrl === boss.locationUrl)?.imageUrl})`,
             backgroundSize: 'cover',
@@ -128,7 +128,7 @@ const BossesTable: React.FC<{ dbBosses: Boss[] }> = ({ dbBosses }) => {
           <div className="flex flex-col justify-between h-full">
             <div className="h-40"></div>
             <CardTitle
-              className={cn(boss.major && 'text-gold', 'bg-secondary/80 rounded-md p-1')}
+              className={cn(boss.major && 'text-gold', 'bg-secondary/80 rounded-md p-1 cursor-default')}
               onClick={(e) => e.stopPropagation()}
             >
               <div className="flex flex-col items-center select-none">
