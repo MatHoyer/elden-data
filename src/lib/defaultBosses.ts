@@ -1265,7 +1265,7 @@ export const bosses = [
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168228',
   },
   {
-    name: 'Malenia Épée de Nicolas',
+    name: 'Malenia Épée de Miquella',
     location: 'Arbre-Sacré de Miquella',
     major: true,
     imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malenia,-blade-of-miquella.jpg',
