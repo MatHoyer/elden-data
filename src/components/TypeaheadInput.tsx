@@ -14,7 +14,9 @@ const TypeaheadInput: React.FC<
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
     setValue(val);
-    setSuggestions(val !== '' ? datas.filter((data) => data.includes(value)).slice(0, 5) : []);
+    setSuggestions(
+      val !== '' ? datas.filter((data) => data.toLocaleLowerCase().includes(value.toLocaleLowerCase())).slice(0, 5) : []
+    );
     onChange?.(val);
   };
 

@@ -431,7 +431,7 @@ export const bosses = [
   {
     name: 'Cavalier Crépusculaire (Night)',
     location: 'Liurnia',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-2-hq-elden-ring-wiki-guide.jpg',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-4-hq-elden-ring-wiki-guide.jpg',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
     locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166181',
   },
