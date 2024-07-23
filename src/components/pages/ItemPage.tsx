@@ -36,7 +36,7 @@ const Filters: React.FC<{
             </Label>
             <Checkbox
               id="show-dlc"
-              defaultChecked={searchParams.get('dlc') === 'true'}
+              defaultChecked={!searchParams.has('dlc') || searchParams.get('dlc') === 'true'}
               onCheckedChange={(checked) => {
                 router.push(pathname + '?' + createQueryString('dlc', String(checked)));
               }}
@@ -47,7 +47,7 @@ const Filters: React.FC<{
           <RadioGroup
             defaultValue="all"
             onValueChange={(value) => {
-              router.push(pathname + '?' + createQueryString('boss', value as string));
+              router.push(pathname + '?' + createQueryString('item', value as string));
             }}
           >
             <div className="flex items-center space-x-2">
@@ -265,7 +265,9 @@ const ItemPage: React.FC<{ data: TUseItems }> = ({ data }) => {
             );
           })
       ) : (
-        <div className="w-full">{data.items && <ItemsTable items={data.items} searchParams={searchParams} />}</div>
+        <div className="w-full">
+          {filterItems['other'] && <ItemsTable items={filterItems['other']} searchParams={searchParams} />}
+        </div>
       )}
     </div>
   );

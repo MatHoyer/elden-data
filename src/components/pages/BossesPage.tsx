@@ -35,7 +35,7 @@ const Filters: React.FC<{
             </Label>
             <Checkbox
               id="show-dlc"
-              defaultChecked={searchParams.get('dlc') === 'true'}
+              defaultChecked={!searchParams.has('dlc') || searchParams.get('dlc') === 'true'}
               onCheckedChange={(checked) => {
                 router.push(pathname + '?' + createQueryString('dlc', String(checked)));
               }}
