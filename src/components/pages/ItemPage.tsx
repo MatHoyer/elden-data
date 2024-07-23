@@ -94,19 +94,24 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
       {items.map((item, index) => (
         <Card
           key={index}
-          className={cn('p-3 cursor-pointer', item.done ? 'border-4 border-green-400' : 'border-4 border-background')}
+          className={cn(
+            'p-3 cursor-pointer w-[300px] h-[240px]',
+            item.done ? 'border-4 border-green-400' : 'border-4 border-background'
+          )}
           style={{
             backgroundImage: `url(${item.imageUrl})`,
             backgroundSize: 'fill',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
+            width: '300px',
+            height: '240px',
           }}
           onClick={() => {
             toggleDone({ itemId: item.id });
           }}
         >
           <div className="flex flex-col justify-between h-full">
-            <div className="h-40"></div>
+            <div></div>
             <CardTitle
               className={cn('bg-secondary/80 rounded-md p-1 cursor-default')}
               onClick={(e) => e.stopPropagation()}

@@ -104,14 +104,17 @@ const BossesTable: React.FC<{ bosses: TUseBosses['bosses']; searchParams: Readon
       {bosses.map((boss, index) => (
         <Card
           key={index}
-          className={cn('p-3 cursor-pointer', boss.done ? 'border-4 border-green-400' : 'border-4 border-background')}
+          className={cn(
+            'p-3 cursor-pointer  w-[300px] h-[240px]',
+            boss.done ? 'border-4 border-green-400' : 'border-4 border-background'
+          )}
           style={{
             backgroundImage: `url(${boss.imageUrl})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            width: '100%',
-            height: '100%',
+            width: '300px',
+            height: '240px',
           }}
           onClick={() => {
             toggleDone({ bossId: boss.id });

@@ -13,6 +13,7 @@ const Navbar = async () => {
             <NavLink href="/" name="Home" />
             <NavLink href="/boss" name="Boss" />
             <NavLink href="/talisman" name="Talismans" />
+            <NavLink href="/armor" name="Armures" />
           </nav>
         </div>
         <div className="flex items-center">
