@@ -97,11 +97,9 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
           className={cn('p-3 cursor-pointer', item.done ? 'border-4 border-green-400' : 'border-4 border-background')}
           style={{
             backgroundImage: `url(${item.imageUrl})`,
-            backgroundSize: 'cover',
+            backgroundSize: 'fill',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            width: '100%',
-            height: '100%',
           }}
           onClick={() => {
             toggleDone({ itemId: item.id });
