@@ -11,7 +11,7 @@ export const talismans = [
     type: 'talisman',
     name: "Médaillon d'ambre pourpre +1",
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
+      'https://static.wikia.nocookie.net/eldenring/images/1/10/ER_Icon_Talisman_Crimson_Amber_Medallion_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Amber+Medallion',
     locationUrl: '',
   },
@@ -19,7 +19,7 @@ export const talismans = [
     type: 'talisman',
     name: "Médaillon d'ambre pourpre +2",
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
+      'https://static.wikia.nocookie.net/eldenring/images/e/e1/ER_Icon_Talisman_Crimson_Amber_Medallion_%2B2.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Amber+Medallion',
     locationUrl: '',
   },
@@ -28,7 +28,7 @@ export const talismans = [
     name: "Médaillon d'ambre pourpre +3",
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_amber_medallion_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Amber+Medallion',
     locationUrl: '',
   },
@@ -45,7 +45,7 @@ export const talismans = [
     name: 'Talisman de la graine pourpre +1',
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_seed_talisman_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_seed_talisman_1_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Seed+Talisman',
     locationUrl: '',
   },
@@ -69,7 +69,7 @@ export const talismans = [
     type: 'talisman',
     name: "Médaillon d'ambre céruléen +1",
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
+      'https://static.wikia.nocookie.net/eldenring/images/f/f5/ER_Icon_Talisman_Cerulean_Amber_Medallion_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Amber+Medallion',
     locationUrl: '',
   },
@@ -77,7 +77,7 @@ export const talismans = [
     type: 'talisman',
     name: "Médaillon d'ambre céruléen +2",
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
+      'https://static.wikia.nocookie.net/eldenring/images/d/d5/ER_Icon_Talisman_Cerulean_Amber_Medallion_%2B2.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Amber+Medallion',
     locationUrl: '',
   },
@@ -86,7 +86,7 @@ export const talismans = [
     name: "Médaillon d'ambre céruléen +3",
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_amber_medallion_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Amber+Medallion',
     locationUrl: '',
   },
@@ -103,7 +103,7 @@ export const talismans = [
     name: 'Talisman de la graine céruléenne +1',
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_seed_talisman_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_seed_talisman_1_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Seed+Talisman',
     locationUrl: '',
   },
@@ -137,7 +137,7 @@ export const talismans = [
     type: 'talisman',
     name: "Médaillon d'ambre vert émeraude +1",
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/viridian_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
+      'https://static.wikia.nocookie.net/eldenring/images/2/24/ER_Icon_Talisman_Viridian_Amber_Medallion_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Viridian+Amber+Medallion',
     locationUrl: '',
   },
@@ -145,7 +145,7 @@ export const talismans = [
     type: 'talisman',
     name: "Médaillon d'ambre vert émeraude +2",
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/viridian_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
+      'https://static.wikia.nocookie.net/eldenring/images/4/4d/ER_Icon_Talisman_Viridian_Amber_Medallion_%2B2.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Viridian+Amber+Medallion',
     locationUrl: '',
   },
@@ -154,7 +154,7 @@ export const talismans = [
     name: "Médaillon d'ambre vert émeraude +3",
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/viridian_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/viridian_amber_medallion_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Viridian+Amber+Medallion',
     locationUrl: '',
   },
@@ -171,7 +171,7 @@ export const talismans = [
     name: 'Talisman de tortue à deux têtes',
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/green_turtle_talisman_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/two-headed_turtle_talisman_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Green+Turtle+Talisman',
     locationUrl: '',
   },
@@ -186,8 +186,7 @@ export const talismans = [
   {
     type: 'talisman',
     name: "Talisman d'arsenal +1",
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/arsenal_charm_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/8/83/ER_Icon_Talisman_Arsenal_Charm_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Arsenal+Charm',
     locationUrl: '',
   },
@@ -202,21 +201,21 @@ export const talismans = [
   {
     type: 'talisman',
     name: "Faveur de l'Arbre-Monde",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtrees_favor_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/4/42/ER_Icon_Talisman_Erdtree%27s_Favor.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Erdtree's+Favor",
     locationUrl: '',
   },
   {
     type: 'talisman',
     name: "Faveur de l'Arbre-Monde +1",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtrees_favor_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/c/cd/ER_Icon_Talisman_Erdtree%27s_Favor_%2B1.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Erdtree's+Favor",
     locationUrl: '',
   },
   {
     type: 'talisman',
     name: "Faveur de l'Arbre-Monde +2",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtrees_favor_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/4/4c/ER_Icon_Talisman_Erdtree%27s_Favor_%2B2.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Erdtree's+Favor",
     locationUrl: '',
   },
@@ -304,7 +303,7 @@ export const talismans = [
     type: 'talisman',
     name: 'Talisman de bouclier draconique +1',
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragoncrest_shield_talisman_talisman_elden_ring_wiki_guide_200px.png',
+      'https://static.wikia.nocookie.net/eldenring/images/4/4a/ER_Icon_Talisman_Dragoncrest_Shield_Talisman_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Dragoncrest+Shield+Talisman',
     locationUrl: '',
   },
@@ -312,7 +311,7 @@ export const talismans = [
     type: 'talisman',
     name: 'Talisman de bouclier draconique +2',
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragoncrest_shield_talisman_talisman_elden_ring_wiki_guide_200px.png',
+      'https://static.wikia.nocookie.net/eldenring/images/4/40/ER_Icon_Talisman_Dragoncrest_Shield_Talisman_%2B2.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Dragoncrest+Shield+Talisman',
     locationUrl: '',
   },
@@ -335,16 +334,14 @@ export const talismans = [
   {
     type: 'talisman',
     name: 'Talisman de dragon magique +1',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spelldrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/8/86/ER_Icon_Talisman_Spelldrake_Talisman_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Spelldrake+Talisman',
     locationUrl: '',
   },
   {
     type: 'talisman',
     name: 'Talisman de dragon magique +2',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spelldrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/a/a8/ER_Icon_Talisman_Spelldrake_Talisman_%2B2.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Spelldrake+Talisman',
     locationUrl: '',
   },
@@ -353,7 +350,7 @@ export const talismans = [
     name: 'Talisman de dragon magique +3',
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spelldrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spelldrake_talisman_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Spelldrake+Talisman',
     locationUrl: '',
   },
@@ -368,16 +365,14 @@ export const talismans = [
   {
     type: 'talisman',
     name: 'Talisman de dragon de feu +1',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flamedrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/f/f8/ER_Icon_Talisman_Flamedrake_Talisman_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Flamedrake+Talisman',
     locationUrl: '',
   },
   {
     type: 'talisman',
     name: 'Talisman de dragon de feu +2',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flamedrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/c/cc/ER_Icon_Talisman_Flamedrake_Talisman_%2B2.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Flamedrake+Talisman',
     locationUrl: '',
   },
@@ -386,7 +381,7 @@ export const talismans = [
     name: 'Talisman de dragon de feu +3',
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flamedrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flamedrake_talisman_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Flamedrake+Talisman',
     locationUrl: '',
   },
@@ -401,16 +396,14 @@ export const talismans = [
   {
     type: 'talisman',
     name: 'Talisman de dragon de foudre +1',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/boltdrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/8/85/ER_Icon_Talisman_Boltdrake_Talisman_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Boltdrake+Talisman',
     locationUrl: '',
   },
   {
     type: 'talisman',
     name: 'Talisman de dragon de foudre +2',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/boltdrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/c/c4/ER_Icon_Talisman_Boltdrake_Talisman_%2B2.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Boltdrake+Talisman',
     locationUrl: '',
   },
@@ -419,7 +412,7 @@ export const talismans = [
     name: 'Talisman de dragon de foudre +3',
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/boltdrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/boltdrake_talisman_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Boltdrake+Talisman',
     locationUrl: '',
   },
@@ -434,16 +427,14 @@ export const talismans = [
   {
     type: 'talisman',
     name: 'Talisman de dragon sacré +1',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligdrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/0/0e/ER_Icon_Talisman_Haligdrake_Talisman_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligdrake+Talisman',
     locationUrl: '',
   },
   {
     type: 'talisman',
     name: 'Talisman de dragon sacré +2',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligdrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/1/10/ER_Icon_Talisman_Haligdrake_Talisman_%2B2.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligdrake+Talisman',
     locationUrl: '',
   },
@@ -467,16 +458,14 @@ export const talismans = [
   {
     type: 'talisman',
     name: 'Talisman de dragon de perle +1',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pearldrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/8/83/ER_Icon_Talisman_Pearldrake_Talisman_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Pearldrake+Talisman',
     locationUrl: '',
   },
   {
     type: 'talisman',
     name: 'Talisman de dragon de perle +2',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pearldrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/9/97/ER_Icon_Talisman_Pearldrake_Talisman_%2B2.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Pearldrake+Talisman',
     locationUrl: '',
   },
@@ -485,7 +474,7 @@ export const talismans = [
     name: 'Talisman de dragon de perle +3',
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pearldrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pearldrake_talisman_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Pearldrake+Talisman',
     locationUrl: '',
   },
@@ -500,8 +489,7 @@ export const talismans = [
   {
     type: 'talisman',
     name: "Corne d'immunité +1",
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/immunizing_horn_charm_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/a/a7/ER_Icon_Talisman_Immunizing_Horn_Charm_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Immunizing+Horn+Charm',
     locationUrl: '',
   },
@@ -510,7 +498,7 @@ export const talismans = [
     name: "Corne d'immunité +2",
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/immunizing_horn_charm_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/immunizing_horn_charm_2_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Immunizing+Horn+Charm',
     locationUrl: '',
   },
@@ -525,8 +513,7 @@ export const talismans = [
   {
     type: 'talisman',
     name: 'Corne de robustesse +1',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stalwart_horn_charm_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/c/c5/ER_Icon_Talisman_Stalwart_Horn_Charm_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Stalwart+Horn+Charm',
     locationUrl: '',
   },
@@ -535,7 +522,7 @@ export const talismans = [
     name: 'Corne de robustesse +2',
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stalwart_horn_charm_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stalwart_horn_charm_2_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Stalwart+Horn+Charm',
     locationUrl: '',
   },
@@ -550,8 +537,7 @@ export const talismans = [
   {
     type: 'talisman',
     name: 'Corne de focalisation +1',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/clarifying_horn_charm_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/e/e0/ER_Icon_Talisman_Clarifying_Horn_Charm_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Clarifying+Horn+Charm',
     locationUrl: '',
   },
@@ -560,7 +546,7 @@ export const talismans = [
     name: 'Corne de focalisation +2',
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/clarifying_horn_charm_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/clarifying_horn_charm_2_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Clarifying+Horn+Charm',
     locationUrl: '',
   },
@@ -575,8 +561,7 @@ export const talismans = [
   {
     type: 'talisman',
     name: 'Pendentif bariolé +1',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mottled_necklace_talisman_elden_ring_wiki_guide_200px.png',
+    imageUrl: 'https://static.wikia.nocookie.net/eldenring/images/a/a3/ER_Icon_Talisman_Mottled_Necklace_%2B1.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Mottled+Necklace',
     locationUrl: '',
   },
@@ -585,7 +570,7 @@ export const talismans = [
     name: 'Pendentif bariolé +2',
     inDlc: true,
     imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mottled_necklace_talisman_elden_ring_wiki_guide_200px.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mottled_necklace_2_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Mottled+Necklace',
     locationUrl: '',
   },
