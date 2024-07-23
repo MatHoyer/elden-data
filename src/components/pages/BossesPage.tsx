@@ -1,5 +1,5 @@
 'use client';
-import { reset, toggleDone, update } from '@/app/actions/bosses';
+import { reset, toggleDone } from '@/actions/bosses';
 import { modal } from '@/components/Modal';
 import TypeaheadInput from '@/components/TypeaheadInput';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
@@ -10,10 +10,8 @@ import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Switch } from '@/components/ui/switch';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { useBosses } from '@/hooks/useBosses';
-import { bosses } from '@/lib/defaultData/bosses';
-import { cn } from '@/lib/utils';
-import { Boss } from '@prisma/client';
+import { TUseBosses } from '@/hooks/useBosses';
+import { cn, groupBy } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
@@ -24,7 +22,7 @@ const Filters: React.FC<{
   pathname: string;
   searchParams: ReadonlyURLSearchParams;
   createQueryString: (key: string, value: string) => string;
-  data: Awaited<ReturnType<typeof useBosses>>;
+  data: TUseBosses;
 }> = ({ router, pathname, searchParams, createQueryString, data }) => {
   return (
     <div className="flex flex-col items-center gap-2">
@@ -97,18 +95,18 @@ const Filters: React.FC<{
   );
 };
 
-const BossesTable: React.FC<{ dbBosses: Boss[]; searchParams: ReadonlyURLSearchParams }> = ({
-  dbBosses,
+const BossesTable: React.FC<{ bosses: TUseBosses['bosses']; searchParams: ReadonlyURLSearchParams }> = ({
+  bosses,
   searchParams,
 }) => {
   return searchParams.has('display-card') && searchParams.get('display-card') === 'true' ? (
     <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center">
-      {dbBosses.map((boss, index) => (
+      {bosses.map((boss, index) => (
         <Card
           key={index}
           className={cn('p-3 cursor-pointer', boss.done ? 'border-4 border-green-400' : 'border-4 border-background')}
           style={{
-            backgroundImage: `url(${bosses.find((b) => b.locationUrl === boss.locationUrl)?.imageUrl})`,
+            backgroundImage: `url(${boss.imageUrl})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
@@ -152,7 +150,7 @@ const BossesTable: React.FC<{ dbBosses: Boss[]; searchParams: ReadonlyURLSearchP
         </TableRow>
       </TableHeader>
       <TableBody>
-        {dbBosses.map((boss) => {
+        {bosses.map((boss) => {
           const goodBoss = bosses.find((b) => b.locationUrl === boss.locationUrl);
           return (
             <TableRow key={boss.id}>
@@ -183,7 +181,7 @@ const BossesTable: React.FC<{ dbBosses: Boss[]; searchParams: ReadonlyURLSearchP
   );
 };
 
-const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({ data }) => {
+const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -198,7 +196,7 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
     [searchParams]
   );
 
-  const filterBosses = Object.groupBy(
+  const filterBosses = groupBy(
     data.bosses.filter((boss) => {
       if (searchParams.has('dlc') && searchParams.get('dlc') === 'false' && boss.inDlc) return false;
       if (searchParams.has('name') && !boss.name.includes(searchParams.get('name') as string)) return false;
@@ -211,80 +209,70 @@ const BossesPage: React.FC<{ data: Awaited<ReturnType<typeof useBosses>> }> = ({
   );
 
   return (
-    <>
-      <div className="flex flex-col gap-5 items-center">
-        <h1 className={cn(data.bossesDone === data.bosses.length && 'text-green-400', 'text-3xl font-bold')}>
-          Bosses {data.bossesDone}/{data.bosses.length}
-        </h1>
-        <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
-          <Filters
-            router={router}
-            pathname={pathname}
-            searchParams={searchParams}
-            createQueryString={createQueryString}
-            data={data}
+    <div className="flex flex-col gap-5 items-center">
+      <h1 className={cn(data.bossesDone === data.bosses.length && 'text-green-400', 'text-3xl font-bold')}>
+        Bosses {data.bossesDone}/{data.bosses.length}
+      </h1>
+      <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
+        <Filters
+          router={router}
+          pathname={pathname}
+          searchParams={searchParams}
+          createQueryString={createQueryString}
+          data={data}
+        />
+      </div>
+      <div className="flex gap-3">
+        <div className="flex items-center gap-2">
+          <Label htmlFor="switch-card">Display with card</Label>
+          <Switch
+            id="switch-card"
+            defaultChecked={searchParams.get('display-card') === 'true'}
+            onCheckedChange={(checked) => {
+              router.push(pathname + '?' + createQueryString('display-card', String(checked)));
+            }}
           />
         </div>
-        <div className="flex gap-3">
-          <div className="flex items-center gap-2">
-            <Label htmlFor="switch-card">Display with card</Label>
-            <Switch
-              id="switch-card"
-              defaultChecked={searchParams.get('display-card') === 'true'}
-              onCheckedChange={(checked) => {
-                router.push(pathname + '?' + createQueryString('display-card', String(checked)));
-              }}
-            />
-          </div>
-          <Button
-            variant={'secondary'}
-            onClick={async (e) => {
-              await update();
-            }}
-          >
-            Update
-          </Button>
-          <Button
-            variant={'destructive'}
-            onClick={async (e) => {
-              e.stopPropagation();
-              const res = await modal.question({
-                title: 'Reinitisaliser les données ?',
-                message: 'Cette action est irreversible',
-                doubleConfirm: true,
-              });
-              if (res) {
-                reset();
-              }
-            }}
-          >
-            Reset
-          </Button>
-        </div>
-        {Object.entries(filterBosses)
-          .filter(([location, b]) => b !== undefined)
-          .map(([location, b], index) => {
-            const countDone = data.bossesByLocationDone.find((bosses) => bosses.location === location)?._count ?? 0;
-            const count = data.bossesByLocation.find((bosses) => bosses.location === location)?._count ?? 0;
-
-            return (
-              <Accordion key={index} className="w-full" type="single" collapsible>
-                <AccordionItem value={location}>
-                  <AccordionTrigger className="flex gap-2">
-                    <div className={cn(count === countDone ? 'text-green-400' : '', 'flex justify-between w-full')}>
-                      <p>{location}</p>
-                      <p>
-                        {countDone}/{count}
-                      </p>
-                    </div>
-                  </AccordionTrigger>
-                  <AccordionContent>{b && <BossesTable dbBosses={b} searchParams={searchParams} />}</AccordionContent>
-                </AccordionItem>
-              </Accordion>
-            );
-          })}
+        <Button
+          variant={'destructive'}
+          onClick={async (e) => {
+            e.stopPropagation();
+            const res = await modal.question({
+              title: 'Reinitisaliser les données ?',
+              message: 'Cette action est irreversible',
+              doubleConfirm: true,
+            });
+            if (res) {
+              reset();
+            }
+          }}
+        >
+          Reset
+        </Button>
       </div>
-    </>
+      {Object.entries(filterBosses)
+        .filter(([location, b]) => b !== undefined)
+        .map(([location, b], index) => {
+          const countDone = data.bossesByLocationDone.find((bosses) => bosses.location === location)?._count ?? 0;
+          const count = data.bossesByLocation.find((bosses) => bosses.location === location)?._count ?? 0;
+
+          return (
+            <Accordion key={index} className="w-full" type="single" collapsible>
+              <AccordionItem value={location}>
+                <AccordionTrigger className="flex gap-2">
+                  <div className={cn(count === countDone ? 'text-green-400' : '', 'flex justify-between w-full')}>
+                    <p>{location}</p>
+                    <p>
+                      {countDone}/{count}
+                    </p>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent>{b && <BossesTable bosses={b} searchParams={searchParams} />}</AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          );
+        })}
+    </div>
   );
 };
 

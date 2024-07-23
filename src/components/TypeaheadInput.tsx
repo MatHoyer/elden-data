@@ -1,5 +1,5 @@
 'use client';
-import { cn } from '@/lib/utils';
+import { cn, latinize } from '@/lib/utils';
 import { useState } from 'react';
 import { Input } from './ui/input';
 
@@ -14,9 +14,7 @@ const TypeaheadInput: React.FC<
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
     setValue(val);
-    setSuggestions(
-      val !== '' ? datas.filter((data) => data.toLocaleLowerCase().includes(value.toLocaleLowerCase())).slice(0, 5) : []
-    );
+    setSuggestions(val !== '' ? datas.filter((data) => latinize(data).includes(latinize(value))).slice(0, 5) : []);
     onChange?.(val);
   };
 

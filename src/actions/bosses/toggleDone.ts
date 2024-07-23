@@ -15,11 +15,16 @@ export const toggleDone = actionClient
   })
   .action(async ({ parsedInput: { bossId }, ctx }) => {
     const { userId } = ctx;
-    const boss = await prisma.boss.findFirst({ where: { id: bossId, userId } });
-    if (!boss) return;
-    await prisma.boss.update({
-      where: { id: bossId },
+    const boss = await prisma.boss_user.findFirst({
+      where: { userId, bossId },
+    });
+    if (!boss) {
+      throw new Error('Boss not found');
+    }
+    await prisma.boss_user.update({
+      where: { userId_bossId: { userId, bossId } },
       data: { done: !boss.done },
     });
+
     revalidatePath('/');
   });

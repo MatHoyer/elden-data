@@ -25,3 +25,7 @@ interface IMessageModalProps extends IMessageParams {
   open?: boolean;
   messageType: TMessageType;
 }
+
+interface String {
+  latinize(): string;
+}
