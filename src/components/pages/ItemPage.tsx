@@ -88,7 +88,7 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
   items,
   searchParams,
 }) => {
-  return searchParams.has('display-card') && searchParams.get('display-card') === 'true' ? (
+  return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
     <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center">
       {items.map((item, index) => (
         <Card
@@ -215,7 +215,7 @@ const ItemPage: React.FC<{ data: TUseItems }> = ({ data }) => {
           <Label htmlFor="switch-card">Display with card</Label>
           <Switch
             id="switch-card"
-            defaultChecked={searchParams.get('display-card') === 'true'}
+            defaultChecked={!searchParams.has('dispaly-card') || searchParams.get('display-card') === 'true'}
             onCheckedChange={(checked) => {
               router.push(pathname + '?' + createQueryString('display-card', String(checked)));
             }}

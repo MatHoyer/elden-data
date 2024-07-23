@@ -99,7 +99,7 @@ const BossesTable: React.FC<{ bosses: TUseBosses['bosses']; searchParams: Readon
   bosses,
   searchParams,
 }) => {
-  return searchParams.has('display-card') && searchParams.get('display-card') === 'true' ? (
+  return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
     <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center">
       {bosses.map((boss, index) => (
         <Card
@@ -227,7 +227,7 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
           <Label htmlFor="switch-card">Display with card</Label>
           <Switch
             id="switch-card"
-            defaultChecked={searchParams.get('display-card') === 'true'}
+            defaultChecked={!searchParams.has('display-card') || searchParams.get('display-card') === 'true'}
             onCheckedChange={(checked) => {
               router.push(pathname + '?' + createQueryString('display-card', String(checked)));
             }}
