@@ -2,7 +2,7 @@
 import { reset, toggleDone } from '@/actions/items';
 import { TUseItems } from '@/hooks/useItems';
 import { bosses } from '@/lib/defaultData/bosses';
-import { cn, groupBy } from '@/lib/utils';
+import { capitalize, cn, groupBy } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
@@ -24,10 +24,11 @@ const Filters: React.FC<{
   searchParams: ReadonlyURLSearchParams;
   createQueryString: (key: string, value: string) => string;
   data: TUseItems;
-}> = ({ router, pathname, searchParams, createQueryString, data }) => {
+  itemType: string;
+}> = ({ router, pathname, searchParams, createQueryString, data, itemType }) => {
   return (
     <div className="flex flex-col items-center gap-2">
-      <p className="text-xl">Filtres items</p>
+      <p className="text-xl">Filtres {itemType}</p>
       <div className="flex gap-3">
         <div className="flex flex-col items-end justify-center gap-3">
           <div className="flex items-center gap-2">
@@ -68,7 +69,7 @@ const Filters: React.FC<{
       <TypeaheadInput
         className="w-[300px]"
         datas={[...new Set(data.items.map((item) => item.name))]}
-        placeholder="name"
+        placeholder="Nom"
         defaultValue={searchParams.get('name') ?? ''}
         onChange={(value) => {
           if (value === '') router.push(pathname + '?' + createQueryString('name', ''));
@@ -132,8 +133,8 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
     <Table>
       <TableHeader>
         <TableRow>
-          <TableHead>Name</TableHead>
-          <TableHead>Location</TableHead>
+          <TableHead>Nom</TableHead>
+          <TableHead>Localisation</TableHead>
           <TableHead>Wiki</TableHead>
           <TableHead>Status</TableHead>
         </TableRow>
@@ -170,7 +171,7 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
   );
 };
 
-const ItemPage: React.FC<{ data: TUseItems }> = ({ data }) => {
+const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemType }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -199,7 +200,7 @@ const ItemPage: React.FC<{ data: TUseItems }> = ({ data }) => {
   return (
     <div className="flex flex-col gap-5 items-center">
       <h1 className={cn(data.itemsDone === data.items.length && 'text-green-400', 'text-3xl font-bold')}>
-        Items {data.itemsDone}/{data.items.length}
+        {capitalize(itemType)} {data.itemsDone}/{data.items.length}
       </h1>
       <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
         <Filters
@@ -208,11 +209,12 @@ const ItemPage: React.FC<{ data: TUseItems }> = ({ data }) => {
           searchParams={searchParams}
           createQueryString={createQueryString}
           data={data}
+          itemType={itemType}
         />
       </div>
       <div className="flex gap-3">
         <div className="flex items-center gap-2">
-          <Label htmlFor="switch-card">Display with card</Label>
+          <Label htmlFor="switch-card">Afficher avec des cartes</Label>
           <Switch
             id="switch-card"
             defaultChecked={!searchParams.has('dispaly-card') || searchParams.get('display-card') === 'true'}
@@ -235,7 +237,7 @@ const ItemPage: React.FC<{ data: TUseItems }> = ({ data }) => {
             }
           }}
         >
-          Reset
+          Réinitialiser
         </Button>
       </div>
       {Object.entries(filterItems).length !== 1 ? (

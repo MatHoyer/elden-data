@@ -26,7 +26,7 @@ const Filters: React.FC<{
 }> = ({ router, pathname, searchParams, createQueryString, data }) => {
   return (
     <div className="flex flex-col items-center gap-2">
-      <p className="text-xl">Filtres bosses</p>
+      <p className="text-xl">Filtres boss</p>
       <div className="flex gap-3">
         <div className="flex flex-col items-end justify-center gap-3">
           <div className="flex items-center gap-2">
@@ -79,7 +79,7 @@ const Filters: React.FC<{
       <TypeaheadInput
         className="w-[300px]"
         datas={[...new Set(data.bosses.map((boss) => boss.name))]}
-        placeholder="name"
+        placeholder="Nom"
         defaultValue={searchParams.get('name') ?? ''}
         onChange={(value) => {
           if (value === '') router.push(pathname + '?' + createQueryString('name', ''));
@@ -143,8 +143,8 @@ const BossesTable: React.FC<{ bosses: TUseBosses['bosses']; searchParams: Readon
     <Table>
       <TableHeader>
         <TableRow>
-          <TableHead>Name</TableHead>
-          <TableHead>Location</TableHead>
+          <TableHead>Nom</TableHead>
+          <TableHead>Localisation</TableHead>
           <TableHead>Wiki</TableHead>
           <TableHead>Status</TableHead>
         </TableRow>
@@ -211,7 +211,7 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
   return (
     <div className="flex flex-col gap-5 items-center">
       <h1 className={cn(data.bossesDone === data.bosses.length && 'text-green-400', 'text-3xl font-bold')}>
-        Bosses {data.bossesDone}/{data.bosses.length}
+        Boss {data.bossesDone}/{data.bosses.length}
       </h1>
       <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
         <Filters
@@ -224,7 +224,7 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
       </div>
       <div className="flex gap-3">
         <div className="flex items-center gap-2">
-          <Label htmlFor="switch-card">Display with card</Label>
+          <Label htmlFor="switch-card">Afficher avec des cartes</Label>
           <Switch
             id="switch-card"
             defaultChecked={!searchParams.has('display-card') || searchParams.get('display-card') === 'true'}
@@ -247,7 +247,7 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
             }
           }}
         >
-          Reset
+          Réinitialiser
         </Button>
       </div>
       {Object.entries(filterBosses)

@@ -18,7 +18,7 @@ const Items: React.FC<{ params: { itemName: string } }> = async ({ params }) => 
         !session?.user && 'flex justify-center items-center h-screen my-0'
       )}
     >
-      {session?.user ? <ItemPage data={data} /> : <LoginButton />}
+      {session?.user ? <ItemPage data={data} itemType={params.itemName} /> : <LoginButton />}
     </div>
   );
 };
