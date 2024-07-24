@@ -4,7 +4,6 @@ import { modal } from '@/components/Modal';
 import TypeaheadInput from '@/components/TypeaheadInput';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { Button } from '@/components/ui/button';
-import { Card, CardTitle } from '@/components/ui/card';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
@@ -16,6 +15,7 @@ import { BookOpen, MapPin } from 'lucide-react';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import React, { useCallback } from 'react';
+import DisplayCard from '../DisplayCard';
 
 const Filters: React.FC<{
   router: AppRouterInstance;
@@ -102,44 +102,17 @@ const BossesTable: React.FC<{ bosses: TUseBosses['bosses']; searchParams: Readon
   return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
     <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center">
       {bosses.map((boss, index) => (
-        <Card
+        <DisplayCard
+          imageUrl={boss.imageUrl}
+          name={boss.name}
+          wikiUrl={boss.wikiUrl}
+          locationUrl={boss.locationUrl}
+          isValidate={boss.done}
+          onCLick={() => toggleDone({ bossId: boss.id })}
+          w={300}
+          h={240}
           key={index}
-          className={cn(
-            'p-3 cursor-pointer  w-[300px] h-[240px]',
-            boss.done ? 'border-4 border-green-400' : 'border-4 border-background'
-          )}
-          style={{
-            backgroundImage: `url(${boss.imageUrl})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            width: '300px',
-            height: '240px',
-          }}
-          onClick={() => {
-            toggleDone({ bossId: boss.id });
-          }}
-        >
-          <div className="flex flex-col justify-between h-full">
-            <div className="h-40"></div>
-            <CardTitle
-              className={cn(boss.major && 'text-gold', 'bg-secondary/80 rounded-md p-1 cursor-default')}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="flex flex-col items-center select-none">
-                <div className="flex gap-3">
-                  <a target="_blank" href={boss.locationUrl}>
-                    <MapPin />
-                  </a>
-                  <a target="_blank" href={boss.wikiUrl}>
-                    <BookOpen />
-                  </a>
-                </div>
-                <p className="text-center">{boss.name}</p>
-              </div>
-            </CardTitle>
-          </div>
-        </Card>
+        />
       ))}
     </div>
   ) : (

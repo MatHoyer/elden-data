@@ -62,6 +62,7 @@ const Modal: React.FC = () => {
           title: params.title || 'Information',
           message: params.message || '',
           messageType: 'info',
+          content: params.content,
           closeModal: () => {
             resolve(true);
             setOpen((prev) => ({ ...prev, message: false }));
@@ -132,7 +133,7 @@ const ModalQuestion: React.FC<IQuestionModalProps> = ({ closeModal, doubleConfir
   );
 };
 
-const ModalMessage: React.FC<IMessageModalProps> = ({ closeModal, message, title, open }) => {
+const ModalMessage: React.FC<IMessageModalProps> = ({ closeModal, message, title, content, open }) => {
   return (
     <Dialog
       open={open}
@@ -147,6 +148,7 @@ const ModalMessage: React.FC<IMessageModalProps> = ({ closeModal, message, title
           <DialogTitle>{title}</DialogTitle>
           <DialogDescription>{message}</DialogDescription>
         </DialogHeader>
+        {content}
         <DialogFooter>
           <Button type="submit" size="sm" onClick={closeModal}>
             Close

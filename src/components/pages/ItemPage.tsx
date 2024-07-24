@@ -7,11 +7,11 @@ import { BookOpen, MapPin } from 'lucide-react';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback } from 'react';
+import DisplayCard from '../DisplayCard';
 import { modal } from '../Modal';
 import TypeaheadInput from '../TypeaheadInput';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
 import { Button } from '../ui/button';
-import { Card, CardTitle } from '../ui/card';
 import { Checkbox } from '../ui/checkbox';
 import { Label } from '../ui/label';
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
@@ -92,44 +92,18 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
   return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
     <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center">
       {items.map((item, index) => (
-        <Card
+        <DisplayCard
+          imageUrl={item.imageUrl}
+          name={item.name}
+          locationUrl={item.locationUrl}
+          wikiUrl={item.wikiUrl}
+          isValidate={item.done}
+          onCLick={() => toggleDone({ itemId: item.id })}
+          w={300}
+          h={240}
+          fillImage={true}
           key={index}
-          className={cn(
-            'p-3 cursor-pointer w-[300px] h-[240px]',
-            item.done ? 'border-4 border-green-400' : 'border-4 border-background'
-          )}
-          style={{
-            backgroundImage: `url(${item.imageUrl})`,
-            backgroundSize: 'fill',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            width: '300px',
-            height: '240px',
-          }}
-          onClick={() => {
-            toggleDone({ itemId: item.id });
-          }}
-        >
-          <div className="flex flex-col justify-between h-full">
-            <div></div>
-            <CardTitle
-              className={cn('bg-secondary/80 rounded-md p-1 cursor-default')}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="flex flex-col items-center select-none">
-                <div className="flex gap-3">
-                  <a target="_blank" href={item.locationUrl || undefined}>
-                    <MapPin />
-                  </a>
-                  <a target="_blank" href={item.wikiUrl}>
-                    <BookOpen />
-                  </a>
-                </div>
-                <p className="text-center">{item.name}</p>
-              </div>
-            </CardTitle>
-          </div>
-        </Card>
+        />
       ))}
     </div>
   ) : (

@@ -25,23 +25,33 @@ export const useArmors = async () => {
       include: {
         armorSet: {
           include: {
-            elements: {
-              include: {
-                item_user: {
-                  where: { userId: id },
-                  select: {
-                    done: true,
-                  },
-                },
-              },
-            },
+            elements: true,
           },
         },
       },
     });
   }
 
-  const armors = userArmors.map((a) => ({ ...a.armorSet }));
+  const doneData = await Promise.all(
+    userArmors.map(async (armor) => {
+      return await Promise.all(
+        armor.armorSet.elements.map(
+          async (element) =>
+            await prisma.item_user.findUnique({
+              where: { userId_itemId: { userId: id || '', itemId: element.id } },
+            })
+        )
+      );
+    })
+  );
+
+  const armors = userArmors.map((armor, index) => ({
+    ...armor.armorSet,
+    elements: armor.armorSet.elements.map((element) => ({
+      ...element,
+      done: doneData[index].find((dd) => dd?.itemId === element.id)?.done || false,
+    })),
+  }));
 
   return { armors };
 };

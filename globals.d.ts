@@ -7,6 +7,7 @@ interface IModal {
 interface IMessageParams {
   title?: string;
   message?: string;
+  content?: React.ReactNode;
 }
 
 interface IQuestionParams extends IMessageParams {

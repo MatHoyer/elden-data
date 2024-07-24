@@ -1,10 +1,64 @@
 'use client';
+import { toggleDone } from '@/actions/items';
 import { TUseArmors } from '@/hooks/useArmors';
-import { capitalize, cn } from '@/lib/utils';
-import { BookOpen } from 'lucide-react';
+import { cn } from '@/lib/utils';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
-import { useCallback } from 'react';
-import { Card, CardTitle } from '../ui/card';
+import { useCallback, useState } from 'react';
+import DisplayCard from '../DisplayCard';
+import { modal } from '../Modal';
+import { Card } from '../ui/card';
+
+const SetModal: React.FC<{ elements: TUseArmors['armors'][number]['elements'] }> = ({ elements }) => {
+  const [done, setDone] = useState(elements.map((element) => element.done));
+
+  return (
+    <div className="flex justify-center gap-3">
+      {elements.map((element, index) => (
+        <Card
+          key={index}
+          className={cn(
+            `w-[100px]`,
+            `h-[100px]`,
+            'p-3 cursor-pointer',
+            done[index] ? 'border-4 border-green-400' : 'border-4 border-background'
+          )}
+          style={{
+            backgroundImage: `url(${element.imageUrl})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            width: '100px',
+            height: '100px',
+          }}
+          onClick={() => {
+            toggleDone({ itemId: element.id });
+            setDone((prev) => prev.map((d, i) => (i === index ? !d : d)));
+          }}
+        >
+          {/* <div className="flex flex-col justify-between h-full">
+            <div></div>
+            <CardTitle
+              className={cn('bg-secondary/80 rounded-md p-1 cursor-default')}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <div className="flex flex-col items-center select-none">
+                <div className="flex gap-3">
+                  <a target="_blank" href={element.locationUrl}>
+                    <MapPin />
+                  </a>
+                  <a target="_blank" href={element.wikiUrl}>
+                    <BookOpen />
+                  </a>
+                </div>
+                <p className="text-center">{capitalize(element.name)}</p>
+              </div>
+            </CardTitle>
+          </div> */}
+        </Card>
+      ))}
+    </div>
+  );
+};
 
 const ArmorsTable: React.FC<{ armors: TUseArmors['armors']; searchParams: ReadonlyURLSearchParams }> = ({
   armors,
@@ -13,39 +67,21 @@ const ArmorsTable: React.FC<{ armors: TUseArmors['armors']; searchParams: Readon
   return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
     <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center">
       {armors.map((armor, index) => (
-        <Card
-          key={index}
-          className={cn(
-            'p-3 cursor-pointer  w-[230px] h-[450px]',
-            armor.elements.every((element) => element) ? 'border-4 border-green-400' : 'border-4 border-background'
-          )}
-          style={{
-            backgroundImage: `url(${armor.imageUrl})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            width: '230px',
-            height: '450px',
+        <DisplayCard
+          imageUrl={armor.imageUrl}
+          name={armor.name}
+          wikiUrl={armor.wikiUrl}
+          isValidate={armor.elements.every((element) => element.done)}
+          onCLick={() => {
+            modal.info({
+              title: armor.name,
+              content: <SetModal elements={armor.elements} />,
+            });
           }}
-          onClick={() => {}}
-        >
-          <div className="flex flex-col justify-between h-full">
-            <div></div>
-            <CardTitle
-              className={cn('bg-secondary/80 rounded-md p-1 cursor-default')}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="flex flex-col items-center select-none">
-                <div className="flex gap-3">
-                  <a target="_blank" href={armor.wikiUrl}>
-                    <BookOpen />
-                  </a>
-                </div>
-                <p className="text-center">{capitalize(armor.name)}</p>
-              </div>
-            </CardTitle>
-          </div>
-        </Card>
+          w={230}
+          h={450}
+          key={index}
+        />
       ))}
     </div>
   ) : (
@@ -57,8 +93,6 @@ const ArmorPage: React.FC<{ data: TUseArmors }> = ({ data }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-
-  console.log(data);
 
   const createQueryString = useCallback(
     (name: string, value: string) => {
