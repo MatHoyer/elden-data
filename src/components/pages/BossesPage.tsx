@@ -128,10 +128,10 @@ const BossesTable: React.FC<{ bosses: TUseBosses['bosses']; searchParams: Readon
             >
               <div className="flex flex-col items-center select-none">
                 <div className="flex gap-3">
-                  <a target="_blank" href={boss.locationUrl || undefined}>
+                  <a target="_blank" href={boss.locationUrl}>
                     <MapPin />
                   </a>
-                  <a target="_blank" href={bosses.find((b) => b.name === boss.name)?.wikiUrl}>
+                  <a target="_blank" href={boss.wikiUrl}>
                     <BookOpen />
                   </a>
                 </div>

@@ -19,6 +19,7 @@ model User {
 
   bosses        Boss_user[]
   items         Item_user[]
+  armorSets     ArmorSet_user[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -98,7 +99,25 @@ model Item {
   locationUrl   String
 
   item_user     Item_user[]
+
+  armorSet           ArmorSet? @relation(fields: [armorSetId], references: [id])
+  armorSetId         String?
  
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ArmorSet {
+  id            String   @id @default(cuid())
+  name          String  @unique
+  inDlc         Boolean @default(false)
+
+  imageUrl      String
+  wikiUrl       String
+
+  elements      Item[]
+  armorSet_user ArmorSet_user[]
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
@@ -129,4 +148,17 @@ model Item_user {
   updatedAt   DateTime @updatedAt
 
   @@unique([userId, itemId])
+}
+
+model ArmorSet_user {
+  id                 String   @id @default(cuid())
+  users              User     @relation(fields: [userId], references: [id])
+  userId             String
+  armorSet           ArmorSet     @relation(fields: [armorSetId], references: [id])
+  armorSetId         String
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@unique([userId, armorSetId])
 }
