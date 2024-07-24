@@ -442,7 +442,7 @@ export const armors = [
   },
   {
     name: "blaidd's set",
-    imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/blaidd'sset.png",
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blaidd%27sset.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Blaidd's+Set",
     elements: [
       {
@@ -878,7 +878,7 @@ export const armors = [
   },
   {
     name: "commoner's set",
-    imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/commoner's_set.png",
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/commoner%27s_set.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Commoner's+Set",
     elements: [
       {
@@ -948,7 +948,7 @@ export const armors = [
   },
   {
     name: "consort's set",
-    imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/consort's_set.png",
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/consort%27s_set.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Consort's+Set",
     elements: [
       {
@@ -977,7 +977,7 @@ export const armors = [
   },
   {
     name: 'crucible axe set',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Monster-Hunter-World/thumbnails/mhws.png',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_knight_set.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Axe+Set',
     elements: [
       {
@@ -2595,7 +2595,7 @@ export const armors = [
   },
   {
     name: "lusat's set",
-    imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lusat's_set.png",
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lusat%27s_set.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Lusat's+Set",
     elements: [
       {
@@ -2940,7 +2940,7 @@ export const armors = [
   },
   {
     name: "night's cavalry set",
-    imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/night's_cavalry_set.png",
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/night%27s_cavalry_set.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Night's+Cavalry+Set",
     elements: [
       {
@@ -3016,7 +3016,7 @@ export const armors = [
   },
   {
     name: "nomadic merchant's set",
-    imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchant's_set.png",
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchant%27s_set.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant's+Set",
     elements: [
       {
@@ -3549,7 +3549,7 @@ export const armors = [
   },
   {
     name: 'raging wolf set',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Monster-Hunter-World/thumbnails/mhws.png',
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloody-wolf-armor-set-elden-ring-wiki-guide.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Raging+Wolf+Set',
     elements: [
       {
@@ -3588,7 +3588,7 @@ export const armors = [
   },
   {
     name: "raptor's set",
-    imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/raptor's_set.png",
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raptor%27s_set.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Raptor's+Set",
     elements: [
       {
@@ -3781,7 +3781,7 @@ export const armors = [
   },
   {
     name: "ronin's set",
-    imageUrl: "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ronin's_set.png",
+    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ronin%27s_set.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Ronin's+Set",
     elements: [
       {

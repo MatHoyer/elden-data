@@ -1,7 +1,8 @@
 'use client';
 import { toggleDone } from '@/actions/items';
 import { TUseArmors } from '@/hooks/useArmors';
-import { cn } from '@/lib/utils';
+import { capitalize, cn } from '@/lib/utils';
+import { BookOpen, MapPin } from 'lucide-react';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useState } from 'react';
 import DisplayCard from '../DisplayCard';
@@ -12,35 +13,32 @@ const SetModal: React.FC<{ elements: TUseArmors['armors'][number]['elements'] }>
   const [done, setDone] = useState(elements.map((element) => element.done));
 
   return (
-    <div className="flex justify-center gap-3">
+    <div className="grid gap-3">
       {elements.map((element, index) => (
-        <Card
+        <div
           key={index}
           className={cn(
-            `w-[100px]`,
-            `h-[100px]`,
-            'p-3 cursor-pointer',
-            done[index] ? 'border-4 border-green-400' : 'border-4 border-background'
+            done[index] ? 'border-4 border-green-400' : 'border-4 border-background',
+            'flex justify-center items-center gap-3 rounded-md p-1 cursor-pointer'
           )}
-          style={{
-            backgroundImage: `url(${element.imageUrl})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
-            width: '100px',
-            height: '100px',
-          }}
           onClick={() => {
             toggleDone({ itemId: element.id });
             setDone((prev) => prev.map((d, i) => (i === index ? !d : d)));
           }}
         >
-          {/* <div className="flex flex-col justify-between h-full">
-            <div></div>
-            <CardTitle
-              className={cn('bg-secondary/80 rounded-md p-1 cursor-default')}
-              onClick={(e) => e.stopPropagation()}
-            >
+          <Card
+            className="w-[100px] h-[100px] p-3 border-4 border-background"
+            style={{
+              backgroundImage: `url(${element.imageUrl})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              width: '100px',
+              height: '100px',
+            }}
+          ></Card>
+          <div className="flex flex-col justify-between w-[200px]">
+            <div className={cn('bg-secondary/80 rounded-md p-1 cursor-default')} onClick={(e) => e.stopPropagation()}>
               <div className="flex flex-col items-center select-none">
                 <div className="flex gap-3">
                   <a target="_blank" href={element.locationUrl}>
@@ -52,9 +50,9 @@ const SetModal: React.FC<{ elements: TUseArmors['armors'][number]['elements'] }>
                 </div>
                 <p className="text-center">{capitalize(element.name)}</p>
               </div>
-            </CardTitle>
-          </div> */}
-        </Card>
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   );
