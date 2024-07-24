@@ -1917,14 +1917,6 @@ export const armors = [
         wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Greaves',
         locationUrl: '',
       },
-      {
-        type: 'armor',
-        name: 'guardian garb (full bloom)',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/guardian_garb_(full_bloom)_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Garb+(Full+Bloom)',
-        locationUrl: '',
-      },
     ],
   },
   {
