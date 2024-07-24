@@ -13,6 +13,7 @@ type props = {
   w?: number;
   h?: number;
   fillImage?: boolean;
+  counter?: { done: number; total: number };
 } & React.HTMLAttributes<HTMLDivElement>;
 
 const DisplayCard: React.FC<props> = ({
@@ -26,6 +27,7 @@ const DisplayCard: React.FC<props> = ({
   w,
   h,
   fillImage,
+  counter,
   ...props
 }) => {
   return (
@@ -61,6 +63,11 @@ const DisplayCard: React.FC<props> = ({
                 <a target="_blank" href={wikiUrl}>
                   <BookOpen />
                 </a>
+              )}
+              {!!counter && (
+                <p
+                  className={cn(counter.done === counter.total && 'text-green-400')}
+                >{`${counter.done}/${counter.total}`}</p>
               )}
             </div>
             <p className="text-center">{capitalize(name)}</p>

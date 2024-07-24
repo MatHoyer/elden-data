@@ -81,6 +81,7 @@ const ArmorsTable: React.FC<{ armors: TUseArmors['armors']; searchParams: Readon
           w={230}
           h={450}
           key={index}
+          counter={{ done: armor.elements.filter((element) => element.done).length, total: armor.elements.length }}
         />
       ))}
     </div>
