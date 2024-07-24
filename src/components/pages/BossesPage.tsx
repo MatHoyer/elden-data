@@ -108,6 +108,7 @@ const BossesTable: React.FC<{ bosses: TUseBosses['bosses']; searchParams: Readon
           wikiUrl={boss.wikiUrl}
           locationUrl={boss.locationUrl}
           isValidate={boss.done}
+          major={boss.major}
           onCLick={() => toggleDone({ bossId: boss.id })}
           w={300}
           h={240}
