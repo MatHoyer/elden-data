@@ -10,50 +10,47 @@ export const useArmors = async () => {
 
   await useItems('armor');
 
-  let userArmors = await prisma.armorSet_user.findMany({
+  const tester = await prisma.armorSet_user.findMany({
     where: { userId: id },
-    include: { armorSet: { include: { elements: true } } },
   });
   const staticArmors = await prisma.armorSet.findMany();
-  if (userArmors.length !== staticArmors.length) {
+  if (tester.length !== staticArmors.length) {
     await prisma.armorSet_user.createMany({
       data: staticArmors.map((armor) => ({ userId: id || '', armorSetId: armor.id })),
       skipDuplicates: true,
     });
-    userArmors = await prisma.armorSet_user.findMany({
-      where: { userId: id },
-      include: {
-        armorSet: {
-          include: {
-            elements: true,
+  }
+  const userArmors = await prisma.armorSet_user.findMany({
+    where: { userId: id },
+    include: {
+      armorSet: {
+        include: {
+          elements: {
+            include: {
+              item_user: {
+                select: {
+                  done: true,
+                },
+              },
+            },
           },
         },
       },
-    });
-  }
+    },
+  });
 
-  const doneData = await Promise.all(
-    userArmors.map(async (armor) => {
-      return await Promise.all(
-        armor.armorSet.elements.map(
-          async (element) =>
-            await prisma.item_user.findUnique({
-              where: { userId_itemId: { userId: id || '', itemId: element.id } },
-            })
-        )
-      );
-    })
-  );
-
-  const armors = userArmors.map((armor, index) => ({
-    ...armor.armorSet,
-    elements: armor.armorSet.elements.map((element) => ({
-      ...element,
-      done: doneData[index].find((dd) => dd?.itemId === element.id)?.done || false,
+  return {
+    armors: userArmors.map((armor) => ({
+      ...armor.armorSet,
+      elements: armor.armorSet.elements.map((element) => {
+        const { item_user, ...rest } = element;
+        return {
+          ...rest,
+          done: item_user[0].done,
+        };
+      }),
     })),
-  }));
-
-  return { armors };
+  };
 };
 
 export type TUseArmors = Awaited<ReturnType<typeof useArmors>>;
