@@ -111,6 +111,7 @@ model ArmorSet {
   id            String   @id @default(cuid())
   name          String  @unique
   inDlc         Boolean @default(false)
+  boss          Boolean @default(false)
 
   imageUrl      String
   wikiUrl       String
