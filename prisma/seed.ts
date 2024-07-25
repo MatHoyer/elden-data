@@ -1,5 +1,6 @@
 import { armors } from '../src/lib/defaultData/armor';
 import { bosses } from '../src/lib/defaultData/bosses';
+import { spells } from '../src/lib/defaultData/spell';
 import { talismans } from '../src/lib/defaultData/talismans';
 import prisma from '../src/lib/prisma';
 
@@ -27,6 +28,19 @@ async function main() {
       },
       create: {
         ...talisman,
+      },
+    });
+  }
+  for (const spell of spells) {
+    await prisma.item.upsert({
+      where: {
+        name: spell.name,
+      },
+      update: {
+        ...spell,
+      },
+      create: {
+        ...spell,
       },
     });
   }

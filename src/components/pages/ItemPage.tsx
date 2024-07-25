@@ -85,9 +85,10 @@ const Filters: React.FC<{
   );
 };
 
-const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyURLSearchParams }> = ({
+const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyURLSearchParams; itemType: string }> = ({
   items,
   searchParams,
+  itemType,
 }) => {
   return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
     <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center">
@@ -101,7 +102,7 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
           onCLick={() => toggleDone({ itemId: item.id })}
           w={300}
           h={240}
-          fillImage={true}
+          fillImage={itemType === 'talisman' ? true : false}
           key={index}
         />
       ))}
@@ -237,7 +238,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
                     </div>
                   </AccordionTrigger>
                   <AccordionContent>
-                    {items && <ItemsTable items={items} searchParams={searchParams} />}
+                    {items && <ItemsTable items={items} searchParams={searchParams} itemType={itemType} />}
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -245,7 +246,9 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
           })
       ) : (
         <div className="w-full">
-          {filterItems['other'] && <ItemsTable items={filterItems['other']} searchParams={searchParams} />}
+          {filterItems['other'] && (
+            <ItemsTable items={filterItems['other']} searchParams={searchParams} itemType={itemType} />
+          )}
         </div>
       )}
     </div>
