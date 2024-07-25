@@ -11,9 +11,9 @@ export const useBosses = async () => {
     include: { boss: true },
   });
   const staticBosses = await prisma.boss.findMany();
-  if (userBosses.length !== staticBosses.length) {
+  if (userBosses.length !== staticBosses.length && id) {
     await prisma.boss_user.createMany({
-      data: staticBosses.map((boss) => ({ userId: id || '', bossId: boss.id })),
+      data: staticBosses.map((boss) => ({ userId: id, bossId: boss.id })),
       skipDuplicates: true,
     });
     userBosses = await prisma.boss_user.findMany({

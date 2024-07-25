@@ -11,9 +11,9 @@ export const useItems = async (type: string) => {
     include: { item: true },
   });
   const staticItems = await prisma.item.findMany();
-  if (userItems.length !== staticItems.length) {
+  if (userItems.length !== staticItems.length && id) {
     await prisma.item_user.createMany({
-      data: staticItems.map((item) => ({ userId: id || '', itemId: item.id })),
+      data: staticItems.map((item) => ({ userId: id, itemId: item.id })),
       skipDuplicates: true,
     });
     userItems = await prisma.item_user.findMany({
