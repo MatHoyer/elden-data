@@ -26,7 +26,7 @@ const LinkCard: React.FC<{ name: string; done: number; all: number }> = ({ name,
   );
 };
 
-const HomePage: React.FC<{ counters: TUseCounter }> = async ({ counters }) => {
+const HomePage: React.FC<{ counters: TUseCounter }> = ({ counters }) => {
   return (
     <div className="flex justify-center">
       <div className="grid grid-cols-2 gap-3">
