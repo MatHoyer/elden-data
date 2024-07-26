@@ -103,7 +103,7 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
           onCLick={() => toggleDone({ itemId: item.id })}
           w={300}
           h={240}
-          fillImage={itemType === 'talisman' || 'weapon' ? true : false}
+          fillImage={itemType === 'talisman' || itemType === 'weapon' ? true : false}
           key={index}
         />
       ))}
