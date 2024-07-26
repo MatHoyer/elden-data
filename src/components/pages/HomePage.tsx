@@ -30,8 +30,8 @@ const HomePage: React.FC<{ counters: TUseCounter }> = async ({ counters }) => {
   return (
     <div className="flex justify-center">
       <div className="grid grid-cols-2 gap-3">
-        {counters.map((counter) => (
-          <LinkCard name={counter.name} done={counter.done} all={counter.all} />
+        {counters.map((counter, index) => (
+          <LinkCard key={index} name={counter.name} done={counter.done} all={counter.all} />
         ))}
       </div>
     </div>
