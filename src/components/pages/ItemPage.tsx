@@ -1,6 +1,7 @@
 'use client';
 import { reset, toggleDone } from '@/actions/items';
 import { TUseItems } from '@/hooks/useItems';
+import { useLocalstorage } from '@/hooks/useLocalstorage';
 import { bosses } from '@/lib/defaultData/bosses';
 import { capitalize, cn, groupBy } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
@@ -153,6 +154,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [local, setLocal] = useLocalstorage(itemType, [] as string[]);
 
   const createQueryString = useCallback(
     (name: string, value: string) => {
@@ -201,6 +203,28 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
             }}
           />
         </div>
+        {Object.entries(filterItems).length !== 1 && (
+          <>
+            <Button
+              variant={'secondary'}
+              onClick={async (e) => {
+                e.stopPropagation();
+                setLocal([...Object.keys(filterItems)]);
+              }}
+            >
+              Ouvrir tout
+            </Button>
+            <Button
+              variant={'secondary'}
+              onClick={async (e) => {
+                e.stopPropagation();
+                setLocal([]);
+              }}
+            >
+              Fermer tout
+            </Button>
+          </>
+        )}
         <Button
           variant={'destructive'}
           onClick={async (e) => {
@@ -219,16 +243,26 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
         </Button>
       </div>
       {Object.entries(filterItems).length !== 1 ? (
-        Object.entries(filterItems)
-          .filter(([sortableType, items]) => items !== undefined)
-          .map(([sortableType, items], index) => {
-            const countDone =
-              data.itemsBySortableTypeDone.find((items) => items.sortableType === sortableType)?._count ?? 0;
-            const count = data.itemsBySortableType.find((items) => items.sortableType === sortableType)?._count ?? 0;
+        <Accordion value={local} className="w-full" type="multiple">
+          {Object.entries(filterItems)
+            .filter(([sortableType, items]) => items !== undefined)
+            .map(([sortableType, items], index) => {
+              const countDone =
+                data.itemsBySortableTypeDone.find((items) => items.sortableType === sortableType)?._count ?? 0;
+              const count = data.itemsBySortableType.find((items) => items.sortableType === sortableType)?._count ?? 0;
 
-            return (
-              <Accordion key={index} className="w-full" type="single" collapsible>
-                <AccordionItem value={sortableType}>
+              return (
+                <AccordionItem
+                  onClick={() => {
+                    if (!local.includes(sortableType)) {
+                      setLocal([...local, sortableType]);
+                    } else {
+                      setLocal(local.filter((l) => l !== sortableType));
+                    }
+                  }}
+                  key={index}
+                  value={sortableType}
+                >
                   <AccordionTrigger className="flex gap-2">
                     <div className={cn(count === countDone ? 'text-green-400' : '', 'flex justify-between w-full')}>
                       <p>{sortableType}</p>
@@ -241,13 +275,17 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
                     {items && <ItemsTable items={items} searchParams={searchParams} itemType={itemType} />}
                   </AccordionContent>
                 </AccordionItem>
-              </Accordion>
-            );
-          })
+              );
+            })}
+        </Accordion>
       ) : (
         <div className="w-full">
-          {filterItems['other'] && (
-            <ItemsTable items={filterItems['other']} searchParams={searchParams} itemType={itemType} />
+          {filterItems[Object.entries(filterItems)[0][0]] && (
+            <ItemsTable
+              items={filterItems[Object.entries(filterItems)[0][0]]}
+              searchParams={searchParams}
+              itemType={itemType}
+            />
           )}
         </div>
       )}

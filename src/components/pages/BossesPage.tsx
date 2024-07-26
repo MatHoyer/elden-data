@@ -10,6 +10,7 @@ import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Switch } from '@/components/ui/switch';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { TUseBosses } from '@/hooks/useBosses';
+import { useLocalstorage } from '@/hooks/useLocalstorage';
 import { cn, groupBy } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
@@ -162,6 +163,7 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [local, setLocal] = useLocalstorage('bosses', [] as string[]);
 
   const createQueryString = useCallback(
     (name: string, value: string) => {
@@ -211,6 +213,24 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
           />
         </div>
         <Button
+          variant={'secondary'}
+          onClick={async (e) => {
+            e.stopPropagation();
+            setLocal([...Object.keys(filterBosses)]);
+          }}
+        >
+          Ouvrir tout
+        </Button>
+        <Button
+          variant={'secondary'}
+          onClick={async (e) => {
+            e.stopPropagation();
+            setLocal([]);
+          }}
+        >
+          Fermer tout
+        </Button>
+        <Button
           variant={'destructive'}
           onClick={async (e) => {
             e.stopPropagation();
@@ -227,15 +247,25 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
           Réinitialiser
         </Button>
       </div>
-      {Object.entries(filterBosses)
-        .filter(([location, b]) => b !== undefined)
-        .map(([location, b], index) => {
-          const countDone = data.bossesByLocationDone.find((bosses) => bosses.location === location)?._count ?? 0;
-          const count = data.bossesByLocation.find((bosses) => bosses.location === location)?._count ?? 0;
+      <Accordion value={local} className="w-full" type="multiple">
+        {Object.entries(filterBosses)
+          .filter(([location, b]) => b !== undefined)
+          .map(([location, b], index) => {
+            const countDone = data.bossesByLocationDone.find((bosses) => bosses.location === location)?._count ?? 0;
+            const count = data.bossesByLocation.find((bosses) => bosses.location === location)?._count ?? 0;
 
-          return (
-            <Accordion key={index} className="w-full" type="single" collapsible>
-              <AccordionItem value={location}>
+            return (
+              <AccordionItem
+                onClick={() => {
+                  if (!local.includes(location)) {
+                    setLocal([...local, location]);
+                  } else {
+                    setLocal(local.filter((l) => l !== location));
+                  }
+                }}
+                key={index}
+                value={location}
+              >
                 <AccordionTrigger className="flex gap-2">
                   <div className={cn(count === countDone ? 'text-green-400' : '', 'flex justify-between w-full')}>
                     <p>{location}</p>
@@ -246,9 +276,9 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
                 </AccordionTrigger>
                 <AccordionContent>{b && <BossesTable bosses={b} searchParams={searchParams} />}</AccordionContent>
               </AccordionItem>
-            </Accordion>
-          );
-        })}
+            );
+          })}
+      </Accordion>
     </div>
   );
 };
