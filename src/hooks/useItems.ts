@@ -24,7 +24,7 @@ export const useItems = async (type: string) => {
 
   const itemsBySortableType = await prisma.item.groupBy({
     by: ['sortableType'],
-    where: { type },
+    where: { type: type },
     _count: true,
   });
 

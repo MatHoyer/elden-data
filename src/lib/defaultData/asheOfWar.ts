@@ -911,7 +911,7 @@ export const ashesOfWar = [
     type: 'asheOfWar',
     name: "Ash of War: Troll's Roar",
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_troll's_roar_elden_ring_wiki_guide_200px.png",
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_troll%27s_roar_elden_ring_wiki_guide_200px.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Troll's+Roar",
     locationUrl: '',
   },
@@ -919,7 +919,7 @@ export const ashesOfWar = [
     type: 'asheOfWar',
     name: "Ash of War: Braggart's Roar",
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_braggart's_roar_elden_ring_wiki_guide_200px.png",
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_braggart%27s_roar_elden_ring_wiki_guide_200px.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Braggart's+Roar",
     locationUrl: '',
   },

@@ -451,20 +451,4 @@ export const shields = [
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Steel+Greatshield',
     locationUrl: '',
   },
-  {
-    type: 'shield',
-    name: 'DUELING SHIELD',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dueling_shield_thrusting_shields_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Dueling+Shield',
-    locationUrl: '',
-  },
-  {
-    type: 'shield',
-    name: 'CARIAN THRUSTING SHIELD',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/carian_thrusting_shield_thrusting_shields_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Carian+Thrusting+Shield',
-    locationUrl: '',
-  },
 ];
