@@ -16,6 +16,11 @@ const Navbar = async () => {
             <NavLink href="/armor" name="Armures" />
             <NavLink href="/spell" name="Sorts" />
             <NavLink href="/weapon" name="Armes" />
+            <NavLink href="/shield" name="Boucliers" />
+            <NavLink href="/asheOfWar" name="Cendres de guerre" />
+            <NavLink href="/spiritAshe" name="Invocations" />
+            <NavLink href="/cookBook" name="Manuels" />
+            <NavLink href="/whetBlade" name="Other" />
           </nav>
         </div>
         <div className="flex items-center">

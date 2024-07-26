@@ -2,7 +2,6 @@
 import { reset, toggleDone } from '@/actions/items';
 import { TUseItems } from '@/hooks/useItems';
 import { useLocalstorage } from '@/hooks/useLocalstorage';
-import { bosses } from '@/lib/defaultData/bosses';
 import { capitalize, cn, groupBy } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
@@ -120,17 +119,16 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
       </TableHeader>
       <TableBody>
         {items.map((item) => {
-          const goodBoss = bosses.find((b) => b.locationUrl === item.locationUrl);
           return (
             <TableRow key={item.id}>
               <TableCell>{item.name}</TableCell>
               <TableCell>
-                <a target="_blank" href={goodBoss?.locationUrl}>
+                <a target="_blank" href={item?.locationUrl}>
                   <MapPin />
                 </a>
               </TableCell>
               <TableCell>
-                <a target="_blank" href={goodBoss?.wikiUrl}>
+                <a target="_blank" href={item?.wikiUrl}>
                   <BookOpen />
                 </a>
               </TableCell>
@@ -197,7 +195,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
           <Label htmlFor="switch-card">Afficher avec des cartes</Label>
           <Switch
             id="switch-card"
-            defaultChecked={!searchParams.has('dispaly-card') || searchParams.get('display-card') === 'true'}
+            defaultChecked={!searchParams.has('display-card') || searchParams.get('display-card') === 'true'}
             onCheckedChange={(checked) => {
               router.push(pathname + '?' + createQueryString('display-card', String(checked)));
             }}

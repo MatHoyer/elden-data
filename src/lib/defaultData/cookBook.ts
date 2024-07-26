@@ -395,18 +395,10 @@ export const cookBooks = [
   },
   {
     type: 'cookBook',
-    locationUrl: '',
-  },
-  {
-    type: 'cookBook',
     name: "Armorer's Cookbook [5]",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/armorers_cookbook_key_items_elden_ring_wiki_guide_200px.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Armorer's+Cookbook+(5)",
-    locationUrl: '',
-  },
-  {
-    type: 'cookBook',
     locationUrl: '',
   },
   {

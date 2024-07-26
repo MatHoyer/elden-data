@@ -9,6 +9,8 @@ export const shields = [
   {
     type: 'shield',
     name: 'RIVETED WOODEN SHIELD',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/riveted_wooden_shield_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Riveted+Wooden+Shield',
     locationUrl: '',
   },
