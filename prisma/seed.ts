@@ -2,6 +2,7 @@ import { armors } from '../src/lib/defaultData/armor';
 import { bosses } from '../src/lib/defaultData/bosses';
 import { spells } from '../src/lib/defaultData/spell';
 import { talismans } from '../src/lib/defaultData/talismans';
+import { weapons } from '../src/lib/defaultData/weapon';
 import prisma from '../src/lib/prisma';
 
 async function main() {
@@ -41,6 +42,19 @@ async function main() {
       },
       create: {
         ...spell,
+      },
+    });
+  }
+  for (const weapon of weapons) {
+    await prisma.item.upsert({
+      where: {
+        name: weapon.name,
+      },
+      update: {
+        ...weapon,
+      },
+      create: {
+        ...weapon,
       },
     });
   }

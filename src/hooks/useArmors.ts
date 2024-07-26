@@ -28,6 +28,7 @@ export const useArmors = async () => {
           elements: {
             include: {
               item_user: {
+                where: { userId: id },
                 select: {
                   done: true,
                 },
@@ -39,9 +40,6 @@ export const useArmors = async () => {
     },
   });
 
-  const users = await prisma.user.findMany();
-  const number = users.findIndex((user) => user.id === id) || 0;
-
   return {
     armors: userArmors.map((armor) => ({
       ...armor.armorSet,
@@ -49,7 +47,7 @@ export const useArmors = async () => {
         const { item_user, ...rest } = element;
         return {
           ...rest,
-          done: item_user[number].done,
+          done: item_user[0].done,
         };
       }),
     })),

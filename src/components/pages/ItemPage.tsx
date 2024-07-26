@@ -46,7 +46,7 @@ const Filters: React.FC<{
         </div>
         <div>
           <RadioGroup
-            defaultValue="all"
+            defaultValue={searchParams.get('item') ?? 'all'}
             onValueChange={(value) => {
               router.push(pathname + '?' + createQueryString('item', value as string));
             }}
@@ -102,7 +102,7 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
           onCLick={() => toggleDone({ itemId: item.id })}
           w={300}
           h={240}
-          fillImage={itemType === 'talisman' ? true : false}
+          fillImage={itemType === 'talisman' || 'weapon' ? true : false}
           key={index}
         />
       ))}
