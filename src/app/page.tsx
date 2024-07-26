@@ -1,9 +1,12 @@
 import { LoginButton } from '@/components/AuthButtons';
+import HomePage from '@/components/pages/HomePage';
+import { useCounter } from '@/hooks/useCounter';
 import { auth } from '@/lib/auth';
 import { cn } from '@/lib/utils';
 
 const Home = async () => {
   const session = await auth();
+  const counters = await useCounter();
 
   return (
     <div
@@ -12,7 +15,7 @@ const Home = async () => {
         !session?.user && 'flex justify-center items-center h-screen my-0'
       )}
     >
-      {session?.user ? <h1 className="text-3xl font-bold">Welcome {session.user.name}</h1> : <LoginButton />}
+      {session?.user ? <HomePage counters={counters} /> : <LoginButton />}
     </div>
   );
 };
