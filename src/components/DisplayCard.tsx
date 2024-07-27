@@ -47,7 +47,10 @@ const DisplayCard: React.FC<props> = ({
         width: w + 'px' || undefined,
         height: h + 'px' || undefined,
       }}
-      onClick={onCLick}
+      onClick={(e) => {
+        e.stopPropagation();
+        onCLick();
+      }}
     >
       <div className="flex flex-col justify-between h-full">
         <div></div>
