@@ -5,11 +5,14 @@ import { revalidatePath } from 'next/cache';
 
 export const reset = actionClient.action(async ({ ctx }) => {
   const { userId } = ctx;
-  await prisma.item_user.deleteMany({
-    where: { userId, item: { NOT: { type: 'armor' } } },
+  await prisma.armorSet_user.deleteMany({
+    where: { userId },
   });
-  await prisma.item_user.createMany({
-    data: (await prisma.item.findMany()).map((item) => ({ userId, itemId: item.id })),
+  await prisma.item_user.deleteMany({
+    where: { userId, item: { type: 'armor' } },
+  });
+  await prisma.armorSet_user.createMany({
+    data: (await prisma.armorSet.findMany()).map((armorSet) => ({ userId, armorSetId: armorSet.id })),
     skipDuplicates: true,
   });
   revalidatePath('/');

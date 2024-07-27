@@ -1,4 +1,5 @@
 'use client';
+import { reset } from '@/actions/armors';
 import { toggleDone } from '@/actions/items';
 import { TUseArmors } from '@/hooks/useArmors';
 import { capitalize, cn } from '@/lib/utils';
@@ -230,7 +231,7 @@ const ArmorPage: React.FC<{ data: TUseArmors }> = ({ data }) => {
               doubleConfirm: true,
             });
             if (res) {
-              console.log('reset');
+              reset();
             }
           }}
         >
