@@ -100,13 +100,9 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
           wikiUrl={item.wikiUrl}
           isValidate={item.done}
           onCLick={() => toggleDone({ itemId: item.id })}
-          w={300}
-          h={240}
-          fillImage={
-            itemType === 'talisman' || itemType === 'weapon' || itemType === 'shield' || itemType === 'cookBook'
-              ? true
-              : false
-          }
+          w={itemType === 'weapon' ? 300 : 300}
+          h={itemType === 'weapon' ? 300 : 240}
+          fillImage={itemType === 'talisman' || itemType === 'shield' ? true : false}
           key={index}
         />
       ))}
@@ -205,7 +201,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
             }}
           />
         </div>
-        {Object.entries(filterItems).length !== 1 && (
+        {Object.entries(filterItems).length > 1 && (
           <>
             <Button
               variant={'secondary'}

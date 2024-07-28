@@ -12,10 +12,10 @@ const LinkCard: React.FC<{ name: string; done: number; all: number }> = ({ name,
 
   return (
     <Card className={'w-60 p-3 cursor-pointer'} onClick={() => router.push(`/${name}`)}>
-      <div className="flex flex-col justify-between items-center h-full gap-2">
+      <div className={cn(done === all && 'text-green-400', 'flex flex-col justify-between items-center h-full gap-2')}>
         <p className="text-center text-3xl">{capitalize(name)}</p>
         <CardTitle className="bg-secondary/80 rounded-md p-2 w-fit">
-          <div className={cn(done === all && 'text-green-400', 'flex flex-col items-center select-none')}>
+          <div className="flex flex-col items-center select-none">
             <div className="flex gap-3">
               <p>
                 {done}/{all}

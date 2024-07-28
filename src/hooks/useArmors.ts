@@ -40,17 +40,22 @@ export const useArmors = async () => {
     },
   });
 
+  const armors = userArmors.map((armor) => ({
+    ...armor.armorSet,
+    elements: armor.armorSet.elements.map((element) => {
+      const { item_user, ...rest } = element;
+      return {
+        ...rest,
+        done: item_user[0].done,
+      };
+    }),
+  }));
+
+  const armorsDone = armors.filter((armor) => armor.elements.every((element) => element.done)).length;
+
   return {
-    armors: userArmors.map((armor) => ({
-      ...armor.armorSet,
-      elements: armor.armorSet.elements.map((element) => {
-        const { item_user, ...rest } = element;
-        return {
-          ...rest,
-          done: item_user[0].done,
-        };
-      }),
-    })),
+    armors,
+    armorsDone,
   };
 };
 

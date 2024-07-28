@@ -212,24 +212,28 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
             }}
           />
         </div>
-        <Button
-          variant={'secondary'}
-          onClick={async (e) => {
-            e.stopPropagation();
-            setLocal([...Object.keys(filterBosses)]);
-          }}
-        >
-          Ouvrir tout
-        </Button>
-        <Button
-          variant={'secondary'}
-          onClick={async (e) => {
-            e.stopPropagation();
-            setLocal([]);
-          }}
-        >
-          Fermer tout
-        </Button>
+        {Object.entries(filterBosses).length > 1 && (
+          <>
+            <Button
+              variant={'secondary'}
+              onClick={async (e) => {
+                e.stopPropagation();
+                setLocal([...Object.keys(filterBosses)]);
+              }}
+            >
+              Ouvrir tout
+            </Button>
+            <Button
+              variant={'secondary'}
+              onClick={async (e) => {
+                e.stopPropagation();
+                setLocal([]);
+              }}
+            >
+              Fermer tout
+            </Button>
+          </>
+        )}
         <Button
           variant={'destructive'}
           onClick={async (e) => {

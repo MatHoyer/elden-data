@@ -210,6 +210,9 @@ const ArmorPage: React.FC<{ data: TUseArmors }> = ({ data }) => {
 
   return (
     <div className="flex flex-col items-center gap-5">
+      <h1 className={cn(data.armorsDone === data.armors.length && 'text-green-400', 'text-3xl font-bold')}>
+        Armures {data.armorsDone}/{data.armors.length}
+      </h1>
       <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
         <Filters
           createQueryString={createQueryString}
