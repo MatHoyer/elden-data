@@ -96,12 +96,18 @@ const Filters: React.FC<{
   );
 };
 
-const BossesTable: React.FC<{ bosses: TUseBosses['bosses']; searchParams: ReadonlyURLSearchParams }> = ({
-  bosses,
-  searchParams,
-}) => {
+const BossesTable: React.FC<{
+  bosses: TUseBosses['bosses'];
+  searchParams: ReadonlyURLSearchParams;
+  solo?: boolean;
+}> = ({ bosses, searchParams, solo }) => {
   return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
-    <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center">
+    <div
+      className={cn(
+        solo && 'border-4 border-background/80 bg-background/30',
+        'grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center'
+      )}
+    >
       {bosses.map((boss, index) => (
         <DisplayCard
           imageUrl={boss.imageUrl}
@@ -118,7 +124,7 @@ const BossesTable: React.FC<{ bosses: TUseBosses['bosses']; searchParams: Readon
       ))}
     </div>
   ) : (
-    <Table>
+    <Table className={cn(solo && 'border-4 border-background/80 bg-background/30')}>
       <TableHeader>
         <TableRow>
           <TableHead>Nom</TableHead>
@@ -270,15 +276,17 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
                 key={index}
                 value={location}
               >
-                <AccordionTrigger className="flex gap-2">
+                <AccordionTrigger className="flex gap-2 bg-background/80">
                   <div className={cn(count === countDone ? 'text-green-400' : '', 'flex justify-between w-full')}>
-                    <p>{location}</p>
+                    <p className="pl-3">{location}</p>
                     <p>
                       {countDone}/{count}
                     </p>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent>{b && <BossesTable bosses={b} searchParams={searchParams} />}</AccordionContent>
+                <AccordionContent className="border-4 border-background/80 bg-background/30">
+                  {b && <BossesTable bosses={b} searchParams={searchParams} />}
+                </AccordionContent>
               </AccordionItem>
             );
           })}

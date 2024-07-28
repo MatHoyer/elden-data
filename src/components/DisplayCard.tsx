@@ -36,8 +36,8 @@ const DisplayCard: React.FC<props> = ({
       className={cn(
         w && `w-[${w}px]`,
         h && `h-[${h}px]`,
-        'p-3 cursor-pointer',
-        isValidate ? 'border-4 border-green-400' : 'border-4 border-background'
+        'p-3 cursor-pointer bg-transparent',
+        isValidate ? 'border-4 border-green-400' : 'border-4 border-transparent'
       )}
       style={{
         backgroundImage: `url(${imageUrl})`,

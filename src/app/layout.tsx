@@ -22,7 +22,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <SessionProvider>
           <Modal />
           <Navbar />
-          <div className="flex justify-center">{children}</div>
+          <div
+            className="flex justify-center"
+            style={{
+              backgroundImage: `url(https://images3.alphacoders.com/131/thumb-1920-1311863.jpeg)`,
+              backgroundSize: 'fill',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              backgroundAttachment: 'fixed',
+            }}
+          >
+            {children}
+          </div>
         </SessionProvider>
       </body>
     </html>

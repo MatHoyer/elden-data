@@ -85,13 +85,19 @@ const Filters: React.FC<{
   );
 };
 
-const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyURLSearchParams; itemType: string }> = ({
-  items,
-  searchParams,
-  itemType,
-}) => {
+const ItemsTable: React.FC<{
+  items: TUseItems['items'];
+  searchParams: ReadonlyURLSearchParams;
+  itemType: string;
+  solo?: boolean;
+}> = ({ items, searchParams, itemType, solo }) => {
   return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
-    <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+    <div
+      className={cn(
+        solo && 'border-4 border-background/80 bg-background/30',
+        'grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center'
+      )}
+    >
       {items.map((item, index) => (
         <DisplayCard
           imageUrl={item.imageUrl}
@@ -108,7 +114,7 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
       ))}
     </div>
   ) : (
-    <Table>
+    <Table className={cn(solo && 'border-4 border-background/80 bg-background/30')}>
       <TableHeader>
         <TableRow>
           <TableHead>Nom</TableHead>
@@ -261,15 +267,15 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
                   key={index}
                   value={sortableType}
                 >
-                  <AccordionTrigger className="flex gap-2">
+                  <AccordionTrigger className="flex gap-2 bg-background/80">
                     <div className={cn(count === countDone ? 'text-green-400' : '', 'flex justify-between w-full')}>
-                      <p>{sortableType}</p>
+                      <p className="pl-3">{sortableType}</p>
                       <p>
                         {countDone}/{count}
                       </p>
                     </div>
                   </AccordionTrigger>
-                  <AccordionContent>
+                  <AccordionContent className="border-4 border-background/80 bg-background/30">
                     {items && <ItemsTable items={items} searchParams={searchParams} itemType={itemType} />}
                   </AccordionContent>
                 </AccordionItem>
@@ -283,6 +289,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
               items={filterItems[Object.entries(filterItems)[0][0]]}
               searchParams={searchParams}
               itemType={itemType}
+              solo={true}
             />
           )}
         </div>
