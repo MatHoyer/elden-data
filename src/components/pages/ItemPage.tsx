@@ -12,6 +12,7 @@ import { modal } from '../Modal';
 import TypeaheadInput from '../TypeaheadInput';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
 import { Button } from '../ui/button';
+import { Card } from '../ui/card';
 import { Checkbox } from '../ui/checkbox';
 import { Label } from '../ui/label';
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
@@ -183,9 +184,11 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
 
   return (
     <div className="flex flex-col gap-5 items-center">
-      <h1 className={cn(data.itemsDone === data.items.length && 'text-green-400', 'text-3xl font-bold')}>
-        {capitalize(itemType)} {data.itemsDone}/{data.items.length}
-      </h1>
+      <Card>
+        <h1 className={cn(data.itemsDone === data.items.length && 'text-green-400', 'text-3xl font-bold p-3')}>
+          {capitalize(itemType)} {data.itemsDone}/{data.items.length}
+        </h1>
+      </Card>
       <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
         <Filters
           router={router}
@@ -196,56 +199,58 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
           itemType={itemType}
         />
       </div>
-      <div className="flex gap-3">
-        <div className="flex items-center gap-2">
-          <Label htmlFor="switch-card">Afficher avec des cartes</Label>
-          <Switch
-            id="switch-card"
-            defaultChecked={!searchParams.has('display-card') || searchParams.get('display-card') === 'true'}
-            onCheckedChange={(checked) => {
-              router.push(pathname + '?' + createQueryString('display-card', String(checked)));
+      <Card>
+        <div className="flex gap-3 p-3">
+          <div className="flex items-center gap-2">
+            <Label htmlFor="switch-card">Afficher avec des cartes</Label>
+            <Switch
+              id="switch-card"
+              defaultChecked={!searchParams.has('display-card') || searchParams.get('display-card') === 'true'}
+              onCheckedChange={(checked) => {
+                router.push(pathname + '?' + createQueryString('display-card', String(checked)));
+              }}
+            />
+          </div>
+          {Object.entries(filterItems).length > 1 && (
+            <>
+              <Button
+                variant={'secondary'}
+                onClick={async (e) => {
+                  e.stopPropagation();
+                  setLocal([...Object.keys(filterItems)]);
+                }}
+              >
+                Ouvrir tout
+              </Button>
+              <Button
+                variant={'secondary'}
+                onClick={async (e) => {
+                  e.stopPropagation();
+                  setLocal([]);
+                }}
+              >
+                Fermer tout
+              </Button>
+            </>
+          )}
+          <Button
+            variant={'destructive'}
+            onClick={async (e) => {
+              e.stopPropagation();
+              const res = await modal.question({
+                title: 'Reinitisaliser les données ?',
+                message: 'Cette action est irreversible',
+                doubleConfirm: true,
+              });
+              if (res) {
+                reset();
+              }
             }}
-          />
+          >
+            Réinitialiser
+          </Button>
         </div>
-        {Object.entries(filterItems).length > 1 && (
-          <>
-            <Button
-              variant={'secondary'}
-              onClick={async (e) => {
-                e.stopPropagation();
-                setLocal([...Object.keys(filterItems)]);
-              }}
-            >
-              Ouvrir tout
-            </Button>
-            <Button
-              variant={'secondary'}
-              onClick={async (e) => {
-                e.stopPropagation();
-                setLocal([]);
-              }}
-            >
-              Fermer tout
-            </Button>
-          </>
-        )}
-        <Button
-          variant={'destructive'}
-          onClick={async (e) => {
-            e.stopPropagation();
-            const res = await modal.question({
-              title: 'Reinitisaliser les données ?',
-              message: 'Cette action est irreversible',
-              doubleConfirm: true,
-            });
-            if (res) {
-              reset();
-            }
-          }}
-        >
-          Réinitialiser
-        </Button>
-      </div>
+      </Card>
       {Object.entries(filterItems).length !== 1 ? (
         <Accordion value={local} className="w-full" type="multiple">
           {Object.entries(filterItems)

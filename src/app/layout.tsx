@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr">
       <body
         style={{
-          backgroundImage: `url(https://images3.alphacoders.com/131/thumb-1920-1311863.jpeg)`,
+          backgroundImage: `url(https://images.alphacoders.com/116/thumb-1920-1169017.jpg)`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
