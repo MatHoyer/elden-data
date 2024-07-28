@@ -1,8 +1,8 @@
-import { crystalTears } from '@/lib/defaultData/crystalTear';
 import { armors } from '../src/lib/defaultData/armor';
 import { ashesOfWar } from '../src/lib/defaultData/asheOfWar';
 import { bosses } from '../src/lib/defaultData/bosses';
 import { cookBooks } from '../src/lib/defaultData/cookBook';
+import { crystalTears } from '../src/lib/defaultData/crystalTear';
 import { shields } from '../src/lib/defaultData/shield';
 import { spells } from '../src/lib/defaultData/spell';
 import { spiritAshes } from '../src/lib/defaultData/spiritAshe';
