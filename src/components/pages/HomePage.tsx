@@ -30,28 +30,30 @@ const LinkCard: React.FC<{ name: string; done: number; all: number }> = ({ name,
 
 const HomePage: React.FC<{ counters: TUseCounter }> = ({ counters }) => {
   return (
-    <div className="flex flex-col items-center gap-5">
-      <div className="grid grid-cols-2 gap-3">
-        {counters.map((counter, index) => (
-          <LinkCard key={index} name={counter.name} done={counter.done} all={counter.all} />
-        ))}
+    <div>
+      <div className="flex flex-col items-center gap-5">
+        <div className="grid grid-cols-3 gap-3">
+          {counters.map((counter, index) => (
+            <LinkCard key={index} name={counter.name} done={counter.done} all={counter.all} />
+          ))}
+        </div>
+        <Button
+          variant={'destructive'}
+          onClick={async (e) => {
+            e.stopPropagation();
+            const res = await modal.question({
+              title: 'Reinitisaliser les données ?',
+              message: 'Cette action est irreversible',
+              doubleConfirm: true,
+            });
+            if (res) {
+              globalReset();
+            }
+          }}
+        >
+          Réinitialiser tout
+        </Button>
       </div>
-      <Button
-        variant={'destructive'}
-        onClick={async (e) => {
-          e.stopPropagation();
-          const res = await modal.question({
-            title: 'Reinitisaliser les données ?',
-            message: 'Cette action est irreversible',
-            doubleConfirm: true,
-          });
-          if (res) {
-            globalReset();
-          }
-        }}
-      >
-        Réinitialiser tout
-      </Button>
     </div>
   );
 };

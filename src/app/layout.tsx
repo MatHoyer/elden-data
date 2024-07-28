@@ -18,22 +18,20 @@ const fontSans = FontSans({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
-      <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
+      <body
+        style={{
+          backgroundImage: `url(https://images3.alphacoders.com/131/thumb-1920-1311863.jpeg)`,
+          backgroundSize: 'fill',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+        }}
+        className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}
+      >
         <SessionProvider>
           <Modal />
           <Navbar />
-          <div
-            className="flex justify-center"
-            style={{
-              backgroundImage: `url(https://images3.alphacoders.com/131/thumb-1920-1311863.jpeg)`,
-              backgroundSize: 'fill',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              backgroundAttachment: 'fixed',
-            }}
-          >
-            {children}
-          </div>
+          <div className="flex justify-center">{children}</div>
         </SessionProvider>
       </body>
     </html>
