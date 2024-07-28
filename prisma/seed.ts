@@ -1,3 +1,4 @@
+import { crystalTears } from '@/lib/defaultData/crystalTear';
 import { armors } from '../src/lib/defaultData/armor';
 import { ashesOfWar } from '../src/lib/defaultData/asheOfWar';
 import { bosses } from '../src/lib/defaultData/bosses';
@@ -68,6 +69,7 @@ async function main() {
   await itemsUpsert(shields);
   await itemsUpsert(spiritAshes);
   await itemsUpsert(whetBlades);
+  await itemsUpsert(crystalTears);
 
   for (const armor of armors) {
     const elementsId = await Promise.all(
