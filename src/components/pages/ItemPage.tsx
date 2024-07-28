@@ -91,7 +91,7 @@ const ItemsTable: React.FC<{ items: TUseItems['items']; searchParams: ReadonlyUR
   itemType,
 }) => {
   return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
-    <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center">
+    <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
       {items.map((item, index) => (
         <DisplayCard
           imageUrl={item.imageUrl}
