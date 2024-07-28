@@ -17,7 +17,7 @@ const Navbar = async () => {
             <NavLink href="/spell" name="Sorts" />
             <NavLink href="/weapon" name="Armes" />
             <NavLink href="/shield" name="Boucliers" />
-            <NavLink href="/crystalTear" name="Larmes de crystals" />
+            <NavLink href="/crystalTear" name="Larmes de cristal" />
             <NavLink href="/asheOfWar" name="Cendres de guerre" />
             <NavLink href="/spiritAshe" name="Invocations" />
             <NavLink href="/cookBook" name="Manuels" />

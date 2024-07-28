@@ -2,7 +2,8 @@ export const crystalTears = [
   {
     type: 'crystalTear',
     name: 'Viridian Hidden Tear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Monster-Hunter-World/thumbnails/mhws.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/viridian_hidden_tear_crystal_tear_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Viridian+Hidden+Tear',
     locationUrl: '',
     inDlc: true,
@@ -10,7 +11,8 @@ export const crystalTears = [
   {
     type: 'crystalTear',
     name: 'Crimsonburst Dried Tear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Monster-Hunter-World/thumbnails/mhws.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimsonburst_dried_tear_crystal_tear_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimsonburst+Dried+Tear',
     locationUrl: '',
     inDlc: true,
@@ -18,7 +20,8 @@ export const crystalTears = [
   {
     type: 'crystalTear',
     name: 'Crimson-Sapping Cracked Tear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Monster-Hunter-World/thumbnails/mhws.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson-sapping_cracked_tear_crystal_tear_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson-Sapping+Cracked+Tear',
     locationUrl: '',
     inDlc: true,
@@ -26,7 +29,8 @@ export const crystalTears = [
   {
     type: 'crystalTear',
     name: 'Cerulean-Sapping Cracked Tear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Monster-Hunter-World/thumbnails/mhws.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean-sapping_cracked_tear_crystal_tear_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean-Sapping+Cracked+Tear',
     locationUrl: '',
     inDlc: true,
@@ -34,7 +38,8 @@ export const crystalTears = [
   {
     type: 'crystalTear',
     name: 'Oil-Soaked Tear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Monster-Hunter-World/thumbnails/mhws.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/oil-soaked_tear_crystal_tear_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Oil-Soaked+Tear',
     locationUrl: '',
     inDlc: true,
@@ -42,7 +47,8 @@ export const crystalTears = [
   {
     type: 'crystalTear',
     name: 'Bloodsucking Cracked Tear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Monster-Hunter-World/thumbnails/mhws.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodsucking_cracked_tear_crystal_tear_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodsucking+Cracked+Tear',
     locationUrl: '',
     inDlc: true,
@@ -50,7 +56,8 @@ export const crystalTears = [
   {
     type: 'crystalTear',
     name: 'Glovewort Crystal Tear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Monster-Hunter-World/thumbnails/mhws.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glovewort_crystal_tear_crystal_tear_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Glovewort+Crystal+Tear',
     locationUrl: '',
     inDlc: true,
@@ -58,7 +65,8 @@ export const crystalTears = [
   {
     type: 'crystalTear',
     name: 'Deflecting Hardtear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Monster-Hunter-World/thumbnails/mhws.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/deflecting_hardtear_crystal_tear_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Deflecting+Hardtear',
     locationUrl: '',
     inDlc: true,
