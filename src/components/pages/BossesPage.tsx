@@ -6,7 +6,6 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Button } from '@/components/ui/button';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
-import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Switch } from '@/components/ui/switch';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { TUseBosses } from '@/hooks/useBosses';
@@ -17,6 +16,7 @@ import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.share
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import React, { useCallback } from 'react';
 import DisplayCard from '../DisplayCard';
+import RadioFilter from '../RadioFilter';
 import { Card } from '../ui/card';
 
 const Filters: React.FC<{
@@ -29,55 +29,25 @@ const Filters: React.FC<{
   return (
     <div className="flex flex-col items-center gap-2">
       <p className="text-xl">Filtres boss</p>
-      <div className="flex gap-3">
-        <div className="flex flex-col items-end justify-center gap-3">
-          <div className="flex items-center gap-2">
-            <Label htmlFor="show-dlc" className="whitespace-nowrap">
-              DLC
-            </Label>
-            <Checkbox
-              id="show-dlc"
-              defaultChecked={!searchParams.has('dlc') || searchParams.get('dlc') === 'true'}
-              onCheckedChange={(checked) => {
-                router.push(pathname + '?' + createQueryString('dlc', String(checked)));
-              }}
-            />
-          </div>
-          <div className="flex items-center gap-2">
-            <Label htmlFor="show-major" className="whitespace-nowrap">
-              Majeur
-            </Label>
-            <Checkbox
-              id="show-major"
-              defaultChecked={searchParams.get('major') === 'true'}
-              onCheckedChange={(checked) => {
-                router.push(pathname + '?' + createQueryString('major', String(checked)));
-              }}
-            />
-          </div>
+      <div className="flex flex-col items-center gap-3">
+        <div className="flex gap-3">
+          <RadioFilter name="dlc" labels={['tous', 'DLC', 'pas DLC']} />
+          <RadioFilter name="boss" labels={['tous', 'fait', 'pas fait']} reverse={true} />
         </div>
-        <div>
-          <RadioGroup
-            defaultValue="all"
-            onValueChange={(value) => {
-              router.push(pathname + '?' + createQueryString('boss', value as string));
+        <div className="flex items-center gap-2">
+          <Label htmlFor="show-major" className="whitespace-nowrap">
+            Majeur
+          </Label>
+          <Switch
+            id="show-major"
+            defaultChecked={searchParams.get('major') === 'true'}
+            onCheckedChange={(checked) => {
+              router.push(pathname + '?' + createQueryString('major', String(checked)));
             }}
-          >
-            <div className="flex items-center space-x-2">
-              <RadioGroupItem value="all" id="all" />
-              <Label htmlFor="all">Tous</Label>
-            </div>
-            <div className="flex items-center space-x-2">
-              <RadioGroupItem value="done" id="done" />
-              <Label htmlFor="done">Fait</Label>
-            </div>
-            <div className="flex items-center space-x-2">
-              <RadioGroupItem value="notdone" id="notdone" />
-              <Label htmlFor="notdone">Pas fait</Label>
-            </div>
-          </RadioGroup>
+          />
         </div>
       </div>
+
       <TypeaheadInput
         className="w-[300px]"
         datas={[...new Set(data.bosses.map((boss) => boss.name))]}
@@ -184,11 +154,12 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
 
   const filterBosses = groupBy(
     data.bosses.filter((boss) => {
-      if (searchParams.has('dlc') && searchParams.get('dlc') === 'false' && boss.inDlc) return false;
       if (searchParams.has('name') && !boss.name.includes(searchParams.get('name') as string)) return false;
       if (searchParams.has('major') && searchParams.get('major') === 'true' && !boss.major) return false;
-      if (searchParams.has('boss') && searchParams.get('boss') === 'notdone' && boss.done) return false;
-      if (searchParams.has('boss') && searchParams.get('boss') === 'done' && !boss.done) return false;
+      if (searchParams.has('boss') && searchParams.get('boss') === 'pas fait' && boss.done) return false;
+      if (searchParams.has('boss') && searchParams.get('boss') === 'fait' && !boss.done) return false;
+      if (searchParams.has('dlc') && searchParams.get('dlc') === 'pas DLC' && boss.inDlc) return false;
+      if (searchParams.has('dlc') && searchParams.get('dlc') === 'DLC' && !boss.inDlc) return false;
       return true;
     }),
     (boss) => boss.location
@@ -197,7 +168,14 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
   return (
     <div className="flex flex-col gap-5 items-center">
       <Card>
-        <h1 className={cn(data.bossesDone === data.bosses.length && 'text-green-400', 'text-3xl font-bold p-3')}>
+        <h1
+          className={cn(
+            data.bosses.filter((boss) => !boss.inDlc && boss.done).length ===
+              data.bosses.filter((boss) => !boss.inDlc).length && 'text-green-400',
+            data.bossesDone === data.bosses.length && 'text-gold',
+            'text-3xl font-bold p-3'
+          )}
+        >
           Boss {data.bossesDone}/{data.bosses.length}
         </h1>
       </Card>

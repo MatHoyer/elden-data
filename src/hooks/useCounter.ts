@@ -1,4 +1,5 @@
 'use server';
+import { pages } from '@/components/pages';
 import { auth } from '@/lib/auth';
 import prisma from '@/lib/prisma';
 
@@ -10,11 +11,14 @@ const countItems = async (type: string, id: string | undefined) => {
       item: { type },
     },
   });
+  const allWithoutDlc = await prisma.item.count({
+    where: { type, inDlc: false },
+  });
   const all = await prisma.item.count({
     where: { type },
   });
 
-  return { name: type, done, all };
+  return { name: type, done, allWithoutDlc, all };
 };
 
 export const useCounter = async () => {
@@ -25,18 +29,16 @@ export const useCounter = async () => {
   const bossesDone = await prisma.boss_user.count({
     where: { userId: id, done: true },
   });
+  const bossesAllWithoutDlc = await prisma.boss.count({
+    where: { inDlc: false },
+  });
   const bossesAll = await prisma.boss.count();
-  data.push({ name: 'boss', done: bossesDone, all: bossesAll });
+  data.push({ name: 'boss', done: bossesDone, allWithoutDlc: bossesAllWithoutDlc, all: bossesAll });
 
-  data.push(await countItems('talisman', id));
-  data.push(await countItems('armor', id));
-  data.push(await countItems('spell', id));
-  data.push(await countItems('weapon', id));
-  data.push(await countItems('shield', id));
-  data.push(await countItems('asheOfWar', id));
-  data.push(await countItems('spiritAshe', id));
-  data.push(await countItems('cookBook', id));
-  data.push(await countItems('whetBlade', id));
+  for (const page of pages) {
+    if (page.type === 'page') continue;
+    data.push(await countItems(page.path.slice(1), id));
+  }
 
   return data;
 };

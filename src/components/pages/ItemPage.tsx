@@ -9,13 +9,13 @@ import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from
 import { useCallback } from 'react';
 import DisplayCard from '../DisplayCard';
 import { modal } from '../Modal';
+import RadioFilter from '../RadioFilter';
 import TypeaheadInput from '../TypeaheadInput';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
 import { Button } from '../ui/button';
 import { Card } from '../ui/card';
 import { Checkbox } from '../ui/checkbox';
 import { Label } from '../ui/label';
-import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
 import { Switch } from '../ui/switch';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table';
 
@@ -31,41 +31,8 @@ const Filters: React.FC<{
     <div className="flex flex-col items-center gap-2">
       <p className="text-xl">Filtres {itemType}</p>
       <div className="flex gap-3">
-        <div className="flex flex-col items-end justify-center gap-3">
-          <div className="flex items-center gap-2">
-            <Label htmlFor="show-dlc" className="whitespace-nowrap">
-              DLC
-            </Label>
-            <Checkbox
-              id="show-dlc"
-              defaultChecked={!searchParams.has('dlc') || searchParams.get('dlc') === 'true'}
-              onCheckedChange={(checked) => {
-                router.push(pathname + '?' + createQueryString('dlc', String(checked)));
-              }}
-            />
-          </div>
-        </div>
-        <div>
-          <RadioGroup
-            defaultValue={searchParams.get('item') ?? 'all'}
-            onValueChange={(value) => {
-              router.push(pathname + '?' + createQueryString('item', value as string));
-            }}
-          >
-            <div className="flex items-center space-x-2">
-              <RadioGroupItem value="all" id="all" />
-              <Label htmlFor="all">Tous</Label>
-            </div>
-            <div className="flex items-center space-x-2">
-              <RadioGroupItem value="done" id="done" />
-              <Label htmlFor="done">Récup</Label>
-            </div>
-            <div className="flex items-center space-x-2">
-              <RadioGroupItem value="notdone" id="notdone" />
-              <Label htmlFor="notdone">Pas récup</Label>
-            </div>
-          </RadioGroup>
-        </div>
+        <RadioFilter name="dlc" labels={['tous', 'DLC', 'pas DLC']} />
+        <RadioFilter name="item" labels={['tous', 'récup', 'pas récup']} reverse={true} />
       </div>
       <TypeaheadInput
         className="w-[300px]"
@@ -96,7 +63,7 @@ const ItemsTable: React.FC<{
     <div
       className={cn(
         solo && 'border-4 border-background/80 bg-background/30',
-        'grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center'
+        'grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-3'
       )}
     >
       {items.map((item, index) => (
@@ -173,10 +140,11 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
 
   const filterItems = groupBy(
     data.items.filter((item) => {
-      if (searchParams.has('dlc') && searchParams.get('dlc') === 'false' && item.inDlc) return false;
       if (searchParams.has('name') && !item.name.includes(searchParams.get('name') as string)) return false;
-      if (searchParams.has('item') && searchParams.get('item') === 'notdone' && item.done) return false;
-      if (searchParams.has('item') && searchParams.get('item') === 'done' && !item.done) return false;
+      if (searchParams.has('item') && searchParams.get('item') === 'pas récup' && item.done) return false;
+      if (searchParams.has('item') && searchParams.get('item') === 'récup' && !item.done) return false;
+      if (searchParams.has('dlc') && searchParams.get('dlc') === 'pas DLC' && item.inDlc) return false;
+      if (searchParams.has('dlc') && searchParams.get('dlc') === 'DLC' && !item.inDlc) return false;
       return true;
     }),
     (item) => item.sortableType || 'other'
@@ -185,7 +153,14 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
   return (
     <div className="flex flex-col gap-5 items-center">
       <Card>
-        <h1 className={cn(data.itemsDone === data.items.length && 'text-green-400', 'text-3xl font-bold p-3')}>
+        <h1
+          className={cn(
+            data.items.filter((item) => !item.inDlc && item.done).length ===
+              data.items.filter((item) => !item.inDlc).length && 'text-green-400',
+            data.itemsDone === data.items.length && 'text-gold',
+            'text-3xl font-bold p-3'
+          )}
+        >
           {capitalize(itemType)} {data.itemsDone}/{data.items.length}
         </h1>
       </Card>

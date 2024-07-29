@@ -1,5 +1,5 @@
 import { LoginButton } from '@/components/AuthButtons';
-import ItemPage from '@/components/pages/ItemPage';
+import { ItemPage } from '@/components/pages';
 import { useItems } from '@/hooks/useItems';
 import { auth } from '@/lib/auth';
 import { cn } from '@/lib/utils';

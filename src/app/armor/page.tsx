@@ -1,5 +1,5 @@
 import { LoginButton } from '@/components/AuthButtons';
-import ArmorPage from '@/components/pages/ArmorPage';
+import { ArmorsPage } from '@/components/pages';
 import { useArmors } from '@/hooks/useArmors';
 import { auth } from '@/lib/auth';
 import { cn } from '@/lib/utils';
@@ -15,7 +15,7 @@ const Armor = async () => {
         !session?.user && 'flex justify-center items-center h-screen my-0'
       )}
     >
-      {session?.user ? <ArmorPage data={armors} /> : <LoginButton />}
+      {session?.user ? <ArmorsPage data={armors} /> : <LoginButton />}
     </div>
   );
 };

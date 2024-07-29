@@ -1,5 +1,5 @@
 import { LoginButton } from '@/components/AuthButtons';
-import HomePage from '@/components/pages/HomePage';
+import { HomePage } from '@/components/pages';
 import { useCounter } from '@/hooks/useCounter';
 import { auth } from '@/lib/auth';
 import { cn } from '@/lib/utils';

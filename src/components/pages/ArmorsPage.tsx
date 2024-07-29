@@ -9,12 +9,12 @@ import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from
 import { useCallback, useState } from 'react';
 import DisplayCard from '../DisplayCard';
 import { modal } from '../Modal';
+import RadioFilter from '../RadioFilter';
 import TypeaheadInput from '../TypeaheadInput';
 import { Button } from '../ui/button';
 import { Card } from '../ui/card';
-import { Checkbox } from '../ui/checkbox';
 import { Label } from '../ui/label';
-import { RadioGroup, RadioGroupItem } from '../ui/radio-group';
+import { Switch } from '../ui/switch';
 
 const Filters: React.FC<{
   router: AppRouterInstance;
@@ -27,53 +27,22 @@ const Filters: React.FC<{
   return (
     <div className="flex flex-col items-center gap-2">
       <p className="text-xl">Filtres {itemType}</p>
-      <div className="flex gap-3">
-        <div className="flex flex-col items-end justify-center gap-3">
-          <div className="flex items-center gap-2">
-            <Label htmlFor="show-dlc" className="whitespace-nowrap">
-              DLC
-            </Label>
-            <Checkbox
-              id="show-dlc"
-              defaultChecked={!searchParams.has('dlc') || searchParams.get('dlc') === 'true'}
-              onCheckedChange={(checked) => {
-                router.push(pathname + '?' + createQueryString('dlc', String(checked)));
-              }}
-            />
-          </div>
-          <div className="flex items-center gap-2">
-            <Label htmlFor="show-dlc" className="whitespace-nowrap">
-              Seulement boss
-            </Label>
-            <Checkbox
-              id="show-dlc"
-              defaultChecked={searchParams.get('boss') === 'true'}
-              onCheckedChange={(checked) => {
-                router.push(pathname + '?' + createQueryString('boss', String(checked)));
-              }}
-            />
-          </div>
+      <div className="flex flex-col items-center gap-3">
+        <div className="flex gap-3">
+          <RadioFilter name="dlc" labels={['tous', 'DLC', 'pas DLC']} />
+          <RadioFilter name="armor" labels={['tous', 'récup', 'pas récup']} reverse={true} />
         </div>
-        <div>
-          <RadioGroup
-            defaultValue="all"
-            onValueChange={(value) => {
-              router.push(pathname + '?' + createQueryString('armor', value as string));
+        <div className="flex items-center gap-2">
+          <Label htmlFor="show-dlc" className="whitespace-nowrap">
+            Seulement boss
+          </Label>
+          <Switch
+            id="show-dlc"
+            defaultChecked={searchParams.get('boss') === 'true'}
+            onCheckedChange={(checked) => {
+              router.push(pathname + '?' + createQueryString('boss', String(checked)));
             }}
-          >
-            <div className="flex items-center space-x-2">
-              <RadioGroupItem value="all" id="all" />
-              <Label htmlFor="all">Tous</Label>
-            </div>
-            <div className="flex items-center space-x-2">
-              <RadioGroupItem value="done" id="done" />
-              <Label htmlFor="done">Récup</Label>
-            </div>
-            <div className="flex items-center space-x-2">
-              <RadioGroupItem value="notdone" id="notdone" />
-              <Label htmlFor="notdone">Pas récup</Label>
-            </div>
-          </RadioGroup>
+          />
         </div>
       </div>
       <TypeaheadInput
@@ -144,12 +113,9 @@ const SetModal: React.FC<{ elements: TUseArmors['armors'][number]['elements'] }>
   );
 };
 
-const ArmorsTable: React.FC<{ armors: TUseArmors['armors']; searchParams: ReadonlyURLSearchParams }> = ({
-  armors,
-  searchParams,
-}) => {
-  return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
-    <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center">
+const ArmorsTable: React.FC<{ armors: TUseArmors['armors'] }> = ({ armors }) => {
+  return (
+    <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center border-4 border-background/80 bg-background/30">
       {armors.map((armor, index) => (
         <DisplayCard
           imageUrl={armor.imageUrl}
@@ -169,8 +135,6 @@ const ArmorsTable: React.FC<{ armors: TUseArmors['armors']; searchParams: Readon
         />
       ))}
     </div>
-  ) : (
-    <div></div>
   );
 };
 
@@ -190,18 +154,19 @@ const ArmorPage: React.FC<{ data: TUseArmors }> = ({ data }) => {
   );
 
   const filterArmors = data.armors.filter((armor) => {
-    if (searchParams.has('dlc') && searchParams.get('dlc') === 'false' && armor.inDlc) return false;
     if (searchParams.has('name') && !armor.name.includes(searchParams.get('name') as string)) return false;
     if (searchParams.has('boss') && searchParams.get('boss') === 'true' && !armor.boss) return false;
+    if (searchParams.has('dlc') && searchParams.get('dlc') === 'pas DLC' && armor.inDlc) return false;
+    if (searchParams.has('dlc') && searchParams.get('dlc') === 'DLC' && !armor.inDlc) return false;
     if (
       searchParams.has('armor') &&
-      searchParams.get('armor') === 'notdone' &&
+      searchParams.get('armor') === 'pas récup' &&
       armor.elements.every((element) => element.done)
     )
       return false;
     if (
       searchParams.has('armor') &&
-      searchParams.get('armor') === 'done' &&
+      searchParams.get('armor') === 'récup' &&
       !armor.elements.every((element) => element.done)
     )
       return false;
@@ -211,7 +176,14 @@ const ArmorPage: React.FC<{ data: TUseArmors }> = ({ data }) => {
   return (
     <div className="flex flex-col items-center gap-5">
       <Card>
-        <h1 className={cn(data.armorsDone === data.armors.length && 'text-green-400', 'text-3xl font-bold p-3')}>
+        <h1
+          className={cn(
+            data.armors.filter((armor) => !armor.inDlc && armor.elements.every((element) => element.done)).length ===
+              data.armors.filter((armor) => !armor.inDlc).length && 'text-green-400',
+            data.armorsDone === data.armors.length && 'text-gold',
+            'text-3xl font-bold p-3'
+          )}
+        >
           Armures {data.armorsDone}/{data.armors.length}
         </h1>
       </Card>
@@ -245,7 +217,7 @@ const ArmorPage: React.FC<{ data: TUseArmors }> = ({ data }) => {
           </Button>
         </div>
       </Card>
-      <ArmorsTable armors={filterArmors} searchParams={searchParams} />
+      <ArmorsTable armors={filterArmors} />
     </div>
   );
 };
