@@ -70,6 +70,9 @@ const HomePage: React.FC<{ counters: TUseCounter }> = ({ counters }) => {
         >
           Réinitialiser tout
         </Button>
+        <a target="_blank" href={'https://github.com/MatHoyer/elden-data/issues/new'}>
+          <Button variant={'link'}>Signaler un bug</Button>
+        </a>
       </div>
     </div>
   );
