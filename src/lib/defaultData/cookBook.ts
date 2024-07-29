@@ -571,7 +571,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (1)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(1)",
     locationUrl:
@@ -582,7 +582,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (2)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(2)",
     locationUrl:
@@ -593,7 +593,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (3)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(3)",
     locationUrl:
@@ -604,7 +604,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (4)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(4)",
     locationUrl:
@@ -615,7 +615,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (5)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(5)",
     locationUrl:
@@ -626,7 +626,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (6)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(6)",
     locationUrl:
@@ -637,7 +637,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (7)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(7)",
     locationUrl:
@@ -648,7 +648,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (8)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(8)",
     locationUrl:
@@ -659,7 +659,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (9)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(9)",
     locationUrl:
@@ -670,7 +670,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (10)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(10)",
     locationUrl:
@@ -681,7 +681,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (11)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(11)",
     locationUrl:
@@ -692,7 +692,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (12)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(12)",
     locationUrl:
@@ -703,7 +703,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (13)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(13)",
     locationUrl:
@@ -714,7 +714,7 @@ export const cookBooks = [
     name: "Manuel de grand potentat (14)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greater_potentates_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Greater+Potentate's+Cookbook+(14)",
     locationUrl:
@@ -725,7 +725,7 @@ export const cookBooks = [
     name: "Manuel de chevalier loyal",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/loyal_knights_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/loyal_knights_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Loyal+Knight's+Cookbook",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381198",
@@ -735,7 +735,7 @@ export const cookBooks = [
     name: "Manuel du chevalier de Feu (1)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knights_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knights_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Cookbook+(1)",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380324",
@@ -745,7 +745,7 @@ export const cookBooks = [
     name: "Manuel du chevalier de Feu (2)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knights_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knights_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Fire+Knight's+Cookbook+(2)",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382159",
@@ -755,7 +755,7 @@ export const cookBooks = [
     name: "Manuel de prêtre de bataille (1)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlefield_priests_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlefield_priests_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Battlefield+Priest's+Cookbook+(1)",
     locationUrl:
@@ -766,7 +766,7 @@ export const cookBooks = [
     name: "Manuel de prêtre de bataille (2)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlefield_priests_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlefield_priests_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Battlefield+Priest's+Cookbook+(2)",
     locationUrl:
@@ -777,7 +777,7 @@ export const cookBooks = [
     name: "Manuel de prêtre de bataille (3)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlefield_priests_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlefield_priests_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Battlefield+Priest's+Cookbook+(3)",
     locationUrl:
@@ -788,7 +788,7 @@ export const cookBooks = [
     name: "Manuel de prêtre de bataille (4)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlefield_priests_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlefield_priests_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Battlefield+Priest's+Cookbook+(4)",
     locationUrl:
@@ -799,7 +799,7 @@ export const cookBooks = [
     name: "Manuel du chev. des dragons anc. (1)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_knights_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_knights_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Knight's+Cookbook+(1)",
     locationUrl:
@@ -810,7 +810,7 @@ export const cookBooks = [
     name: "Manuel du chev. des dragons anc. (2)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_knights_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_knights_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Knight's+Cookbook+(2)",
     locationUrl:
@@ -821,7 +821,7 @@ export const cookBooks = [
     name: "Manuel de disciple de sainte Trina (1)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/st._trina_disciples_cookbook_1_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/st._trina_disciples_cookbook_1_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/St.+Trina+Disciple's+Cookbook+(1)",
     locationUrl:
@@ -832,7 +832,7 @@ export const cookBooks = [
     name: "Manuel de disciple de sainte Trina (2)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/st._trina_disciples_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/st._trina_disciples_cookbook_1_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/St.+Trina+Disciple's+Cookbook+(2)",
     locationUrl:
@@ -843,7 +843,7 @@ export const cookBooks = [
     name: "Manuel de disciple de sainte Trina (3)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/st._trina_disciples_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/st._trina_disciples_cookbook_1_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/St.+Trina+Disciple's+Cookbook+(3)",
     locationUrl:
@@ -854,7 +854,7 @@ export const cookBooks = [
     name: "Manuel d'artisan fou (1)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mad_craftsmans_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mad_craftsmans_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Mad+Craftsman's+Cookbook+(1)",
     locationUrl:
@@ -865,7 +865,7 @@ export const cookBooks = [
     name: "Manuel d'artisan fou (2)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mad_craftsmans_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mad_craftsmans_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Mad+Craftsman's+Cookbook+(2)",
     locationUrl:
@@ -876,7 +876,7 @@ export const cookBooks = [
     name: "Manuel d'artisan fou (3)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mad_craftsmans_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mad_craftsmans_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Mad+Craftsman's+Cookbook+(3)",
     locationUrl:
@@ -887,7 +887,7 @@ export const cookBooks = [
     name: "Manuel de gardien des tombes (1)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave_keepers_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave_keepers_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Grave+Keeper's+Cookbook+(1)",
     locationUrl:
@@ -898,7 +898,7 @@ export const cookBooks = [
     name: "Manuel de gardien des tombes (2)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave_keepers_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave_keepers_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Grave+Keeper's+Cookbook+(2)",
     locationUrl:
@@ -909,7 +909,7 @@ export const cookBooks = [
     name: "Manuel des os",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibias_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibias_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Tibia's+Cookbook",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381936",
@@ -919,7 +919,7 @@ export const cookBooks = [
     name: "Manuel de digitomancien (1)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger-weavers_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger_weavers_cookbook_elden_ring_sote_wiki_guide200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Finger-Weaver's+Cookbook+(1)",
     locationUrl:
@@ -930,7 +930,7 @@ export const cookBooks = [
     name: "Manuel de digitomancien (2)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger-weavers_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger_weavers_cookbook_elden_ring_sote_wiki_guide200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Finger-Weaver's+Cookbook+(2)",
     locationUrl:
@@ -941,7 +941,7 @@ export const cookBooks = [
     name: "Manuel d'expert en antiquités (1)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/antiquity_scholars_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/antiquity_scholars_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Antiquity+Scholar's+Cookbook+(1)",
     locationUrl:
@@ -952,7 +952,7 @@ export const cookBooks = [
     name: "Manuel d'expert en antiquités (2)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/antiquity_scholars_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/antiquity_scholars_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl:
       "https://eldenring.wiki.fextralife.com/Antiquity+Scholar's+Cookbook+(2)",
     locationUrl:
@@ -963,7 +963,7 @@ export const cookBooks = [
     name: "Manuel de la nuée glaneuse (1)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_1_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_2_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(1)",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380330",
@@ -973,7 +973,7 @@ export const cookBooks = [
     name: "Manuel de la nuée glaneuse (2)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_2_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_2_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(2)",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381284",
@@ -983,7 +983,7 @@ export const cookBooks = [
     name: "Manuel de la nuée glaneuse (3)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_3_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_2_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(3)",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382588",
@@ -993,7 +993,7 @@ export const cookBooks = [
     name: "Manuel de la nuée glaneuse (4)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_4_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_2_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(4)",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382727",
@@ -1003,7 +1003,7 @@ export const cookBooks = [
     name: "Manuel de la nuée glaneuse (5)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_5_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_2_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(5)",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382244",
@@ -1013,7 +1013,7 @@ export const cookBooks = [
     name: "Manuel de la nuée glaneuse (6)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_6_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_2_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(6)",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381262",
@@ -1023,7 +1023,7 @@ export const cookBooks = [
     name: "Manuel de la nuée glaneuse (7)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_1_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/forager_brood_cookbook_2_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Forager+Brood+Cookbook+(7)",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=384408",
@@ -1033,7 +1033,7 @@ export const cookBooks = [
     name: "Manuel d'Igon (1)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/igons_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/igons_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Cookbook+(1)",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382199",
@@ -1043,7 +1043,7 @@ export const cookBooks = [
     name: "Manuel d'Igon (2)",
     inDlc: true,
     imageUrl:
-      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/igons_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_75px.png",
+      "https://eldenring.wiki.fextralife.com/file/Elden-Ring/igons_cookbook_cookbooks_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Cookbook+(2)",
     locationUrl:
       "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382196",
