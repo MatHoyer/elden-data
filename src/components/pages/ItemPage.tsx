@@ -5,6 +5,7 @@ import { TUseItems } from '@/hooks/useItems';
 import { useLocalstorage } from '@/hooks/useLocalstorage';
 import { capitalize, cn, groupBy } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
+import { useOptimisticAction } from 'next-safe-action/hooks';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback } from 'react';
 import DisplayCard from '../DisplayCard';
@@ -56,7 +57,8 @@ const ItemsTable: React.FC<{
   searchParams: ReadonlyURLSearchParams;
   itemType: string;
   solo?: boolean;
-}> = ({ items, searchParams, itemType, solo }) => {
+  optimisticToggleDone: (input: { itemId: string }) => void;
+}> = ({ items, searchParams, itemType, solo, optimisticToggleDone }) => {
   return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
     <div
       className={cn(
@@ -71,7 +73,7 @@ const ItemsTable: React.FC<{
           locationUrl={item.locationUrl}
           wikiUrl={item.wikiUrl}
           isValidate={item.done}
-          onCLick={() => toggleDone({ itemId: item.id })}
+          onCLick={() => optimisticToggleDone({ itemId: item.id })}
           w={itemType === 'weapon' ? 300 : 300}
           h={itemType === 'weapon' ? 300 : 240}
           fillImage={itemType === 'talisman' || itemType === 'shield' ? true : false}
@@ -93,7 +95,7 @@ const ItemsTable: React.FC<{
         {items.map((item) => {
           return (
             <TableRow key={item.id}>
-              <TableCell>{item.name}</TableCell>
+              <TableCell className={cn(item.done && 'text-green-400')}>{item.name}</TableCell>
               <TableCell>
                 <a target="_blank" href={item?.locationUrl}>
                   <MapPin />
@@ -108,7 +110,7 @@ const ItemsTable: React.FC<{
                 <Checkbox
                   defaultChecked={item.done}
                   onCheckedChange={() => {
-                    toggleDone({ itemId: item.id });
+                    optimisticToggleDone({ itemId: item.id });
                   }}
                 />
               </TableCell>
@@ -125,6 +127,16 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [local, setLocal] = useLocalstorage(itemType, [] as string[]);
+  const { execute, result, optimisticState } = useOptimisticAction(toggleDone, {
+    currentState: data,
+    updateFn: (state, { itemId }) => {
+      const item = state.items.find((item) => item.id === itemId);
+      if (item) {
+        item.done = !item.done;
+      }
+      return state;
+    },
+  });
 
   const createQueryString = useCallback(
     (name: string, value: string) => {
@@ -137,7 +149,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
   );
 
   const filterItems = groupBy(
-    data.items.filter((item) => {
+    optimisticState.items.filter((item) => {
       if (searchParams.has('name') && !item.name.includes(searchParams.get('name') as string)) return false;
       if (searchParams.has('item') && searchParams.get('item') === 'pas récup' && item.done) return false;
       if (searchParams.has('item') && searchParams.get('item') === 'récup' && !item.done) return false;
@@ -147,6 +159,8 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
     }),
     (item) => item.sortableType || 'other'
   );
+
+  console.log(optimisticState.items[0].done);
 
   return (
     <div className="flex flex-col gap-5 items-center">
@@ -222,7 +236,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
       {Object.entries(filterItems).length !== 1 ? (
         <Accordion value={local} className="w-full" type="multiple">
           {Object.entries(filterItems)
-            .filter(([sortableType, items]) => items !== undefined)
+            .filter(([_sortableType, items]) => items !== undefined)
             .map(([sortableType, items], index) => {
               const countDone =
                 data.itemsBySortableTypeDone.find((items) => items.sortableType === sortableType)?._count ?? 0;
@@ -249,7 +263,14 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="border-4 border-background/80 bg-background/30">
-                    {items && <ItemsTable items={items} searchParams={searchParams} itemType={itemType} />}
+                    {items && (
+                      <ItemsTable
+                        items={items}
+                        searchParams={searchParams}
+                        itemType={itemType}
+                        optimisticToggleDone={execute}
+                      />
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               );
@@ -263,6 +284,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
               searchParams={searchParams}
               itemType={itemType}
               solo={true}
+              optimisticToggleDone={execute}
             />
           )}
         </div>
