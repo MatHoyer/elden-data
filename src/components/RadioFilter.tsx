@@ -1,23 +1,10 @@
+import { useFilterContext } from '@/contexts/FilterContext';
 import { capitalize, cn } from '@/lib/utils';
-import { usePathname, useRouter, useSearchParams } from 'next/navigation';
-import React, { useCallback } from 'react';
 import { Label } from './ui/label';
 import { RadioGroup, RadioGroupItem } from './ui/radio-group';
 
 const RadioFilter: React.FC<{ name: string; labels: string[]; reverse?: boolean }> = ({ name, labels, reverse }) => {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-
-  const createQueryString = useCallback(
-    (name: string, value: string) => {
-      const params = new URLSearchParams(searchParams.toString());
-      params.set(name, value);
-
-      return params.toString();
-    },
-    [searchParams]
-  );
+  const { router, pathname, searchParams, createQueryString } = useFilterContext();
 
   return (
     <RadioGroup

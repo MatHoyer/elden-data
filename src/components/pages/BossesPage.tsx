@@ -8,11 +8,11 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { FilterProvider, useFilterContext } from '@/contexts/FilterContext';
 import { TUseBosses } from '@/hooks/useBosses';
 import { useLocalstorage } from '@/hooks/useLocalstorage';
 import { cn, groupBy } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
-import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import React, { useCallback } from 'react';
 import DisplayCard from '../DisplayCard';
@@ -20,12 +20,10 @@ import RadioFilter from '../RadioFilter';
 import { Card } from '../ui/card';
 
 const Filters: React.FC<{
-  router: AppRouterInstance;
-  pathname: string;
-  searchParams: ReadonlyURLSearchParams;
-  createQueryString: (key: string, value: string) => string;
   data: TUseBosses;
-}> = ({ router, pathname, searchParams, createQueryString, data }) => {
+}> = ({ data }) => {
+  const { router, pathname, searchParams, createQueryString } = useFilterContext();
+
   return (
     <div className="flex flex-col items-center gap-2">
       <p className="text-xl">Filtres boss</p>
@@ -180,13 +178,9 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
         </h1>
       </Card>
       <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
-        <Filters
-          router={router}
-          pathname={pathname}
-          searchParams={searchParams}
-          createQueryString={createQueryString}
-          data={data}
-        />
+        <FilterProvider value={{ router, pathname, searchParams, createQueryString }}>
+          <Filters data={data} />
+        </FilterProvider>
       </div>
       <Card>
         <div className="flex gap-3 p-3">

@@ -1,10 +1,10 @@
 'use client';
 import { reset, toggleDone } from '@/actions/items';
+import { FilterProvider, useFilterContext } from '@/contexts/FilterContext';
 import { TUseItems } from '@/hooks/useItems';
 import { useLocalstorage } from '@/hooks/useLocalstorage';
 import { capitalize, cn, groupBy } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
-import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback } from 'react';
 import DisplayCard from '../DisplayCard';
@@ -20,13 +20,11 @@ import { Switch } from '../ui/switch';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '../ui/table';
 
 const Filters: React.FC<{
-  router: AppRouterInstance;
-  pathname: string;
-  searchParams: ReadonlyURLSearchParams;
-  createQueryString: (key: string, value: string) => string;
   data: TUseItems;
   itemType: string;
-}> = ({ router, pathname, searchParams, createQueryString, data, itemType }) => {
+}> = ({ data, itemType }) => {
+  const { router, pathname, searchParams, createQueryString } = useFilterContext();
+
   return (
     <div className="flex flex-col items-center gap-2">
       <p className="text-xl">Filtres {itemType}</p>
@@ -165,14 +163,9 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
         </h1>
       </Card>
       <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
-        <Filters
-          router={router}
-          pathname={pathname}
-          searchParams={searchParams}
-          createQueryString={createQueryString}
-          data={data}
-          itemType={itemType}
-        />
+        <FilterProvider value={{ router, pathname, searchParams, createQueryString }}>
+          <Filters data={data} itemType={itemType} />
+        </FilterProvider>
       </div>
       <Card>
         <div className="flex gap-3 p-3">

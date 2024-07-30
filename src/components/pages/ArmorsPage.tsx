@@ -1,11 +1,11 @@
 'use client';
 import { reset } from '@/actions/armors';
 import { toggleDone } from '@/actions/items';
+import { FilterProvider, useFilterContext } from '@/contexts/FilterContext';
 import { TUseArmors } from '@/hooks/useArmors';
 import { capitalize, cn } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
-import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context.shared-runtime';
-import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
+import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useState } from 'react';
 import DisplayCard from '../DisplayCard';
 import { modal } from '../Modal';
@@ -17,13 +17,11 @@ import { Label } from '../ui/label';
 import { Switch } from '../ui/switch';
 
 const Filters: React.FC<{
-  router: AppRouterInstance;
-  pathname: string;
-  searchParams: ReadonlyURLSearchParams;
-  createQueryString: (key: string, value: string) => string;
   data: TUseArmors;
   itemType: string;
-}> = ({ router, pathname, searchParams, createQueryString, data, itemType }) => {
+}> = ({ data, itemType }) => {
+  const { router, pathname, searchParams, createQueryString } = useFilterContext();
+
   return (
     <div className="flex flex-col items-center gap-2">
       <p className="text-xl">Filtres {itemType}</p>
@@ -188,14 +186,9 @@ const ArmorPage: React.FC<{ data: TUseArmors }> = ({ data }) => {
         </h1>
       </Card>
       <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
-        <Filters
-          createQueryString={createQueryString}
-          router={router}
-          pathname={pathname}
-          searchParams={searchParams}
-          data={data}
-          itemType="armor"
-        />
+        <FilterProvider value={{ router, pathname, searchParams, createQueryString }}>
+          <Filters data={data} itemType="armor" />
+        </FilterProvider>
       </div>
       <Card>
         <div className="flex gap-3 p-3">
