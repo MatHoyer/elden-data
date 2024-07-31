@@ -57,6 +57,22 @@ const ItemsTable: React.FC<{
   itemType: string;
   solo?: boolean;
 }> = ({ items, searchParams, itemType, solo }) => {
+  const notFill = [
+    "Talisman d'épée à deux mains",
+    'Visage geignard',
+    'Bouclier de duel',
+    "Bouclier d'estoc de Caria",
+    'Dancing Blade of Ranah',
+    'Sword of Night',
+    'Serpent Flail',
+    'Anvil Hammer',
+    'Gazing Finger',
+    'Shadow Sunflower Blossom',
+    "Rabbath's Cannon",
+    "Fire Knight's Seal",
+    "Dane's Footwork",
+  ]; //erk
+
   return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
     <div
       className={cn(
@@ -72,9 +88,13 @@ const ItemsTable: React.FC<{
           wikiUrl={item.wikiUrl}
           isValidate={item.done}
           onCLick={() => toggleDone({ itemId: item.id })}
-          w={itemType === 'weapon' ? 300 : 300}
-          h={itemType === 'weapon' ? 300 : 240}
-          fillImage={itemType === 'talisman' || itemType === 'shield' ? true : false}
+          w={300}
+          h={240}
+          fillImage={
+            (itemType === 'talisman' || itemType === 'shield' || itemType === 'weapon') && !notFill.includes(item.name)
+              ? true
+              : false
+          }
           key={index}
         />
       ))}

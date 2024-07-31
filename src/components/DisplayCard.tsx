@@ -55,8 +55,8 @@ const DisplayCard: React.FC<props> = ({
       <div className="flex flex-col justify-between h-full">
         <div></div>
         <CardTitle className={cn('bg-secondary/80 rounded-md p-1 cursor-default')} onClick={(e) => e.stopPropagation()}>
-          <div className={cn(major && 'text-gold', 'flex flex-col items-center select-none')}>
-            <div className="flex gap-3">
+          <div className={cn(major && 'text-gold', 'flex flex-col items-center')}>
+            <div className="flex gap-3 select-none">
               {!!locationUrl && (
                 <a target="_blank" href={locationUrl}>
                   <MapPin />
