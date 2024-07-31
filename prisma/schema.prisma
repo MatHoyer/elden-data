@@ -76,9 +76,9 @@ model Boss {
   major       Boolean @default(false)
   inDlc       Boolean @default(false)
 
-  imageUrl    String
-  wikiUrl     String
-  locationUrl String @unique
+  imageUrl    String @db.Text
+  wikiUrl     String @db.Text
+  locationUrl String @unique @db.Text
 
   boss_user   Boss_user[]
  
@@ -94,9 +94,9 @@ model Item {
 
   sortableType  String?
 
-  imageUrl      String
-  wikiUrl       String
-  locationUrl   String
+  imageUrl      String @db.Text
+  wikiUrl       String @db.Text
+  locationUrl   String @db.Text
 
   item_user     Item_user[]
 
@@ -113,8 +113,8 @@ model ArmorSet {
   inDlc         Boolean @default(false)
   boss          Boolean @default(false)
 
-  imageUrl      String
-  wikiUrl       String
+  imageUrl      String @db.Text
+  wikiUrl       String @db.Text
 
   elements      Item[]
   armorSet_user ArmorSet_user[]
