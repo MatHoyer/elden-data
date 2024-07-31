@@ -1,4 +1,3 @@
-'use server';
 import { auth } from '@/lib/auth';
 import prisma from '@/lib/prisma';
 
@@ -6,21 +5,22 @@ export const useItems = async (type: string) => {
   const session = await auth();
   const id = session?.user?.id;
 
-  let userItems = await prisma.item_user.findMany({
+  const userItemsNumber = await prisma.item_user.count({
     where: { userId: id, item: { type } },
-    include: { item: true },
+    select: true,
   });
-  const staticItems = await prisma.item.findMany();
-  if (userItems.length !== staticItems.length && id) {
+  const staticItems = await prisma.item.findMany({ where: { type } });
+  if (userItemsNumber !== staticItems.length && id) {
     await prisma.item_user.createMany({
       data: staticItems.map((item) => ({ userId: id, itemId: item.id })),
       skipDuplicates: true,
     });
-    userItems = await prisma.item_user.findMany({
-      where: { userId: id, item: { type } },
-      include: { item: true },
-    });
   }
+  const userItems = await prisma.item_user.findMany({
+    where: { userId: id, item: { type } },
+    include: { item: true },
+    orderBy: { itemId: 'asc' },
+  });
 
   const itemsBySortableType = await prisma.item.groupBy({
     by: ['sortableType'],

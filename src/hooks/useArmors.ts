@@ -10,11 +10,12 @@ export const useArmors = async () => {
 
   await useItems('armor');
 
-  const tester = await prisma.armorSet_user.findMany({
+  const userAmorSetNumber = await prisma.armorSet_user.count({
     where: { userId: id },
+    select: true,
   });
   const staticArmors = await prisma.armorSet.findMany();
-  if (tester.length !== staticArmors.length && id) {
+  if (userAmorSetNumber !== staticArmors.length && id) {
     await prisma.armorSet_user.createMany({
       data: staticArmors.map((armor) => ({ userId: id, armorSetId: armor.id })),
       skipDuplicates: true,

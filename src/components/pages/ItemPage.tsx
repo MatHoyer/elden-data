@@ -5,7 +5,6 @@ import { TUseItems } from '@/hooks/useItems';
 import { useLocalstorage } from '@/hooks/useLocalstorage';
 import { capitalize, cn, groupBy } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
-import { useOptimisticAction } from 'next-safe-action/hooks';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback } from 'react';
 import DisplayCard from '../DisplayCard';
@@ -57,8 +56,7 @@ const ItemsTable: React.FC<{
   searchParams: ReadonlyURLSearchParams;
   itemType: string;
   solo?: boolean;
-  optimisticToggleDone: (input: { itemId: string }) => void;
-}> = ({ items, searchParams, itemType, solo, optimisticToggleDone }) => {
+}> = ({ items, searchParams, itemType, solo }) => {
   return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
     <div
       className={cn(
@@ -73,7 +71,7 @@ const ItemsTable: React.FC<{
           locationUrl={item.locationUrl}
           wikiUrl={item.wikiUrl}
           isValidate={item.done}
-          onCLick={() => optimisticToggleDone({ itemId: item.id })}
+          onCLick={() => toggleDone({ itemId: item.id })}
           w={itemType === 'weapon' ? 300 : 300}
           h={itemType === 'weapon' ? 300 : 240}
           fillImage={itemType === 'talisman' || itemType === 'shield' ? true : false}
@@ -110,7 +108,7 @@ const ItemsTable: React.FC<{
                 <Checkbox
                   defaultChecked={item.done}
                   onCheckedChange={() => {
-                    optimisticToggleDone({ itemId: item.id });
+                    toggleDone({ itemId: item.id });
                   }}
                 />
               </TableCell>
@@ -127,16 +125,6 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [local, setLocal] = useLocalstorage(itemType, [] as string[]);
-  const { execute, result, optimisticState } = useOptimisticAction(toggleDone, {
-    currentState: data,
-    updateFn: (state, { itemId }) => {
-      const item = state.items.find((item) => item.id === itemId);
-      if (item) {
-        item.done = !item.done;
-      }
-      return state;
-    },
-  });
 
   const createQueryString = useCallback(
     (name: string, value: string) => {
@@ -149,7 +137,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
   );
 
   const filterItems = groupBy(
-    optimisticState.items.filter((item) => {
+    data.items.filter((item) => {
       if (searchParams.has('name') && !item.name.includes(searchParams.get('name') as string)) return false;
       if (searchParams.has('item') && searchParams.get('item') === 'pas récup' && item.done) return false;
       if (searchParams.has('item') && searchParams.get('item') === 'récup' && !item.done) return false;
@@ -159,8 +147,6 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
     }),
     (item) => item.sortableType || 'other'
   );
-
-  console.log(optimisticState.items[0].done);
 
   return (
     <div className="flex flex-col gap-5 items-center">
@@ -263,14 +249,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="border-4 border-background/80 bg-background/30">
-                    {items && (
-                      <ItemsTable
-                        items={items}
-                        searchParams={searchParams}
-                        itemType={itemType}
-                        optimisticToggleDone={execute}
-                      />
-                    )}
+                    {items && <ItemsTable items={items} searchParams={searchParams} itemType={itemType} />}
                   </AccordionContent>
                 </AccordionItem>
               );
@@ -284,7 +263,6 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
               searchParams={searchParams}
               itemType={itemType}
               solo={true}
-              optimisticToggleDone={execute}
             />
           )}
         </div>

@@ -6,7 +6,7 @@ import { revalidatePath } from 'next/cache';
 import { z } from 'zod';
 
 const toggleSchema = z.object({
-  bossId: z.string(),
+  bossId: z.number(),
 });
 
 export const toggleDone = actionClient

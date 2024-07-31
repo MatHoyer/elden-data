@@ -6,21 +6,22 @@ export const useBosses = async () => {
   const session = await auth();
   const id = session?.user?.id;
 
-  let userBosses = await prisma.boss_user.findMany({
+  const userBossesNumber = await prisma.boss_user.count({
     where: { userId: id },
-    include: { boss: true },
+    select: true,
   });
   const staticBosses = await prisma.boss.findMany();
-  if (userBosses.length !== staticBosses.length && id) {
+  if (userBossesNumber !== staticBosses.length && id) {
     await prisma.boss_user.createMany({
       data: staticBosses.map((boss) => ({ userId: id, bossId: boss.id })),
       skipDuplicates: true,
     });
-    userBosses = await prisma.boss_user.findMany({
-      where: { userId: id },
-      include: { boss: true },
-    });
   }
+  const userBosses = await prisma.boss_user.findMany({
+    where: { userId: id },
+    include: { boss: true },
+    orderBy: { bossId: 'asc' },
+  });
 
   const bossesByLocation = await prisma.boss.groupBy({
     by: ['location'],
