@@ -26,7 +26,7 @@ const Filters: React.FC<{
 
   return (
     <div className="flex flex-col items-center gap-2">
-      <p className="text-xl">Filtres boss</p>
+      <p className="text-xl">Filtres Boss</p>
       <div className="flex flex-col items-center gap-3">
         <div className="flex gap-3">
           <RadioFilter name="dlc" labels={['tous', 'DLC', 'pas DLC']} />
@@ -183,7 +183,7 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
         </FilterProvider>
       </div>
       <Card>
-        <div className="flex gap-3 p-3">
+        <div className="flex flex-col items-center gap-2 p-3">
           <div className="flex items-center gap-2">
             <Label htmlFor="switch-card">Afficher avec des cartes</Label>
             <Switch
@@ -194,44 +194,46 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
               }}
             />
           </div>
-          {Object.entries(filterBosses).length > 1 && (
-            <>
-              <Button
-                variant={'secondary'}
-                onClick={async (e) => {
-                  e.stopPropagation();
-                  setLocal([...Object.keys(filterBosses)]);
-                }}
-              >
-                Ouvrir tout
-              </Button>
-              <Button
-                variant={'secondary'}
-                onClick={async (e) => {
-                  e.stopPropagation();
-                  setLocal([]);
-                }}
-              >
-                Fermer tout
-              </Button>
-            </>
-          )}
-          <Button
-            variant={'destructive'}
-            onClick={async (e) => {
-              e.stopPropagation();
-              const res = await modal.question({
-                title: 'Reinitisaliser les données ?',
-                message: 'Cette action est irreversible',
-                doubleConfirm: true,
-              });
-              if (res) {
-                reset();
-              }
-            }}
-          >
-            Réinitialiser
-          </Button>
+          <div className="flex gap-3">
+            {Object.entries(filterBosses).length > 1 && (
+              <>
+                <Button
+                  variant={'secondary'}
+                  onClick={async (e) => {
+                    e.stopPropagation();
+                    setLocal([...Object.keys(filterBosses)]);
+                  }}
+                >
+                  Ouvrir tout
+                </Button>
+                <Button
+                  variant={'secondary'}
+                  onClick={async (e) => {
+                    e.stopPropagation();
+                    setLocal([]);
+                  }}
+                >
+                  Fermer tout
+                </Button>
+              </>
+            )}
+            <Button
+              variant={'destructive'}
+              onClick={async (e) => {
+                e.stopPropagation();
+                const res = await modal.question({
+                  title: 'Reinitisaliser les données ?',
+                  message: 'Cette action est irreversible',
+                  doubleConfirm: true,
+                });
+                if (res) {
+                  reset();
+                }
+              }}
+            >
+              Réinitialiser
+            </Button>
+          </div>
         </div>
       </Card>
       <Accordion value={local} className="w-full" type="multiple">

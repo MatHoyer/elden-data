@@ -1,8 +1,8 @@
 export const pages = [
   { path: '/', name: 'Home', type: 'page' },
   { path: '/boss', name: 'Boss', type: 'page' },
+  { path: '/armor', name: 'Armures', type: 'page' },
   { path: '/talisman', name: 'Talismans' },
-  { path: '/armor', name: 'Armures' },
   { path: '/spell', name: 'Sorts' },
   { path: '/weapon', name: 'Armes' },
   { path: '/shield', name: 'Boucliers' },

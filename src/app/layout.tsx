@@ -1,3 +1,4 @@
+import GoTop from '@/components/GoTop';
 import Modal from '@/components/Modal';
 import Navbar from '@/components/nav/Navbar';
 import { cn } from '@/lib/utils';
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Modal />
           <Navbar />
           <div className="flex justify-center">{children}</div>
+          <GoTop />
         </SessionProvider>
       </body>
     </html>

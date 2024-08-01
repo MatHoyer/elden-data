@@ -3,7 +3,7 @@ import { reset, toggleDone } from '@/actions/items';
 import { FilterProvider, useFilterContext } from '@/contexts/FilterContext';
 import { TUseItems } from '@/hooks/useItems';
 import { useLocalstorage } from '@/hooks/useLocalstorage';
-import { capitalize, cn, groupBy } from '@/lib/utils';
+import { cn, getName, groupBy } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback } from 'react';
@@ -27,7 +27,7 @@ const Filters: React.FC<{
 
   return (
     <div className="flex flex-col items-center gap-2">
-      <p className="text-xl">Filtres {itemType}</p>
+      <p className="text-xl">Filtres {getName(`/${itemType}`)}</p>
       <div className="flex gap-3">
         <RadioFilter name="dlc" labels={['tous', 'DLC', 'pas DLC']} />
         <RadioFilter name="item" labels={['tous', 'récup', 'pas récup']} reverse={true} />
@@ -179,7 +179,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
             'text-3xl font-bold p-3'
           )}
         >
-          {capitalize(itemType)} {data.itemsDone}/{data.items.length}
+          {getName(`/${itemType}`)} {data.itemsDone}/{data.items.length}
         </h1>
       </Card>
       <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
@@ -188,7 +188,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
         </FilterProvider>
       </div>
       <Card>
-        <div className="flex gap-3 p-3">
+        <div className="flex flex-col items-center gap-2 p-3">
           <div className="flex items-center gap-2">
             <Label htmlFor="switch-card">Afficher avec des cartes</Label>
             <Switch
@@ -199,44 +199,46 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
               }}
             />
           </div>
-          {Object.entries(filterItems).length > 1 && (
-            <>
-              <Button
-                variant={'secondary'}
-                onClick={async (e) => {
-                  e.stopPropagation();
-                  setLocal([...Object.keys(filterItems)]);
-                }}
-              >
-                Ouvrir tout
-              </Button>
-              <Button
-                variant={'secondary'}
-                onClick={async (e) => {
-                  e.stopPropagation();
-                  setLocal([]);
-                }}
-              >
-                Fermer tout
-              </Button>
-            </>
-          )}
-          <Button
-            variant={'destructive'}
-            onClick={async (e) => {
-              e.stopPropagation();
-              const res = await modal.question({
-                title: 'Reinitisaliser les données ?',
-                message: 'Cette action est irreversible',
-                doubleConfirm: true,
-              });
-              if (res) {
-                reset();
-              }
-            }}
-          >
-            Réinitialiser
-          </Button>
+          <div className="flex gap-3">
+            {Object.entries(filterItems).length > 1 && (
+              <>
+                <Button
+                  variant={'secondary'}
+                  onClick={async (e) => {
+                    e.stopPropagation();
+                    setLocal([...Object.keys(filterItems)]);
+                  }}
+                >
+                  Ouvrir tout
+                </Button>
+                <Button
+                  variant={'secondary'}
+                  onClick={async (e) => {
+                    e.stopPropagation();
+                    setLocal([]);
+                  }}
+                >
+                  Fermer tout
+                </Button>
+              </>
+            )}
+            <Button
+              variant={'destructive'}
+              onClick={async (e) => {
+                e.stopPropagation();
+                const res = await modal.question({
+                  title: 'Reinitisaliser les données ?',
+                  message: 'Cette action est irreversible',
+                  doubleConfirm: true,
+                });
+                if (res) {
+                  reset();
+                }
+              }}
+            >
+              Réinitialiser
+            </Button>
+          </div>
         </div>
       </Card>
       {Object.entries(filterItems).length !== 1 ? (

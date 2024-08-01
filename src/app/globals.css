@@ -27,6 +27,17 @@
   }
 }
 
+/* Masquer la barre de défilement sur les navigateurs Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Masquer la barre de défilement sur IE, Edge et Firefox */
+body {
+  -ms-overflow-style: none; /* IE et Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 @layer base {
   * {
     @apply border-border;

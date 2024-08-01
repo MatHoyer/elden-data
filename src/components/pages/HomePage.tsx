@@ -1,7 +1,7 @@
 'use client';
 import { globalReset } from '@/actions/reset';
 import { TUseCounter } from '@/hooks/useCounter';
-import { capitalize, cn } from '@/lib/utils';
+import { cn, getName } from '@/lib/utils';
 import { useRouter } from 'next/navigation';
 import { modal } from '../Modal';
 import { Button } from '../ui/button';
@@ -16,7 +16,7 @@ const LinkCard: React.FC<{ name: string; done: number; allWihtoutDlc: number; al
   const router = useRouter();
 
   return (
-    <Card className={'w-60 p-3 cursor-pointer'} onClick={() => router.push(`/${name}`)}>
+    <Card className={'w-60 h-36 p-3 cursor-pointer'} onClick={() => router.push(`/${name}`)}>
       <div
         className={cn(
           done === allWihtoutDlc && 'text-green-400',
@@ -24,7 +24,7 @@ const LinkCard: React.FC<{ name: string; done: number; allWihtoutDlc: number; al
           'flex flex-col justify-between items-center h-full gap-2'
         )}
       >
-        <p className="text-center text-3xl">{capitalize(name)}</p>
+        <p className="text-center text-3xl">{getName(`/${name}`)}</p>
         <CardTitle className="bg-secondary/80 rounded-md p-2 w-fit">
           <div className="flex flex-col items-center select-none">
             <div className="flex gap-3">

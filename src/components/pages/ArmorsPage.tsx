@@ -3,7 +3,7 @@ import { reset } from '@/actions/armors';
 import { toggleDone } from '@/actions/items';
 import { FilterProvider, useFilterContext } from '@/contexts/FilterContext';
 import { TUseArmors } from '@/hooks/useArmors';
-import { capitalize, cn } from '@/lib/utils';
+import { capitalize, cn, getName } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useState } from 'react';
@@ -24,7 +24,7 @@ const Filters: React.FC<{
 
   return (
     <div className="flex flex-col items-center gap-2">
-      <p className="text-xl">Filtres {itemType}</p>
+      <p className="text-xl">Filtres {getName(`/${itemType}`)}</p>
       <div className="flex flex-col items-center gap-3">
         <div className="flex gap-3">
           <RadioFilter name="dlc" labels={['tous', 'DLC', 'pas DLC']} />
