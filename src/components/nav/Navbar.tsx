@@ -59,7 +59,7 @@ const Navbar = async () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), 'bg-transparent')} asChild>
-                  <Link href="/armor">Set d'armures</Link>
+                  <Link href="/armor">Set d&apos;armures</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
