@@ -11,7 +11,7 @@ export const useItems = async (type: string) => {
       where: { userId: id, item: { type } },
       select: true,
     });
-    const staticItems = await prisma.item.findMany({ where: { type } });
+    const staticItems = await prisma.item.findMany({ where: { type }, orderBy: { id: 'asc' } });
     if (userItemsNumber !== staticItems.length && id) {
       await prisma.item_user.createMany({
         data: staticItems.map((item) => ({ userId: id, itemId: item.id })),
@@ -25,7 +25,10 @@ export const useItems = async (type: string) => {
     });
     items = userItems.map((b) => ({ ...b.item, done: b.done }));
   } else {
-    items = (await prisma.item.findMany({ where: { type } })).map((b) => ({ ...b, done: false }));
+    items = (await prisma.item.findMany({ where: { type }, orderBy: { id: 'asc' } })).map((b) => ({
+      ...b,
+      done: false,
+    }));
   }
 
   const itemsBySortableType = await prisma.item.groupBy({

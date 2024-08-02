@@ -15,7 +15,7 @@ export const useArmors = async () => {
       where: { userId: id },
       select: true,
     });
-    const staticArmors = await prisma.armorSet.findMany();
+    const staticArmors = await prisma.armorSet.findMany({ orderBy: { id: 'asc' } });
     if (userAmorSetNumber !== staticArmors.length && id) {
       await prisma.armorSet_user.createMany({
         data: staticArmors.map((armor) => ({ userId: id, armorSetId: armor.id })),
@@ -40,6 +40,7 @@ export const useArmors = async () => {
           },
         },
       },
+      orderBy: { armorSetId: 'asc' },
     });
 
     armors = userArmors.map((armor) => ({
@@ -57,6 +58,7 @@ export const useArmors = async () => {
       include: {
         elements: true,
       },
+      orderBy: { id: 'asc' },
     });
     armors = staticArmors.map((armor) => ({
       ...armor,

@@ -12,7 +12,7 @@ export const useBosses = async () => {
       where: { userId: id },
       select: true,
     });
-    const staticBosses = await prisma.boss.findMany();
+    const staticBosses = await prisma.boss.findMany({ orderBy: { id: 'asc' } });
     if (userBossesNumber !== staticBosses.length && id) {
       await prisma.boss_user.createMany({
         data: staticBosses.map((boss) => ({ userId: id, bossId: boss.id })),
@@ -26,7 +26,7 @@ export const useBosses = async () => {
     });
     bosses = userBosses.map((b) => ({ ...b.boss, done: b.done }));
   } else {
-    const userBosses = await prisma.boss.findMany();
+    const userBosses = await prisma.boss.findMany({ orderBy: { id: 'asc' } });
     bosses = userBosses.map((b) => ({ ...b, done: false }));
   }
 
