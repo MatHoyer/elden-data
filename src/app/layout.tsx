@@ -19,6 +19,7 @@ const fontSans = FontSans({
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr">
+      <link rel="icon" href="/eldenRing.png" />
       <body
         style={{
           backgroundImage: `url(https://images.alphacoders.com/116/thumb-1920-1169017.jpg)`,
