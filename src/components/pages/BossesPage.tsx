@@ -107,9 +107,9 @@ const BossesTable: React.FC<{
       <TableHeader>
         <TableRow>
           <TableHead>Nom</TableHead>
-          <TableHead>Localisation</TableHead>
-          <TableHead>Wiki</TableHead>
-          <TableHead>Status</TableHead>
+          <TableHead className="w-[50px]">Localisation</TableHead>
+          <TableHead className="w-[50px]">Wiki</TableHead>
+          <TableHead className="w-[50px]">Status</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
@@ -118,7 +118,7 @@ const BossesTable: React.FC<{
           return (
             <TableRow key={boss.id}>
               <TableCell className={cn(boss.major && 'text-gold')}>{boss.name}</TableCell>
-              <TableCell>
+              <TableCell className="flex justify-center">
                 <div className="w-fit">
                   <a target="_blank" href={goodBoss?.locationUrl}>
                     <MapPin />

@@ -114,9 +114,9 @@ const ItemsTable: React.FC<{
       <TableHeader>
         <TableRow>
           <TableHead>Nom</TableHead>
-          <TableHead>Localisation</TableHead>
-          <TableHead>Wiki</TableHead>
-          <TableHead>Status</TableHead>
+          <TableHead className="w-[50px]">Localisation</TableHead>
+          <TableHead className="w-[50px]">Wiki</TableHead>
+          <TableHead className="w-[50px]">Status</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
@@ -124,7 +124,7 @@ const ItemsTable: React.FC<{
           return (
             <TableRow key={item.id}>
               <TableCell className={cn(item.done && 'text-green-400')}>{item.name}</TableCell>
-              <TableCell>
+              <TableCell className="flex justify-center">
                 <div className="w-fit">
                   <a target="_blank" href={item?.locationUrl}>
                     <MapPin />
