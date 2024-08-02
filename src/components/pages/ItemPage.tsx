@@ -106,7 +106,10 @@ const ItemsTable: React.FC<{
       ))}
     </div>
   ) : (
-    <Table className={cn(solo && 'border-4 border-background/80 bg-background/30')}>
+    <Table
+      className={cn(solo && 'border-4 border-background/80 bg-background/30')}
+      onClick={(e) => e.stopPropagation()}
+    >
       <TableHeader>
         <TableRow>
           <TableHead>Nom</TableHead>
@@ -121,18 +124,22 @@ const ItemsTable: React.FC<{
             <TableRow key={item.id}>
               <TableCell className={cn(item.done && 'text-green-400')}>{item.name}</TableCell>
               <TableCell>
-                <a target="_blank" href={item?.locationUrl}>
-                  <MapPin />
-                </a>
+                <div className="w-fit">
+                  <a target="_blank" href={item?.locationUrl}>
+                    <MapPin />
+                  </a>
+                </div>
               </TableCell>
               <TableCell>
-                <a target="_blank" href={item?.wikiUrl}>
-                  <BookOpen />
-                </a>
+                <div className="w-fit">
+                  <a target="_blank" href={item?.wikiUrl}>
+                    <BookOpen />
+                  </a>
+                </div>
               </TableCell>
               <TableCell>
                 <Checkbox
-                  defaultChecked={item.done}
+                  checked={item.done}
                   onCheckedChange={() => {
                     if (session) toggleDone({ itemId: item.id });
                     else shouldRegister();
