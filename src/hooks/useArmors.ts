@@ -9,9 +9,8 @@ export const useArmors = async () => {
   const id = session?.user?.id;
 
   let armors;
+  await useItems('armor');
   if (id) {
-    await useItems('armor');
-
     const userAmorSetNumber = await prisma.armorSet_user.count({
       where: { userId: id },
       select: true,
