@@ -1,4 +1,3 @@
-import { modal } from '@/components/Modal';
 import { pages } from '@/components/pages';
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -32,11 +31,4 @@ export const capitalize = (str: string) => {
 export const getName = (path: string) => {
   const name = pages.find((page) => page.path === path)?.name;
   return capitalize(name || path);
-};
-
-export const shouldRegister = () => {
-  modal.info({
-    title: 'Vous devez être connecté',
-    message: 'Pour marquer un boss comme fait, vous devez être connecté',
-  });
 };

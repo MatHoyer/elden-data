@@ -1,10 +1,11 @@
 'use client';
 import { globalReset } from '@/actions/reset';
 import { TUseCounter } from '@/hooks/useCounter';
-import { cn, getName, shouldRegister } from '@/lib/utils';
+import { cn, getName } from '@/lib/utils';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { modal } from '../Modal';
+import { shouldRegister } from '../shouldRegister';
 import { Button } from '../ui/button';
 import { Card, CardTitle } from '../ui/card';
 

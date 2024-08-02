@@ -11,7 +11,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { FilterProvider, useFilterContext } from '@/contexts/FilterContext';
 import { TUseBosses } from '@/hooks/useBosses';
 import { useLocalstorage } from '@/hooks/useLocalstorage';
-import { cn, groupBy, shouldRegister } from '@/lib/utils';
+import { cn, groupBy } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
 import { Session } from 'next-auth';
 import { useSession } from 'next-auth/react';
@@ -19,6 +19,7 @@ import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from
 import React, { useCallback } from 'react';
 import DisplayCard from '../DisplayCard';
 import RadioFilter from '../RadioFilter';
+import { shouldRegister } from '../shouldRegister';
 import { Card } from '../ui/card';
 
 const Filters: React.FC<{
