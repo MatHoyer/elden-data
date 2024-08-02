@@ -11,8 +11,10 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@
 import { FilterProvider, useFilterContext } from '@/contexts/FilterContext';
 import { TUseBosses } from '@/hooks/useBosses';
 import { useLocalstorage } from '@/hooks/useLocalstorage';
-import { cn, groupBy } from '@/lib/utils';
+import { cn, groupBy, shouldRegister } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
+import { Session } from 'next-auth';
+import { useSession } from 'next-auth/react';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import React, { useCallback } from 'react';
 import DisplayCard from '../DisplayCard';
@@ -69,7 +71,8 @@ const BossesTable: React.FC<{
   bosses: TUseBosses['bosses'];
   searchParams: ReadonlyURLSearchParams;
   solo?: boolean;
-}> = ({ bosses, searchParams, solo }) => {
+  session: Session | null;
+}> = ({ bosses, searchParams, solo, session }) => {
   return !searchParams.has('display-card') || searchParams.get('display-card') === 'true' ? (
     <div
       className={cn(
@@ -85,7 +88,10 @@ const BossesTable: React.FC<{
           locationUrl={boss.locationUrl}
           isValidate={boss.done}
           major={boss.major}
-          onCLick={() => toggleDone({ bossId: boss.id })}
+          onCLick={() => {
+            if (session?.user) toggleDone({ bossId: boss.id });
+            else shouldRegister();
+          }}
           w={300}
           h={240}
           key={index}
@@ -93,7 +99,10 @@ const BossesTable: React.FC<{
       ))}
     </div>
   ) : (
-    <Table className={cn(solo && 'border-4 border-background/80 bg-background/30')}>
+    <Table
+      className={cn(solo && 'border-4 border-background/80 bg-background/30')}
+      onClick={(e) => e.stopPropagation()}
+    >
       <TableHeader>
         <TableRow>
           <TableHead>Nom</TableHead>
@@ -109,20 +118,25 @@ const BossesTable: React.FC<{
             <TableRow key={boss.id}>
               <TableCell className={cn(boss.major && 'text-gold')}>{boss.name}</TableCell>
               <TableCell>
-                <a target="_blank" href={goodBoss?.locationUrl}>
-                  <MapPin />
-                </a>
+                <div className="w-fit">
+                  <a target="_blank" href={goodBoss?.locationUrl}>
+                    <MapPin />
+                  </a>
+                </div>
               </TableCell>
               <TableCell>
-                <a target="_blank" href={goodBoss?.wikiUrl}>
-                  <BookOpen />
-                </a>
+                <div className="w-fit">
+                  <a target="_blank" href={goodBoss?.wikiUrl}>
+                    <BookOpen />
+                  </a>
+                </div>
               </TableCell>
               <TableCell>
                 <Checkbox
-                  defaultChecked={boss.done}
+                  checked={boss.done}
                   onCheckedChange={() => {
-                    toggleDone({ bossId: boss.id });
+                    if (session?.user) toggleDone({ bossId: boss.id });
+                    else shouldRegister();
                   }}
                 />
               </TableCell>
@@ -139,6 +153,7 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [local, setLocal] = useLocalstorage('bosses', [] as string[]);
+  const { data: session } = useSession();
 
   const createQueryString = useCallback(
     (name: string, value: string) => {
@@ -221,13 +236,20 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
               variant={'destructive'}
               onClick={async (e) => {
                 e.stopPropagation();
-                const res = await modal.question({
-                  title: 'Reinitisaliser les données ?',
-                  message: 'Cette action est irreversible',
-                  doubleConfirm: true,
-                });
-                if (res) {
-                  reset();
+                if (session?.user) {
+                  const res = await modal.question({
+                    title: 'Reinitisaliser les données ?',
+                    message: 'Cette action est irreversible',
+                    doubleConfirm: true,
+                  });
+                  if (res) {
+                    reset();
+                  }
+                } else {
+                  modal.info({
+                    title: 'Vous devez être connecté',
+                    message: 'Pour réinitialiser les données, vous devez être connecté',
+                  });
                 }
               }}
             >
@@ -264,7 +286,7 @@ const BossesPage: React.FC<{ data: TUseBosses }> = ({ data }) => {
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="border-4 border-background/80 bg-background/30">
-                  {b && <BossesTable bosses={b} searchParams={searchParams} />}
+                  {b && <BossesTable bosses={b} searchParams={searchParams} session={session} />}
                 </AccordionContent>
               </AccordionItem>
             );

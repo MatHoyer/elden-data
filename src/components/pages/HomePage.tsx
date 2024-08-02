@@ -1,7 +1,8 @@
 'use client';
 import { globalReset } from '@/actions/reset';
 import { TUseCounter } from '@/hooks/useCounter';
-import { cn, getName } from '@/lib/utils';
+import { cn, getName, shouldRegister } from '@/lib/utils';
+import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { modal } from '../Modal';
 import { Button } from '../ui/button';
@@ -40,6 +41,8 @@ const LinkCard: React.FC<{ name: string; done: number; allWihtoutDlc: number; al
 };
 
 const HomePage: React.FC<{ counters: TUseCounter }> = ({ counters }) => {
+  const { data: session } = useSession();
+
   return (
     <div>
       <div className="flex flex-col items-center gap-5">
@@ -58,13 +61,17 @@ const HomePage: React.FC<{ counters: TUseCounter }> = ({ counters }) => {
           variant={'destructive'}
           onClick={async (e) => {
             e.stopPropagation();
-            const res = await modal.question({
-              title: 'Reinitisaliser les données ?',
-              message: 'Cette action est irreversible',
-              doubleConfirm: true,
-            });
-            if (res) {
-              globalReset();
+            if (session) {
+              const res = await modal.question({
+                title: 'Reinitisaliser les données ?',
+                message: 'Cette action est irreversible',
+                doubleConfirm: true,
+              });
+              if (res) {
+                globalReset();
+              }
+            } else {
+              shouldRegister();
             }
           }}
         >

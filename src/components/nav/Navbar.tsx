@@ -2,7 +2,7 @@ import { auth } from '@/lib/auth';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import React from 'react';
-import { LogoutButton } from '../AuthButtons';
+import { LoginButton, LogoutButton } from '../AuthButtons';
 import { pages } from '../pages';
 import {
   NavigationMenu,
@@ -41,7 +41,7 @@ ListItem.displayName = 'ListItem';
 const Navbar = async () => {
   const session = await auth();
 
-  return session?.user ? (
+  return (
     <header className="flex sticky items-center top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex w-full h-14 container justify-between">
         <div className="mr-4 flex items-center">
@@ -77,12 +77,10 @@ const Navbar = async () => {
             </NavigationMenuList>
           </NavigationMenu>
         </div>
-        <div className="flex items-center">
-          <LogoutButton />
-        </div>
+        <div className="flex items-center">{!!session?.user ? <LogoutButton /> : <LoginButton />}</div>
       </div>
     </header>
-  ) : null;
+  );
 };
 
 export default Navbar;

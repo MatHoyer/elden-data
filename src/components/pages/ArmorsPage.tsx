@@ -3,8 +3,10 @@ import { reset } from '@/actions/armors';
 import { toggleDone } from '@/actions/items';
 import { FilterProvider, useFilterContext } from '@/contexts/FilterContext';
 import { TUseArmors } from '@/hooks/useArmors';
-import { capitalize, cn, getName } from '@/lib/utils';
+import { capitalize, cn, shouldRegister } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
+import { Session } from 'next-auth';
+import { useSession } from 'next-auth/react';
 import { usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback, useState } from 'react';
 import DisplayCard from '../DisplayCard';
@@ -18,13 +20,12 @@ import { Switch } from '../ui/switch';
 
 const Filters: React.FC<{
   data: TUseArmors;
-  itemType: string;
-}> = ({ data, itemType }) => {
+}> = ({ data }) => {
   const { router, pathname, searchParams, createQueryString } = useFilterContext();
 
   return (
     <div className="flex flex-col items-center gap-2">
-      <p className="text-xl">Filtres {getName(`/${itemType}`)}</p>
+      <p className="text-xl">Filtres Armures</p>
       <div className="flex flex-col items-center gap-3">
         <div className="flex gap-3">
           <RadioFilter name="dlc" labels={['tous', 'DLC', 'pas DLC']} />
@@ -62,7 +63,10 @@ const Filters: React.FC<{
   );
 };
 
-const SetModal: React.FC<{ elements: TUseArmors['armors'][number]['elements'] }> = ({ elements }) => {
+const SetModal: React.FC<{ elements: TUseArmors['armors'][number]['elements']; session: Session | null }> = ({
+  elements,
+  session,
+}) => {
   const [done, setDone] = useState(elements.map((element) => element.done));
 
   return (
@@ -75,8 +79,12 @@ const SetModal: React.FC<{ elements: TUseArmors['armors'][number]['elements'] }>
             'flex justify-center items-center gap-3 rounded-md p-1 cursor-pointer'
           )}
           onClick={() => {
-            toggleDone({ itemId: element.id });
-            setDone((prev) => prev.map((d, i) => (i === index ? !d : d)));
+            if (session) {
+              toggleDone({ itemId: element.id });
+              setDone((prev) => prev.map((d, i) => (i === index ? !d : d)));
+            } else {
+              shouldRegister();
+            }
           }}
         >
           <Card
@@ -111,7 +119,7 @@ const SetModal: React.FC<{ elements: TUseArmors['armors'][number]['elements'] }>
   );
 };
 
-const ArmorsTable: React.FC<{ armors: TUseArmors['armors'] }> = ({ armors }) => {
+const ArmorsTable: React.FC<{ armors: TUseArmors['armors']; session: Session | null }> = ({ armors, session }) => {
   return (
     <div className="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 justify-items-center justify-center border-4 border-background/80 bg-background/30">
       {armors.map((armor, index) => (
@@ -123,7 +131,7 @@ const ArmorsTable: React.FC<{ armors: TUseArmors['armors'] }> = ({ armors }) => 
           onCLick={() => {
             modal.info({
               title: armor.name,
-              content: <SetModal elements={armor.elements} />,
+              content: <SetModal elements={armor.elements} session={session} />,
             });
           }}
           w={230}
@@ -140,6 +148,8 @@ const ArmorPage: React.FC<{ data: TUseArmors }> = ({ data }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+
+  const { data: session } = useSession();
 
   const createQueryString = useCallback(
     (name: string, value: string) => {
@@ -187,7 +197,7 @@ const ArmorPage: React.FC<{ data: TUseArmors }> = ({ data }) => {
       </Card>
       <div className="h-fit w-fit rounded-lg border bg-background px-4 py-4 flex flex-col gap-3">
         <FilterProvider value={{ router, pathname, searchParams, createQueryString }}>
-          <Filters data={data} itemType="armor" />
+          <Filters data={data} />
         </FilterProvider>
       </div>
       <Card>
@@ -196,13 +206,17 @@ const ArmorPage: React.FC<{ data: TUseArmors }> = ({ data }) => {
             variant={'destructive'}
             onClick={async (e) => {
               e.stopPropagation();
-              const res = await modal.question({
-                title: 'Reinitisaliser les données ?',
-                message: 'Cette action est irreversible',
-                doubleConfirm: true,
-              });
-              if (res) {
-                reset();
+              if (session) {
+                const res = await modal.question({
+                  title: 'Reinitisaliser les données ?',
+                  message: 'Cette action est irreversible',
+                  doubleConfirm: true,
+                });
+                if (res) {
+                  reset();
+                }
+              } else {
+                shouldRegister();
               }
             }}
           >
@@ -210,7 +224,7 @@ const ArmorPage: React.FC<{ data: TUseArmors }> = ({ data }) => {
           </Button>
         </div>
       </Card>
-      <ArmorsTable armors={filterArmors} />
+      <ArmorsTable armors={filterArmors} session={session} />
     </div>
   );
 };

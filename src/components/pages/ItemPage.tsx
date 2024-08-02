@@ -3,8 +3,10 @@ import { reset, toggleDone } from '@/actions/items';
 import { FilterProvider, useFilterContext } from '@/contexts/FilterContext';
 import { TUseItems } from '@/hooks/useItems';
 import { useLocalstorage } from '@/hooks/useLocalstorage';
-import { cn, getName, groupBy } from '@/lib/utils';
+import { cn, getName, groupBy, shouldRegister } from '@/lib/utils';
 import { BookOpen, MapPin } from 'lucide-react';
+import { Session } from 'next-auth';
+import { useSession } from 'next-auth/react';
 import { ReadonlyURLSearchParams, usePathname, useRouter, useSearchParams } from 'next/navigation';
 import { useCallback } from 'react';
 import DisplayCard from '../DisplayCard';
@@ -56,7 +58,8 @@ const ItemsTable: React.FC<{
   searchParams: ReadonlyURLSearchParams;
   itemType: string;
   solo?: boolean;
-}> = ({ items, searchParams, itemType, solo }) => {
+  session: Session | null;
+}> = ({ items, searchParams, itemType, solo, session }) => {
   const notFill = [
     "Talisman d'épée à deux mains",
     'Visage geignard',
@@ -87,7 +90,10 @@ const ItemsTable: React.FC<{
           locationUrl={item.locationUrl}
           wikiUrl={item.wikiUrl}
           isValidate={item.done}
-          onCLick={() => toggleDone({ itemId: item.id })}
+          onCLick={() => {
+            if (session) toggleDone({ itemId: item.id });
+            else shouldRegister();
+          }}
           w={300}
           h={240}
           fillImage={
@@ -128,7 +134,8 @@ const ItemsTable: React.FC<{
                 <Checkbox
                   defaultChecked={item.done}
                   onCheckedChange={() => {
-                    toggleDone({ itemId: item.id });
+                    if (session) toggleDone({ itemId: item.id });
+                    else shouldRegister();
                   }}
                 />
               </TableCell>
@@ -145,6 +152,8 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [local, setLocal] = useLocalstorage(itemType, [] as string[]);
+
+  const { data: session } = useSession();
 
   const createQueryString = useCallback(
     (name: string, value: string) => {
@@ -226,13 +235,17 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
               variant={'destructive'}
               onClick={async (e) => {
                 e.stopPropagation();
-                const res = await modal.question({
-                  title: 'Reinitisaliser les données ?',
-                  message: 'Cette action est irreversible',
-                  doubleConfirm: true,
-                });
-                if (res) {
-                  reset();
+                if (session) {
+                  const res = await modal.question({
+                    title: 'Reinitisaliser les données ?',
+                    message: 'Cette action est irreversible',
+                    doubleConfirm: true,
+                  });
+                  if (res) {
+                    reset();
+                  }
+                } else {
+                  shouldRegister();
                 }
               }}
             >
@@ -271,7 +284,9 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="border-4 border-background/80 bg-background/30">
-                    {items && <ItemsTable items={items} searchParams={searchParams} itemType={itemType} />}
+                    {items && (
+                      <ItemsTable items={items} searchParams={searchParams} itemType={itemType} session={session} />
+                    )}
                   </AccordionContent>
                 </AccordionItem>
               );
@@ -285,6 +300,7 @@ const ItemPage: React.FC<{ data: TUseItems; itemType: string }> = ({ data, itemT
               searchParams={searchParams}
               itemType={itemType}
               solo={true}
+              session={session}
             />
           )}
         </div>

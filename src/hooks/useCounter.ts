@@ -4,13 +4,18 @@ import { auth } from '@/lib/auth';
 import prisma from '@/lib/prisma';
 
 const countItems = async (type: string, id: string | undefined) => {
-  const done = await prisma.item_user.count({
-    where: {
-      userId: id,
-      done: true,
-      item: { type },
-    },
-  });
+  let done;
+  if (id) {
+    done = await prisma.item_user.count({
+      where: {
+        userId: id,
+        done: true,
+        item: { type },
+      },
+    });
+  } else {
+    done = 0;
+  }
   const allWithoutDlc = await prisma.item.count({
     where: { type, inDlc: false },
   });
@@ -27,45 +32,53 @@ export const useCounter = async () => {
 
   const data = [];
 
-  const bossesDone = await prisma.boss_user.count({
-    where: { userId: id, done: true },
-  });
+  let bossesDone;
+  if (id) {
+    bossesDone = await prisma.boss_user.count({
+      where: { userId: id, done: true },
+    });
+  } else {
+    bossesDone = 0;
+  }
   const bossesAllWithoutDlc = await prisma.boss.count({
     where: { inDlc: false },
   });
   const bossesAll = await prisma.boss.count();
   data.push({ name: 'boss', done: bossesDone, allWithoutDlc: bossesAllWithoutDlc, all: bossesAll });
 
-  const userArmors = await prisma.armorSet_user.findMany({
-    where: { userId: id },
-    include: {
-      armorSet: {
-        include: {
-          elements: {
-            include: {
-              item_user: {
-                where: { userId: id },
-                select: {
-                  done: true,
+  let armors;
+  if (id) {
+    const userArmors = await prisma.armorSet_user.findMany({
+      where: { userId: id },
+      include: {
+        armorSet: {
+          include: {
+            elements: {
+              include: {
+                item_user: {
+                  where: { userId: id },
+                  select: {
+                    done: true,
+                  },
                 },
               },
             },
           },
         },
       },
-    },
-  });
-  const armors = userArmors.map((armor) => ({
-    ...armor.armorSet,
-    elements: armor.armorSet.elements.map((element) => {
-      const { item_user, ...rest } = element;
-      return {
-        ...rest,
-        done: item_user[0].done,
-      };
-    }),
-  }));
-  const armorsDone = armors.filter((armor) => armor.elements.every((element) => element.done)).length;
+    });
+    armors = userArmors.map((armor) => ({
+      ...armor.armorSet,
+      elements: armor.armorSet.elements.map((element) => {
+        const { item_user, ...rest } = element;
+        return {
+          ...rest,
+          done: item_user[0].done,
+        };
+      }),
+    }));
+  }
+  const armorsDone = armors?.filter((armor) => armor.elements.every((element) => element.done)).length || 0;
   const armorsAllWithoutDlc = await prisma.armorSet.count({
     where: { inDlc: false },
   });
