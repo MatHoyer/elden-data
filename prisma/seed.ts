@@ -3,6 +3,7 @@ import { ashesOfWar } from '../src/lib/defaultData/asheOfWar';
 import { bosses } from '../src/lib/defaultData/bosses';
 import { cookBooks } from '../src/lib/defaultData/cookBook';
 import { crystalTears } from '../src/lib/defaultData/crystalTear';
+import { rebaseBosses } from '../src/lib/defaultData/rebaseBosses';
 import { shields } from '../src/lib/defaultData/shield';
 import { spells } from '../src/lib/defaultData/spell';
 import { spiritAshes } from '../src/lib/defaultData/spiritAshe';
@@ -47,19 +48,44 @@ const itemsUpsert = async (items: TItem) => {
 };
 
 async function main() {
-  for (const boss of bosses) {
-    await prisma.boss.upsert({
-      where: {
+  for (const location of rebaseBosses.location) {
+    for (const boss of location.bosses) {
+      const formatedBoss = {
+        name: boss.name.fr,
+        location: location.name.fr,
+        inDlc: boss.category.inDlc || false,
+        major: false,
+        imageUrl: bosses.find((b) => b.locationUrl === boss.locationUrl)?.imageUrl || '',
+        wikiUrl: boss.wikiUrl,
         locationUrl: boss.locationUrl,
-      },
-      update: {
-        ...boss,
-      },
-      create: {
-        ...boss,
-      },
-    });
+      };
+
+      await prisma.boss.upsert({
+        where: {
+          locationUrl: boss.locationUrl,
+        },
+        update: {
+          ...formatedBoss,
+        },
+        create: {
+          ...formatedBoss,
+        },
+      });
+    }
   }
+  // for (const boss of bosses) {
+  //   await prisma.boss.upsert({
+  //     where: {
+  //       locationUrl: boss.locationUrl,
+  //     },
+  //     update: {
+  //       ...boss,
+  //     },
+  //     create: {
+  //       ...boss,
+  //     },
+  //   });
+  // }
 
   await itemsUpsert(talismans);
   await itemsUpsert(spells);
