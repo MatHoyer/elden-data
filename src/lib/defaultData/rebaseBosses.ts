@@ -17,6 +17,7 @@ type TRebaseBosses = {
         needBell?: boolean;
         phase?: number;
         inDlc?: boolean;
+        hasRemembrance?: boolean;
       };
     }[];
   }[];
@@ -263,7 +264,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164421',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+the+Grafted',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
       ],
     },
@@ -567,7 +570,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164430',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Rennala,+Queen+of+the+Full+Moon',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
       ],
     },
@@ -862,7 +867,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165444',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Starscourge+Radahn',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
         {
           id: '',
@@ -1003,7 +1010,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167929',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Regal+Ancestor+Spirit',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
         {
           id: '',
@@ -1051,7 +1060,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168158',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Lichdragon+Fortissax',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
         {
           id: '',
@@ -1089,7 +1100,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167488',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Astel,+Naturalborn+of+the+Void',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
       ],
     },
@@ -1469,7 +1482,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167571',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Rykard,+Lord+of+Blasphemy',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
       ],
     },
@@ -1598,7 +1613,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167374',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Morgott,+the+Omen+King',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
         {
           id: '',
@@ -1730,7 +1747,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167375',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Giant',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
       ],
     },
@@ -1840,7 +1859,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168412',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Mohg,+Lord+of+Blood',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
       ],
     },
@@ -1868,7 +1889,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168522',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Dragonlord+Placidusax',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
         {
           id: '',
@@ -1878,7 +1901,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175509',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Maliketh,+the+Black+Blade',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
       ],
     },
@@ -1906,7 +1931,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176808',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Godfrey,+First+Elden+Lord',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
       ],
     },
@@ -1934,7 +1961,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167678',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Malenia+Blade+of+Miquella',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
       ],
     },
@@ -1952,7 +1981,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176996',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Beast',
-          category: {},
+          category: {
+            hasRemembrance: true
+          },
         },
       ],
     },
@@ -2008,6 +2039,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Divine+Beast+Dancing+Lion',
           category: {
             inDlc: true,
+            hasRemembrance: true,
           },
         },
         {
@@ -2064,6 +2096,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Rellana,+Twin+Moon+Knight',
           category: {
             inDlc: true,
+            hasRemembrance: true,
           },
         },
       ],
@@ -2244,6 +2277,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Putrescent+Knight',
           category: {
             inDlc: true,
+            hasRemembrance: true,
           },
         },
       ],
@@ -2308,6 +2342,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Scadutree+Avatar',
           category: {
             inDlc: true,
+            hasRemembrance: true,
           },
         },
         {
@@ -2320,6 +2355,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Commander+Gaius',
           category: {
             inDlc: true,
+            hasRemembrance: true,
           },
         },
         {
@@ -2332,6 +2368,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Messmer+the+Impaler',
           category: {
             inDlc: true,
+            hasRemembrance: true,
           },
         },
       ],
@@ -2396,6 +2433,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Metyr,+Mother+of+Fingers',
           category: {
             inDlc: true,
+            hasRemembrance: true,
           },
         },
         {
@@ -2460,6 +2498,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Midra+Lord+of+Frenzied+Flame',
           category: {
             inDlc: true,
+            hasRemembrance: true,
           },
         },
       ],
@@ -2548,6 +2587,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Romina,+Saint+of+the+Bud',
           category: {
             inDlc: true,
+            hasRemembrance: true,
           },
         },
       ],
@@ -2568,6 +2608,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Promised+Consort+Radahn',
           category: {
             inDlc: true,
+            hasRemembrance: true,
           },
         },
       ],
