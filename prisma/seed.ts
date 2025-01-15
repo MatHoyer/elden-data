@@ -54,7 +54,7 @@ async function main() {
         name: boss.name.fr,
         location: location.name.fr,
         inDlc: boss.category.inDlc || false,
-        major: false,
+        major: boss.category.major || false,
         imageUrl: bosses.find((b) => b.locationUrl === boss.locationUrl)?.imageUrl || '',
         wikiUrl: boss.wikiUrl,
         locationUrl: boss.locationUrl,
