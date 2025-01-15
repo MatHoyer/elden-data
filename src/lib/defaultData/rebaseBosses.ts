@@ -18,6 +18,7 @@ type TRebaseBosses = {
         phase?: number;
         inDlc?: boolean;
         hasRemembrance?: boolean;
+        major?: boolean;
       };
     }[];
   }[];
@@ -117,7 +118,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164484',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Flying+Dragon+Agheel',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -254,7 +257,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=163938',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Margit+the+Fell+Omen',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -265,7 +270,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164421',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+the+Grafted',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -378,7 +384,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164812',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Leonine+Misbegotten',
-          category: {},
+          category: {
+            major: true,
+          },
         },
       ],
     },
@@ -396,7 +404,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167775',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Ancestor+Spirit',
-          category: {},
+          category: {
+            major: true,
+          },
         },
       ],
     },
@@ -528,7 +538,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165267',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Glintstone+Dragon+Smarag',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -560,7 +572,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165697',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Red+Wolf+of+Radagon',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -571,7 +585,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164430',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Rennala,+Queen+of+the+Full+Moon',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -590,7 +605,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167625',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Dragonkin+Soldier+of+Nokstella',
-          category: {},
+          category: {
+            major: true,
+          },
         },
       ],
     },
@@ -683,7 +700,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165490',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Knight+Loretta',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -753,7 +772,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167222',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Magma+Wyrm',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -783,7 +804,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165933',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Decaying+Ekzykes',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -815,7 +838,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166176',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Knight+&+Misbegotten+Warrior',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -837,7 +862,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166073',
           wikiUrl: "https://eldenring.wiki.fextralife.com/Commander+O'Neil",
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -868,7 +895,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165444',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Starscourge+Radahn',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
         {
@@ -917,7 +945,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166668',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Apostle',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -960,7 +990,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166013',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Flying+Dragon+Greyll',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1000,7 +1032,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168280',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Mimic+Tear',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1011,7 +1045,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167929',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Regal+Ancestor+Spirit',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
         {
@@ -1022,7 +1057,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167928',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Dragonkin+Soldier',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1032,7 +1069,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168404',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Valiant+Gargoyle',
-          category: {},
+          category: {
+            major: true,
+          },
         },
       ],
     },
@@ -1050,7 +1089,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168424',
           wikiUrl: "https://eldenring.wiki.fextralife.com/Fia's+champions",
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1061,7 +1102,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168158',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Lichdragon+Fortissax',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
         {
@@ -1072,7 +1114,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168281',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Knight+Siluria',
-          category: {},
+          category: {
+            major: true,
+          },
         },
       ],
     },
@@ -1090,7 +1134,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168515',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Dragonkin+Soldier',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1101,7 +1147,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167488',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Astel,+Naturalborn+of+the+Void',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -1121,6 +1168,7 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167576',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Glintstone+Dragon+Adula',
           category: {
+            major: true,
             phase: 2,
           },
         },
@@ -1150,7 +1198,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166245',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Magma+Wyrm+Makar',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1212,7 +1262,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167645',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Godefroy+the+Grafted',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1285,6 +1337,7 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168510',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Ancient+Dragon+Lansseax',
           category: {
+            major: true,
             phase: 2,
           },
         },
@@ -1354,7 +1407,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167323',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Elemer+of+the+Briar',
-          category: {},
+          category: {
+            major: true,
+          },
         },
       ],
     },
@@ -1412,7 +1467,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167377',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Magma+Wyrm',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1472,7 +1529,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168177',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Noble',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1483,7 +1542,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167571',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Rykard,+Lord+of+Blasphemy',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -1585,7 +1645,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168657',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Mohg,+the+Omen',
-          category: {},
+          category: {
+            major: true,
+          },
         },
       ],
     },
@@ -1603,7 +1665,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167693',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Godfrey,+First+Elden+Lord+(Golden+Shade)',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1614,7 +1678,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167374',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Morgott,+the+Omen+King',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
         {
@@ -1687,7 +1752,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167290',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Commander+Niall',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1717,7 +1784,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165642',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Borealis+the+Freezing+Fog',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1748,7 +1817,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167375',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Giant',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -1819,7 +1889,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168186',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Great+Wyrm+Theodorix',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1860,7 +1932,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168412',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Mohg,+Lord+of+Blood',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -1879,7 +1952,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167392',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Duo',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1890,7 +1965,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168522',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Dragonlord+Placidusax',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
         {
@@ -1902,7 +1978,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175509',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Maliketh,+the+Black+Blade',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -1921,7 +1998,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176583',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Sir+Gideon+Ofnir,+the+All-Knowing',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1932,7 +2011,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176808',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Godfrey,+First+Elden+Lord',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -1951,7 +2031,9 @@ export const rebaseBosses: TRebaseBosses = {
           },
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168228',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Loretta,+Knight+of+the+Haligtree',
-          category: {},
+          category: {
+            major: true,
+          },
         },
         {
           id: '',
@@ -1962,7 +2044,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167678',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Malenia+Blade+of+Miquella',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -1982,7 +2065,8 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl: 'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176996',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Beast',
           category: {
-            hasRemembrance: true
+            hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -2015,6 +2099,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Ghostflame+Dragon',
           category: {
             inDlc: true,
+            major: true,
           },
         },
         {
@@ -2040,6 +2125,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
             hasRemembrance: true,
+            major: true,
           },
         },
         {
@@ -2097,6 +2183,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
             hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -2153,6 +2240,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Ghostflame+Dragon',
           category: {
             inDlc: true,
+            major: true,
           },
         },
         {
@@ -2253,6 +2341,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Ghostflame+Dragon',
           category: {
             inDlc: true,
+            major: true,
           },
         },
         {
@@ -2278,6 +2367,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
             hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -2330,6 +2420,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Golden+Hippopotamus',
           category: {
             inDlc: true,
+            major: true,
           },
         },
         {
@@ -2343,6 +2434,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
             hasRemembrance: true,
+            major: true,
           },
         },
         {
@@ -2356,6 +2448,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
             hasRemembrance: true,
+            major: true,
           },
         },
         {
@@ -2369,6 +2462,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
             hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -2434,6 +2528,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
             hasRemembrance: true,
+            major: true,
           },
         },
         {
@@ -2478,6 +2573,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Jori,+Elder+Inquisitor',
           category: {
             inDlc: true,
+            major: true,
           },
         },
       ],
@@ -2499,6 +2595,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
             hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -2519,6 +2616,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Jagged+Peak+Drake',
           category: {
             inDlc: true,
+            major: true,
           },
         },
         {
@@ -2531,6 +2629,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Jagged+Peak+Drake',
           category: {
             inDlc: true,
+            major: true,
           },
         },
         {
@@ -2543,6 +2642,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Ancient+Dragon+Senessax',
           category: {
             inDlc: true,
+            major: true,
           },
         },
         {
@@ -2555,6 +2655,7 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Bayle+the+Dread',
           category: {
             inDlc: true,
+            major: true,
           },
         },
       ],
@@ -2588,6 +2689,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
             hasRemembrance: true,
+            major: true,
           },
         },
       ],
@@ -2609,6 +2711,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
             hasRemembrance: true,
+            major: true,
           },
         },
       ],
