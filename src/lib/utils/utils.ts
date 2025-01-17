@@ -1,4 +1,3 @@
-import { pages } from '@/components/pages';
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 
@@ -26,9 +25,4 @@ export const latinize = (str: string) => {
 
 export const capitalize = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
-};
-
-export const getName = (path: string) => {
-  const name = pages.find((page) => page.path === path)?.name;
-  return capitalize(name || path);
 };
