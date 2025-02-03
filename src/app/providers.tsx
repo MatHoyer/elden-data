@@ -4,6 +4,7 @@ import { AppSidebar } from '@/components/sidebar/AppSidebar';
 import { NavigationWrapper } from '@/components/sidebar/NavigationWrapper';
 import { UserDetails } from '@/components/sidebar/UserSwitcher';
 import { ThemeProvider } from '@/components/theme/theme-provider';
+import { Typography } from '@/components/ui/typography';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { SessionProvider } from 'next-auth/react';
 import { NuqsAdapter } from 'nuqs/adapters/next/app';
@@ -19,7 +20,11 @@ export const Providers: React.FC<PropsWithChildren> = ({ children }) => {
         <QueryClientProvider client={queryClient}>
           <NuqsAdapter>
             <NavigationWrapper
-              sidebarHeader={<div className="flex items-center justify-center h-full">Elden ring tracker</div>}
+              sidebarHeader={
+                <div className="flex items-center justify-center h-full gap-2 cursor-pointer">
+                  <Typography variant="large">Elden Ring Tracker</Typography>
+                </div>
+              }
               sidebarContent={<AppSidebar />}
               sidebarFooter={<UserDetails />}
             >

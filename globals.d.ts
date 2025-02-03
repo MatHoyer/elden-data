@@ -4,6 +4,11 @@ interface IModal {
   question: (params: IQuestionParams) => Promise<boolean>;
 }
 
+type ErrorParams = {
+  error: Error & { digest?: string };
+  reset: () => void;
+};
+
 interface IMessageParams {
   title?: string;
   message?: string;
