@@ -1,0 +1,23 @@
+enum ItemType {
+  WEAPON
+  SHIELD
+  TALISMAN
+  ARMOR_PART
+  SORCERIE
+  INVOCATION
+  ASHE_OF_WAR
+  SPIRIT_ASHE
+  CRYSTAL_TEAR
+  WHET_BLADE
+  COOKBOOK
+}
+
+model Item {
+  id String @id @default(cuid())
+
+  type        ItemType
+  name        String
+  imageUrl    String
+  wikiUrl     String
+  locationUrl String
+}

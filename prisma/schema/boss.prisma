@@ -1,0 +1,50 @@
+model BossNames {
+  id String @id @default(cuid())
+
+  fr String
+  en String
+
+  boss Boss?
+}
+
+model BossCategories {
+  id String @id @default(cuid())
+
+  inNight        Boolean @default(false)
+  needBell       Boolean @default(false)
+  inDlc          Boolean @default(false)
+  hasRemembrance Boolean @default(false)
+  major          Boolean @default(false)
+
+  Boss Boss?
+}
+
+model Boss {
+  id String @id @default(cuid())
+
+  locationUrl String @db.Text
+  wikiUrl     String @db.Text
+  imageUrl    String @db.Text
+
+  users User_Boss[]
+
+  categories       BossCategories @relation(fields: [bossCategoriesId], references: [id])
+  bossCategoriesId String         @unique
+  names            BossNames      @relation(fields: [bossNamesId], references: [id])
+  bossNamesId      String         @unique
+  location         Location       @relation(fields: [locationId], references: [id])
+  locationId       String
+}
+
+model User_Boss {
+  id String @id @default(cuid())
+
+  isDone Boolean @default(false)
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
+  boss   Boss   @relation(fields: [bossId], references: [id])
+  bossId String
+
+  @@unique([userId, bossId])
+}
