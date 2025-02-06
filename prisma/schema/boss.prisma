@@ -1,12 +1,3 @@
-model BossNames {
-  id String @id @default(cuid())
-
-  fr String
-  en String
-
-  boss Boss?
-}
-
 model BossCategories {
   id String @id @default(cuid())
 
@@ -28,10 +19,10 @@ model Boss {
 
   users User_Boss[]
 
+  names            Names          @relation(fields: [namesId], references: [id])
+  namesId          String         @unique
   categories       BossCategories @relation(fields: [bossCategoriesId], references: [id])
   bossCategoriesId String         @unique
-  names            BossNames      @relation(fields: [bossNamesId], references: [id])
-  bossNamesId      String         @unique
   location         Location       @relation(fields: [locationId], references: [id])
   locationId       String
 }
@@ -46,5 +37,17 @@ model User_Boss {
   boss   Boss   @relation(fields: [bossId], references: [id])
   bossId String
 
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
   @@unique([userId, bossId])
+}
+
+model Location {
+  id String @id @default(cuid())
+
+  bosses Boss[]
+
+  names   Names  @relation(fields: [namesId], references: [id])
+  namesId String @unique
 }

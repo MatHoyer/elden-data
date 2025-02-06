@@ -1,0 +1,11 @@
+model Names {
+  id String @id @default(cuid())
+
+  fr String
+  en String
+
+  boss         Boss?
+  location     Location?
+  itemCategory ItemCategory?
+  item         Item?
+}
