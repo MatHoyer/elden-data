@@ -1,23 +1,24 @@
-enum ItemType {
-  WEAPON
-  SHIELD
-  TALISMAN
-  ARMOR_PART
-  SORCERIE
-  INVOCATION
-  ASHE_OF_WAR
-  SPIRIT_ASHE
-  CRYSTAL_TEAR
-  WHET_BLADE
-  COOKBOOK
+model ItemCategory {
+  id String @id @default(cuid())
+
+  items         Item[]
+  subCategories ItemCategory[] @relation("SubCategory")
+
+  names            Names         @relation(fields: [namesId], references: [id])
+  namesId          String        @unique
+  parentCategory   ItemCategory? @relation("SubCategory", fields: [parentCategoryId], references: [id])
+  parentCategoryId String?
 }
 
 model Item {
   id String @id @default(cuid())
 
-  type        ItemType
-  name        String
   imageUrl    String
   wikiUrl     String
   locationUrl String
+
+  names      Names        @relation(fields: [namesId], references: [id])
+  namesId    String       @unique
+  category   ItemCategory @relation(fields: [categoryId], references: [id])
+  categoryId String
 }
