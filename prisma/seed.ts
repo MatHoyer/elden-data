@@ -64,8 +64,79 @@ const createBosses = async () => {
   }
 };
 
+const categories = [
+  {
+    en: 'Armors',
+    fr: 'Armures',
+  },
+  {
+    en: 'Weapons',
+    fr: 'Armes',
+  },
+  {
+    en: 'Shields',
+    fr: 'Boucliers',
+  },
+  {
+    en: 'Spells',
+    fr: 'Sorts',
+  },
+  {
+    en: 'Whet blades',
+    fr: "Lames d'affûtage",
+  },
+  {
+    en: 'Crystal tears',
+    fr: 'Larmes de cristal',
+  },
+  {
+    en: 'Spirit ashes',
+    fr: 'Invocations',
+  },
+  {
+    en: 'Cook books',
+    fr: 'Manuels',
+  },
+  {
+    en: 'Talismans',
+    fr: 'Talismans',
+  },
+  {
+    en: 'Ashes of war',
+    fr: 'Cendres de guerre',
+  },
+];
+
+const createCategories = async () => {
+  for (const category of categories) {
+    const existingCategoryNames = await prisma.names.findFirst({
+      where: { ...category },
+    });
+    const prismaCategoryNames = existingCategoryNames
+      ? existingCategoryNames
+      : await prisma.names.create({
+          data: category,
+        });
+
+    const existingCategory = await prisma.itemCategory.upsert({
+      where: { namesId: prismaCategoryNames.id },
+      update: {
+        namesId: prismaCategoryNames.id,
+      },
+      create: {
+        namesId: prismaCategoryNames.id,
+      },
+    });
+  }
+};
+
+const createItems = async () => {
+  await createCategories();
+};
+
 async function main() {
   await createBosses();
+  await createItems();
 }
 
 main();

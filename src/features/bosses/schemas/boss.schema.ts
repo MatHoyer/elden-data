@@ -1,7 +1,4 @@
-import { Boss } from '@prisma/client';
 import { z } from 'zod';
-
-type test = Boss;
 
 export const bossSchema = z.object({
   id: z.number(),

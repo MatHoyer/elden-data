@@ -8,9 +8,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { getUrl, TRoute } from '@/lib/utils/url-utils';
 import { cn } from '@/lib/utils/utils';
-import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
 const ProgressBar: React.FC<{
@@ -23,11 +21,14 @@ const ProgressBar: React.FC<{
       <h1 className="text-3xl p-5">{title}</h1>
       <div className="relative w-full h-6 bg-gray-200 rounded-full overflow-hidden">
         <p className="absolute w-full text-black">
-          {progress}/{total}
+          {progress >= 0 && `${progress}/`}
+          {total}
         </p>
         <div
           className="h-6 bg-amber-400"
-          style={{ width: `${(progress / total) * 100}%` }}
+          style={{
+            width: progress >= 0 ? `${(progress / total) * 100}%` : '100%',
+          }}
         />
       </div>
     </div>
@@ -48,7 +49,11 @@ const RemembrancesCard: React.FC<{ name: string; image: string }> = ({
               name ? 'bg-amber-400' : 'opacity-80'
             )}
           >
-            <img className="w-36 h-36 object-cover" src={image} />
+            <img
+              className="w-36 h-36 object-cover"
+              src={image || undefined}
+              alt="boss"
+            />
           </Card>
         </TooltipTrigger>
         <TooltipContent side="bottom" className="text-2xl">
@@ -62,20 +67,18 @@ const RemembrancesCard: React.FC<{ name: string; image: string }> = ({
 export const HomePageClient: React.FC<{
   boss: {
     normal: {
-      remembrance: { name: string; image: string }[];
+      remembrances: { name: string; image: string }[];
       killed: number;
       total: number;
     };
     dlc: {
-      remembrance: { name: string; image: string }[];
+      remembrances: { name: string; image: string }[];
       killed: number;
       total: number;
     };
   };
   items: { name: string; taken: number; total: number }[];
 }> = ({ boss, items }) => {
-  const session = useSession();
-  const isConnected = !!session.data;
   const router = useRouter();
 
   return (
@@ -102,13 +105,13 @@ export const HomePageClient: React.FC<{
         </Card>
         <div className="grid grid-rows-[3fr_0fr_2fr] gap-2">
           <div className="grid grid-cols-5 grid-rows-3 gap-2 px-2">
-            {boss.normal.remembrance.map((rem, i) => {
+            {boss.normal.remembrances.map((rem, i) => {
               return <RemembrancesCard key={i} {...rem} />;
             })}
           </div>
           <Separator className="h-1" />
           <div className="grid grid-cols-5 grid-rows-2 gap-2 px-2">
-            {boss.dlc.remembrance.map((rem, i) => {
+            {boss.dlc.remembrances.map((rem, i) => {
               return <RemembrancesCard key={i} {...rem} />;
             })}
           </div>

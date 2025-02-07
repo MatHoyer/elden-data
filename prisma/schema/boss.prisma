@@ -7,7 +7,7 @@ model BossCategories {
   hasRemembrance Boolean @default(false)
   major          Boolean @default(false)
 
-  Boss Boss?
+  boss Boss?
 }
 
 model Boss {
