@@ -1583,7 +1583,7 @@ export const bosses: bossesType[] = [
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/maliketh-the-black-blade-4k.jpg',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Maliketh,+the+Black+Blade',
     locationUrl:
-      'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167619',
+      'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175509',
   },
   {
     name: '2x Sanctechair',
