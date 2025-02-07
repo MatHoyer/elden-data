@@ -17,8 +17,28 @@ model Item {
   wikiUrl     String
   locationUrl String
 
+  users User_Item[]
+
   names      Names        @relation(fields: [namesId], references: [id])
   namesId    String       @unique
   category   ItemCategory @relation(fields: [categoryId], references: [id])
   categoryId String
+  user       User         @relation(fields: [userId], references: [id])
+  userId     String
+}
+
+model User_Item {
+  id String @id @default(cuid())
+
+  isDone Boolean @default(false)
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String
+  item   Item   @relation(fields: [itemId], references: [id])
+  itemId String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@unique([userId, itemId])
 }

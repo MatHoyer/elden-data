@@ -1,39 +1,71 @@
-import { bosses } from '../src/lib/defaultData/bosses';
-import { rebaseBosses } from '../src/lib/defaultData/rebaseBosses';
 import prisma from '../src/lib/prisma';
+import { bosses } from './defaultData/bosses';
+import { rebaseBosses } from './defaultData/rebaseBosses';
 
-async function main() {
+const createBosses = async () => {
   for (const location of rebaseBosses.location) {
-    const prismaLocationNames = await prisma.locationNames.create({
-      data: location.name,
+    const existingLocationNames = await prisma.names.findFirst({
+      where: { ...location.name },
     });
-    const prismaLocation = await prisma.location.create({
-      data: {
-        locationNamesId: prismaLocationNames.id,
+    const prismaLocationNames = existingLocationNames
+      ? existingLocationNames
+      : await prisma.names.create({
+          data: location.name,
+        });
+
+    const existingLocation = await prisma.location.upsert({
+      where: { namesId: prismaLocationNames.id },
+      update: {
+        namesId: prismaLocationNames.id,
+      },
+      create: {
+        namesId: prismaLocationNames.id,
       },
     });
+
     for (const boss of location.bosses) {
-      const prismaNames = await prisma.bossNames.create({
-        data: boss.name,
+      const existingBoss = await prisma.boss.findUnique({
+        where: { locationUrl: boss.locationUrl },
       });
-      const prismaCategories = await prisma.bossCategories.create({
-        data: boss.category,
+      const prismaBossNames = await prisma.names.upsert({
+        where: { id: existingBoss?.namesId || '' },
+        update: boss.name,
+        create: boss.name,
+      });
+      const prismaBossCategory = await prisma.bossCategories.upsert({
+        where: { id: existingBoss?.bossCategoriesId || '' },
+        update: boss.category,
+        create: boss.category,
       });
 
-      await prisma.boss.create({
-        data: {
+      const prismaBoss = await prisma.boss.upsert({
+        where: { id: existingBoss?.id || '' },
+        update: {
+          locationUrl: boss.locationUrl,
+          wikiUrl: boss.wikiUrl,
+          remanbranceUrl: '',
           imageUrl:
             bosses.find((b) => b.locationUrl === boss.locationUrl)?.imageUrl ||
             '',
+        },
+        create: {
+          namesId: prismaBossNames.id,
+          locationId: existingLocation.id,
+          bossCategoriesId: prismaBossCategory.id,
           locationUrl: boss.locationUrl,
           wikiUrl: boss.wikiUrl,
-          locationId: prismaLocation.id,
-          bossNamesId: prismaNames.id,
-          bossCategoriesId: prismaCategories.id,
+          remanbranceUrl: '',
+          imageUrl:
+            bosses.find((b) => b.locationUrl === boss.locationUrl)?.imageUrl ||
+            '',
         },
       });
     }
   }
+};
+
+async function main() {
+  await createBosses();
 }
 
 main();

@@ -9,9 +9,11 @@ model User {
   Account       Account?
 
   bosses User_Boss[]
+  items  User_Item[]
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  Item      Item[]
 }
 
 model Account {

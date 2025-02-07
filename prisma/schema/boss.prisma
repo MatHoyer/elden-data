@@ -13,9 +13,10 @@ model BossCategories {
 model Boss {
   id String @id @default(cuid())
 
-  locationUrl String @db.Text
-  wikiUrl     String @db.Text
-  imageUrl    String @db.Text
+  locationUrl    String @unique @db.Text
+  wikiUrl        String @db.Text
+  imageUrl       String @db.Text
+  remanbranceUrl String @db.Text
 
   users User_Boss[]
 
