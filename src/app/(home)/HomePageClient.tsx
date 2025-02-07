@@ -34,7 +34,10 @@ const ProgressBar: React.FC<{
   );
 };
 
-const RemembrancesCard: React.FC<{ name: string }> = ({ name }) => {
+const RemembrancesCard: React.FC<{ name: string; image: string }> = ({
+  name,
+  image,
+}) => {
   return (
     <TooltipProvider>
       <Tooltip delayDuration={0}>
@@ -45,10 +48,7 @@ const RemembrancesCard: React.FC<{ name: string }> = ({ name }) => {
               name ? 'bg-amber-400' : 'opacity-80'
             )}
           >
-            <img
-              className="w-36 h-36 object-cover"
-              src="https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_grafted_elden_ring_wiki_guide_200px.png"
-            />
+            <img className="w-36 h-36 object-cover" src={image} />
           </Card>
         </TooltipTrigger>
         <TooltipContent side="bottom" className="text-2xl">
@@ -59,51 +59,24 @@ const RemembrancesCard: React.FC<{ name: string }> = ({ name }) => {
   );
 };
 
-export const HomePageClient = () => {
+export const HomePageClient: React.FC<{
+  boss: {
+    normal: {
+      remembrance: { name: string; image: string }[];
+      killed: number;
+      total: number;
+    };
+    dlc: {
+      remembrance: { name: string; image: string }[];
+      killed: number;
+      total: number;
+    };
+  };
+  items: { name: string; taken: number; total: number }[];
+}> = ({ boss, items }) => {
   const session = useSession();
   const isConnected = !!session.data;
   const router = useRouter();
-
-  const categories: { name: string; url: TRoute }[] = [
-    { name: 'Armes', url: 'weapons' },
-    { name: 'Boucliers', url: 'shields' },
-    { name: 'Talismans', url: 'talismans' },
-    { name: 'Armures', url: 'armors' },
-    { name: 'Sorts', url: 'sorceries' },
-    { name: 'Invocations', url: 'invocations' },
-    { name: 'Cendres de guerre', url: 'ashesOfWar' },
-  ];
-
-  const remembrances: { name: string }[] = [
-    { name: '11111111111' },
-    { name: '2' },
-    { name: '3' },
-    { name: '4' },
-    { name: '5' },
-    { name: '' },
-    { name: '7' },
-    { name: '8' },
-    { name: '9' },
-    { name: '10' },
-    { name: '11' },
-    { name: '12' },
-    { name: '13' },
-    { name: '14' },
-    { name: '' },
-  ];
-
-  const remembrancesDLC: { name: string }[] = [
-    { name: '16' },
-    { name: '17' },
-    { name: '18' },
-    { name: '19' },
-    { name: '20' },
-    { name: '' },
-    { name: '22' },
-    { name: '23' },
-    { name: '24' },
-    { name: '25' },
-  ];
 
   return (
     <div className="space-y-5">
@@ -112,32 +85,44 @@ export const HomePageClient = () => {
           <h1 className="text-5xl p-5">Boss</h1>
           <Separator className="h-1" />
           <div className="px-10 py-3">
-            <ProgressBar title={'Jeu de Base'} progress={75} total={150} />
+            <ProgressBar
+              title={'Jeu de Base'}
+              progress={boss.normal.killed}
+              total={boss.normal.total}
+            />
           </div>
           <Separator className="h-1 mb-[5px]" />
           <div className="px-10 py-3">
-            <ProgressBar title={'DLC'} progress={42} total={70} />
+            <ProgressBar
+              title={'DLC'}
+              progress={boss.dlc.killed}
+              total={boss.dlc.total}
+            />
           </div>
         </Card>
         <div className="grid grid-rows-[3fr_0fr_2fr] gap-2">
           <div className="grid grid-cols-5 grid-rows-3 gap-2 px-2">
-            {remembrances.map((rem, i) => {
-              return <RemembrancesCard key={i} name={rem.name} />;
+            {boss.normal.remembrance.map((rem, i) => {
+              return <RemembrancesCard key={i} {...rem} />;
             })}
           </div>
           <Separator className="h-1" />
           <div className="grid grid-cols-5 grid-rows-2 gap-2 px-2">
-            {remembrancesDLC.map((rem, i) => {
-              return <RemembrancesCard key={i} name={rem.name} />;
+            {boss.dlc.remembrance.map((rem, i) => {
+              return <RemembrancesCard key={i} {...rem} />;
             })}
           </div>
         </div>
       </div>
       <div className="grid grid-cols-3 text-center items-center gap-2">
-        {categories.map((cat, i) => {
+        {items.map((item, i) => {
           return (
             <Card key={i} className="px-10 py-3">
-              <ProgressBar title={cat.name} progress={10} total={30} />
+              <ProgressBar
+                title={item.name}
+                progress={item.taken}
+                total={item.total}
+              />
             </Card>
           );
         })}
