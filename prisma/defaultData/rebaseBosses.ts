@@ -11,12 +11,19 @@ type TRebaseBosses = {
       };
       locationUrl: string;
       wikiUrl: string;
+      imageUrl: string;
+      remembrance?: {
+        name: {
+          en: string;
+          fr: string;
+        };
+        imageUrl: string;
+      };
       category: {
         inNight?: boolean;
         needBell?: boolean;
         phase?: number;
         inDlc?: boolean;
-        hasRemembrance?: boolean;
         major?: boolean;
       };
     }[];
@@ -40,6 +47,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164433',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Grafted+Scion',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/er_grafted_scion.png',
         },
       ],
     },
@@ -58,6 +67,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164420',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Soldier+of+Godrick',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/soldier-of-godrick-boss-elden-rings.jpg',
         },
         {
           name: {
@@ -69,6 +80,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit.png',
         },
         {
           name: {
@@ -79,6 +92,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164444',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-sentinel-3.jpg',
         },
         {
           name: {
@@ -89,6 +104,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164457',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Demi-Human+Chief',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/demihuman-chief-boss-enemy-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -100,6 +117,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px.jpg',
         },
         {
           name: {
@@ -111,6 +130,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Beastman+of+Farum+Azula',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastman-of-farum-azula-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -123,6 +144,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flying_dragon_agheel_2_bosses_elden_ring_wiki_600px.jpg',
         },
         {
           name: {
@@ -133,6 +156,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164478',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Stonedigger+Troll',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stonedigger_troll_bosses_elden_ring_wiki_600px.jpg',
         },
         {
           name: {
@@ -143,6 +168,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164504',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Patches',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/patches-npc-photo-elden-ring-wiki-guide-300px-min.jpg',
         },
         {
           name: {
@@ -153,6 +180,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164499',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Grave+Warden+Duelist',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-warden-duelist-3.jpg',
         },
         {
           name: {
@@ -165,6 +194,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-limgrave.jpg',
         },
         {
           name: {
@@ -175,6 +206,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164490',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Mad+Pumpkin+Head',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mad-pumpkin-head.png',
         },
         {
           name: {
@@ -186,6 +219,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Darriwil',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound-knight-darriwil-boss-enemy-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -196,6 +231,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164476',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Knight',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-stormhill-1.png',
         },
         {
           name: {
@@ -209,6 +246,7 @@ export const rebaseBosses: TRebaseBosses = {
             inNight: true,
             needBell: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -221,6 +259,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-bird-limgrave.jpg',
         },
         {
           name: {
@@ -231,6 +271,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164530',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Assassin',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-limgrave-2.png',
         },
         {
           name: {
@@ -241,6 +283,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164509',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Golem',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/guardian-golem-field-boss-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -251,6 +295,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164859',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Tibia+Mariner',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibia-mariner-limgrave-small.jpg',
         },
         {
           name: {
@@ -263,6 +309,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/margit-3-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -272,10 +320,19 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl:
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164421',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+the+Grafted',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Grafted',
+              fr: 'Souvenir du Greffé',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_grafted_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_the_grafted_bosses_elden_ring_wiki_600px.jpg',
         },
       ],
     },
@@ -296,6 +353,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-weeping-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -307,6 +366,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px.jpg',
         },
         {
           name: {
@@ -317,6 +378,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165462',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Runebear',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/runebear_bosses_elden_ring_wiki_guide.jpg',
         },
         {
           name: {
@@ -327,6 +390,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165453',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaly+Misbegotten',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/scaly_misbegotten.jpg',
         },
         {
           name: {
@@ -337,6 +402,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165321',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Avatar',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-weeping-peninsula-elden-rink-wiki-guide-2.jpg',
         },
         {
           name: {
@@ -347,6 +414,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165317',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Cemetery+Shade',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cemetery_shade_bosses_elden_ring_wiki_600px.jpg',
         },
         {
           name: {
@@ -358,6 +427,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Ancient+Hero+of+Zamor',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient-hero-of-zamor-weeping-evergaol-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -369,6 +440,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Miranda+the+Blighted+Bloom',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/miranda-the-blighted-bloom-field-boss-elden-ring-wiki-guide-300px.jpg',
         },
         {
           name: {
@@ -381,6 +454,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-bird-weeping-peninsula.jpg',
         },
         {
           name: {
@@ -393,6 +468,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leonine_misbegotten_bosses_elden_ring_wiki_600px.jpg',
         },
       ],
     },
@@ -413,6 +490,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancestor_spirit1-min.jpg',
         },
       ],
     },
@@ -431,6 +510,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166386',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Knight',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot-knight-6-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -442,6 +523,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-burial-watchdog-2-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -454,6 +537,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-4-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -464,6 +549,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166619',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Tibia+Mariner',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibia-mariner-liurnia.jpg',
         },
         {
           name: {
@@ -474,6 +561,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168523',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodhound+Knight',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhunt-knight-2-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -484,6 +573,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166505',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Adan,+Thief+of+Fire',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/adan-thief-of-fire-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -496,6 +587,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbird-2-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -506,6 +599,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166426',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Omenkiller',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller-3-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -516,6 +611,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165594',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Avatar',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-2-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -526,6 +623,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166749',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Spirit-caller+Snail',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spirit-caller-snail-2-hq-enemy-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -536,6 +635,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167325',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Bols,+Carian+Knight',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bols-carian-knight-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -549,6 +650,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone-dragon-smarag-2-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -559,6 +662,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166455',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Crystalians',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystallian-6-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -571,6 +676,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-3-hq-elden-ring-wiki-guide.jpg?v=1664766957687',
         },
         {
           name: {
@@ -583,6 +690,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/red_wolf_of_radagon_1_bosses_elden_ring_wiki_600px.jpg',
         },
         {
           name: {
@@ -593,10 +702,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164430',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Rennala,+Queen+of+the+Full+Moon',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Full Moon Queen',
+              fr: 'Souvenir de la reine de la pleine lune',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_full_moon_queen_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rennala_queen_of_the_full_moon_bosses_elden_ring_wiki_600px.jpg',
         },
       ],
     },
@@ -618,6 +736,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonkin-soldier-nokstella-2-hq-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -636,6 +756,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166381',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Crystalians',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystallian-4-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -649,6 +771,7 @@ export const rebaseBosses: TRebaseBosses = {
             inNight: true,
             needBell: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -659,6 +782,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166484',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Cemetery+Shade',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cemetary-shade-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -669,6 +794,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166482',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Assassin',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-black-knife-catacombs-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -679,6 +806,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165595',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Avatar',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-3-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -691,6 +820,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-2-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -701,6 +832,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166772',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Revenant',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal-revenant-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -713,6 +846,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_knight_loretta_bosses_elden_ring_wiki_guide.jpg',
         },
         {
           name: {
@@ -723,6 +858,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166766',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Onyx+Lord',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/onyx-lord-1-hq-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -741,6 +878,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166512',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Putrid+Avatar',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -752,6 +891,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px.jpg',
         },
         {
           name: {
@@ -762,6 +903,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166738',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Mad+Pumpkin+Head',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/boss-mad-pumpkin-heads-01-elden-ring-wiki-600px.jpg',
         },
         {
           name: {
@@ -774,6 +917,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/magma_wyrm_bosses_elden_ring_wiki_guide.jpg',
         },
         {
           name: {
@@ -784,6 +929,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168213',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Knight',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot-knight-5-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -794,6 +941,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168033',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Frenzied+Duelist',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/frenzied-duelist-axe-elden-ring-wiki-guide-300px.jpg',
         },
         {
           name: {
@@ -806,6 +955,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/decaying_ekzykes_bosses_elden_ring_wiki_guide.jpg',
         },
         {
           name: {
@@ -818,6 +969,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-6-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -828,6 +981,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168518',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Cemetery+Shade',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cemetery_shade_bosses_elden_ring_wiki_600px.jpg',
         },
         {
           name: {
@@ -841,6 +996,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-and-misbegotten-warrior-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -853,6 +1010,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-4-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -865,6 +1024,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/commander-o-neil-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -875,6 +1036,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167582',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Fallingstar+Beast',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fallingstar-beast-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -886,6 +1049,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Nox+Swordstress+&+Nox+Priest',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox-swordstress-nox-monk_-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -895,10 +1060,19 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl:
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165444',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Starscourge+Radahn',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Starscourge',
+              fr: 'Souvenir du Fléau des astres',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_starscourge_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn-2-hq-enemy-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -909,6 +1083,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167378',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Putrid+Tree+Spirit',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-tree-spirit-boss-elden-ring-wiki-guide-300px-min.jpeg',
         },
       ],
     },
@@ -927,6 +1103,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167921',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Putrid+Crystalians',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-crystallian-7-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -937,6 +1115,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167402',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Battlemage+Hugues',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlemage-hugues-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -949,6 +1129,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-apostle-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -962,6 +1144,7 @@ export const rebaseBosses: TRebaseBosses = {
             inNight: true,
             needBell: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -973,6 +1156,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Beastman+of+Farum+Azula',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastmen-duo-1.jpg',
         },
         {
           name: {
@@ -983,6 +1168,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166615',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Putrid+Avatar',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -995,6 +1182,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flying_dragon_greyll_bosses_elden_ring_wiki_guide_300px.jpg',
         },
         {
           name: {
@@ -1007,6 +1196,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-dragonbarrow-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -1017,6 +1208,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166006',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Blade+Kindred',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-blade-kindred-1-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -1037,6 +1230,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mimic-tear-boss-enemies-elden-ring-wiki-guide-300px.jpg',
         },
         {
           name: {
@@ -1047,10 +1242,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167929',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Regal+Ancestor+Spirit',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Regal Ancestor',
+              fr: "Souvenir de l'Esprit ancestral royal",
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_regal_ancestor_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/regal-ancestor-spirit_map-bosses-enemies-elden-ring-wiki-guide-300px.jpg',
         },
         {
           name: {
@@ -1063,6 +1267,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonkin-soldier-boss-enemies-elden-ring-wiki-guide-300px.jpg',
         },
         {
           name: {
@@ -1075,6 +1281,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gargoyle-2-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -1095,6 +1303,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fias-champion-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1104,10 +1314,19 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl:
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168158',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Lichdragon+Fortissax',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Lichdragon',
+              fr: 'Souvenir de la Liche draconique',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_lichdragon_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lichdragon-fortissax-2-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1121,6 +1340,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-siluria-1-hq-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -1141,6 +1362,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonkin_soldier_bosses_elden_ring_wiki_600px.jpg',
         },
         {
           name: {
@@ -1151,10 +1374,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167488',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Astel,+Naturalborn+of+the+Void',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Naturalborn',
+              fr: 'Souvenir du Rejeton',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_naturalborn_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/astel-naturalborn-of-the-void-1-hq-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -1176,6 +1408,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_dragon_bosses_elden_ring_wiki_600px.jpg',
         },
         {
           name: {
@@ -1187,6 +1421,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Alecto,+Black+Knife+Ringleader',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/alecto-black-knife-ringleader-1-hq-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -1207,6 +1443,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/magma-wyrm-3-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1217,6 +1455,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167394',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Tricia',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer-tricia-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1227,6 +1467,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166675',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Necromancer+Garris',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/necromancer-garris-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -1237,6 +1479,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166678',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Assassin',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-sages-cave-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -1247,6 +1491,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168507',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Stonedigger+Troll',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stonedigger-troll-2-hq-enemy-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -1259,6 +1505,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godefroy-the-grafted-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1271,6 +1519,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1282,6 +1532,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Demi-Human+Queen+Gilika',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/queen-gilika-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -1292,6 +1544,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167656',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Sanguine+Noble',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sanguine-noble-6-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1302,6 +1556,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166231',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Apostle',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-apostle-3-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1312,6 +1568,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167317',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Wormface',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/wormface-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1322,6 +1580,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168080',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Crystalians',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystallian-5-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1335,6 +1595,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient-dragon-lansseax-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1345,6 +1607,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167676',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Assassin',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-sainted-heros-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -1356,6 +1620,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Ancient+Hero+of+Zamor',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient-hero-of-zamor-2-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1366,6 +1632,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169017',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Omenkiller',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/miranda-and-omenkiller.jpg',
         },
         {
           name: {
@@ -1376,6 +1644,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167585',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Fallingstar+Beast',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fallingstar_beast_altus_plateau_enemies_elden_ring_wiki_300px.jpg',
         },
         {
           name: {
@@ -1386,6 +1656,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167584',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-sentinel-duo-2-small.jpg',
         },
       ],
     },
@@ -1406,6 +1678,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/elemer-of-the-briar-1-hq-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -1424,6 +1698,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168514',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Abductor+Virgins',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/abductor-virgins-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1434,6 +1710,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167560',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Tibia+Mariner',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibia-manner-enemy-3-hq-big-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -1445,6 +1723,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-burial-watchdog-3-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1455,6 +1735,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168512',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Kindred+of+Rot',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/kindred-of-rot-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1467,6 +1749,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/magma-wyrm-2-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1478,6 +1762,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Demi-Human+Queen+Maggie',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human-queen-maggie-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1489,6 +1775,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Red+Wolf+of+the+Champion',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/red-wolf-of-radagon-3-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1500,6 +1788,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Demi-Human+Queen+Margot',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human-queen-margot-2-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1511,6 +1801,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Full-Grown+Fallingstar+Beast',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/full-grown-fallingstar-beast-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1522,6 +1814,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/uncerated-tree-spirit-5-hq-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -1534,6 +1828,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-noble-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1544,10 +1840,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167571',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Rykard,+Lord+of+Blasphemy',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Blasphemous',
+              fr: 'Souvenir du seigneur du blasphème',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_blasphemous_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/god-devouring-serpent-1-hq-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -1566,6 +1871,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168154',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Onyx+Lord',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/onyx-lord-2-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1579,6 +1886,7 @@ export const rebaseBosses: TRebaseBosses = {
             inNight: true,
             needBell: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -1591,6 +1899,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbird-1-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1602,6 +1912,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Crucible+Knight+Ordovis',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-and-ordovis-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1612,6 +1924,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167018',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Grave+Warden+Duelist',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-warden-duelist-3-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1623,6 +1937,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Draconic+Tree+Sentinel',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/draconic-tree-sentinel-2-hq-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -1642,6 +1958,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Esgar,+Priest+of+Blood',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/esgar_priest_of_blood_bosses_elden_ring_wiki_guide.jpg',
         },
         {
           name: {
@@ -1654,6 +1972,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mogh_the_omen.png',
         },
       ],
     },
@@ -1675,6 +1995,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godfrey-first-elden-lord-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1685,10 +2007,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167374',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Morgott,+the+Omen+King',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Omen King',
+              fr: 'Souvenir du Roi des Réprouvés',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_omen_king_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/morgott-omen-king-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1699,6 +2030,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167171',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Fell+Twins',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fell-twin-1-hq-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -1719,6 +2052,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-forbidden-lands-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -1729,6 +2064,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168016',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Blade+Kindred',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-blade-kindred-2-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1740,6 +2077,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit.png',
         },
         {
           name: {
@@ -1752,6 +2091,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-2-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1764,6 +2105,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/commander-niall-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1774,6 +2117,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167138',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Avatar',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-4-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1784,6 +2129,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169802',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Spirit-caller+Snail',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spirit-caller-snail-1-hs-enemy-elden-ring-wiki.jpg',
         },
         {
           name: {
@@ -1797,6 +2144,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/borealis-the-freezing-fog-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1808,6 +2157,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Roundtable+Knight+Vyke',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vyke-1-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1819,6 +2170,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Ancient+Hero+of+Zamor',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_hero_of_zamor_enemies_elden_ring_wiki_300px.jpg',
         },
         {
           name: {
@@ -1828,10 +2181,19 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl:
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167375',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Giant',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Fire Giant',
+              fr: 'Souvenir du Géant de feu',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_fire_giant_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_giant_eye.jpg',
         },
       ],
     },
@@ -1850,6 +2212,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169799',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Stray+Mimic+Tear',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stray-mimic-tear-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1861,6 +2225,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Putrid+Grave+Warden+Duelist',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-grave-warden-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1873,6 +2239,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-5-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1884,6 +2252,8 @@ export const rebaseBosses: TRebaseBosses = {
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Astel,+Stars+of+Darkness',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/astel-naturalborn-of-the-void-3-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1894,6 +2264,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168661',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Misbegotten+Crusader',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/misbegotten-crusader-bloom-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1906,6 +2278,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/theodorix_6.jpg',
         },
         {
           name: {
@@ -1916,6 +2290,8 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168521',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Putrid+Avatar',
           category: {},
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-2-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1928,6 +2304,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inNight: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-1-hq-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -1945,10 +2323,19 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl:
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168412',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Mohg,+Lord+of+Blood',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Blood Lord',
+              fr: 'Souvenir du seigneur du sang',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_blood_lord_item_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mohg.jpg',
         },
       ],
     },
@@ -1969,6 +2356,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-duo-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1979,10 +2368,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168522',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Dragonlord+Placidusax',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Dragonlord',
+              fr: 'Souvenir du Seigneur draconique',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_dragonlord_item_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonlord-placidusax-boss-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -1993,10 +2391,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175509',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Maliketh,+the+Black+Blade',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Black Blade',
+              fr: "Souvenir de la Lame d'ébène",
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_black_blade_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/maliketh-the-black-blade-4k.jpg',
         },
       ],
     },
@@ -2018,6 +2425,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ofnir-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -2028,10 +2437,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176808',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Godfrey,+First+Elden+Lord',
+          remembrance: {
+            name: {
+              en: 'Remembrance of Hoarah Loux',
+              fr: 'Souvenir de Hoarah Loux',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_hoarah_loux_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godfrey,hoarah.jpg',
         },
       ],
     },
@@ -2053,6 +2471,8 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/loretta-knight-of-the-haligtree-1-hq-elden-ring-wiki-guide.jpg',
         },
         {
           name: {
@@ -2063,10 +2483,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167678',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Malenia+Blade+of+Miquella',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Rot Goddess',
+              fr: 'Souvenir de la déesse de la putréfaction',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_rot_goddess_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malenia,-blade-of-miquella.jpg',
         },
       ],
     },
@@ -2084,10 +2513,19 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl:
             'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176996',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Beast',
+          remembrance: {
+            name: {
+              en: 'Elden Remembrance',
+              fr: "Souvenir d'Elden",
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/elden_remembrance_elden_ring_wiki_guide_200px.png',
+          },
           category: {
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radagon-of-the-golden-order-boss-elden-ring-wiki-guide.jpg',
         },
       ],
     },
@@ -2108,6 +2546,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2121,6 +2560,7 @@ export const rebaseBosses: TRebaseBosses = {
             inDlc: true,
             major: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2134,6 +2574,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2144,11 +2585,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380798',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Divine+Beast+Dancing+Lion',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Dancing Lion',
+              fr: 'Souvenir du Lion dansant',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_dancing_lion_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+          },
           category: {
             inDlc: true,
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2161,6 +2610,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2173,6 +2623,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2185,6 +2636,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2203,11 +2655,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380245',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Rellana,+Twin+Moon+Knight',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Twin Moon Knight',
+              fr: 'Souvenir de la Chev. des Lunes jum.',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_twin_moon_knight_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+          },
           category: {
             inDlc: true,
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2228,6 +2688,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2241,6 +2702,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2253,6 +2715,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2266,6 +2729,7 @@ export const rebaseBosses: TRebaseBosses = {
             inDlc: true,
             major: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2278,6 +2742,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2290,6 +2755,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2310,6 +2776,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2323,6 +2790,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2335,6 +2803,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2356,6 +2825,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2369,6 +2839,7 @@ export const rebaseBosses: TRebaseBosses = {
             inDlc: true,
             major: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2381,6 +2852,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2390,11 +2862,19 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl:
             'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381961',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Putrescent+Knight',
+          remembrance: {
+            name: {
+              en: 'Remembrance of Putrescence',
+              fr: 'Souvenir de putrescence',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_putrescence_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+          },
           category: {
             inDlc: true,
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2415,6 +2895,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2427,6 +2908,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2448,6 +2930,7 @@ export const rebaseBosses: TRebaseBosses = {
             inDlc: true,
             major: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2457,11 +2940,19 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl:
             'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381991',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Scadutree+Avatar',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Shadow Sunflower',
+              fr: "Souvenir de l'ombreflore",
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_shadow_sunflower_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+          },
           category: {
             inDlc: true,
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2471,11 +2962,19 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl:
             'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381989',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Commander+Gaius',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Wild Boar Rider',
+              fr: 'Souvenir du Chevaucheur de sanglier',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_wild_boar_rider_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+          },
           category: {
             inDlc: true,
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2485,11 +2984,19 @@ export const rebaseBosses: TRebaseBosses = {
           locationUrl:
             'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381741',
           wikiUrl: 'https://eldenring.wiki.fextralife.com/Messmer+the+Impaler',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Impaler',
+              fr: "Souvenir de l'Empaleur",
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_impaler_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+          },
           category: {
             inDlc: true,
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2510,6 +3017,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2522,6 +3030,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2534,6 +3043,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2552,11 +3062,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382002',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Metyr,+Mother+of+Fingers',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Mother of Fingers',
+              fr: 'Souvenir de la Mère des Doigts',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_mother_of_fingers_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+          },
           category: {
             inDlc: true,
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2570,6 +3088,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2590,6 +3109,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2604,6 +3124,7 @@ export const rebaseBosses: TRebaseBosses = {
             inDlc: true,
             major: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2622,11 +3143,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382190',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Midra+Lord+of+Frenzied+Flame',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Lord of Frenzied Flame',
+              fr: 'Souvenir du Seigneur de la Flamme exaltée',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_lord_of_frenzied_flame_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+          },
           category: {
             inDlc: true,
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2648,6 +3177,7 @@ export const rebaseBosses: TRebaseBosses = {
             inDlc: true,
             major: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2661,6 +3191,7 @@ export const rebaseBosses: TRebaseBosses = {
             inDlc: true,
             major: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2675,6 +3206,7 @@ export const rebaseBosses: TRebaseBosses = {
             inDlc: true,
             major: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2688,6 +3220,7 @@ export const rebaseBosses: TRebaseBosses = {
             inDlc: true,
             major: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2709,6 +3242,7 @@ export const rebaseBosses: TRebaseBosses = {
           category: {
             inDlc: true,
           },
+          imageUrl: '',
         },
         {
           name: {
@@ -2719,11 +3253,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382040',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Romina,+Saint+of+the+Bud',
+          remembrance: {
+            name: {
+              en: 'Remembrance of the Saint of the Bud',
+              fr: 'Souvenir de la Sainte du bourgeon',
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_saint_of_the_bud_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+          },
           category: {
             inDlc: true,
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl: '',
         },
       ],
     },
@@ -2742,11 +3284,19 @@ export const rebaseBosses: TRebaseBosses = {
             'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382044',
           wikiUrl:
             'https://eldenring.wiki.fextralife.com/Promised+Consort+Radahn',
+          remembrance: {
+            name: {
+              en: 'Remembrance of a God and a Lord',
+              fr: "Souvenir d'un dieu et d'un seigneur",
+            },
+            imageUrl:
+              'https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance-of-a-god-and-lord-elden-ring-wiki-guide.png',
+          },
           category: {
             inDlc: true,
-            hasRemembrance: true,
             major: true,
           },
+          imageUrl: '',
         },
       ],
     },

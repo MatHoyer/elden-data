@@ -4,10 +4,21 @@ model BossCategories {
   inNight        Boolean @default(false)
   needBell       Boolean @default(false)
   inDlc          Boolean @default(false)
-  hasRemembrance Boolean @default(false)
   major          Boolean @default(false)
 
   boss Boss?
+}
+
+model BossRemembrance {
+  id String @id @default(cuid())
+
+  imageUrl         String         @db.Text
+  
+  boss Boss[]
+
+  names            Names          @relation(fields: [namesId], references: [id])
+  namesId          String         @unique
+
 }
 
 model Boss {
@@ -16,15 +27,16 @@ model Boss {
   locationUrl    String @unique @db.Text
   wikiUrl        String @db.Text
   imageUrl       String @db.Text
-  remanbranceUrl String @db.Text
 
   users User_Boss[]
 
-  names            Names          @relation(fields: [namesId], references: [id])
-  namesId          String         @unique
-  categories       BossCategories @relation(fields: [bossCategoriesId], references: [id])
-  bossCategoriesId String         @unique
-  location         Location       @relation(fields: [locationId], references: [id])
+  names            Names              @relation(fields: [namesId], references: [id])
+  namesId          String             @unique
+  categories       BossCategories     @relation(fields: [bossCategoriesId], references: [id])
+  bossCategoriesId String             @unique
+  remembrance      BossRemembrance?   @relation(fields: [bossRemembranceId], references: [id])
+  bossRemembranceId    String?
+  location         Location           @relation(fields: [locationId], references: [id])
   locationId       String
 }
 

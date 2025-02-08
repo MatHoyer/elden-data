@@ -8,4 +8,5 @@ model Names {
   location     Location?
   itemCategory ItemCategory?
   item         Item?
+  remembrance  BossRemembrance?
 }

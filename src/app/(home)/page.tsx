@@ -9,33 +9,28 @@ const HomePage = async () => {
     include: {
       names: true,
       categories: true,
-    },
-  });
-  const userBosses = session
-    ? await prisma.user_Boss.findMany({
+      remembrance: { include: { names: true } },
+      users: {
         where: {
-          userId: session.id,
+          userId: session?.id,
         },
         include: {
-          boss: {
-            include: {
-              categories: true,
-            },
-          },
+          user: true,
         },
-      })
-    : [];
+      },
+    },
+  });
 
   const remembranceBosses = Object.groupBy(
-    bosses.filter((boss) => boss.categories.hasRemembrance),
+    bosses.filter((boss) => !!boss.remembrance),
     (boss) => (boss.categories.inDlc ? 'dlc' : 'normal')
   );
   const totalBosses = Object.groupBy(bosses, (boss) =>
     boss.categories.inDlc ? 'dlc' : 'normal'
   );
   const doneUserBosses = Object.groupBy(
-    userBosses.filter((userBoss) => userBoss.isDone),
-    (userBoss) => (userBoss.boss.categories.inDlc ? 'dlc' : 'normal')
+    bosses.filter((userBoss) => userBoss.users[0]?.isDone || false),
+    (userBoss) => (userBoss.categories.inDlc ? 'dlc' : 'normal')
   );
 
   return (
@@ -44,22 +39,31 @@ const HomePage = async () => {
         boss={{
           normal: {
             remembrances: remembranceBosses.normal!.map((boss) => ({
-              name: boss.names.fr,
-              image: boss.imageUrl,
+              id: boss.id,
+              name: boss.remembrance!.names.fr,
+              image: boss.remembrance!.imageUrl,
+              isDone: boss.users[0]?.isDone || false,
             })),
             killed: session ? doneUserBosses.normal?.length || 0 : -1,
             total: totalBosses.normal!.length,
           },
           dlc: {
             remembrances: remembranceBosses.dlc!.map((boss) => ({
-              name: boss.names.fr,
-              image: boss.imageUrl,
+              id: boss.id,
+              name: boss.remembrance!.names.fr,
+              image: boss.remembrance!.imageUrl,
+              isDone: boss.users[0]?.isDone || false,
             })),
             killed: session ? doneUserBosses.dlc?.length || 0 : -1,
             total: totalBosses.dlc!.length,
           },
         }}
-        items={[{ name: 'test', taken: session ? 0 : -1, total: 10 }]}
+        items={[
+          { name: 'test', taken: session ? 0 : -1, total: 10 },
+          { name: 'test', taken: session ? 0 : -1, total: 10 },
+          { name: 'test', taken: session ? 0 : -1, total: 10 },
+          { name: 'test', taken: session ? 0 : -1, total: 10 },
+        ]}
       />
     </div>
   );

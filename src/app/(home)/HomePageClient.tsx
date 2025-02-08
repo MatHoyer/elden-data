@@ -8,8 +8,11 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import { check } from '@/features/bosses/actions/check';
 import { cn } from '@/lib/utils/utils';
+import { useMutation } from '@tanstack/react-query';
 import { useRouter } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 const ProgressBar: React.FC<{
   title: string;
@@ -35,18 +38,42 @@ const ProgressBar: React.FC<{
   );
 };
 
-const RemembrancesCard: React.FC<{ name: string; image: string }> = ({
-  name,
-  image,
-}) => {
+const RemembrancesCard: React.FC<{
+  id: string;
+  name: string;
+  image: string;
+  isDone: boolean;
+}> = ({ id, name, image, isDone }) => {
+  const router = useRouter();
+
+  const toggleMutation = useMutation({
+    mutationFn: async () => {
+      const res = await check({
+        boss: {
+          id,
+        },
+      });
+    },
+    onSuccess: () => {
+      router.refresh();
+    },
+  });
+
   return (
     <TooltipProvider>
       <Tooltip delayDuration={0}>
-        <TooltipTrigger>
+        <TooltipTrigger
+          onClick={(e) => {
+            e.preventDefault();
+          }}
+        >
           <Card
+            onClick={() => {
+              toggleMutation.mutate();
+            }}
             className={cn(
               'flex justify-center items-center',
-              name ? 'bg-amber-400' : 'opacity-80'
+              isDone ? 'bg-amber-400/50' : 'opacity-80'
             )}
           >
             <img
@@ -56,7 +83,13 @@ const RemembrancesCard: React.FC<{ name: string; image: string }> = ({
             />
           </Card>
         </TooltipTrigger>
-        <TooltipContent side="bottom" className="text-2xl">
+        <TooltipContent
+          onPointerDownOutside={(e) => {
+            e.preventDefault();
+          }}
+          side="bottom"
+          className="text-2xl"
+        >
           <p>{name}</p>
         </TooltipContent>
       </Tooltip>
@@ -67,12 +100,22 @@ const RemembrancesCard: React.FC<{ name: string; image: string }> = ({
 export const HomePageClient: React.FC<{
   boss: {
     normal: {
-      remembrances: { name: string; image: string }[];
+      remembrances: {
+        id: string;
+        name: string;
+        image: string;
+        isDone: boolean;
+      }[];
       killed: number;
       total: number;
     };
     dlc: {
-      remembrances: { name: string; image: string }[];
+      remembrances: {
+        id: string;
+        name: string;
+        image: string;
+        isDone: boolean;
+      }[];
       killed: number;
       total: number;
     };
@@ -104,13 +147,13 @@ export const HomePageClient: React.FC<{
           </div>
         </Card>
         <div className="grid grid-rows-[3fr_0fr_2fr] gap-2">
-          <div className="grid grid-cols-5 grid-rows-3 gap-2 px-2">
+          <div className="grid grid-cols-5 grid-rows-3 gap-2 px-2 select-none">
             {boss.normal.remembrances.map((rem, i) => {
               return <RemembrancesCard key={i} {...rem} />;
             })}
           </div>
           <Separator className="h-1" />
-          <div className="grid grid-cols-5 grid-rows-2 gap-2 px-2">
+          <div className="grid grid-cols-5 grid-rows-2 gap-2 px-2 select-none">
             {boss.dlc.remembrances.map((rem, i) => {
               return <RemembrancesCard key={i} {...rem} />;
             })}

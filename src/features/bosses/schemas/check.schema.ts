@@ -1,6 +1,6 @@
 import { z } from 'zod';
+import { bossSchema } from './boss.schema';
 
 export const checkSchema = z.object({
-  tableName: z.enum(['boss', 'armor', 'item']),
-  id: z.number(),
+  boss: bossSchema.pick({ id: true }),
 });

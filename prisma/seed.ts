@@ -1,5 +1,4 @@
 import prisma from '../src/lib/prisma';
-import { bosses } from './defaultData/bosses';
 import { rebaseBosses } from './defaultData/rebaseBosses';
 
 const createBosses = async () => {
@@ -37,27 +36,41 @@ const createBosses = async () => {
         update: boss.category,
         create: boss.category,
       });
+      let prismaBossRemembrance = null;
+      if (boss.remembrance) {
+        const prismaBossRemembranceNames = await prisma.names.upsert({
+          where: { id: existingBoss?.namesId || '' },
+          update: boss.remembrance?.name,
+          create: boss.remembrance?.name,
+        });
+        prismaBossRemembrance = await prisma.bossRemembrance.upsert({
+          where: { id: existingBoss?.bossRemembranceId || '' },
+          update: {
+            namesId: prismaBossRemembranceNames.id,
+            imageUrl: boss.remembrance.imageUrl,
+          },
+          create: {
+            namesId: prismaBossRemembranceNames.id,
+            imageUrl: boss.remembrance.imageUrl,
+          },
+        });
+      }
 
       const prismaBoss = await prisma.boss.upsert({
         where: { id: existingBoss?.id || '' },
         update: {
           locationUrl: boss.locationUrl,
           wikiUrl: boss.wikiUrl,
-          remanbranceUrl: '',
-          imageUrl:
-            bosses.find((b) => b.locationUrl === boss.locationUrl)?.imageUrl ||
-            '',
+          imageUrl: boss.imageUrl,
         },
         create: {
           namesId: prismaBossNames.id,
           locationId: existingLocation.id,
           bossCategoriesId: prismaBossCategory.id,
+          bossRemembranceId: prismaBossRemembrance?.id,
           locationUrl: boss.locationUrl,
           wikiUrl: boss.wikiUrl,
-          remanbranceUrl: '',
-          imageUrl:
-            bosses.find((b) => b.locationUrl === boss.locationUrl)?.imageUrl ||
-            '',
+          imageUrl: boss.imageUrl,
         },
       });
     }
