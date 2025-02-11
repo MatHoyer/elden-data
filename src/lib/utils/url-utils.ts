@@ -2,7 +2,7 @@ import { getServerUrl } from '../server-url';
 
 type TRouteDataRequirements = {
   home: undefined;
-  bosses: undefined;
+  locations: undefined;
   weapons: undefined;
   shields: undefined;
   armors: undefined;
@@ -27,14 +27,14 @@ const routes: {
   [T in TRoute]: (params: TRouteDataMap<T>) => string;
 } = {
   home: () => '/',
-  bosses: () => '/boss',
-  weapons: () => '/armes',
-  shields: () => '/boucliers',
+  locations: () => '/locations',
+  weapons: () => '/weapons',
+  shields: () => '/shields',
   talismans: () => 'talismans',
-  armors: () => '/armures',
-  sorceries: () => 'sorts',
-  invocations: () => 'invocations',
-  ashesOfWar: () => 'cendres-de-guerre',
+  armors: () => '/armors',
+  sorceries: () => '/sorceries',
+  invocations: () => '/invocations',
+  ashesOfWar: () => '/ashes-of-war',
 
   //to remove
   tmp: ({ nothing }) => `/tmp/${nothing}`,

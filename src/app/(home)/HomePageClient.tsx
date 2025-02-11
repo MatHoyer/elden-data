@@ -1,5 +1,6 @@
 'use client';
 
+import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import {
@@ -9,8 +10,10 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 import { check } from '@/features/bosses/actions/check';
+import { getUrl } from '@/lib/utils/url-utils';
 import { cn } from '@/lib/utils/utils';
 import { useMutation } from '@tanstack/react-query';
+import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
@@ -22,13 +25,13 @@ const ProgressBar: React.FC<{
   return (
     <div>
       <h1 className="text-3xl p-5">{title}</h1>
-      <div className="relative w-full h-6 bg-gray-200 rounded-full overflow-hidden">
+      <div className="relative w-full h-6 bg-card rounded-full overflow-hidden">
         <p className="absolute w-full text-black">
           {progress >= 0 && `${progress}/`}
           {total}
         </p>
         <div
-          className="h-6 bg-amber-400"
+          className="h-6 bg-primary"
           style={{
             width: progress >= 0 ? `${(progress / total) * 100}%` : '100%',
           }}
@@ -45,6 +48,7 @@ const RemembrancesCard: React.FC<{
   isDone: boolean;
 }> = ({ id, name, image, isDone }) => {
   const router = useRouter();
+  const session = useSession();
 
   const toggleMutation = useMutation({
     mutationFn: async () => {
@@ -68,12 +72,16 @@ const RemembrancesCard: React.FC<{
           }}
         >
           <Card
-            onClick={() => {
-              toggleMutation.mutate();
-            }}
+            onClick={
+              session.data?.user
+                ? () => {
+                    toggleMutation.mutate();
+                  }
+                : undefined
+            }
             className={cn(
               'flex justify-center items-center',
-              isDone ? 'bg-amber-400/50' : 'opacity-80'
+              isDone ? 'bg-primary' : 'opacity-80'
             )}
           >
             <img
@@ -128,7 +136,16 @@ export const HomePageClient: React.FC<{
     <div className="space-y-5">
       <div className="grid grid-cols-[1fr_3fr]">
         <Card className="grid grid-rows-[1fr_0fr_2fr_0fr_2fr] text-center items-center w-full">
-          <h1 className="text-5xl p-5">Boss</h1>
+          <div
+            className="flex h-full items-center justify-center group cursor-pointer"
+            onClick={() =>
+              router.push(getUrl('locations', { urlParams: { test: 'test' } }))
+            }
+          >
+            <h1 className="text-5xl p-5 group-hover:underline group-hover:text-primary transition-colors duration-200">
+              Boss
+            </h1>
+          </div>
           <Separator className="h-1" />
           <div className="px-10 py-3">
             <ProgressBar

@@ -3,6 +3,7 @@ import Modal from '@/components/Modal';
 import { AppSidebar } from '@/components/sidebar/AppSidebar';
 import { NavigationWrapper } from '@/components/sidebar/NavigationWrapper';
 import { UserDetails } from '@/components/sidebar/UserSwitcher';
+import { TailwindIndicator } from '@/components/TailwindIndicator';
 import { ThemeProvider } from '@/components/theme/theme-provider';
 import { Typography } from '@/components/ui/typography';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -19,6 +20,9 @@ export const Providers: React.FC<PropsWithChildren> = ({ children }) => {
       <SessionProvider>
         <QueryClientProvider client={queryClient}>
           <NuqsAdapter>
+            <Toaster />
+            <Modal />
+            <TailwindIndicator />
             <NavigationWrapper
               sidebarHeader={
                 <div className="flex items-center justify-center h-full gap-2 cursor-pointer">
@@ -28,8 +32,6 @@ export const Providers: React.FC<PropsWithChildren> = ({ children }) => {
               sidebarContent={<AppSidebar />}
               sidebarFooter={<UserDetails />}
             >
-              <Toaster />
-              <Modal />
               {children}
             </NavigationWrapper>
           </NuqsAdapter>

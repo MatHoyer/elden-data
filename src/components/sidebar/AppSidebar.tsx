@@ -1,5 +1,5 @@
 import { getUrl } from '@/lib/utils/url-utils';
-import { Home } from 'lucide-react';
+import { Compass, Home, Skull } from 'lucide-react';
 import { SidebarGroup, SidebarGroupLabel, SidebarMenu } from '../ui/sidebar';
 import { NavItem } from './NavComp';
 
@@ -13,6 +13,13 @@ export const AppSidebar = () => {
             title: 'Accueil',
             url: getUrl('home'),
             icon: Home,
+          }}
+        ></NavItem>
+        <NavItem
+          item={{
+            title: 'Locations',
+            url: getUrl('locations'),
+            icon: Compass,
           }}
         ></NavItem>
       </SidebarMenu>

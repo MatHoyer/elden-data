@@ -17,7 +17,10 @@ const UserDropdown: React.FC<PropsWithChildren> = ({ children }) => {
   const session = useSession();
 
   const mutation = useMutation({
-    mutationFn: async () => await signOut(),
+    mutationFn: async () => {
+      await signOut();
+      window.location.reload();
+    },
   });
 
   return (
@@ -56,7 +59,11 @@ const UserDropdown: React.FC<PropsWithChildren> = ({ children }) => {
             mutation.mutate();
           }}
         >
-          {mutation.isPending ? <Loader className="mr-2 size-4" /> : <LogOut className="mr-2 size-4" />}
+          {mutation.isPending ? (
+            <Loader className="mr-2 size-4" />
+          ) : (
+            <LogOut className="mr-2 size-4" />
+          )}
           Se déconnecter
         </DropdownMenuItem>
       </DropdownMenuContent>

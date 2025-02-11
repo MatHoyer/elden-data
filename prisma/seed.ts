@@ -1,8 +1,8 @@
 import prisma from '../src/lib/prisma';
-import { rebaseBosses } from './defaultData/rebaseBosses';
+import { bosses } from './defaultData/bosses';
 
 const createBosses = async () => {
-  for (const location of rebaseBosses.location) {
+  for (const location of bosses.location) {
     const existingLocationNames = await prisma.names.findFirst({
       where: { ...location.name },
     });

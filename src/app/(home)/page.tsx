@@ -12,7 +12,7 @@ const HomePage = async () => {
       remembrance: { include: { names: true } },
       users: {
         where: {
-          userId: session?.id,
+          userId: session?.id ?? '-1',
         },
         include: {
           user: true,
