@@ -1,7 +1,7 @@
 import { Prisma } from '@prisma/client';
 import { createSafeActionClient } from 'next-safe-action';
-import { auth, requiredAuth } from './utils/auth-utils';
 import prisma from './prisma';
+import { requiredAuth } from './utils/auth-utils';
 
 export const actionClient = createSafeActionClient({
   handleReturnedServerError: (error, utils) => {

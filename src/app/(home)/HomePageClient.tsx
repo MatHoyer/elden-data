@@ -1,6 +1,5 @@
 'use client';
 
-import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import {
@@ -9,13 +8,13 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { check } from '@/features/bosses/actions/check';
+import { checkBoss } from '@/features/bosses/actions/check-boss.action';
+import { defaultMutationEnding } from '@/lib/utils/action-utils';
 import { getUrl } from '@/lib/utils/url-utils';
 import { cn } from '@/lib/utils/utils';
 import { useMutation } from '@tanstack/react-query';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
 
 const ProgressBar: React.FC<{
   title: string;
@@ -52,9 +51,17 @@ const RemembrancesCard: React.FC<{
 
   const toggleMutation = useMutation({
     mutationFn: async () => {
-      const res = await check({
+      const res = await checkBoss({
         boss: {
           id,
+        },
+      });
+
+      return defaultMutationEnding({
+        res,
+        successMessage: 'Boss mis à jour',
+        cb: () => {
+          router.refresh();
         },
       });
     },

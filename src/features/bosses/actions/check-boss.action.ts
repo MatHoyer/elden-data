@@ -1,12 +1,12 @@
 'use server';
 
+import prisma from '@/lib/prisma';
 import { actionClient } from '@/lib/safe-action';
 import { flattenValidationErrors } from 'next-safe-action';
-import { checkSchema } from '../schemas/check.schema';
-import prisma from '@/lib/prisma';
+import { checkBossSchema } from '../schemas/check-boss.schema';
 
-export const check = actionClient
-  .schema(checkSchema, {
+export const checkBoss = actionClient
+  .schema(checkBossSchema, {
     handleValidationErrorsShape: async (ve) => flattenValidationErrors(ve),
   })
   .action(
