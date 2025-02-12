@@ -29,10 +29,10 @@ model Item {
 
   names            Names          @relation(fields: [namesId], references: [id])
   namesId          String         @unique
-  categories       ItemCategories @relation(fields: [itemCategoriesId], references: [id])
-  itemCategoriesId String         @unique
   category         ItemCategory   @relation(fields: [categoryId], references: [id])
   categoryId       String
+  categories       ItemCategories @relation(fields: [itemCategoriesId], references: [id])
+  itemCategoriesId String         @unique
 }
 
 model User_Item {

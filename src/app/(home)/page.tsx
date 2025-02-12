@@ -20,6 +20,47 @@ const HomePage = async () => {
       },
     },
   });
+  const itemCategories = await prisma.itemCategory.findMany({
+    where: {
+      parentCategory: null,
+    },
+    include: {
+      names: true,
+      subCategories: {
+        include: {
+          names: true,
+          items: {
+            include: {
+              names: true,
+              categories: true,
+              users: {
+                where: {
+                  userId: session?.id ?? '-1',
+                },
+                include: {
+                  user: true,
+                },
+              },
+            },
+          },
+        },
+      },
+      items: {
+        include: {
+          names: true,
+          categories: true,
+          users: {
+            where: {
+              userId: session?.id ?? '-1',
+            },
+            include: {
+              user: true,
+            },
+          },
+        },
+      },
+    },
+  });
 
   const remembranceBosses = Object.groupBy(
     bosses.filter((boss) => !!boss.remembrance),
@@ -58,12 +99,28 @@ const HomePage = async () => {
             total: totalBosses.dlc!.length,
           },
         }}
-        items={[
-          { name: 'test', taken: session ? 0 : -1, total: 10 },
-          { name: 'test', taken: session ? 0 : -1, total: 10 },
-          { name: 'test', taken: session ? 0 : -1, total: 10 },
-          { name: 'test', taken: session ? 0 : -1, total: 10 },
-        ]}
+        items={itemCategories.map((itemCategory) => ({
+          name: itemCategory.names.fr,
+          taken: session?.id
+            ? itemCategory.items.length === 0
+              ? itemCategory.subCategories.reduce(
+                  (acc, subCategory) =>
+                    acc +
+                    subCategory.items.filter((item) => item.users[0].isDone)
+                      .length,
+                  0
+                )
+              : itemCategory.items.filter((item) => item.users[0].isDone).length
+            : -1,
+
+          total:
+            itemCategory.items.length === 0
+              ? itemCategory.subCategories.reduce(
+                  (acc, subCategory) => acc + subCategory.items.length,
+                  0
+                )
+              : itemCategory.items.length,
+        }))}
       />
     </div>
   );

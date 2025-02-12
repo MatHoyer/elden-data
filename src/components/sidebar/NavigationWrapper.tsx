@@ -50,10 +50,7 @@ export const NavigationWrapper: React.FC<TNavigationWrapperProps> = ({
             <header className="flex h-[65px] items-center gap-4 border-b bg-sidebar px-4 lg:h-[60px]">
               <SidebarTrigger />
               <div className="w-full flex-1">{topLeftChildren}</div>
-              <div className="flex items-center gap-2">
-                {topRightChildren}
-                {/* <ThemeToggle /> */}
-              </div>
+              <div className="flex items-center gap-2">{topRightChildren}</div>
             </header>
           )}
           <main className="flex flex-1 flex-col gap-4 overflow-auto h-dvh lg:gap-6 lg:p-6">
