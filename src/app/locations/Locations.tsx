@@ -13,7 +13,7 @@ const LocationCard: React.FC<{ name: { en: string; fr: string } }> = ({
   return (
     <Card
       onClick={() =>
-        router.push(getUrl(`locationName`, { locationName: name.en }))
+        router.push(getUrl(`location-name`, { locationName: name.en }))
       }
       className="relative"
     >

@@ -35,3 +35,13 @@ interface IMessageModalProps extends IMessageParams {
 interface String {
   latinize(): string;
 }
+
+type PageParams<T extends Record<string, string> = object> = {
+  params: Promise<T>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+};
+
+type LayoutParams<T extends Record<string, string> = object> = {
+  params: Promise<T>;
+  children?: ReactNode | undefined;
+};

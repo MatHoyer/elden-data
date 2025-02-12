@@ -3,7 +3,7 @@ import { getServerUrl } from '../server-url';
 type TRouteDataRequirements = {
   home: undefined;
   locations: undefined;
-  locationName: { locationName: string };
+  'location-name': { locationName: string };
   weapons: undefined;
   shields: undefined;
   armors: undefined;
@@ -24,7 +24,7 @@ const routes: {
 } = {
   home: () => '/',
   locations: () => `/locations`,
-  locationName: ({ locationName }) => `/locations/${locationName}`,
+  'location-name': ({ locationName }) => `/locations/${locationName}`,
   weapons: () => '/weapons',
   shields: () => '/shields',
   talismans: () => 'talismans',
