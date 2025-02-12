@@ -106,11 +106,12 @@ const HomePage = async () => {
               ? itemCategory.subCategories.reduce(
                   (acc, subCategory) =>
                     acc +
-                    subCategory.items.filter((item) => item.users[0].isDone)
+                    subCategory.items.filter((item) => item.users[0]?.isDone)
                       .length,
                   0
                 )
-              : itemCategory.items.filter((item) => item.users[0].isDone).length
+              : itemCategory.items.filter((item) => item.users[0]?.isDone)
+                  .length
             : -1,
 
           total:
