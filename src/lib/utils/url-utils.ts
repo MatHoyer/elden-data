@@ -3,6 +3,7 @@ import { getServerUrl } from '../server-url';
 type TRouteDataRequirements = {
   home: undefined;
   locations: undefined;
+  locationName: { locationName: string };
   weapons: undefined;
   shields: undefined;
   armors: undefined;
@@ -10,11 +11,6 @@ type TRouteDataRequirements = {
   invocations: undefined;
   ashesOfWar: undefined;
   talismans: undefined;
-
-  //to remove
-  tmp: {
-    nothing: string;
-  };
 };
 
 export type TRoute = keyof TRouteDataRequirements;
@@ -27,7 +23,8 @@ const routes: {
   [T in TRoute]: (params: TRouteDataMap<T>) => string;
 } = {
   home: () => '/',
-  locations: () => '/locations',
+  locations: () => `/locations`,
+  locationName: ({ locationName }) => `/locations/${locationName}`,
   weapons: () => '/weapons',
   shields: () => '/shields',
   talismans: () => 'talismans',
@@ -35,9 +32,6 @@ const routes: {
   sorceries: () => '/sorceries',
   invocations: () => '/invocations',
   ashesOfWar: () => '/ashes-of-war',
-
-  //to remove
-  tmp: ({ nothing }) => `/tmp/${nothing}`,
 };
 
 type TUrlParams =

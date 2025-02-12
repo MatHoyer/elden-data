@@ -1392,8 +1392,8 @@ export const bosses: TBosses = {
     },
     {
       name: {
-        en: 'Liurnia of the Lakes (Plateau) (Quest  Ranni)',
-        fr: 'Liurnia (Plateau) (Quête  Ranni)',
+        en: 'Liurnia of the Lakes (Plateau)',
+        fr: 'Liurnia (Plateau)',
       },
       bosses: [
         {
@@ -1944,8 +1944,8 @@ export const bosses: TBosses = {
     },
     {
       name: {
-        en: 'Leyndell Catacombs',
-        fr: 'Catacombes de Leyndell',
+        en: 'Leyndell, Royal Capital',
+        fr: 'Leyndell, Capitale Royale',
       },
       bosses: [
         {
@@ -1975,14 +1975,6 @@ export const bosses: TBosses = {
           imageUrl:
             'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mogh_the_omen.png',
         },
-      ],
-    },
-    {
-      name: {
-        en: 'Leyndell, Royal Capital',
-        fr: 'Leyndell, Capitale Royale',
-      },
-      bosses: [
         {
           name: {
             en: 'Godfrey, First Elden Lord',
@@ -3029,8 +3021,8 @@ export const bosses: TBosses = {
     },
     {
       name: {
-        en: 'Hinterlands (Gesture O Mother)',
-        fr: 'Arrière-pays (Émotes  Ô mère)',
+        en: 'Hinterlands',
+        fr: 'Arrière-pays',
       },
       bosses: [
         {
@@ -3079,8 +3071,8 @@ export const bosses: TBosses = {
     },
     {
       name: {
-        en: 'Cathedral of Manus Metyr (Quest Count Ymir)',
-        fr: 'Cathédrale de Manus Metyr (Quête  Comte Ymir)',
+        en: 'Cathedral of Manus Metyr',
+        fr: 'Cathédrale de Manus Metyr',
       },
       bosses: [
         {
