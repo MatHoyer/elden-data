@@ -17,17 +17,24 @@ const HomePage: React.FC<PageParams> = async (props) => {
   const session = await auth();
 
   const bosses = await prisma.boss.findMany({
-    include: {
-      names: true,
-      categories: true,
-      remembrance: { include: { names: true } },
-      location: { include: { names: true } },
+    select: {
+      names: { select: { en: true, fr: true } },
+      locationUrl: true,
+      wikiUrl: true,
+      imageUrl: true,
+      remembrance: {
+        select: { imageUrl: true, names: { select: { en: true, fr: true } } },
+      },
+      categories: {
+        select: { inNight: true, needBell: true, inDlc: true, major: true },
+      },
+      location: { select: { names: { select: { en: true } } } },
       users: {
         where: {
           userId: session?.id ?? '-1',
         },
-        include: {
-          user: true,
+        select: {
+          user: { select: { bosses: { select: { isDone: true } } } },
         },
       },
     },
@@ -41,28 +48,7 @@ const HomePage: React.FC<PageParams> = async (props) => {
     <div>
       <Boss
         locationName={decodeURIComponent(p.locationName)}
-        bosses={bossByLocation.map((boss) => {
-          return {
-            name: { en: boss.names.en, fr: boss.names.fr },
-            locationUrl: boss.locationUrl,
-            wikiUrl: boss.wikiUrl,
-            imageUrl: boss.imageUrl,
-            remembrance: {
-              name: {
-                en: boss.remembrance?.names.en,
-                fr: boss.remembrance?.names.fr,
-              },
-              imageUrl: boss.remembrance?.imageUrl,
-            },
-            category: {
-              inNight: boss.categories.inNight,
-              needBell: boss.categories.needBell,
-              inDlc: boss.categories.inDlc,
-              major: boss.categories.major,
-            },
-            isDone: boss.users[0]?.isDone || false,
-          };
-        })}
+        bosses={bossByLocation}
       />
     </div>
   );
