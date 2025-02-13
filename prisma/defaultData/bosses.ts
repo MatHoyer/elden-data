@@ -22,7 +22,6 @@ type TBosses = {
       category: {
         inNight?: boolean;
         needBell?: boolean;
-        phase?: number;
         inDlc?: boolean;
         major?: boolean;
       };
@@ -246,7 +245,8 @@ export const bosses: TBosses = {
             inNight: true,
             needBell: true,
           },
-          imageUrl: '',
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg',
         },
         {
           name: {
@@ -771,7 +771,8 @@ export const bosses: TBosses = {
             inNight: true,
             needBell: true,
           },
-          imageUrl: '',
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg',
         },
         {
           name: {
@@ -1144,7 +1145,8 @@ export const bosses: TBosses = {
             inNight: true,
             needBell: true,
           },
-          imageUrl: '',
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg',
         },
         {
           name: {
@@ -1886,7 +1888,8 @@ export const bosses: TBosses = {
             inNight: true,
             needBell: true,
           },
-          imageUrl: '',
+          imageUrl:
+            'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg',
         },
         {
           name: {

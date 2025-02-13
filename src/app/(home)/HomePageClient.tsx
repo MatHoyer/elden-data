@@ -145,29 +145,49 @@ export const HomePageClient: React.FC<{
         <Card className="grid grid-rows-[1fr_0fr_2fr_0fr_2fr] text-center items-center w-full">
           <div
             className="flex h-full items-center justify-center group cursor-pointer"
-            onClick={() =>
-              router.push(getUrl('locations', { urlParams: { test: 'test' } }))
-            }
+            onClick={() => router.push(getUrl('locations'))}
           >
-            <h1 className="text-5xl p-5 group-hover:underline group-hover:text-primary transition-colors duration-200">
+            <h1 className="text-6xl p-5 group-hover:underline group-hover:text-primary transition-colors duration-200">
               Boss
             </h1>
           </div>
           <Separator className="h-1" />
-          <div className="px-10 py-3">
-            <ProgressBar
-              title={'Jeu de Base'}
-              progress={boss.normal.killed}
-              total={boss.normal.total}
-            />
+          <div
+            className="flex h-full items-center justify-center group cursor-pointer"
+            onClick={() =>
+              router.push(
+                getUrl('locations', { urlParams: { filter: 'normal' } })
+              )
+            }
+          >
+            <div className="w-full px-10 py-3">
+              <h2 className="text-4xl group-hover:underline group-hover:text-primary transition-colors duration-200">
+                Jeu de Base
+              </h2>
+              <ProgressBar
+                title={''}
+                progress={boss.normal.killed}
+                total={boss.normal.total}
+              />
+            </div>
           </div>
           <Separator className="h-1 mb-[5px]" />
-          <div className="px-10 py-3">
-            <ProgressBar
-              title={'DLC'}
-              progress={boss.dlc.killed}
-              total={boss.dlc.total}
-            />
+          <div
+            className="flex h-full items-center justify-center group cursor-pointer"
+            onClick={() =>
+              router.push(getUrl('locations', { urlParams: { filter: 'dlc' } }))
+            }
+          >
+            <div className="w-full px-10 py-3">
+              <h2 className="text-4xl group-hover:underline group-hover:text-primary transition-colors duration-200">
+                DLC
+              </h2>
+              <ProgressBar
+                title={''}
+                progress={boss.dlc.killed}
+                total={boss.dlc.total}
+              />
+            </div>
           </div>
         </Card>
         <div className="grid grid-rows-[3fr_0fr_2fr] gap-2">

@@ -3,7 +3,7 @@
 import { Card } from '@/components/ui/card';
 import { TextSeparator } from '@/components/ui/separator';
 import { getUrl } from '@/lib/utils/url-utils';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import React from 'react';
 
 const LocationCard: React.FC<{ name: { en: string; fr: string } }> = ({
@@ -41,20 +41,31 @@ export const Locations: React.FC<{
     };
   }[];
 }> = ({ locations, locationsDlc }) => {
+  const searchParams = useSearchParams();
+  const filter = searchParams.get('filter');
+
   return (
     <div className="flex flex-col gap-6">
-      <TextSeparator className="text-3xl">Jeu de Base</TextSeparator>
-      <div className="grid grid-cols-7 gap-3">
-        {locations.map((location, i) => {
-          return <LocationCard key={i} name={location.name} />;
-        })}
-      </div>
-      <TextSeparator className="text-3xl">DLC</TextSeparator>
-      <div className="grid grid-cols-7 gap-3">
-        {locationsDlc.map((location, i) => {
-          return <LocationCard key={i} name={location.name} />;
-        })}
-      </div>
+      {filter === 'dlc' || (
+        <div>
+          <TextSeparator className="text-3xl">Jeu de Base</TextSeparator>
+          <div className="grid grid-cols-7 gap-3 pt-6">
+            {locations.map((location, i) => {
+              return <LocationCard key={i} name={location.name} />;
+            })}
+          </div>
+        </div>
+      )}
+      {filter === 'normal' || (
+        <div>
+          <TextSeparator className="text-3xl">DLC</TextSeparator>
+          <div className="grid grid-cols-7 gap-3 pt-6">
+            {locationsDlc.map((location, i) => {
+              return <LocationCard key={i} name={location.name} />;
+            })}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
