@@ -1,17 +1,17 @@
 import { ItemCategory } from '@prisma/client';
 import prisma from '../src/lib/prisma';
-import { armors } from './defaultData/armor';
-import { ashesOfWar } from './defaultData/asheOfWar';
+import { armors } from './defaultData/armors';
+import { ashesOfWar } from './defaultData/ashesOfWar';
 import { bosses } from './defaultData/bosses';
 import { categories } from './defaultData/categories';
-import { cookBooks } from './defaultData/cookBook';
-import { crystalTears } from './defaultData/crystalTear';
-import { shields } from './defaultData/shield';
-import { spells } from './defaultData/spell';
-import { spiritAshes } from './defaultData/spiritAshe';
+import { cookBooks } from './defaultData/cookBooks';
+import { crystalTears } from './defaultData/crystalTears';
+import { shields } from './defaultData/shields';
+import { spells } from './defaultData/spells';
+import { spiritAshes } from './defaultData/spiritAshes';
 import { talismans } from './defaultData/talismans';
-import { weapons } from './defaultData/weapon';
-import { whetBlades } from './defaultData/whetBlade';
+import { weapons } from './defaultData/weapons';
+import { whetBlades } from './defaultData/whetBlades';
 
 const createBosses = async () => {
   for (const location of bosses.location) {

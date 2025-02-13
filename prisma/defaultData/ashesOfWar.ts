@@ -1,10 +1,24 @@
+type TAshesOfWar = {
+  ashesOfWar: {
+    name: {
+      en: string;
+      fr: string;
+    };
+    locationUrl: string;
+    wikiUrl: string;
+    imageUrl: string;
+    inDlc?: boolean;
+  }[];
+};
+
 export const ashesOfWar = [
   {
     type: 'asheOfWar',
     name: 'Ash of War Dryleaf Whirlwind',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_dryleaf_whirlwind_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War+Dryleaf+Whirlwind',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War+Dryleaf+Whirlwind',
     locationUrl: '',
     inDlc: true,
   },
@@ -13,7 +27,8 @@ export const ashesOfWar = [
     name: 'Ash of War Aspects of the Crucible: Wings',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_aspects_of_the_crucible_wings_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War+Aspects+of+the+Crucible:+Wings',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War+Aspects+of+the+Crucible:+Wings',
     locationUrl: '',
     inDlc: true,
   },
@@ -22,7 +37,8 @@ export const ashesOfWar = [
     name: 'Ash of War Spinning Gravity Thrust',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spinning_gravity_thrust_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War+Spinning+Gravity+Thrust',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War+Spinning+Gravity+Thrust',
     locationUrl: '',
     inDlc: true,
   },
@@ -49,7 +65,8 @@ export const ashesOfWar = [
     name: 'Ash of War Scattershot Throw',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_scattershot_throw_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War+Scattershot+Throw',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War+Scattershot+Throw',
     locationUrl: '',
     inDlc: true,
   },
@@ -148,7 +165,8 @@ export const ashesOfWar = [
     name: "Ash of War Savage Lion's Claw",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_savage_lions_claw_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War+Savage+Lion's+Claw",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Ash+of+War+Savage+Lion's+Claw",
     locationUrl: '',
     inDlc: true,
   },
@@ -157,7 +175,8 @@ export const ashesOfWar = [
     name: 'Ash of War Divine Beast Frost Stomp',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_divine_beast_frost_stomp_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War+Divine+Beast+Frost+Stomp',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War+Divine+Beast+Frost+Stomp',
     locationUrl: '',
     inDlc: true,
   },
@@ -175,7 +194,8 @@ export const ashesOfWar = [
     name: 'Ash of War Carian Sovereignty',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_sovereignty_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War+Carian+Sovereignty',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War+Carian+Sovereignty',
     locationUrl: '',
     inDlc: true,
   },
@@ -184,7 +204,8 @@ export const ashesOfWar = [
     name: 'Ash of War Shriek of Sorrow',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_shriek_of_sorrow_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War+Shriek+of+Sorrow',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War+Shriek+of+Sorrow',
     locationUrl: '',
     inDlc: true,
   },
@@ -193,7 +214,8 @@ export const ashesOfWar = [
     name: 'Ash of War Ghostflame Call',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_ghostflame_call_1_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War%3A+Ghostflame+Call',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War%3A+Ghostflame+Call',
     locationUrl: '',
     inDlc: true,
   },
@@ -202,7 +224,8 @@ export const ashesOfWar = [
     name: 'Ash of War The Poison Flower Blooms Twice',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_the_poison_flower_blooms_twice_1_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War%3A+The+Poison+Flower+Blooms+Twice',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War%3A+The+Poison+Flower+Blooms+Twice',
     locationUrl: '',
     inDlc: true,
   },
@@ -211,7 +234,8 @@ export const ashesOfWar = [
     name: "Ash of War Igon's Drake Hunt",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_igons_drake_hunt_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War+Igon's+Drake+Hunt",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Ash+of+War+Igon's+Drake+Hunt",
     locationUrl: '',
     inDlc: true,
   },
@@ -220,7 +244,8 @@ export const ashesOfWar = [
     name: 'Ash of War Shield Strike',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_shield_strike_3_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War%3A+Shield+Strike',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War%3A+Shield+Strike',
     locationUrl: '',
     inDlc: true,
   },
@@ -237,13 +262,15 @@ export const ashesOfWar = [
     name: 'Ash of War: Repeating Thrust',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_repeating_thrust_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Repeating+Thrust',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Repeating+Thrust',
     locationUrl: '',
   },
   {
     type: 'asheOfWar',
     name: 'Ash of War: Gravitas',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_gravitas_elden_ring_wiki_guide_200.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_gravitas_elden_ring_wiki_guide_200.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Gravitas',
     locationUrl: '',
   },
@@ -292,20 +319,23 @@ export const ashesOfWar = [
     name: 'Ash of War: Stamp (Upward Cut)',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_stamp_upward_%20cut_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Stamp+(Upward+Cut)',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Stamp+(Upward+Cut)',
     locationUrl: '',
   },
   {
     type: 'asheOfWar',
     name: 'Ash of War: Kick',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_kick_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_kick_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Kick',
     locationUrl: '',
   },
   {
     type: 'asheOfWar',
     name: 'Ash of War: Endure',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_endure_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_endure_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Endure',
     locationUrl: '',
   },
@@ -330,7 +360,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Impaling Thrust',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_impaling_thrust_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Impaling+Thrust',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Impaling+Thrust',
     locationUrl: '',
   },
   {
@@ -352,7 +383,8 @@ export const ashesOfWar = [
   {
     type: 'asheOfWar',
     name: 'Ash of War: Parry',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_parry_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_parry_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Parry',
     locationUrl: '',
   },
@@ -369,7 +401,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Glintstone Pebble',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_glintstone_pebble_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Glintstone+Pebble',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Glintstone+Pebble',
     locationUrl: '',
   },
   {
@@ -377,7 +410,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Spinning Weapon',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spinning_weapon_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Weapon',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Weapon',
     locationUrl: '',
   },
   {
@@ -465,7 +499,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Prayerful Strike',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_prayerful_strike_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Prayerful+Strike',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Prayerful+Strike',
     locationUrl: '',
   },
   {
@@ -473,7 +508,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Lightning Slash',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lightning_slash_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Lightning+Slash',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Lightning+Slash',
     locationUrl: '',
   },
   {
@@ -497,7 +533,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Vow of the Indomitable',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_vow_of_the_indomitable_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Vow+of+the+Indomitable',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Vow+of+the+Indomitable',
     locationUrl: '',
   },
   {
@@ -513,7 +550,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Carian Grandeur',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_grandeur_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Grandeur',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Grandeur',
     locationUrl: '',
   },
   {
@@ -521,7 +559,8 @@ export const ashesOfWar = [
     name: "Ash of War: Loretta's Slash",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lorettas_slash_elden_ring_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Loretta's+Slash",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Ash+of+War:+Loretta's+Slash",
     locationUrl: '',
   },
   {
@@ -529,7 +568,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Hoarfrost Stomp',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_hoarfrost_stomp_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Hoarfrost+Stomp',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Hoarfrost+Stomp',
     locationUrl: '',
   },
   {
@@ -537,7 +577,8 @@ export const ashesOfWar = [
     name: "Ash of War: Thops's Barrier",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_thopss_barrier_elden_ring_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Thops's+Barrier",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Ash+of+War:+Thops's+Barrier",
     locationUrl: '',
   },
   {
@@ -583,7 +624,8 @@ export const ashesOfWar = [
   {
     type: 'asheOfWar',
     name: 'Lost Ashes of War',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lost_ashes_of_war_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lost_ashes_of_war_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Lost+Ashes+of+War',
     locationUrl: '',
   },
@@ -592,7 +634,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Glintblade Phalanx',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_glintblade_phalanx_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Glintblade+Phalanx',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Glintblade+Phalanx',
     locationUrl: '',
   },
   {
@@ -600,7 +643,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Poison Moth Flight',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_poison_moth_flight_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Poison+Moth+Flight',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Poison+Moth+Flight',
     locationUrl: '',
   },
   {
@@ -616,7 +660,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Sacred Ring of Light',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_sacred_ring_of_light_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Sacred+Ring+of+Light',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Sacred+Ring+of+Light',
     locationUrl: '',
   },
   {
@@ -632,7 +677,8 @@ export const ashesOfWar = [
     name: "Ash of War: Assassin's Gambit",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_assassins_gambit_elden_ring_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Assassin's+Gambit",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Ash+of+War:+Assassin's+Gambit",
     locationUrl: '',
   },
   {
@@ -648,7 +694,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Black Flame Tornado',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_black_flame_tornado_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Black+Flame+Tornado',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Black+Flame+Tornado',
     locationUrl: '',
   },
   {
@@ -656,7 +703,8 @@ export const ashesOfWar = [
     name: "Ash of War: Hoarah Loux's Earthshaker",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_hoarah_louxs_earthshaker_elden_ring_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Hoarah+Loux's+Earthshaker",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Ash+of+War:+Hoarah+Loux's+Earthshaker",
     locationUrl: '',
   },
   {
@@ -672,7 +720,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Barricade Shield',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_barricade_shield_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Barricade+Shield',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Barricade+Shield',
     locationUrl: '',
   },
   {
@@ -688,7 +737,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Carian Retaliation',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_retaliation_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Retaliation',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Retaliation',
     locationUrl: '',
   },
   {
@@ -696,7 +746,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Waves of Darkness',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_waves_of_darkness_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Waves+of+Darkness',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Waves+of+Darkness',
     locationUrl: '',
   },
   {
@@ -752,7 +803,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Spinning Strikes',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spinning_strikes_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Strikes',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Strikes',
     locationUrl: '',
   },
   {
@@ -760,7 +812,8 @@ export const ashesOfWar = [
     name: "Ash of War: Prelate's Charge",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_prelates_charge_elden_ring_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Prelate's+Charge",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Ash+of+War:+Prelate's+Charge",
     locationUrl: '',
   },
   {
@@ -792,7 +845,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Carian Greatsword',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_greatsword_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Greatsword',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Greatsword',
     locationUrl: '',
   },
   {
@@ -800,7 +854,8 @@ export const ashesOfWar = [
     name: "Ash of War: Royal Knight's Resolve",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_royal_knights_resolve_elden_ring_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Royal+Knight's+Resolve",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Ash+of+War:+Royal+Knight's+Resolve",
     locationUrl: '',
   },
   {
@@ -848,7 +903,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Through and Through',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_through_and_through_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Through+and+Through',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Through+and+Through',
     locationUrl: '',
   },
   {
@@ -872,7 +928,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Flame of the Redmanes',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_flame_of_the_redmanes_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+of+the+Redmanes',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+of+the+Redmanes',
     locationUrl: '',
   },
   {
@@ -920,7 +977,8 @@ export const ashesOfWar = [
     name: "Ash of War: Braggart's Roar",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_braggart%27s_roar_elden_ring_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Braggart's+Roar",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Ash+of+War:+Braggart's+Roar",
     locationUrl: '',
   },
   {
@@ -936,7 +994,8 @@ export const ashesOfWar = [
     name: "Ash of War: Bloodhound's Step",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_bloodhounds_step_elden_ring_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War:+Bloodhound's+Step",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Ash+of+War:+Bloodhound's+Step",
     locationUrl: '',
   },
   {
@@ -944,7 +1003,8 @@ export const ashesOfWar = [
     name: 'Ash of War: Raptor of the Mists',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_raptor_of_the_mists_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ash+of+War:+Raptor+of+the+Mists',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ash+of+War:+Raptor+of+the+Mists',
     locationUrl: '',
   },
   {
@@ -952,7 +1012,8 @@ export const ashesOfWar = [
     name: "Ash of War: White Shadow's Lure",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_white_shadows_lure_elden_ring_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ash+of+War:+White+Shadow's+Lure",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Ash+of+War:+White+Shadow's+Lure",
     locationUrl: '',
   },
 ];

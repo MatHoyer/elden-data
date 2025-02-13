@@ -1,3 +1,22 @@
+type TWeapons = {
+  type: {
+    name: {
+      en: string;
+      fr: string;
+    };
+    weapons: {
+      name: {
+        en: string;
+        fr: string;
+      };
+      locationUrl: string;
+      wikiUrl: string;
+      imageUrl: string;
+      inDlc?: boolean;
+    }[];
+  }[];
+};
+
 export const weapons = [
   {
     type: 'weapon',
@@ -423,7 +442,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Claymore',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/claymore_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/claymore_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Claymore',
     locationUrl: '',
     sortableType: 'Greatswords',
@@ -460,7 +480,8 @@ export const weapons = [
     name: "Banished Knight's Greatsword",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knights_greatsword_weapon_elden_ring_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Banished+Knight's+Greatsword",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Banished+Knight's+Greatsword",
     locationUrl: '',
     sortableType: 'Greatswords',
     inDlc: true,
@@ -477,7 +498,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Flamberge',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flamberge_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flamberge_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Flamberge',
     locationUrl: '',
     sortableType: 'Greatswords',
@@ -504,7 +526,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Inseparable Sword',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/inseparable_sword_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/inseparable_sword_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Inseparable+Sword',
     locationUrl: '',
     sortableType: 'Greatswords',
@@ -558,7 +581,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: "Helphen's Steeple",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/helphens_steeple.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/helphens_steeple.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Helphen's+Steeple",
     locationUrl: '',
     sortableType: 'Greatswords',
@@ -593,7 +617,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Sacred Relic Sword',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sacred_relic_sword.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sacred_relic_sword.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Sacred+Relic+Sword',
     locationUrl: '',
     sortableType: 'Greatswords',
@@ -613,7 +638,8 @@ export const weapons = [
     name: 'Ancient Meteoric Ore Greatsword',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_meteoric_ore_greatsword_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ancient+Meteoric+Ore+Greatsword',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ancient+Meteoric+Ore+Greatsword',
     locationUrl: '',
     sortableType: 'Colossal Swords',
     inDlc: true,
@@ -623,7 +649,8 @@ export const weapons = [
     name: 'Greatsword of Radahn (Lord)',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/greatsword_of_radahn_%28lord%29_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Greatsword+of+Radahn+(Lord)',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Greatsword+of+Radahn+(Lord)',
     locationUrl: '',
     sortableType: 'Colossal Swords',
     inDlc: true,
@@ -643,7 +670,8 @@ export const weapons = [
     name: 'Greatsword of Radahn (Light)',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/greatsword_of_radahn_%28light%29_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Greatsword+of+Radahn+(Light)',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Greatsword+of+Radahn+(Light)',
     locationUrl: '',
     sortableType: 'Colossal Swords',
     inDlc: true,
@@ -1064,7 +1092,8 @@ export const weapons = [
     name: "Horned Warrior's Greatsword",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/horned_warriors_greatsword_curved_greatsword_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Horned+Warrior's+Greatsword",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Horned+Warrior's+Greatsword",
     locationUrl: '',
     sortableType: 'Curved Greatswords',
     inDlc: true,
@@ -1100,7 +1129,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: "Monk's Flameblade",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/monks_flameblade_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/monks_flameblade_elden_ring_wiki_guide_200px.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Monk's+Flameblade",
     locationUrl: '',
     sortableType: 'Curved Greatswords',
@@ -1108,7 +1138,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: "Beastman's Cleaver",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastmans_cleaver_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastmans_cleaver_elden_ring_wiki_guide_200px.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Beastman's+Cleaver",
     locationUrl: '',
     sortableType: 'Curved Greatswords',
@@ -1181,7 +1212,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Uchigatana',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/uchigatana_katana_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/uchigatana_katana_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Uchigatana',
     locationUrl: '',
     sortableType: 'Katanas',
@@ -1366,7 +1398,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Hand Axe',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hand_axe_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hand_axe_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Hand+Axe',
     locationUrl: '',
     sortableType: 'Axes',
@@ -1383,7 +1416,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Battle Axe',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/battle_axe_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/battle_axe_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Battle+Axe',
     locationUrl: '',
     sortableType: 'Axes',
@@ -1472,7 +1506,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: "Rosus' Axe",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rosus_axe_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rosus_axe_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Rosus'+Axe",
     locationUrl: '',
     sortableType: 'Axes',
@@ -1492,7 +1527,8 @@ export const weapons = [
     name: "Death Knight's Longhaft Axe",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death_knights_longhaft_axe_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Death+Knight's+Longhaft+Axe",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Death+Knight's+Longhaft+Axe",
     locationUrl: '',
     sortableType: 'Greataxes',
     inDlc: true,
@@ -1528,7 +1564,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Longhaft Axe',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/longhaft_axe_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/longhaft_axe_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Longhaft+Axe',
     locationUrl: '',
     sortableType: 'Greataxes',
@@ -1629,7 +1666,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Curved Club',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/curved_club_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/curved_club_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Curved+Club',
     locationUrl: '',
     sortableType: 'Hammers',
@@ -1646,7 +1684,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Stone Club',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stone_club_clubs_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stone_club_clubs_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Stone+Club',
     locationUrl: '',
     sortableType: 'Hammers',
@@ -1699,7 +1738,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: "Varre's Bouquet",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/varres_bouquet_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/varres_bouquet_elden_ring_wiki_guide_200px.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Varre's+Bouquet",
     locationUrl: '',
     sortableType: 'Hammers',
@@ -1707,7 +1747,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: "Envoy's Horn",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/envoys_horn_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/envoys_horn_elden_ring_wiki_guide_200px.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Envoy's+Horn",
     locationUrl: '',
     sortableType: 'Hammers',
@@ -1742,7 +1783,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: "Marika's Hammer",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marikas_hammer_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marikas_hammer_elden_ring_wiki_guide_200px.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Marika's+Hammer",
     locationUrl: '',
     sortableType: 'Hammers',
@@ -1760,7 +1802,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Flail',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flail_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flail_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Flail',
     locationUrl: '',
     sortableType: 'Flails',
@@ -2000,7 +2043,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Duelist Greataxe',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/duelist_greataxe_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/duelist_greataxe_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Duelist+Greataxe',
     locationUrl: '',
     sortableType: 'Colossal Weapons',
@@ -2026,7 +2070,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Giant-Crusher',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/giant-crusher_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/giant-crusher_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Giant-Crusher',
     locationUrl: '',
     sortableType: 'Colossal Weapons',
@@ -2089,7 +2134,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Rotten Staff',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_staff_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_staff_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Rotten+Staff',
     locationUrl: '',
     sortableType: 'Colossal Weapons',
@@ -2098,7 +2144,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: "Envoy's Greathorn",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/envoys_greathorn_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/envoys_greathorn_elden_ring_wiki_guide_200px.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Envoy's+Greathorn",
     locationUrl: '',
     sortableType: 'Colossal Weapons',
@@ -2172,7 +2219,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Iron Spear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_spear_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_spear_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Spear',
     locationUrl: '',
     sortableType: 'Spears',
@@ -2180,7 +2228,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Spear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spear_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spear_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Spear',
     locationUrl: '',
     sortableType: 'Spears',
@@ -2188,7 +2237,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Partisan',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/partisan_spear-elden-ring-wiki-guide-200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/partisan_spear-elden-ring-wiki-guide-200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Partisan',
     locationUrl: '',
     sortableType: 'Spears',
@@ -2196,7 +2246,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Pike',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pike_spear-elden-ring-wiki-guide-200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pike_spear-elden-ring-wiki-guide-200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Pike',
     locationUrl: '',
     sortableType: 'Spears',
@@ -2204,7 +2255,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Spiked Spear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spiked_spear_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spiked_spear_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Spiked+Spear',
     locationUrl: '',
     sortableType: 'Spears',
@@ -2212,7 +2264,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Cross-Naginata',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cross-naginata_elden_ring_wiki_guide_75px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cross-naginata_elden_ring_wiki_guide_75px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Cross-Naginata',
     locationUrl: '',
     sortableType: 'Spears',
@@ -2220,7 +2273,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: "Clayman's Harpoon",
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/claymans_harpoon-elden-ring-wiki-guide.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/claymans_harpoon-elden-ring-wiki-guide.png',
     wikiUrl: "https://eldenring.wiki.fextralife.com/Clayman's+Harpoon",
     locationUrl: '',
     sortableType: 'Spears',
@@ -2237,7 +2291,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Torchpole',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/torchpole_elden_ring_wiki_guide_75px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/torchpole_elden_ring_wiki_guide_75px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Torchpole',
     locationUrl: '',
     sortableType: 'Spears',
@@ -2254,7 +2309,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Crystal Spear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystal_spear_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystal_spear_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Crystal+Spear',
     locationUrl: '',
     sortableType: 'Spears',
@@ -2271,7 +2327,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Cleanrot Spear',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot_spear-elden-ring-wiki-guide.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot_spear-elden-ring-wiki-guide.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Spear',
     locationUrl: '',
     sortableType: 'Spears',
@@ -2288,7 +2345,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Bolt of Gransax',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bolt_of_gransax-elden-ring-wiki-guide.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bolt_of_gransax-elden-ring-wiki-guide.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Bolt+of+Gransax',
     locationUrl: '',
     sortableType: 'Spears',
@@ -2437,7 +2495,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Glaive',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glaive_halberds_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glaive_halberds_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Glaive',
     locationUrl: '',
     sortableType: 'Halberds',
@@ -2612,7 +2671,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Whip',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/whip_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/whip_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Whip',
     locationUrl: '',
     sortableType: 'Whips',
@@ -2629,7 +2689,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Urumi',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/urumi_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/urumi_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Urumi',
     locationUrl: '',
     sortableType: 'Whips',
@@ -2732,7 +2793,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Katar',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/katar_fist_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/katar_fist_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Katar',
     locationUrl: '',
     sortableType: 'Fists',
@@ -2917,7 +2979,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Black Bow',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_bow_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_bow_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Bow',
     locationUrl: '',
     sortableType: 'Bows',
@@ -2926,7 +2989,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Pulley Bow',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pulley_bow_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pulley_bow_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Pulley+Bow',
     locationUrl: '',
     sortableType: 'Bows',
@@ -2934,7 +2998,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Horn Bow',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/horn_bow_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/horn_bow_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Horn+Bow',
     locationUrl: '',
     sortableType: 'Bows',
@@ -2962,7 +3027,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Longbow',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/longbow_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/longbow_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Longbow',
     locationUrl: '',
     sortableType: 'Bows',
@@ -2981,7 +3047,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Greatbow',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/greatbow_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/greatbow_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Greatbow',
     locationUrl: '',
     sortableType: 'Greatbows',
@@ -3063,7 +3130,8 @@ export const weapons = [
   {
     type: 'weapon',
     name: 'Arbalest',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/arbalest_weapon_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/arbalest_weapon_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Arbalest',
     locationUrl: '',
     sortableType: 'Crossbows',
@@ -3073,7 +3141,8 @@ export const weapons = [
     name: "Crepus's Black-Key Crossbow",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crepuss_black-key_crossbow_weapon_elden_ring_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Crepus's+Black-Key+Crossbow",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Crepus's+Black-Key+Crossbow",
     locationUrl: '',
     sortableType: 'Crossbows',
   },
@@ -3449,7 +3518,8 @@ export const weapons = [
     name: 'Deadly Poison Perfume Bottle',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/deadly_poison_perfume_bottle_perfume_bottles_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Deadly+Poison+Perfume+Bottle',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Deadly+Poison+Perfume+Bottle',
     locationUrl: '',
     sortableType: 'Perfume Bottles',
     inDlc: true,
@@ -3519,7 +3589,8 @@ export const weapons = [
     name: "Dragon-Hunter's Great Katana",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragon-hunters_great_katana_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Dragon-Hunter's+Great+Katana",
+    wikiUrl:
+      "https://eldenring.wiki.fextralife.com/Dragon-Hunter's+Great+Katana",
     locationUrl: '',
     sortableType: 'Great Katanas',
     inDlc: true,

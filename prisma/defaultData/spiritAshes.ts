@@ -1,3 +1,16 @@
+type TSpiritAshes = {
+  spiritAshes: {
+    name: {
+      en: string;
+      fr: string;
+    };
+    locationUrl: string;
+    wikiUrl: string;
+    imageUrl: string;
+    inDlc?: boolean;
+  }[];
+};
+
 export const spiritAshes = [
   {
     type: 'spiritAshe',
@@ -76,7 +89,8 @@ export const spiritAshes = [
     name: 'Black Knight Commander Andreas',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knight_commander_andreas_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knight+Commander+Andreas',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Black+Knight+Commander+Andreas',
     locationUrl: '',
     inDlc: true,
   },
@@ -166,7 +180,8 @@ export const spiritAshes = [
     name: 'Swordhand of Night Jolán',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/swordhand_of_night_jolan_spirit_ash_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Swordhand+of+Night+Jol%C3%A1n',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Swordhand+of+Night+Jol%C3%A1n',
     locationUrl: '',
     inDlc: true,
   },
@@ -198,7 +213,8 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'NOMAD ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomad_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomad_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Nomad+Ashes',
     locationUrl: '',
   },
@@ -229,7 +245,8 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'ALBINAURIC ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/albinauric_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/albinauric_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Albinauric+Ashes',
     locationUrl: '',
   },
@@ -244,14 +261,16 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'DEMI-HUMAN ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Demi-Human+Ashes',
     locationUrl: '',
   },
   {
     type: 'spiritAshe',
     name: 'CLAYMAN ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/clayman_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/clayman_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Clayman+Ashes',
     locationUrl: '',
   },
@@ -266,7 +285,8 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'LONE WOLF ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lone_wolf_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lone_wolf_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Lone+Wolf+Ashes',
     locationUrl: '',
   },
@@ -281,21 +301,24 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'GIANT RAT ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/giant_rat_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/giant_rat_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Giant+Rat+Ashes',
     locationUrl: '',
   },
   {
     type: 'spiritAshe',
     name: 'WARHAWK ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/warhawk_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/warhawk_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Warhawk+Ashes',
     locationUrl: '',
   },
   {
     type: 'spiritAshe',
     name: 'LAND SQUIRT ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/land_squirt_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/land_squirt_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Land+Squirt+Ashes',
     locationUrl: '',
   },
@@ -318,7 +341,8 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'FANGED IMP ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fanged_imp_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fanged_imp_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Fanged+Imp+Ashes',
     locationUrl: '',
   },
@@ -333,7 +357,8 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'ARCHER ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/archer_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/archer_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Archer+Ashes',
     locationUrl: '',
   },
@@ -348,7 +373,8 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'PAGE ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/page_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/page_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Page+Ashes',
     locationUrl: '',
   },
@@ -395,7 +421,8 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'FIRE MONK ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_monk_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_monk_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Monk+Ashes',
     locationUrl: '',
   },
@@ -418,14 +445,16 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'MAN-SERPENT ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/man-serpent_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/man-serpent_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Man-Serpent+Ashes',
     locationUrl: '',
   },
   {
     type: 'spiritAshe',
     name: 'CRYSTALIAN ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystalian_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystalian_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Crystalian+Ashes',
     locationUrl: '',
   },
@@ -504,7 +533,8 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'STORMHAWK DEENH',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stormhawk_deenh_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stormhawk_deenh_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Stormhawk+Deenh',
     locationUrl: '',
   },
@@ -521,7 +551,8 @@ export const spiritAshes = [
     name: 'BANISHED KNIGHT ENGVALL ASHES',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knight_engvall_ashes_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Banished+Knight+Engvall+Ashes',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Banished+Knight+Engvall+Ashes',
     locationUrl: '',
   },
   {
@@ -551,7 +582,8 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'PERFUMER TRICIA',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer_tricia_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer_tricia_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Tricia+Ashes',
     locationUrl: '',
   },
@@ -560,13 +592,15 @@ export const spiritAshes = [
     name: 'DEPRAVED PERFUMER CARMAAN ASHES',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/depraved_perfumer_carmaan_ashes_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Carmaan+Ashes',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Carmaan+Ashes',
     locationUrl: '',
   },
   {
     type: 'spiritAshe',
     name: 'OMENKILLER ROLLO',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller_rollo_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller_rollo_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Omenkiller+Rollo',
     locationUrl: '',
   },
@@ -583,7 +617,8 @@ export const spiritAshes = [
     name: 'Ancient Dragon Knight Kristoff Ashes',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_knight_kristoff_ashes_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Ancient+Dragon+Knight+Kristoff+Ashes',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Ancient+Dragon+Knight+Kristoff+Ashes',
     locationUrl: '',
   },
   {
@@ -607,20 +642,23 @@ export const spiritAshes = [
     name: 'CLEANROT KNIGHT FINLAY ASHES',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot_knight_finlay_ashes_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Knight+Finlay+Ashes',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Cleanrot+Knight+Finlay+Ashes',
     locationUrl: '',
   },
   {
     type: 'spiritAshe',
     name: 'BLACK KNIFE TICHE',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knife_tiche_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knife_tiche_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Tiche',
     locationUrl: '',
   },
   {
     type: 'spiritAshe',
     name: 'MIMIC TEAR ASHES',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mimic_tear_ashes_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mimic_tear_ashes_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Mimic+Tear+Ashes',
     locationUrl: '',
   },
@@ -629,13 +667,15 @@ export const spiritAshes = [
     name: 'FINGER MAIDEN THEROLINA PUPPET',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger_maiden_therolina_puppet_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Finger+Maiden+Therolina+Puppet',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Finger+Maiden+Therolina+Puppet',
     locationUrl: '',
   },
   {
     type: 'spiritAshe',
     name: 'JARWIGHT PUPPET',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/jarwight_puppet_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/jarwight_puppet_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Jarwight+Puppet',
     locationUrl: '',
   },
@@ -644,7 +684,8 @@ export const spiritAshes = [
     name: 'DOLORES THE SLEEPING ARROW PUPPET',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dolores_the_sleeping_arrow_puppet_elden_ring_wiki_guide_200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Dolores+the+Sleeping+Arrow+Puppet',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Dolores+the+Sleeping+Arrow+Puppet',
     locationUrl: '',
   },
   {
@@ -658,7 +699,8 @@ export const spiritAshes = [
   {
     type: 'spiritAshe',
     name: 'DUNG EATER PUPPET',
-    imageUrl: 'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dung_eater_puppet_elden_ring_wiki_guide_200px.png',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dung_eater_puppet_elden_ring_wiki_guide_200px.png',
     wikiUrl: 'https://eldenring.wiki.fextralife.com/Dung+Eater+Puppet',
     locationUrl: '',
   },
@@ -667,7 +709,8 @@ export const spiritAshes = [
     name: 'NIGHTMAIDEN & SWORDSTRESS PUPPETS',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nightmaiden-&-swordstress-puppets-spirit-ashes-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Nightmaiden+&+Swordstress+Puppets',
+    wikiUrl:
+      'https://eldenring.wiki.fextralife.com/Nightmaiden+&+Swordstress+Puppets',
     locationUrl: '',
   },
 ];
