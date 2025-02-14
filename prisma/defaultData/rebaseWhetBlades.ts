@@ -1,6 +1,6 @@
 type TWhetBlades = {
   whetBlades: {
-    name: {
+    names: {
       en: string;
       fr: string;
     };
@@ -13,7 +13,7 @@ type TWhetBlades = {
 export const whetBlades: TWhetBlades = {
   whetBlades: [
     {
-      name: {
+      names: {
         en: '',
         fr: 'Couteau à aiguiser',
       },
@@ -24,7 +24,7 @@ export const whetBlades: TWhetBlades = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/whetstone_knife_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Lame d'affûtage en fer",
       },
@@ -35,7 +35,7 @@ export const whetBlades: TWhetBlades = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_whetblade_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Lame d'affûtage en pierre d'éclat",
       },
@@ -46,7 +46,7 @@ export const whetBlades: TWhetBlades = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_whetblade_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Lame d'affûtage incandescente",
       },
@@ -57,7 +57,7 @@ export const whetBlades: TWhetBlades = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/red-hot_whetblade_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Lame d'affûtage sanctifiée",
       },
@@ -68,7 +68,7 @@ export const whetBlades: TWhetBlades = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sancrified_whetblade_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Lame d'affûtage noire",
       },

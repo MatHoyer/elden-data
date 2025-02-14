@@ -1,6 +1,6 @@
 type TTalismans = {
   talismans: {
-    name: {
+    names: {
       en: string;
       fr: string;
     };
@@ -14,7 +14,7 @@ type TTalismans = {
 export const talismans: TTalismans = {
   talismans: [
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre pourpre",
       },
@@ -25,7 +25,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre pourpre +1",
       },
@@ -36,7 +36,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/1/10/ER_Icon_Talisman_Crimson_Amber_Medallion_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre pourpre +2",
       },
@@ -47,7 +47,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/e/e1/ER_Icon_Talisman_Crimson_Amber_Medallion_%2B2.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre pourpre +3",
       },
@@ -59,7 +59,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la graine pourpre',
       },
@@ -70,7 +70,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_seed_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la graine pourpre +1',
       },
@@ -82,7 +82,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la larme bénie',
       },
@@ -93,7 +93,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blessed_dew_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre céruléen",
       },
@@ -104,7 +104,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre céruléen +1",
       },
@@ -115,7 +115,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/f/f5/ER_Icon_Talisman_Cerulean_Amber_Medallion_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre céruléen +2",
       },
@@ -126,7 +126,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/d/d5/ER_Icon_Talisman_Cerulean_Amber_Medallion_%2B2.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre céruléen +3",
       },
@@ -138,7 +138,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la graine céruléenne',
       },
@@ -149,7 +149,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_seed_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la graine céruléenne +1',
       },
@@ -161,7 +161,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la larme bleue bénie',
       },
@@ -174,7 +174,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman du don du seigneur',
       },
@@ -187,7 +187,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre vert émeraude",
       },
@@ -198,7 +198,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/viridian_amber_medallion_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre vert émeraude +1",
       },
@@ -209,7 +209,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/2/24/ER_Icon_Talisman_Viridian_Amber_Medallion_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre vert émeraude +2",
       },
@@ -220,7 +220,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/4/4d/ER_Icon_Talisman_Viridian_Amber_Medallion_%2B2.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Médaillon d'ambre vert émeraude +3",
       },
@@ -232,7 +232,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de tortue verte',
       },
@@ -243,7 +243,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/green_turtle_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de tortue à deux têtes',
       },
@@ -255,7 +255,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Talisman d'arsenal",
       },
@@ -266,7 +266,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/arsenal_charm_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Talisman d'arsenal +1",
       },
@@ -277,7 +277,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/8/83/ER_Icon_Talisman_Arsenal_Charm_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Arsenal de la Grande jarre',
       },
@@ -288,7 +288,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/great-jars_arsenal_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Faveur de l'Arbre-Monde",
       },
@@ -299,7 +299,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/4/42/ER_Icon_Talisman_Erdtree%27s_Favor.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Faveur de l'Arbre-Monde +1",
       },
@@ -310,7 +310,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/c/cd/ER_Icon_Talisman_Erdtree%27s_Favor_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Faveur de l'Arbre-Monde +2",
       },
@@ -321,7 +321,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/4/4c/ER_Icon_Talisman_Erdtree%27s_Favor_%2B2.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Sceau scarifié de Radagon',
       },
@@ -332,7 +332,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radagons_scarseal_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Sceau meurtri de Radagon',
       },
@@ -343,7 +343,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radagons_soreseal_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Sceau scarifié de Marika',
       },
@@ -354,7 +354,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marikas_scarseal_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Sceau meurtri de Marika',
       },
@@ -365,7 +365,7 @@ export const talismans: TTalismans = {
         'https://eldenring.fanapis.com/images/talismans/17f69c504f2l0i2swunxt9oun5dn9.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Héritage du Fléau des astres',
       },
@@ -376,7 +376,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/starscourge_heirloom_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Héritage de l'épéiste amputée",
       },
@@ -388,7 +388,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/prosthesis-wearer_heriloom_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Héritage de l'astrologue",
       },
@@ -399,7 +399,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stargazer_heirloom_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Héritage des Deux Doigts',
       },
@@ -410,7 +410,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/two_fingers_heirloom_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Héritage de la Divinité extérieure',
       },
@@ -422,7 +422,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de bouclier draconique',
       },
@@ -434,7 +434,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragoncrest_shield_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de bouclier draconique +1',
       },
@@ -446,7 +446,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/4/4a/ER_Icon_Talisman_Dragoncrest_Shield_Talisman_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de bouclier draconique +2',
       },
@@ -458,7 +458,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/4/40/ER_Icon_Talisman_Dragoncrest_Shield_Talisman_%2B2.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de pavois draconique',
       },
@@ -470,7 +470,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragoncrest_greatshield_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon magique',
       },
@@ -481,7 +481,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spelldrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon magique +1',
       },
@@ -492,7 +492,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/8/86/ER_Icon_Talisman_Spelldrake_Talisman_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon magique +2',
       },
@@ -503,7 +503,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/a/a8/ER_Icon_Talisman_Spelldrake_Talisman_%2B2.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon magique +3',
       },
@@ -515,7 +515,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de feu',
       },
@@ -526,7 +526,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flamedrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de feu +1',
       },
@@ -537,7 +537,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/f/f8/ER_Icon_Talisman_Flamedrake_Talisman_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de feu +2',
       },
@@ -548,7 +548,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/c/cc/ER_Icon_Talisman_Flamedrake_Talisman_%2B2.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de feu +3',
       },
@@ -560,7 +560,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de foudre',
       },
@@ -571,7 +571,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/boltdrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de foudre +1',
       },
@@ -582,7 +582,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/8/85/ER_Icon_Talisman_Boltdrake_Talisman_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de foudre +2',
       },
@@ -593,7 +593,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/c/c4/ER_Icon_Talisman_Boltdrake_Talisman_%2B2.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de foudre +3',
       },
@@ -605,7 +605,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon sacré',
       },
@@ -616,7 +616,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligdrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon sacré +1',
       },
@@ -627,7 +627,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/0/0e/ER_Icon_Talisman_Haligdrake_Talisman_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon sacré +2',
       },
@@ -638,7 +638,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/1/10/ER_Icon_Talisman_Haligdrake_Talisman_%2B2.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Tresse dorée',
       },
@@ -650,7 +650,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de perle',
       },
@@ -661,7 +661,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pearldrake_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de perle +1',
       },
@@ -672,7 +672,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/8/83/ER_Icon_Talisman_Pearldrake_Talisman_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de perle +2',
       },
@@ -683,7 +683,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/9/97/ER_Icon_Talisman_Pearldrake_Talisman_%2B2.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de dragon de perle +3',
       },
@@ -695,7 +695,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Corne d'immunité",
       },
@@ -706,7 +706,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/immunizing_horn_charm_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Corne d'immunité +1",
       },
@@ -717,7 +717,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/a/a7/ER_Icon_Talisman_Immunizing_Horn_Charm_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Corne d'immunité +2",
       },
@@ -729,7 +729,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Corne de robustesse',
       },
@@ -740,7 +740,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stalwart_horn_charm_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Corne de robustesse +1',
       },
@@ -751,7 +751,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/c/c5/ER_Icon_Talisman_Stalwart_Horn_Charm_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Corne de robustesse +2',
       },
@@ -763,7 +763,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Corne de focalisation',
       },
@@ -774,7 +774,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/clarifying_horn_charm_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Corne de focalisation +1',
       },
@@ -785,7 +785,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/e/e0/ER_Icon_Talisman_Clarifying_Horn_Charm_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Corne de focalisation +2',
       },
@@ -797,7 +797,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Pendentif bariolé',
       },
@@ -808,7 +808,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mottled_necklace_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Pendentif bariolé +1',
       },
@@ -819,7 +819,7 @@ export const talismans: TTalismans = {
         'https://static.wikia.nocookie.net/eldenring/images/a/a3/ER_Icon_Talisman_Mottled_Necklace_%2B1.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Pendentif bariolé +2',
       },
@@ -831,7 +831,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Excroissance du Prince de la Mort',
       },
@@ -843,7 +843,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/prince_of_deaths_pustule_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Kyste du Prince de la Mort',
       },
@@ -854,7 +854,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/prince_of_deaths_cyst_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Talisman d'altération",
       },
@@ -866,7 +866,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la dague',
       },
@@ -877,7 +877,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dagger_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Talisman d'épée courbée",
       },
@@ -888,7 +888,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/curved_sword_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la lame double',
       },
@@ -899,7 +899,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/twinblade_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la hache',
       },
@@ -910,7 +910,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/axe_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman du marteau',
       },
@@ -921,7 +921,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hammer_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la lance',
       },
@@ -932,7 +932,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spear_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la lance de cavalerie',
       },
@@ -943,7 +943,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lance_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la griffe',
       },
@@ -954,7 +954,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/claw_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Talisman d'épée à deux mains",
       },
@@ -967,7 +967,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de pavois',
       },
@@ -978,7 +978,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/greatshield_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman du bouclier perlé',
       },
@@ -990,7 +990,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Enchevêtrement de riposte',
       },
@@ -1002,7 +1002,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Enchevêtrement de lacération',
       },
@@ -1014,7 +1014,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman des flèches mordantes',
       },
@@ -1025,7 +1025,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/arrows_sting_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman des flèches filantes',
       },
@@ -1036,7 +1036,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/arrows_reach_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman des flèches mordantes (DLC)',
       },
@@ -1049,7 +1049,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de tir précis',
       },
@@ -1061,7 +1061,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Talisman de l'amalgame sculpté",
       },
@@ -1072,7 +1072,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/graven-school_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Talisman de l'amas sculpté",
       },
@@ -1083,7 +1083,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/graven-mass_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman en toile des fidèles',
       },
@@ -1095,7 +1095,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/faithfuls_canvas_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman en toile des ouailles',
       },
@@ -1106,7 +1106,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flocks_canvas_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Lame de pierre d'éclat primordiale",
       },
@@ -1117,7 +1117,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/primal_glintstone_blade_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Lune de Nokstella',
       },
@@ -1128,7 +1128,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/moon_of_nokstella_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Talisman d'ancien seigneur",
       },
@@ -1139,7 +1139,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/old_lords_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Icône de Radagon',
       },
@@ -1150,7 +1150,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radagon_icon_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Poussière d'étoiles chérie",
       },
@@ -1162,7 +1162,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Médaillon de cri',
       },
@@ -1173,7 +1173,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/roar_medallion_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Jarre de compagnie',
       },
@@ -1184,7 +1184,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/companion_jar_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de Parfumeur',
       },
@@ -1195,7 +1195,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumers_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Emblème de Caria à filigrane',
       },
@@ -1206,7 +1206,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/carian_filigreed_crest_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Fragment de guerrier-jarre',
       },
@@ -1217,7 +1217,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/warrior_jar_shard_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Fragment d'Alexander",
       },
@@ -1228,7 +1228,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shard_of_alexander_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Icône de Godfrey',
       },
@@ -1239,7 +1239,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godfrey_icon_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Camée de Rellana',
       },
@@ -1251,7 +1251,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de pierre brisée',
       },
@@ -1263,7 +1263,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de forgeron',
       },
@@ -1275,7 +1275,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la bête divine enragée',
       },
@@ -1287,7 +1287,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Talisman de l'Effroyable",
       },
@@ -1299,7 +1299,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman du mouflon',
       },
@@ -1310,7 +1310,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bull-goats_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de la danseuse bleue',
       },
@@ -1321,7 +1321,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_dancer_charm_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Disque vert-de-gris',
       },
@@ -1333,7 +1333,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman du scorpion magique',
       },
@@ -1344,7 +1344,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/magic_scorpion_charm_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman du scorpion de feu',
       },
@@ -1355,7 +1355,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_scorpion_charm_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman du scorpion de foudre',
       },
@@ -1366,7 +1366,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lightning_scorpion_charm_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman du scorpion sacré',
       },
@@ -1377,7 +1377,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sacred_scorpion_charm_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman à écaille du Creuset',
       },
@@ -1388,7 +1388,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_scale_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman à plume du Creuset',
       },
@@ -1400,7 +1400,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_feather_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman à noeud du Creuset',
       },
@@ -1411,7 +1411,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_knot_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman à plume raffiné du Creuset',
       },
@@ -1424,7 +1424,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de tous les Creusets',
       },
@@ -1437,7 +1437,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Lame cornue aux plumes rouges',
       },
@@ -1449,7 +1449,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/red-feathered_branchsword_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Lame cornue aux plumes bleues',
       },
@@ -1461,7 +1461,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue-feathered_branchsword_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Talisman d'épée rituelle",
       },
@@ -1472,7 +1472,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ritual_sword_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman de bouclier rituel',
       },
@@ -1483,7 +1483,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ritual_shield_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Dague pourpre de l'assassin",
       },
@@ -1495,7 +1495,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/assassins_crimson_dagger_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Dague céruléenne de l'assassin",
       },
@@ -1507,7 +1507,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/assassins_cerulean_dagger_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Insigne d'épée ailée",
       },
@@ -1518,7 +1518,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/winged_sword_insignia_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Insigne d'épée ailée putréfiée",
       },
@@ -1530,7 +1530,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_winged_sword_insignia_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Prothèse de Milicent',
       },
@@ -1541,7 +1541,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/millicents_prosthesis_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Lange sanctechair',
       },
@@ -1552,7 +1552,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_swaddling_cloth_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Exultation des adptes de la putréfaction',
       },
@@ -1564,7 +1564,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/kindred_of_rots_exultation_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Exultation du seigneur du sang',
       },
@@ -1576,7 +1576,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lord_of_bloods_exultation_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Exultation de l'ancien",
       },
@@ -1588,7 +1588,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Sourire de sainte Trina',
       },
@@ -1600,7 +1600,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Lame de miséricorde',
       },
@@ -1612,7 +1612,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Camée de pillard',
       },
@@ -1623,7 +1623,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/takers_cameo_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Corne de l'esprit ancestral",
       },
@@ -1634,7 +1634,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancestral_spirits_horn_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Insigne de croisade',
       },
@@ -1646,7 +1646,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Bouquet séché',
       },
@@ -1658,7 +1658,7 @@ export const talismans: TTalismans = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Scarabée d'or",
       },
@@ -1669,7 +1669,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gold_scarab_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Scarabée d'argent",
       },
@@ -1680,7 +1680,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/silver_scarab_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Fiole de Crepus',
       },
@@ -1691,7 +1691,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crepuss_vial_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Cape dissimulatrice',
       },
@@ -1702,7 +1702,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/concealing_veil_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Talisman du chat à longue queue',
       },
@@ -1713,7 +1713,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/longtail_cat_talisman_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Miroir retors de Doigt crochu',
       },
@@ -1725,7 +1725,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/furled_fingers_trick-mirror_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Miroir retors d'hôte",
       },
@@ -1736,7 +1736,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hosts_trick-mirror_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Malheur de Shabiri',
       },
@@ -1747,7 +1747,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shabriris_woe_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Malheur de Daedicar',
       },
@@ -1758,7 +1758,7 @@ export const talismans: TTalismans = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/daedicars_woe_talisman_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Branche sacrificielle',
       },

@@ -1,6 +1,6 @@
 type TCookBooks = {
   cookBooks: {
-    name: {
+    names: {
       en: string;
       fr: string;
     };
@@ -14,7 +14,7 @@ type TCookBooks = {
 export const cookBooks: TCookBooks = {
   cookBooks: [
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (1)',
       },
@@ -26,7 +26,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (2)',
       },
@@ -38,7 +38,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (3)',
       },
@@ -50,7 +50,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (4)',
       },
@@ -62,7 +62,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (5)',
       },
@@ -74,7 +74,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (6)',
       },
@@ -86,7 +86,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (7)',
       },
@@ -98,7 +98,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (8)',
       },
@@ -110,7 +110,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (9)',
       },
@@ -122,7 +122,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (10)',
       },
@@ -134,7 +134,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (11)',
       },
@@ -146,7 +146,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (12)',
       },
@@ -158,7 +158,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (13)',
       },
@@ -170,7 +170,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (14)',
       },
@@ -182,7 +182,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (15)',
       },
@@ -194,7 +194,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (16)',
       },
@@ -206,7 +206,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (17)',
       },
@@ -218,7 +218,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (18)',
       },
@@ -230,7 +230,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (19)',
       },
@@ -242,7 +242,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (20)',
       },
@@ -254,7 +254,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (21)',
       },
@@ -266,7 +266,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (22)',
       },
@@ -278,7 +278,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (23)',
       },
@@ -290,7 +290,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de guerrier nomade (24)',
       },
@@ -302,7 +302,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_warriors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'armurier (1)",
       },
@@ -313,7 +313,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/armorers_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'armurier (2)",
       },
@@ -324,7 +324,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/armorers_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'armurier (3)",
       },
@@ -335,7 +335,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/armorers_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'armurier (4)",
       },
@@ -346,7 +346,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/armorers_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'armurier (5)",
       },
@@ -357,7 +357,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/armorers_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'armurier (6)",
       },
@@ -368,7 +368,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/armorers_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'armurier (7)",
       },
@@ -379,7 +379,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/armorers_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'artisan des p. d'éclat (1)",
       },
@@ -391,7 +391,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_craftsmans_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Glintstone Craftsman'sCookbook (2)",
       },
@@ -403,7 +403,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_craftsmans_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'artisan des p. d'éclat (3)",
       },
@@ -415,7 +415,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_craftsmans_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'artisan des p. d'éclat (4)",
       },
@@ -427,7 +427,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_craftsmans_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'artisan des p. d'éclat (5)",
       },
@@ -439,7 +439,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_craftsmans_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'artisan des p. d'éclat (6)",
       },
@@ -451,7 +451,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_craftsmans_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'artisan des p. d'éclat (7)",
       },
@@ -463,7 +463,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_craftsmans_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'artisan des p. d'éclat (8)",
       },
@@ -475,7 +475,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_craftsmans_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de missionnaire (1)',
       },
@@ -487,7 +487,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/missionarys_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de missionnaire (2)',
       },
@@ -499,7 +499,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/missionarys_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de missionnaire (3)',
       },
@@ -511,7 +511,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/missionarys_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de missionnaire (4)',
       },
@@ -523,7 +523,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/missionarys_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de missionnaire (5)',
       },
@@ -535,7 +535,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/missionarys_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de missionnaire (6)',
       },
@@ -547,7 +547,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/missionarys_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de missionnaire (7)',
       },
@@ -559,7 +559,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/missionarys_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'apôtre des drag. anciens (1)",
       },
@@ -571,7 +571,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_apostles_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'apôtre des drag. anciens (2)",
       },
@@ -583,7 +583,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_apostles_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'apôtre des drag. anciens (3)",
       },
@@ -595,7 +595,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_apostles_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'apôtre des drag. anciens (4)",
       },
@@ -607,7 +607,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_apostles_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de Parfumeur (1)',
       },
@@ -618,7 +618,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumers_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de Parfumeur (2)',
       },
@@ -629,7 +629,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumers_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de Parfumeur (3)',
       },
@@ -640,7 +640,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumers_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de Parfumeur (4)',
       },
@@ -651,7 +651,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumers_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de Fevor (1)',
       },
@@ -662,7 +662,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fevors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de Fevor (2)',
       },
@@ -673,7 +673,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fevors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de Fevor (3)',
       },
@@ -684,7 +684,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fevors_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'exalté (1)",
       },
@@ -695,7 +695,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/frenzieds_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'exalté (2)",
       },
@@ -706,7 +706,7 @@ export const cookBooks: TCookBooks = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/frenzieds_cookbook_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (1)',
       },
@@ -719,7 +719,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (2)',
       },
@@ -732,7 +732,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (3)',
       },
@@ -745,7 +745,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (4)',
       },
@@ -758,7 +758,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (5)',
       },
@@ -771,7 +771,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (6)',
       },
@@ -784,7 +784,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (7)',
       },
@@ -797,7 +797,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (8)',
       },
@@ -810,7 +810,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (9)',
       },
@@ -823,7 +823,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (10)',
       },
@@ -836,7 +836,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (11)',
       },
@@ -849,7 +849,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (12)',
       },
@@ -862,7 +862,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (13)',
       },
@@ -875,7 +875,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de grand potentat (14)',
       },
@@ -888,7 +888,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de chevalier loyal',
       },
@@ -900,7 +900,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel du chevalier de Feu (1)',
       },
@@ -913,7 +913,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel du chevalier de Feu (2)',
       },
@@ -926,7 +926,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de prêtre de bataille (1)',
       },
@@ -939,7 +939,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de prêtre de bataille (2)',
       },
@@ -952,7 +952,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de prêtre de bataille (3)',
       },
@@ -965,7 +965,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de prêtre de bataille (4)',
       },
@@ -978,7 +978,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel du chev. des dragons anc. (1)',
       },
@@ -991,7 +991,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel du chev. des dragons anc. (2)',
       },
@@ -1004,7 +1004,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de disciple de sainte Trina (1)',
       },
@@ -1017,7 +1017,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de disciple de sainte Trina (2)',
       },
@@ -1030,7 +1030,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de disciple de sainte Trina (3)',
       },
@@ -1043,7 +1043,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'artisan fou (1)",
       },
@@ -1056,7 +1056,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'artisan fou (2)",
       },
@@ -1069,7 +1069,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'artisan fou (3)",
       },
@@ -1082,7 +1082,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de gardien des tombes (1)',
       },
@@ -1095,7 +1095,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de gardien des tombes (2)',
       },
@@ -1108,7 +1108,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel des os',
       },
@@ -1120,7 +1120,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de digitomancien (1)',
       },
@@ -1133,7 +1133,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de digitomancien (2)',
       },
@@ -1146,7 +1146,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'expert en antiquités (1)",
       },
@@ -1159,7 +1159,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'expert en antiquités (2)",
       },
@@ -1172,7 +1172,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de la nuée glaneuse (1)',
       },
@@ -1185,7 +1185,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de la nuée glaneuse (2)',
       },
@@ -1198,7 +1198,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de la nuée glaneuse (3)',
       },
@@ -1211,7 +1211,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de la nuée glaneuse (4)',
       },
@@ -1224,7 +1224,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de la nuée glaneuse (5)',
       },
@@ -1237,7 +1237,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de la nuée glaneuse (6)',
       },
@@ -1250,7 +1250,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Manuel de la nuée glaneuse (7)',
       },
@@ -1263,7 +1263,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'Igon (1)",
       },
@@ -1275,7 +1275,7 @@ export const cookBooks: TCookBooks = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Manuel d'Igon (2)",
       },

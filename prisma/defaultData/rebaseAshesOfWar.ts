@@ -1,6 +1,6 @@
 type TAshesOfWar = {
   ashesOfWar: {
-    name: {
+    names: {
       en: string;
       fr: string;
     };
@@ -14,7 +14,7 @@ type TAshesOfWar = {
 export const ashesOfWar: TAshesOfWar = {
   ashesOfWar: [
     {
-      name: {
+      names: {
         en: 'Ash of War Dryleaf Whirlwind',
         fr: '',
       },
@@ -26,7 +26,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Aspects of the Crucible: Wings',
         fr: '',
       },
@@ -38,7 +38,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Spinning Gravity Thrust',
         fr: '',
       },
@@ -50,7 +50,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Palm Blast',
         fr: '',
       },
@@ -61,7 +61,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Piercing Throw',
         fr: '',
       },
@@ -73,7 +73,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Scattershot Throw',
         fr: '',
       },
@@ -85,7 +85,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Wall of Sparks',
         fr: '',
       },
@@ -97,7 +97,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Rolling Sparks',
         fr: '',
       },
@@ -109,7 +109,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Raging Beast',
         fr: '',
       },
@@ -120,7 +120,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Savage Claws',
         fr: '',
       },
@@ -131,7 +131,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Blind Spot',
         fr: '',
       },
@@ -142,7 +142,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Swift Slash',
         fr: '',
       },
@@ -153,7 +153,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Overhead Stance',
         fr: '',
       },
@@ -165,7 +165,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Wing Stance',
         fr: '',
       },
@@ -176,7 +176,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Blinkbolt',
         fr: '',
       },
@@ -187,7 +187,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Flame Skewer',
         fr: '',
       },
@@ -198,7 +198,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: "Ash of War Savage Lion's Claw",
         fr: '',
       },
@@ -210,7 +210,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Divine Beast Frost Stomp',
         fr: '',
       },
@@ -222,7 +222,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Flame Spear',
         fr: '',
       },
@@ -233,7 +233,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Carian Sovereignty',
         fr: '',
       },
@@ -245,7 +245,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Shriek of Sorrow',
         fr: '',
       },
@@ -257,7 +257,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Ghostflame Call',
         fr: '',
       },
@@ -269,7 +269,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War The Poison Flower Blooms Twice',
         fr: '',
       },
@@ -281,7 +281,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: "Ash of War Igon's Drake Hunt",
         fr: '',
       },
@@ -293,7 +293,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War Shield Strike',
         fr: '',
       },
@@ -305,7 +305,7 @@ export const ashesOfWar: TAshesOfWar = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Storm Stomp',
         fr: '',
       },
@@ -315,7 +315,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_storm_stomp_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Repeating Thrust',
         fr: '',
       },
@@ -326,7 +326,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_repeating_thrust_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Gravitas',
         fr: '',
       },
@@ -336,7 +336,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_gravitas_elden_ring_wiki_guide_200.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Stamp (Sweep)',
         fr: '',
       },
@@ -347,7 +347,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_stamp_sweep_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Unsheathe',
         fr: '',
       },
@@ -357,7 +357,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_unsheathe_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Mighty Shot',
         fr: '',
       },
@@ -367,7 +367,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_mighty_shot_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Golden Vow',
         fr: '',
       },
@@ -377,7 +377,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_golden_vow_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Sacred Blade',
         fr: '',
       },
@@ -387,7 +387,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_sacred_blade_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Stamp (Upward Cut)',
         fr: '',
       },
@@ -398,7 +398,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_stamp_upward_%20cut_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Kick',
         fr: '',
       },
@@ -408,7 +408,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_kick_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Endure',
         fr: '',
       },
@@ -418,7 +418,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_endure_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: War Cry',
         fr: '',
       },
@@ -428,7 +428,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_war_cry_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Spinning Slash',
         fr: '',
       },
@@ -439,7 +439,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spinning_slash_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Impaling Thrust',
         fr: '',
       },
@@ -450,7 +450,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_impaling_thrust_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Quickstep',
         fr: '',
       },
@@ -460,7 +460,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_quickstep_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Storm Blade',
         fr: '',
       },
@@ -470,7 +470,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_storm_blade_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Parry',
         fr: '',
       },
@@ -480,7 +480,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_parry_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: No Skill',
         fr: '',
       },
@@ -490,7 +490,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_no_skill_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Glintstone Pebble',
         fr: '',
       },
@@ -501,7 +501,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_glintstone_pebble_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Spinning Weapon',
         fr: '',
       },
@@ -512,7 +512,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spinning_weapon_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Wild Strikes',
         fr: '',
       },
@@ -522,7 +522,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_wild_strikes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Storm Wall',
         fr: '',
       },
@@ -532,7 +532,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_storm_wall_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Bloody Slash',
         fr: '',
       },
@@ -542,7 +542,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_bloody_slash_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Ground Slam',
         fr: '',
       },
@@ -552,7 +552,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_ground_slam_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Spectral Lance',
         fr: '',
       },
@@ -563,7 +563,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spectral_lance_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Charge Forth',
         fr: '',
       },
@@ -573,7 +573,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_charge_forth_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Square Off',
         fr: '',
       },
@@ -583,7 +583,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_square_off_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Sacred Order',
         fr: '',
       },
@@ -593,7 +593,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_sacred_order_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Lifesteal Fist',
         fr: '',
       },
@@ -604,7 +604,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lifesteal_fist_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Barrage',
         fr: '',
       },
@@ -614,7 +614,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_barrage_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Prayerful Strike',
         fr: '',
       },
@@ -625,7 +625,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_prayerful_strike_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Lightning Slash',
         fr: '',
       },
@@ -636,7 +636,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lightning_slash_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Giant Hunt',
         fr: '',
       },
@@ -646,7 +646,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_giant_hunt_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Sword Dance',
         fr: '',
       },
@@ -656,7 +656,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_sword_dance_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Vow of the Indomitable',
         fr: '',
       },
@@ -667,7 +667,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_vow_of_the_indomitable_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: Beast's Roar",
         fr: '',
       },
@@ -677,7 +677,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_beasts_roar_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Carian Grandeur',
         fr: '',
       },
@@ -688,7 +688,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_grandeur_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: Loretta's Slash",
         fr: '',
       },
@@ -699,7 +699,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lorettas_slash_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Hoarfrost Stomp',
         fr: '',
       },
@@ -710,7 +710,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_hoarfrost_stomp_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: Thops's Barrier",
         fr: '',
       },
@@ -721,7 +721,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_thopss_barrier_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Chilling Mist',
         fr: '',
       },
@@ -732,7 +732,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_chilling_mist_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Lightning Ram',
         fr: '',
       },
@@ -743,7 +743,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lightning_ram_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: Lion's Claw",
         fr: '',
       },
@@ -753,7 +753,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lions_claw_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Flaming Strike',
         fr: '',
       },
@@ -764,7 +764,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_flaming_strike_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Determination',
         fr: '',
       },
@@ -775,7 +775,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_determination_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Lost Ashes of War',
         fr: '',
       },
@@ -785,7 +785,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lost_ashes_of_war_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Glintblade Phalanx',
         fr: '',
       },
@@ -796,7 +796,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_glintblade_phalanx_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Poison Moth Flight',
         fr: '',
       },
@@ -807,7 +807,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_poison_moth_flight_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Poisonous Mist',
         fr: '',
       },
@@ -818,7 +818,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_poisonous_mist_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Sacred Ring of Light',
         fr: '',
       },
@@ -829,7 +829,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_sacred_ring_of_light_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Eruption',
         fr: '',
       },
@@ -839,7 +839,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_eruption_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: Assassin's Gambit",
         fr: '',
       },
@@ -850,7 +850,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_assassins_gambit_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Seppuku',
         fr: '',
       },
@@ -860,7 +860,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_seppuku_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Black Flame Tornado',
         fr: '',
       },
@@ -871,7 +871,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_black_flame_tornado_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: Hoarah Loux's Earthshaker",
         fr: '',
       },
@@ -882,7 +882,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_hoarah_louxs_earthshaker_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Enchanted Shot',
         fr: '',
       },
@@ -893,7 +893,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_enchanted_shot_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Barricade Shield',
         fr: '',
       },
@@ -904,7 +904,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_barricade_shield_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Golden Land',
         fr: '',
       },
@@ -914,7 +914,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_golden_land_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Carian Retaliation',
         fr: '',
       },
@@ -925,7 +925,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_retaliation_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Waves of Darkness',
         fr: '',
       },
@@ -936,7 +936,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_waves_of_darkness_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Ice Spear',
         fr: '',
       },
@@ -946,7 +946,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_ice_spear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Double Slash',
         fr: '',
       },
@@ -956,7 +956,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_double_slash_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Vacuum Slice',
         fr: '',
       },
@@ -966,7 +966,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_vacuum_slice_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Stormcaller',
         fr: '',
       },
@@ -976,7 +976,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_stormcaller_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Piercing Fang',
         fr: '',
       },
@@ -987,7 +987,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_piercing_fang_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Blood Tax',
         fr: '',
       },
@@ -997,7 +997,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_blood_tax_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Spinning Strikes',
         fr: '',
       },
@@ -1008,7 +1008,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spinning_strikes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: Prelate's Charge",
         fr: '',
       },
@@ -1019,7 +1019,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_prelates_charge_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Storm Assault',
         fr: '',
       },
@@ -1030,7 +1030,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_storm_assault_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Earthshaker',
         fr: '',
       },
@@ -1040,7 +1040,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_earthshaker_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Thunderbolt',
         fr: '',
       },
@@ -1050,7 +1050,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_thunderbolt_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Carian Greatsword',
         fr: '',
       },
@@ -1061,7 +1061,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_greatsword_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: Royal Knight's Resolve",
         fr: '',
       },
@@ -1072,7 +1072,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_royal_knights_resolve_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Blood Blade',
         fr: '',
       },
@@ -1082,7 +1082,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_blood_blade_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Phantom Slash',
         fr: '',
       },
@@ -1093,7 +1093,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_phantom_slash_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Shield Bash',
         fr: '',
       },
@@ -1103,7 +1103,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_shield_bash_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Golden Parry',
         fr: '',
       },
@@ -1113,7 +1113,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_golden_parry_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Shield Crash',
         fr: '',
       },
@@ -1123,7 +1123,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_shield_crash_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Through and Through',
         fr: '',
       },
@@ -1134,7 +1134,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_through_and_through_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Sky Shot',
         fr: '',
       },
@@ -1144,7 +1144,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_sky_shot_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Rain of Arrows',
         fr: '',
       },
@@ -1155,7 +1155,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_rain_of_arrows_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Flame of the Redmanes',
         fr: '',
       },
@@ -1166,7 +1166,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_flame_of_the_redmanes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Golden Slam',
         fr: '',
       },
@@ -1176,7 +1176,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_golden_slam_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Shared Order',
         fr: '',
       },
@@ -1186,7 +1186,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_shared_order_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Cragblade',
         fr: '',
       },
@@ -1196,7 +1196,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_cragblade_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Barbaric Roar',
         fr: '',
       },
@@ -1207,7 +1207,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_barbaric_roar_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: Troll's Roar",
         fr: '',
       },
@@ -1217,7 +1217,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_troll%27s_roar_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: Braggart's Roar",
         fr: '',
       },
@@ -1228,7 +1228,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_braggart%27s_roar_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Holy Ground',
         fr: '',
       },
@@ -1238,7 +1238,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_holy_ground_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: Bloodhound's Step",
         fr: '',
       },
@@ -1249,7 +1249,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_bloodhounds_step_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ash of War: Raptor of the Mists',
         fr: '',
       },
@@ -1260,7 +1260,7 @@ export const ashesOfWar: TAshesOfWar = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_raptor_of_the_mists_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: "Ash of War: White Shadow's Lure",
         fr: '',
       },

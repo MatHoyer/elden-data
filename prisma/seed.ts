@@ -14,9 +14,9 @@ import { weapons } from './defaultData/weapons';
 import { whetBlades } from './defaultData/whetBlades';
 
 const createBosses = async () => {
-  for (const location of bosses.location) {
+  for (const location of bosses.locations) {
     const prismaLocationNames = await prisma.names.create({
-      data: location.name,
+      data: location.names,
     });
     const prismaLocation = await prisma.location.create({
       data: {
@@ -26,15 +26,15 @@ const createBosses = async () => {
 
     for (const boss of location.bosses) {
       const prismaBossNames = await prisma.names.create({
-        data: boss.name,
+        data: boss.names,
       });
       const prismaBossCategories = await prisma.bossCategories.create({
-        data: boss.category,
+        data: boss.categories,
       });
       let prismaBossRemembrance = undefined;
       if (boss.remembrance) {
         const prismaBossRemembranceNames = await prisma.names.create({
-          data: boss.remembrance.name,
+          data: boss.remembrance.names,
         });
         prismaBossRemembrance = await prisma.bossRemembrance.create({
           data: {

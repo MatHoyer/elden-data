@@ -1,6 +1,6 @@
 type TCrystalTears = {
   crystalTears: {
-    name: {
+    names: {
       en: string;
       fr: string;
     };
@@ -14,7 +14,7 @@ type TCrystalTears = {
 export const crystalTears: TCrystalTears = {
   crystalTears: [
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal pourpre (1)',
       },
@@ -25,7 +25,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal pourpre (2)',
       },
@@ -36,7 +36,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal pourpre fendue',
       },
@@ -48,7 +48,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimsonspill_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal pourpre fissurée',
       },
@@ -60,7 +60,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimsonburst_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme séchée pourpre fendue',
       },
@@ -72,7 +72,7 @@ export const crystalTears: TCrystalTears = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal céruléenne (1)',
       },
@@ -83,7 +83,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal céruléenne (2)',
       },
@@ -94,7 +94,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal verte fendue',
       },
@@ -105,7 +105,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/greenspill_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal verte fissurée',
       },
@@ -116,7 +116,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/greenburst_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal noueuse de force',
       },
@@ -128,7 +128,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/strength-knot_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal noueuse de dextérité',
       },
@@ -140,7 +140,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dexterity-knot_crystal_tear2_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: "Larme de cristal noueuse d'intelligence",
       },
@@ -152,7 +152,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/intelligence-knot_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal noueuse de foi',
       },
@@ -163,7 +163,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/faith-knot_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme solidifiée opaline',
       },
@@ -174,7 +174,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/opaline_hardtear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme solidifiée tachetée',
       },
@@ -185,7 +185,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/speckled_hardtear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme solidifiée grise',
       },
@@ -196,7 +196,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leaden_hardtear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme solidifiée de déviation',
       },
@@ -208,7 +208,7 @@ export const crystalTears: TCrystalTears = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme fissurée voilée de magie',
       },
@@ -220,7 +220,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/magic-shrouding_cracked_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme fissurée voilée de flammes',
       },
@@ -232,7 +232,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flame-shrouding_cracked_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme fissurée voilée de foudre',
       },
@@ -244,7 +244,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lightning-shrouding_cracked_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme fissurée voilée de sacre',
       },
@@ -256,7 +256,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/holy-shrouding_cracked_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme fissurée à aiguillons de pierre',
       },
@@ -267,7 +267,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stonebarb_cracked_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme fissurée à pointes',
       },
@@ -278,7 +278,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spiked_cracked_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme fissurée épineuse',
       },
@@ -289,7 +289,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/thorny_cracked_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme pourpre fissurée de drain',
       },
@@ -302,7 +302,7 @@ export const crystalTears: TCrystalTears = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme céruléenne fissurée de drain',
       },
@@ -315,7 +315,7 @@ export const crystalTears: TCrystalTears = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme fissurée buveuse de sang',
       },
@@ -328,7 +328,7 @@ export const crystalTears: TCrystalTears = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme fissurée à rameaux',
       },
@@ -339,7 +339,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/twiggy_cracked_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal ailée',
       },
@@ -350,7 +350,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/winged_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de Cristal Venteuse',
       },
@@ -361,7 +361,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/windy_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal en forme de muguet',
       },
@@ -373,7 +373,7 @@ export const crystalTears: TCrystalTears = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Perle de cristal pourpre',
       },
@@ -384,7 +384,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_bubbletear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Perle de cristal aux volutes pourpres',
       },
@@ -395,7 +395,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimsonwhorl-bubblecar-key-item-description.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Perle de cristal opaline',
       },
@@ -406,7 +406,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/opaline_bubbletear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme secrète céruléenne',
       },
@@ -417,7 +417,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_hidden_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme secrète vert émeraude',
       },
@@ -429,7 +429,7 @@ export const crystalTears: TCrystalTears = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal purificatrice',
       },
@@ -440,7 +440,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/purifying_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal fissurée (1)',
       },
@@ -451,7 +451,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ruptured_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme de cristal fissurée (2)',
       },
@@ -462,7 +462,7 @@ export const crystalTears: TCrystalTears = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ruptured_crystal_tear_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: '',
         fr: 'Larme huileuse',
       },

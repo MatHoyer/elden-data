@@ -1,6 +1,6 @@
 type TSpiritAshes = {
   spiritAshes: {
-    name: {
+    names: {
       en: string;
       fr: string;
     };
@@ -14,7 +14,7 @@ type TSpiritAshes = {
 export const spiritAshes: TSpiritAshes = {
   spiritAshes: [
     {
-      name: {
+      names: {
         en: 'Curseblade Meera',
         fr: '',
       },
@@ -25,7 +25,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: "Bloodfiend Hexer's Ashes",
         fr: '',
       },
@@ -36,7 +36,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Gravebird Ashes',
         fr: '',
       },
@@ -47,7 +47,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Fire Knight Hilde',
         fr: '',
       },
@@ -58,7 +58,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Spider Scorpion Ashes',
         fr: '',
       },
@@ -69,7 +69,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Inquisitor Ashes',
         fr: '',
       },
@@ -80,7 +80,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Demi-Human Swordsman Yosh',
         fr: '',
       },
@@ -92,7 +92,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Messmer Soldier Ashes',
         fr: '',
       },
@@ -103,7 +103,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Black Knight Commander Andreas',
         fr: '',
       },
@@ -115,7 +115,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Black Knight Captain Huw',
         fr: '',
       },
@@ -126,7 +126,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Bigmouth Imp Ashes',
         fr: '',
       },
@@ -137,7 +137,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Man-Fly Ashes',
         fr: '',
       },
@@ -148,7 +148,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Taylew the Golem Smith',
         fr: '',
       },
@@ -159,7 +159,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Divine Bird Warrior Ornis',
         fr: '',
       },
@@ -171,7 +171,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Horned Warrior Ashes',
         fr: '',
       },
@@ -182,7 +182,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Ancient Dragon Florissax',
         fr: '',
       },
@@ -193,7 +193,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Fingercreeper Ashes',
         fr: '',
       },
@@ -204,7 +204,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Fire Knight Queelign',
         fr: '',
       },
@@ -215,7 +215,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Swordhand of Night Jolán',
         fr: '',
       },
@@ -227,7 +227,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'Jolán and Anna',
         fr: '',
       },
@@ -238,7 +238,7 @@ export const spiritAshes: TSpiritAshes = {
       inDlc: true,
     },
     {
-      name: {
+      names: {
         en: 'WANDERING NOBLE ASHES',
         fr: '',
       },
@@ -248,7 +248,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/wandering_noble_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'NOBLE SORCERER ASHES',
         fr: '',
       },
@@ -258,7 +258,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/noble_sorcerer_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'NOMAD ASHES',
         fr: '',
       },
@@ -268,7 +268,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomad_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'PUTRID CORPSE ASHES',
         fr: '',
       },
@@ -278,7 +278,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid_corpse_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'SKELETAL MILITIAMAN ASHES',
         fr: '',
       },
@@ -289,7 +289,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/skeletal_militiaman_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'SKELETAL BANDIT ASHES',
         fr: '',
       },
@@ -299,7 +299,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/skeletal_bandit_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'ALBINAURIC ASHES',
         fr: '',
       },
@@ -309,7 +309,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/albinauric_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'WINGED MISBEGOTTEN ASHES',
         fr: '',
       },
@@ -319,7 +319,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/winged_misbegotten_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'DEMI-HUMAN ASHES',
         fr: '',
       },
@@ -329,7 +329,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'CLAYMAN ASHES',
         fr: '',
       },
@@ -339,7 +339,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/clayman_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'ORACLE ENVOY ASHES',
         fr: '',
       },
@@ -349,7 +349,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/oracle_envoy_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'LONE WOLF ASHES',
         fr: '',
       },
@@ -359,7 +359,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lone_wolf_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'ROTTEN STRAY ASHES',
         fr: '',
       },
@@ -369,7 +369,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_stray_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'GIANT RAT ASHES',
         fr: '',
       },
@@ -379,7 +379,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/giant_rat_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'WARHAWK ASHES',
         fr: '',
       },
@@ -389,7 +389,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/warhawk_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'LAND SQUIRT ASHES',
         fr: '',
       },
@@ -399,7 +399,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/land_squirt_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'SPIRIT JELLYFISH ASHES',
         fr: '',
       },
@@ -409,7 +409,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spirit_jellyfish_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'MIRANDA SPROUT ASHES',
         fr: '',
       },
@@ -419,7 +419,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/miranda_sprout_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'FANGED IMP ASHES',
         fr: '',
       },
@@ -429,7 +429,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fanged_imp_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'SOLDJARS OF FORTUNE ASHES',
         fr: '',
       },
@@ -440,7 +440,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/soldjars_of_fortune_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'ARCHER ASHES',
         fr: '',
       },
@@ -450,7 +450,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/archer_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'GREATSHIELD SOLDIER ASHES',
         fr: '',
       },
@@ -461,7 +461,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/greatshield_soldier_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'PAGE ASHES',
         fr: '',
       },
@@ -471,7 +471,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/page_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'VULGAR MILITIA ASHES',
         fr: '',
       },
@@ -481,7 +481,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vulgar_militia_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'MARIONETTE SOLDIER ASHES',
         fr: '',
       },
@@ -491,7 +491,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marionette_soldier_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'AVIONETTE SOLDIER ASHES',
         fr: '',
       },
@@ -501,7 +501,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/avionette_soldier_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'KAIDEN SELLSWORD ASHES',
         fr: '',
       },
@@ -511,7 +511,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/kaiden_sellsword_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'MAD PUMPKIN HEAD ASHES',
         fr: '',
       },
@@ -521,7 +521,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mad_pumpkin_head_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'FIRE MONK ASHES',
         fr: '',
       },
@@ -531,7 +531,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_monk_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'ANCESTRAL FOLLOWER ASHES',
         fr: '',
       },
@@ -541,7 +541,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancestral_follower_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'AZULA BEASTMAN ASHES',
         fr: '',
       },
@@ -551,7 +551,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/azula_beastman_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'MAN-SERPENT ASHES',
         fr: '',
       },
@@ -561,7 +561,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/man-serpent_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'CRYSTALIAN ASHES',
         fr: '',
       },
@@ -571,7 +571,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystalian_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'KINDRED OF ROT ASHES',
         fr: '',
       },
@@ -581,7 +581,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/kindred_of_rot_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'GLINTSTONE SORCERER ASHES',
         fr: '',
       },
@@ -592,7 +592,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_sorcerer_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'TWINSAGE SORCERER ASHES',
         fr: '',
       },
@@ -602,7 +602,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/twinsage_sorcerer_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'GODRICK SOLDIER ASHES',
         fr: '',
       },
@@ -612,7 +612,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_soldier_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'RAYA LUCARIA SOLDIER ASHES',
         fr: '',
       },
@@ -623,7 +623,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raya_lucaria_soldier_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'LEYNDELL SOLDIER ASHES',
         fr: '',
       },
@@ -633,7 +633,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_soldier_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'RADAHN SOLDIER ASHES',
         fr: '',
       },
@@ -643,7 +643,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn_soldier_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'HALIGTREE SOLDIER ASHES',
         fr: '',
       },
@@ -653,7 +653,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_soldier_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'MAUSOLEUM SOLDIER ASHES',
         fr: '',
       },
@@ -663,7 +663,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_soldier_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'STORMHAWK DEENH',
         fr: '',
       },
@@ -673,7 +673,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stormhawk_deenh_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'BANISHED KNIGHT OLEG ASHES',
         fr: '',
       },
@@ -684,7 +684,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knight_oleg_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'BANISHED KNIGHT ENGVALL ASHES',
         fr: '',
       },
@@ -695,7 +695,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knight_engvall_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Bloodhound Knight Floh',
         fr: '',
       },
@@ -705,7 +705,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound_knight_floh_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'BATTLEMAGE HUGUES ASHES',
         fr: '',
       },
@@ -715,7 +715,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlemage_hugues_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'LATENNA THE ALBINAURIC',
         fr: '',
       },
@@ -725,7 +725,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/latenna_the_albinauric_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'PERFUMER TRICIA',
         fr: '',
       },
@@ -735,7 +735,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer_tricia_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'DEPRAVED PERFUMER CARMAAN ASHES',
         fr: '',
       },
@@ -746,7 +746,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/depraved_perfumer_carmaan_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'OMENKILLER ROLLO',
         fr: '',
       },
@@ -756,7 +756,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller_rollo_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'BLACKFLAME MONK AMON ASHES',
         fr: '',
       },
@@ -767,7 +767,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blackflame_monk_amon_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'Ancient Dragon Knight Kristoff Ashes',
         fr: '',
       },
@@ -778,7 +778,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_dragon_knight_kristoff_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'REDMANE KNIGHT OGHA ASHES',
         fr: '',
       },
@@ -789,7 +789,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/redmane_knight_ogha_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'LHUTEL THE HEADLESS',
         fr: '',
       },
@@ -799,7 +799,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lhutel_the_headless_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'CLEANROT KNIGHT FINLAY ASHES',
         fr: '',
       },
@@ -810,7 +810,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot_knight_finlay_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'BLACK KNIFE TICHE',
         fr: '',
       },
@@ -820,7 +820,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knife_tiche_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'MIMIC TEAR ASHES',
         fr: '',
       },
@@ -830,7 +830,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mimic_tear_ashes_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'FINGER MAIDEN THEROLINA PUPPET',
         fr: '',
       },
@@ -841,7 +841,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger_maiden_therolina_puppet_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'JARWIGHT PUPPET',
         fr: '',
       },
@@ -851,7 +851,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/jarwight_puppet_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'DOLORES THE SLEEPING ARROW PUPPET',
         fr: '',
       },
@@ -862,7 +862,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dolores_the_sleeping_arrow_puppet_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'NEPHELI LOUX PUPPET',
         fr: '',
       },
@@ -872,7 +872,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nepheli_loux_puppet_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'DUNG EATER PUPPET',
         fr: '',
       },
@@ -882,7 +882,7 @@ export const spiritAshes: TSpiritAshes = {
         'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dung_eater_puppet_elden_ring_wiki_guide_200px.png',
     },
     {
-      name: {
+      names: {
         en: 'NIGHTMAIDEN & SWORDSTRESS PUPPETS',
         fr: '',
       },
