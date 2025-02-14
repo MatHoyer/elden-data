@@ -1,16 +1,16 @@
 import { ItemCategory } from '@prisma/client';
 import prisma from '../src/lib/prisma';
-import { armors } from './defaultData/armors';
+import { armorSets } from './defaultData/armors';
 import { ashesOfWar } from './defaultData/ashesOfWar';
 import { bosses } from './defaultData/bosses';
 import { categories } from './defaultData/categories';
 import { cookBooks } from './defaultData/cookBooks';
 import { crystalTears } from './defaultData/crystalTears';
-import { shields } from './defaultData/shields';
-import { spells } from './defaultData/spells';
+import { shieldTypes } from './defaultData/shields';
+import { spellTypes } from './defaultData/spells';
 import { spiritAshes } from './defaultData/spiritAshes';
 import { talismans } from './defaultData/talismans';
-import { weapons } from './defaultData/weapons';
+import { weaponTypes } from './defaultData/weapons';
 import { whetBlades } from './defaultData/whetBlades';
 
 const createBosses = async () => {
@@ -109,12 +109,9 @@ const createCategories = async () => {
 
     switch (category.en) {
       case 'Armors':
-        for (const armor of armors) {
+        for (const armor of armorSets) {
           const prismaArmorSetCategoryNames = await prisma.names.create({
-            data: {
-              en: '',
-              fr: armor.name,
-            },
+            data: armor.names,
           });
           const prismaArmorSetCategory = await prisma.itemCategory.create({
             data: {
@@ -127,10 +124,7 @@ const createCategories = async () => {
               imageUrl: armorPiece.imageUrl,
               locationUrl: armorPiece.locationUrl,
               wikiUrl: armorPiece.wikiUrl,
-              names: {
-                en: '',
-                fr: armorPiece.name,
-              },
+              names: armorPiece.names,
               inDlc: false,
             });
           }
@@ -138,91 +132,71 @@ const createCategories = async () => {
         break;
 
       case 'Weapons':
-        for (const weapon of weapons) {
-          await createItem(prismaCategory, {
-            imageUrl: weapon.imageUrl,
-            locationUrl: weapon.locationUrl,
-            wikiUrl: weapon.wikiUrl,
-            names: {
-              en: '',
-              fr: weapon.name,
-            },
-            inDlc: weapon.inDlc,
+        for (const weaponType of weaponTypes) {
+          const weaponTypeNames = await prisma.names.create({
+            data: weaponType.names,
           });
+          const weaponTypeCategory = await prisma.itemCategory.create({
+            data: {
+              namesId: weaponTypeNames.id,
+              parentCategoryId: prismaCategory.id,
+            },
+          });
+          for (const weapon of weaponType.weapons) {
+            await createItem(weaponTypeCategory, {
+              names: weapon.names,
+              imageUrl: weapon.imageUrl,
+              locationUrl: weapon.locationUrl,
+              wikiUrl: weapon.wikiUrl,
+            });
+          }
         }
         break;
 
       case 'Shields':
-        for (const shield of shields) {
-          await createItem(prismaCategory, {
-            imageUrl: shield.imageUrl,
-            locationUrl: shield.locationUrl,
-            wikiUrl: shield.wikiUrl,
-            names: {
-              en: '',
-              fr: shield.name,
-            },
-            inDlc: shield.inDlc,
+        for (const shieldType of shieldTypes) {
+          const shieldTypeNames = await prisma.names.create({
+            data: shieldType.names,
           });
+          const shieldTypeCategory = await prisma.itemCategory.create({
+            data: {
+              namesId: shieldTypeNames.id,
+              parentCategoryId: prismaCategory.id,
+            },
+          });
+          for (const shield of shieldType.shields) {
+            await createItem(shieldTypeCategory, {
+              imageUrl: shield.imageUrl,
+              locationUrl: shield.locationUrl,
+              wikiUrl: shield.wikiUrl,
+              names: shield.names,
+              inDlc: shield.inDlc,
+            });
+          }
         }
         break;
 
       case 'Spells':
-        const prismaSorcelleriesCategoryNames = await prisma.names.create({
-          data: {
-            en: 'Sorcelleries',
-            fr: 'Sorcelleries',
-          },
-        });
-        const prismaSorcelleriesCategory = await prisma.itemCategory.create({
-          data: {
-            namesId: prismaSorcelleriesCategoryNames.id,
-            parentCategoryId: prismaCategory.id,
-          },
-        });
-        const prismaIncantationsCategoryNames = await prisma.names.create({
-          data: {
-            en: 'Incantations',
-            fr: 'Incantations',
-          },
-        });
-        const prismaIncantationsCategory = await prisma.itemCategory.create({
-          data: {
-            namesId: prismaIncantationsCategoryNames.id,
-            parentCategoryId: prismaCategory.id,
-          },
-        });
-
-        const filteredSpells = Object.groupBy(spells, (spell) =>
-          spell.sortableType === 'Sorcelleries'
-            ? 'Sorcelleries'
-            : 'Incantations'
-        );
-        for (const spell of filteredSpells.Incantations!) {
-          await createItem(prismaIncantationsCategory, {
-            imageUrl: spell.imageUrl,
-            locationUrl: spell.locationUrl,
-            wikiUrl: spell.wikiUrl,
-            names: {
-              en: '',
-              fr: spell.name,
-            },
-            inDlc: spell.inDlc,
+        for (const spellType of spellTypes) {
+          const spellTypeNames = await prisma.names.create({
+            data: spellType.names,
           });
-        }
-        for (const spell of filteredSpells.Sorcelleries!) {
-          await createItem(prismaSorcelleriesCategory, {
-            imageUrl: spell.imageUrl,
-            locationUrl: spell.locationUrl,
-            wikiUrl: spell.wikiUrl,
-            names: {
-              en: '',
-              fr: spell.name,
+          const spellTypeCategory = await prisma.itemCategory.create({
+            data: {
+              namesId: spellTypeNames.id,
+              parentCategoryId: prismaCategory.id,
             },
-            inDlc: spell.inDlc,
           });
+          for (const spell of spellType.spells) {
+            await createItem(spellTypeCategory, {
+              imageUrl: spell.imageUrl,
+              locationUrl: spell.locationUrl,
+              wikiUrl: spell.wikiUrl,
+              names: spell.names,
+              inDlc: spell.inDlc,
+            });
+          }
         }
-
         break;
 
       case 'Whet blades':
@@ -231,10 +205,7 @@ const createCategories = async () => {
             imageUrl: whetBlade.imageUrl,
             locationUrl: whetBlade.locationUrl,
             wikiUrl: whetBlade.wikiUrl,
-            names: {
-              en: '',
-              fr: whetBlade.name,
-            },
+            names: whetBlade.names,
             inDlc: false,
           });
         }
@@ -246,10 +217,7 @@ const createCategories = async () => {
             imageUrl: crystalTear.imageUrl,
             locationUrl: crystalTear.locationUrl,
             wikiUrl: crystalTear.wikiUrl,
-            names: {
-              en: '',
-              fr: crystalTear.name,
-            },
+            names: crystalTear.names,
             inDlc: crystalTear.inDlc,
           });
         }
@@ -261,10 +229,7 @@ const createCategories = async () => {
             imageUrl: spiritAshe.imageUrl,
             locationUrl: spiritAshe.locationUrl,
             wikiUrl: spiritAshe.wikiUrl,
-            names: {
-              en: '',
-              fr: spiritAshe.name,
-            },
+            names: spiritAshe.names,
             inDlc: spiritAshe.inDlc,
           });
         }
@@ -276,10 +241,7 @@ const createCategories = async () => {
             imageUrl: cookBook.imageUrl,
             locationUrl: cookBook.locationUrl,
             wikiUrl: cookBook.wikiUrl,
-            names: {
-              en: '',
-              fr: cookBook.name,
-            },
+            names: cookBook.names,
             inDlc: cookBook.inDlc,
           });
         }
@@ -291,10 +253,7 @@ const createCategories = async () => {
             imageUrl: talisman.imageUrl,
             locationUrl: talisman.locationUrl,
             wikiUrl: talisman.wikiUrl,
-            names: {
-              en: '',
-              fr: talisman.name,
-            },
+            names: talisman.names,
             inDlc: talisman.inDlc,
           });
         }
@@ -306,10 +265,7 @@ const createCategories = async () => {
             imageUrl: asheOfWar.imageUrl,
             locationUrl: asheOfWar.locationUrl,
             wikiUrl: asheOfWar.wikiUrl,
-            names: {
-              en: '',
-              fr: asheOfWar.name,
-            },
+            names: asheOfWar.names,
             inDlc: asheOfWar.inDlc,
           });
         }

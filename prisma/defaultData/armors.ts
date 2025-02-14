@@ -1,6024 +1,7650 @@
 import { TDefaultDataItem } from './defaultDataType';
 
-type TArmors = {
-  armors: {
-    name: {
-      en: string;
-      fr: string;
-    };
-    wikiUrl: string;
-    imageUrl: string;
-    inDlc?: boolean;
-    elements: {
-      helms?: TDefaultDataItem;
-      chestsArmor?: TDefaultDataItem;
-      gauntlets?: TDefaultDataItem;
-      legs?: TDefaultDataItem;
-    };
-  }[];
-};
-
-export const armors = [
+export const armorSets: {
+  names: {
+    en: string;
+    fr: string;
+  };
+  wikiUrl: string;
+  imageUrl: string;
+  elements: TDefaultDataItem[];
+}[] = [
   {
-    name: "alberich's set",
+    names: {
+      en: "alberich's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Alberich's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/alberich-set-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Alberich's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "alberich's pointed hat",
+        names: {
+          en: "alberich's pointed hat",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Alberich's+Pointed+Hat",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/alberichs_pointed_hat_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Alberich's+Pointed+Hat",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "alberich's robe",
+        names: {
+          en: "alberich's robe",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Alberich's+Robe",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/alberichs_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Alberich's+Robe",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "alberich's bracers",
+        names: {
+          en: "alberich's bracers",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Alberich's+Bracers",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/alberichs_bracers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Alberich's+Bracers",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "alberich's trousers",
+        names: {
+          en: "alberich's trousers",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Alberich's+Trousers",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/alberichs_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Alberich's+Trousers",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'albinauric set',
+    names: {
+      en: 'albinauric set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Albinauric+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/albinauric_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Albinauric+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'albinauric mask',
+        names: {
+          en: 'albinauric mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Albinauric+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/albinauric_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Albinauric+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'dirty chainmail',
+        names: {
+          en: 'dirty chainmail',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Dirty+Chainmail',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dirty_chainmail_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Dirty+Chainmail',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'all-knowing set',
+    names: {
+      en: 'all-knowing set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/All-Knowing+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/allkknowing.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/All-Knowing+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'all-knowing helm',
+        names: {
+          en: 'all-knowing helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/All-Knowing+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/all-knowing_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/All-Knowing+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'all-knowing armor',
+        names: {
+          en: 'all-knowing armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/All-Knowing+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/all-knowing_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/All-Knowing+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'all-knowing gauntlets',
+        names: {
+          en: 'all-knowing gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/All-Knowing+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/all-knowing_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/All-Knowing+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'all-knowing greaves',
+        names: {
+          en: 'all-knowing greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/All-Knowing+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/all-knowing_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/All-Knowing+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'aristocrat set',
+    names: {
+      en: 'aristocrat set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Aristocrat+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/aristocrat_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Aristocrat+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'aristocrat headband',
+        names: {
+          en: 'aristocrat headband',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Aristocrat+Headband',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/aristocrat_headband_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Aristocrat+Headband',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'aristocrat garb',
+        names: {
+          en: 'aristocrat garb',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Aristocrat+Garb',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/aristocrat_garb_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Aristocrat+Garb',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'aristocrat boots',
+        names: {
+          en: 'aristocrat boots',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Aristocrat+Boots',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/aristocrat_boots_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Aristocrat+Boots',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'astrologer set',
+    names: {
+      en: 'astrologer set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Astrologer+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/astrologer-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Astrologer+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'astrologer hood',
+        names: {
+          en: 'astrologer hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Astrologer+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/astrologer_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Astrologer+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'astrologer robe',
+        names: {
+          en: 'astrologer robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Astrologer+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/astrologer_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Astrologer+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'astrologer gloves',
+        names: {
+          en: 'astrologer gloves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Astrologer+Gloves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/astrologer_gloves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Astrologer+Gloves',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'astrologer trousers',
+        names: {
+          en: 'astrologer trousers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Astrologer+Trousers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/astrologer_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Astrologer+Trousers',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "azur's glintstone set",
+    names: {
+      en: "azur's glintstone set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Azur's+Glintstone+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/azurs_full_set_2.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Azur's+Glintstone+Set",
     elements: [
       {
-        type: 'armor',
-        name: "azur's glintstone crown",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/azurs_glintstone_crown_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: "azur's glintstone crown",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Azur's+Glintstone+Crown",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/azurs_glintstone_crown_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: "azur's glintstone robe",
+        names: {
+          en: "azur's glintstone robe",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Azur's+Glintstone+Robe",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/azurs_glintstone_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Azur's+Glintstone+Robe",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "azur's manchettes",
+        names: {
+          en: "azur's manchettes",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Azur's+Manchettes",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/azurs_manchettes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Azur's+Manchettes",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "old sorcerer's legwraps",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/old_sorcerers_legwraps_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: "old sorcerer's legwraps",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Old+Sorcerer's+Legwraps",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/old_sorcerers_legwraps_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'bandit set',
+    names: {
+      en: 'bandit set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bandit-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'bandit mask',
+        names: {
+          en: 'bandit mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bandit_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'bandit garb',
+        names: {
+          en: 'bandit garb',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Garb',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bandit_garb_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Garb',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'bandit manchettes',
+        names: {
+          en: 'bandit manchettes',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Manchettes',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bandit_manchettes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Manchettes',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'bandit boots',
+        names: {
+          en: 'bandit boots',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Boots',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bandit_boots_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Boots',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'banished knight set',
+    names: {
+      en: 'banished knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Banished+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knight_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Banished+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'banished knight helm',
+        names: {
+          en: 'banished knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Banished+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Banished+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'banished knight armor',
+        names: {
+          en: 'banished knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Banished+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Banished+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'banished knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knight_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'banished knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Banished+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knight_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'banished knight greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knight_greaves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'banished knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Banished+Knight+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/banished_knight_greaves_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'battlemage set',
+    names: {
+      en: 'battlemage set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Battlemage+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlemage_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Battlemage+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'haima glintstone crown',
+        names: {
+          en: 'haima glintstone crown',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haima+Glintstone+Crown',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haima_glintstone_crown_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haima+Glintstone+Crown',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'battlemage robe',
+        names: {
+          en: 'battlemage robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Battlemage+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlemage_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Battlemage+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'battlemage manchettes',
+        names: {
+          en: 'battlemage manchettes',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Battlemage+Manchettes',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlemage_manchettes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Battlemage+Manchettes',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'battlemage legwraps',
+        names: {
+          en: 'battlemage legwraps',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Battlemage+Legwraps',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlemage_legwraps_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Battlemage+Legwraps',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'beast champion set',
+    names: {
+      en: 'beast champion set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Beast+Champion+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beast-champion-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Beast+Champion+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'beast champion helm',
+        names: {
+          en: 'beast champion helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Beast+Champion+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beast_champion_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Beast+Champion+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'beast champion armor',
+        names: {
+          en: 'beast champion armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Beast+Champion+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beast_champion_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Beast+Champion+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'beast champion gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beast_champion_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'beast champion gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Beast+Champion+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beast_champion_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'beast champion greaves',
+        names: {
+          en: 'beast champion greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Beast+Champion+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/beast_champion_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Beast+Champion+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'black knife set',
+    names: {
+      en: 'black knife set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knife_armor_set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'black knife hood',
+        names: {
+          en: 'black knife hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knife_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'black knife armor',
+        names: {
+          en: 'black knife armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knife_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'black knife gauntlets',
+        names: {
+          en: 'black knife gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knife_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'black knife greaves',
+        names: {
+          en: 'black knife greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knife_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knife+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'blackflame monk set',
+    names: {
+      en: 'blackflame monk set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Blackflame+Monk+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blackflame_monk_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Blackflame+Monk+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'blackflame monk hood',
+        names: {
+          en: 'blackflame monk hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blackflame+Monk+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blackflame_monk_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blackflame+Monk+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'blackflame monk armor',
+        names: {
+          en: 'blackflame monk armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blackflame+Monk+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blackflame_monk_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blackflame+Monk+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'blackflame monk gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blackflame_monk_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'blackflame monk gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Blackflame+Monk+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blackflame_monk_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'blackflame monk greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blackflame_monk_greaves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'blackflame monk greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Blackflame+Monk+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blackflame_monk_greaves_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: "blaidd's set",
+    names: {
+      en: "blaidd's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Blaidd's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blaidd%27sset.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Blaidd's+Set",
     elements: [
       {
-        type: 'armor',
-        name: 'black wolf mask',
+        names: {
+          en: 'black wolf mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Wolf+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_wolf_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Wolf+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "blaidd's armor",
+        names: {
+          en: "blaidd's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Blaidd's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blaidds_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Blaidd's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "blaidd's gauntlets",
+        names: {
+          en: "blaidd's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Blaidd's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blaidds_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Blaidd's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "blaidd's greaves",
+        names: {
+          en: "blaidd's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Blaidd's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blaidds_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Blaidd's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'bloodhound knight set',
+    names: {
+      en: 'bloodhound knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'bloodhound knight helm',
+        names: {
+          en: 'bloodhound knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound-knight-helm-armor-elden-ring-wiki-guide.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'bloodhound knight armor',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound_knight_armor_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'bloodhound knight armor',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Armor',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound_knight_armor_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'bloodhound knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound_knight_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'bloodhound knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound_knight_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'bloodhound knight greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound_knight_greaves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'bloodhound knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound_knight_greaves_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'bloodsoaked set',
+    names: {
+      en: 'bloodsoaked set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodsoaked+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodsoaked_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodsoaked+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'bloodsoaked mask',
+        names: {
+          en: 'bloodsoaked mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodsoaked+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodsoaked_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodsoaked+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "official's attire",
+        names: {
+          en: "official's attire",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Official's+Attire",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/officials_attire_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Official's+Attire",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'bloodsoaked manchettes',
+        names: {
+          en: 'bloodsoaked manchettes',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodsoaked+Manchettes',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodsoaked_manchettes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodsoaked+Manchettes',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'blue cloth set',
+    names: {
+      en: 'blue cloth set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Cloth+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue-cloth-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Cloth+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'blue cloth cowl',
+        names: {
+          en: 'blue cloth cowl',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Cloth+Cowl',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_cloth_cowl_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Cloth+Cowl',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'blue cloth vest',
+        names: {
+          en: 'blue cloth vest',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Cloth+Vest',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_cloth_vest_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Cloth+Vest',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'warrior gauntlets',
+        names: {
+          en: 'warrior gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Warrior+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/warrior_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Warrior+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'warrior greaves',
+        names: {
+          en: 'warrior greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Warrior+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/warrior_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Warrior+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'blue festive set',
+    names: {
+      en: 'blue festive set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Festive+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_festive_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Festive+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'blue festive hood',
+        names: {
+          en: 'blue festive hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Festive+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_festive_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Festive+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'blue festive garb',
+        names: {
+          en: 'blue festive garb',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Festive+Garb',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_festive_garb_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Festive+Garb',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'blue silver set',
+    names: {
+      en: 'blue silver set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Silver+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_silver_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Silver+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'blue silver mail hood',
+        names: {
+          en: 'blue silver mail hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Silver+Mail+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_silver_mail_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Silver+Mail+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'blue silver mail armor',
+        names: {
+          en: 'blue silver mail armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Silver+Mail+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_silver_mail_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Silver+Mail+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'blue silver bracelets',
+        names: {
+          en: 'blue silver bracelets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Silver+Bracelets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_silver_bracelets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Silver+Bracelets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'blue silver mail skirt',
+        names: {
+          en: 'blue silver mail skirt',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Silver+Mail+Skirt',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/blue_silver_mail_skirt_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Blue+Silver+Mail+Skirt',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'briar set',
+    names: {
+      en: 'briar set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Briar+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/briar_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Briar+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'briar helm',
+        names: {
+          en: 'briar helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Briar+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/briar_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Briar+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'briar armor',
+        names: {
+          en: 'briar armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Briar+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/briar_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Briar+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'briar gauntlets',
+        names: {
+          en: 'briar gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Briar+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/briar_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Briar+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'briar greaves',
+        names: {
+          en: 'briar greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Briar+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/briar_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Briar+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'bull-goat set',
+    names: {
+      en: 'bull-goat set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Bull-Goat+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bullgate-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Bull-Goat+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'bull-goat helm',
+        names: {
+          en: 'bull-goat helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bull-Goat+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bull-goat_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bull-Goat+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'bull-goat armor',
+        names: {
+          en: 'bull-goat armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bull-Goat+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bull-goat_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bull-Goat+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'bull-goat gauntlets',
+        names: {
+          en: 'bull-goat gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bull-Goat+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bull-goat_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bull-Goat+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'bull-goat greaves',
+        names: {
+          en: 'bull-goat greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bull-Goat+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bull-goat_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bull-Goat+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'carian knight set',
+    names: {
+      en: 'carian knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Carian+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/carian-knight-set-elden-ring-wiki-200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Carian+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'carian knight helm',
+        names: {
+          en: 'carian knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Carian+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/carian_knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Carian+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'carian knight armor',
+        names: {
+          en: 'carian knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Carian+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/carian_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Carian+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'carian knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/carian_knight_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'carian knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Carian+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/carian_knight_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'carian knight greaves',
+        names: {
+          en: 'carian knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Carian+Knight+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/carian_knight_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Carian+Knight+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'chain set',
+    names: {
+      en: 'chain set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/chain_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'chain coif',
+        names: {
+          en: 'chain coif',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain+Coif',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/chain_coif.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain+Coif',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'chain armor',
+        names: {
+          en: 'chain armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/chain_armor.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'chain gauntlets',
+        names: {
+          en: 'chain gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/chain_gauntlets_fixed.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'chain leggings',
+        names: {
+          en: 'chain leggings',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain+Leggings',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/chain_leggings_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain+Leggings',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'champion set',
+    names: {
+      en: 'champion set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Champion+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/champion-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Champion+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'champion headband',
+        names: {
+          en: 'champion headband',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Champion+Headband',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/champion_headband_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Champion+Headband',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'champion pauldron',
+        names: {
+          en: 'champion pauldron',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Champion+Pauldron',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/champion_pauldron_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Champion+Pauldron',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'champion bracers',
+        names: {
+          en: 'champion bracers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Champion+Bracers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/champion_bracers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Champion+Bracers',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'champion gaiters',
+        names: {
+          en: 'champion gaiters',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Champion+Gaiters',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/champion_gaiters_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Champion+Gaiters',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'cleanrot set',
+    names: {
+      en: 'cleanrot set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrotf.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'cleanrot helm',
+        names: {
+          en: 'cleanrot helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'cleanrot armor',
+        names: {
+          en: 'cleanrot armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'cleanrot gauntlets',
+        names: {
+          en: 'cleanrot gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'cleanrot greaves',
+        names: {
+          en: 'cleanrot greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cleanrot+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "commoner's set",
+    names: {
+      en: "commoner's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Commoner's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/commoner%27s_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Commoner's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "commoner's headband",
+        names: {
+          en: "commoner's headband",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Commoner's+Headband",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/commoners_headband_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Commoner's+Headband",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "commoner's garb",
+        names: {
+          en: "commoner's garb",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Commoner's+Garb",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/commoners_garb_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Commoner's+Garb",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "commoner's shoes",
+        names: {
+          en: "commoner's shoes",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Commoner's+Shoes",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/commoners_shoes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Commoner's+Shoes",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'confessor set',
+    names: {
+      en: 'confessor set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Confessor+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/confessor-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Confessor+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'confessor hood',
+        names: {
+          en: 'confessor hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Confessor+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/confessor_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Confessor+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'confessor armor',
+        names: {
+          en: 'confessor armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Confessor+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/confessor_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Confessor+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'confessor gloves',
+        names: {
+          en: 'confessor gloves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Confessor+Gloves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/confessor_gloves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Confessor+Gloves',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'confessor boots',
+        names: {
+          en: 'confessor boots',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Confessor+Boots',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/confessor_boots_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Confessor+Boots',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "consort's set",
+    names: {
+      en: "consort's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Consort's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/consort%27s_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Consort's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "consort's mask",
+        names: {
+          en: "consort's mask",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Consort's+Mask",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/consorts_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Consort's+Mask",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "consort's robe",
+        names: {
+          en: "consort's robe",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Consort's+Robe",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/consorts_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Consort's+Robe",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "consort's trousers",
+        names: {
+          en: "consort's trousers",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Consort's+Trousers",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/consorts_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Consort's+Trousers",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'crucible axe set',
+    names: {
+      en: 'crucible axe set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Axe+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_knight_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Axe+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'crucible axe helm',
+        names: {
+          en: 'crucible axe helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Axe+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_axe_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Axe+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'crucible axe armor',
+        names: {
+          en: 'crucible axe armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Axe+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_axe_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Axe+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'crucible gauntlets',
+        names: {
+          en: 'crucible gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'crucible greaves',
+        names: {
+          en: 'crucible greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'crucible tree set',
+    names: {
+      en: 'crucible tree set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Tree+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-tree-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Tree+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'crucible tree helm',
+        names: {
+          en: 'crucible tree helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Tree+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-tree-helm-head-armor-elden-ring-wiki-guide.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Tree+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'crucible tree armor',
+        names: {
+          en: 'crucible tree armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Tree+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-tree-armor-elden-ring-wiki-guide.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Tree+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'crucible gauntlets',
+        names: {
+          en: 'crucible gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'crucible greaves',
+        names: {
+          en: 'crucible greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Crucible+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'cuckoo knight set',
+    names: {
+      en: 'cuckoo knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cuckoo+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cuckoo_knight_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cuckoo+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'cuckoo knight helm',
+        names: {
+          en: 'cuckoo knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cuckoo+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cuckoo_knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cuckoo+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'cuckoo knight armor',
+        names: {
+          en: 'cuckoo knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cuckoo+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cuckoo_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cuckoo+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'cuckoo knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cuckoo_knight_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'cuckoo knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Cuckoo+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cuckoo_knight_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'cuckoo knight greaves',
+        names: {
+          en: 'cuckoo knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cuckoo+Knight+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cuckoo_knight_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cuckoo+Knight+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'depraved perfumer set',
+    names: {
+      en: 'depraved perfumer set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/depraved_perfumer_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'depraved perfumer headscarf',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/depraved_perfumer_headscarf_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'depraved perfumer headscarf',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Headscarf',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/depraved_perfumer_headscarf_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'depraved perfumer robe',
+        names: {
+          en: 'depraved perfumer robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/depraved_perfumer_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'depraved perfumer gloves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/depraved_perfumer_gloves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'depraved perfumer gloves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Gloves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/depraved_perfumer_gloves_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'depraved perfumer trousers',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/depraved_perfumer_trousers_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'depraved perfumer trousers',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Depraved+Perfumer+Trousers',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/depraved_perfumer_trousers_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'drake knight set',
+    names: {
+      en: 'drake knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Drake+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/drake_knight_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Drake+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'drake knight helm',
+        names: {
+          en: 'drake knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Drake+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/drake_knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Drake+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'drake knight armor',
+        names: {
+          en: 'drake knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Drake+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/drake_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Drake+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'drake knight gauntlets',
+        names: {
+          en: 'drake knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Drake+Knight+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/drake_knight_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Drake+Knight+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'drake knight greaves',
+        names: {
+          en: 'drake knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Drake+Knight+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/drake_knight_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Drake+Knight+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'duelist set',
+    names: {
+      en: 'duelist set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Duelist+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/duelist_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Duelist+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'duelist helm',
+        names: {
+          en: 'duelist helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Duelist+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/duelist_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Duelist+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'gravekeeper cloak',
+        names: {
+          en: 'gravekeeper cloak',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gravekeeper+Cloak',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gravekeeper_cloak_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gravekeeper+Cloak',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'duelist greaves',
+        names: {
+          en: 'duelist greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Duelist+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/duelist_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Duelist+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'eccentric set',
+    names: {
+      en: 'eccentric set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Eccentric+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/eccentric_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Eccentric+Set',
     elements: [
       {
-        type: 'armor',
-        name: "eccentric's hood",
+        names: {
+          en: "eccentric's hood",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Eccentric's+Hood",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/eccentrics_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Eccentric's+Hood",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "eccentric's armor",
+        names: {
+          en: "eccentric's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Eccentric's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/eccentrics_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Eccentric's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "eccentric's manchettes",
+        names: {
+          en: "eccentric's manchettes",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Eccentric's+Manchettes",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/eccentrics_manchettes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Eccentric's+Manchettes",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "eccentric's breeches",
+        names: {
+          en: "eccentric's breeches",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Eccentric's+Breeches",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/eccentrics_breeches_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Eccentric's+Breeches",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'elden lord set',
+    names: {
+      en: 'elden lord set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Lord+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/elden_lord_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Lord+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'elden lord crown',
+        names: {
+          en: 'elden lord crown',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Lord+Crown',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/elden_lord_crown_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Lord+Crown',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'elden lord armor',
+        names: {
+          en: 'elden lord armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Lord+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/elden_lord_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Lord+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'elden lord bracers',
+        names: {
+          en: 'elden lord bracers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Lord+Bracers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/elden_lord_bracers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Lord+Bracers',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'elden lord greaves',
+        names: {
+          en: 'elden lord greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Lord+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/elden_lord_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Elden+Lord+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'errant sorcerer set',
+    names: {
+      en: 'errant sorcerer set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Errant+Sorcerer+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/errant_sorcerer_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Errant+Sorcerer+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'hierodas glintstone crown',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hierodas_glintstone_crown_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'hierodas glintstone crown',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Hierodas+Glintstone+Crown',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hierodas_glintstone_crown_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'errant sorcerer robe',
+        names: {
+          en: 'errant sorcerer robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Errant+Sorcerer+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/errant-sorcerer-robe-altered-armor-elden-ring-wiki-guide.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Errant+Sorcerer+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'errant sorcerer manchettes',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/errant-sorcerer-manchettes-armor-elden-ring-wiki-guide.png',
+        names: {
+          en: 'errant sorcerer manchettes',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Errant+Sorcerer+Manchettes',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/errant-sorcerer-manchettes-armor-elden-ring-wiki-guide.png',
       },
       {
-        type: 'armor',
-        name: 'errant sorcerer boots',
+        names: {
+          en: 'errant sorcerer boots',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Errant+Sorcerer+Boots',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/errant-sorcerer-boots-altered-armor-elden-ring-wiki-guide.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Errant+Sorcerer+Boots',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'exile set',
+    names: {
+      en: 'exile set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Exile+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/exile-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Exile+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'exile hood',
+        names: {
+          en: 'exile hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Exile+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/exile_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Exile+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'exile armor',
+        names: {
+          en: 'exile armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Exile+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/exile_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Exile+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'exile gauntlets',
+        names: {
+          en: 'exile gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Exile+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/exile_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Exile+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'exile greaves',
+        names: {
+          en: 'exile greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Exile+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/exile_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Exile+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'festive set',
+    names: {
+      en: 'festive set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Festive+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/festive_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Festive+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'festive hood',
+        names: {
+          en: 'festive hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Festive+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/festive_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Festive+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'festive garb',
+        names: {
+          en: 'festive garb',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Festive+Garb',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/festive_garb_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Festive+Garb',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "fia's set",
+    names: {
+      en: "fia's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Fia's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fia_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Fia's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "fia's hood",
+        names: {
+          en: "fia's hood",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Fia's+Hood",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fias_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Fia's+Hood",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "fia's robe",
+        names: {
+          en: "fia's robe",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Fia's+Robe",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fias_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Fia's+Robe",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'finger maiden set',
+    names: {
+      en: 'finger maiden set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Finger+Maiden+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger-maiden-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Finger+Maiden+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'finger maiden fillet',
+        names: {
+          en: 'finger maiden fillet',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Finger+Maiden+Fillet',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger_maiden_fillet_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Finger+Maiden+Fillet',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'finger maiden robe',
+        names: {
+          en: 'finger maiden robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Finger+Maiden+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger_maiden_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Finger+Maiden+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'finger maiden shoes',
+        names: {
+          en: 'finger maiden shoes',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Finger+Maiden+Shoes',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger_maiden_shoes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Finger+Maiden+Shoes',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'fingerprint set',
+    names: {
+      en: 'fingerprint set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Fingerprint+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fingerprint_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Fingerprint+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'fingerprint helm',
+        names: {
+          en: 'fingerprint helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fingerprint+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fingerprint-helm.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fingerprint+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fingerprint armor',
+        names: {
+          en: 'fingerprint armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fingerprint+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fingerprint_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fingerprint+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fingerprint gauntlets',
+        names: {
+          en: 'fingerprint gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fingerprint+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fingerprint_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fingerprint+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fingerprint greaves',
+        names: {
+          en: 'fingerprint greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fingerprint+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fingerprint_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fingerprint+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'fire monk set',
+    names: {
+      en: 'fire monk set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Monk+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_monk_set_transparent.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Monk+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'fire monk hood',
+        names: {
+          en: 'fire monk hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Monk+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_monk_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Monk+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fire monk armor',
+        names: {
+          en: 'fire monk armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Monk+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_monk_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Monk+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fire monk gauntlets',
+        names: {
+          en: 'fire monk gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Monk+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_monk_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Monk+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fire monk greaves',
+        names: {
+          en: 'fire monk greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Monk+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_monk_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Monk+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'fire prelate set',
+    names: {
+      en: 'fire prelate set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Prelate+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_prelate_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Prelate+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'fire prelate helm',
+        names: {
+          en: 'fire prelate helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Prelate+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_prelate_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Prelate+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fire prelate armor',
+        names: {
+          en: 'fire prelate armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Prelate+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_prelate_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Prelate+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fire prelate gauntlets',
+        names: {
+          en: 'fire prelate gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Prelate+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_prelate_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Prelate+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fire prelate greaves',
+        names: {
+          en: 'fire prelate greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Prelate+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_prelate_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Prelate+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'fur set',
+    names: {
+      en: 'fur set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Fur+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fur_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Fur+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'great horned headband',
+        names: {
+          en: 'great horned headband',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Great+Horned+Headband',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/great_horned_headband_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Great+Horned+Headband',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fur raiment',
+        names: {
+          en: 'fur raiment',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fur+Raiment',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fur_raiment_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fur+Raiment',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fur leggings',
+        names: {
+          en: 'fur leggings',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fur+Leggings',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fur_leggings_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fur+Leggings',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'gelmir knight set',
+    names: {
+      en: 'gelmir knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Gelmir+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gelmir-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Gelmir+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'gelmir knight helm',
+        names: {
+          en: 'gelmir knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gelmir+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gelmir_knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gelmir+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'gelmir knight armor',
+        names: {
+          en: 'gelmir knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gelmir+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gelmir_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gelmir+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'gelmir knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gelmir_knight_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'gelmir knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Gelmir+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gelmir_knight_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'gelmir knight greaves',
+        names: {
+          en: 'gelmir knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gelmir+Knight+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gelmir_knight_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gelmir+Knight+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'general radahn set',
+    names: {
+      en: 'general radahn set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/General+Radahn+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/General+Radahn+Set',
     elements: [
       {
-        type: 'armor',
-        name: "radahn's redmane helm",
+        names: {
+          en: "radahn's redmane helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Radahn's+Redmane+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahns_redmane_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Radahn's+Redmane+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "radahn's lion armor",
+        names: {
+          en: "radahn's lion armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Radahn's+Lion+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahns_lion_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Radahn's+Lion+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "radahn's gauntlets",
+        names: {
+          en: "radahn's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Radahn's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahns_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Radahn's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "radahn's greaves",
+        names: {
+          en: "radahn's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Radahn's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahns_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Radahn's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'godrick foot soldier set',
+    names: {
+      en: 'godrick foot soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Foot+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_foot_soldier_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Foot+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'foot soldier cap',
+        names: {
+          en: 'foot soldier cap',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Cap',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_cap_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Cap',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'chain-draped tabard',
+        names: {
+          en: 'chain-draped tabard',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain-Draped+Tabard',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/chain-draped_tabard_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Chain-Draped+Tabard',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier gauntlets',
+        names: {
+          en: 'foot soldier gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier greaves',
+        names: {
+          en: 'foot soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'godrick knight set',
+    names: {
+      en: 'godrick knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_knight_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'godrick knight helm',
+        names: {
+          en: 'godrick knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'godrick knight armor',
+        names: {
+          en: 'godrick knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'godrick knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_knight_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'godrick knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Godrick+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_knight_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'godrick knight greaves',
+        names: {
+          en: 'godrick knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Knight+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_knight_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Knight+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'godrick soldier set',
+    names: {
+      en: 'godrick soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_soldier_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'godrick soldier helm',
+        names: {
+          en: 'godrick soldier helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Soldier+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_soldier_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godrick+Soldier+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'tree-and-beast surcoat',
+        names: {
+          en: 'tree-and-beast surcoat',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree-and-Beast+Surcoat',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-and-beast_surcoat_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree-and-Beast+Surcoat',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'godrick soldier gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'godrick soldier gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Godrick+Soldier+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'godrick soldier greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_soldier_greaves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'godrick soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Godrick+Soldier+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_soldier_greaves_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'godskin apostle set',
+    names: {
+      en: 'godskin apostle set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Apostle+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-apostle-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Apostle+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'godskin apostle hood',
+        names: {
+          en: 'godskin apostle hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Apostle+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_apostle_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Apostle+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'godskin apostle robe',
+        names: {
+          en: 'godskin apostle robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Apostle+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_apostle_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Apostle+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'godskin apostle bracelets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_apostle_bracelets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'godskin apostle bracelets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Godskin+Apostle+Bracelets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_apostle_bracelets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'godskin apostle trousers',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_apostle_trousers_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'godskin apostle trousers',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Godskin+Apostle+Trousers',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_apostle_trousers_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'godskin noble set',
+    names: {
+      en: 'godskin noble set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Noble+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_noble_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Noble+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'godskin noble hood',
+        names: {
+          en: 'godskin noble hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Noble+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_noble_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Noble+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'godskin noble robe',
+        names: {
+          en: 'godskin noble robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Noble+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_noble_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Noble+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'godskin noble bracelets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_noble_bracelets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'godskin noble bracelets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Godskin+Noble+Bracelets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_noble_bracelets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'godskin noble trousers',
+        names: {
+          en: 'godskin noble trousers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Noble+Trousers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_noble_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Godskin+Noble+Trousers',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "goldmask's set",
+    names: {
+      en: "goldmask's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Goldmask's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/goldmask_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Goldmask's+Set",
     elements: [
       {
-        type: 'armor',
-        name: 'radiant gold mask',
+        names: {
+          en: 'radiant gold mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Radiant+Gold+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radiant_gold_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Radiant+Gold+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "goldmask's rags",
+        names: {
+          en: "goldmask's rags",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Goldmask's+Rags",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/goldmasks_rags_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Goldmask's+Rags",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'gold bracelets',
+        names: {
+          en: 'gold bracelets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gold+Bracelets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gold_bracelets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gold+Bracelets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'gold waistwrap',
+        names: {
+          en: 'gold waistwrap',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gold+Waistwrap',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gold_waistwrap_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gold+Waistwrap',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'guardian set',
+    names: {
+      en: 'guardian set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/guardian_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'guardian mask',
+        names: {
+          en: 'guardian mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/guardian_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'guardian garb',
+        names: {
+          en: 'guardian garb',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Garb',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/guardian_garb_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Garb',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'guardian bracers',
+        names: {
+          en: 'guardian bracers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Bracers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/guardian_bracers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Bracers',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'guardian greaves',
+        names: {
+          en: 'guardian greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/guardian_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Guardian+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'guilty set',
+    names: {
+      en: 'guilty set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Guilty+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/guilty_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Guilty+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'guilty hood',
+        names: {
+          en: 'guilty hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Guilty+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/guilty_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Guilty+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'cloth garb',
+        names: {
+          en: 'cloth garb',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cloth+Garb',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cloth_garb_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cloth+Garb',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'cloth trousers',
+        names: {
+          en: 'cloth trousers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cloth+Trousers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cloth_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cloth+Trousers',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'haligtree foot soldier set',
+    names: {
+      en: 'haligtree foot soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Foot+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_foot_soldier_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Foot+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'sacred crown helm',
+        names: {
+          en: 'sacred crown helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sacred+Crown+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sacred_crown_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sacred+Crown+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'ivory-draped tabard',
+        names: {
+          en: 'ivory-draped tabard',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Ivory-Draped+Tabard',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ivory-draped_tabard_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Ivory-Draped+Tabard',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier gauntlets',
+        names: {
+          en: 'foot soldier gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier greaves',
+        names: {
+          en: 'foot soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'haligtree knight set',
+    names: {
+      en: 'haligtree knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_knight_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'haligtree knight helm',
+        names: {
+          en: 'haligtree knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'haligtree knight armor',
+        names: {
+          en: 'haligtree knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'haligtree knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_knight_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'haligtree knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Haligtree+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_knight_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'haligtree knight greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_knight_greaves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'haligtree knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Haligtree+Knight+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_knight_greaves_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'haligtree set',
+    names: {
+      en: 'haligtree set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'haligtree helm',
+        names: {
+          en: 'haligtree helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'haligtree crest surcoat',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_crest_surcoat_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'haligtree crest surcoat',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Haligtree+Crest+Surcoat',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_crest_surcoat_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'haligtree gauntlets',
+        names: {
+          en: 'haligtree gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'haligtree greaves',
+        names: {
+          en: 'haligtree greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligtree+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'high page set',
+    names: {
+      en: 'high page set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Page+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/high_page_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Page+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'high page hood',
+        names: {
+          en: 'high page hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Page+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/high_page_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Page+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'high page clothes',
+        names: {
+          en: 'high page clothes',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Page+Clothes',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/high_page_clothes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Page+Clothes',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'page trousers',
+        names: {
+          en: 'page trousers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Page+Trousers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/page_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Page+Trousers',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'highwayman set',
+    names: {
+      en: 'highwayman set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Highwayman+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/highwayman_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Highwayman+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'highwayman hood',
+        names: {
+          en: 'highwayman hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Highwayman+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/highwayman_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Highwayman+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'highwayman cloth armor',
+        names: {
+          en: 'highwayman cloth armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Highwayman+Cloth+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/highwayman_cloth_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Highwayman+Cloth+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'highwayman gauntlets',
+        names: {
+          en: 'highwayman gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Highwayman+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/highwayman_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Highwayman+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier greaves',
+        names: {
+          en: 'foot soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "hoslow's set",
+    names: {
+      en: "hoslow's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Hoslow's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hoslow-set-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Hoslow's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "hoslow's helm",
+        names: {
+          en: "hoslow's helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Hoslow's+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hoslows_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Hoslow's+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "hoslow's armor",
+        names: {
+          en: "hoslow's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Hoslow's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hoslows_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Hoslow's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "hoslow's gauntlets",
+        names: {
+          en: "hoslow's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Hoslow's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hoslows_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Hoslow's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "hoslow's greaves",
+        names: {
+          en: "hoslow's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Hoslow's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hoslows_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Hoslow's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'house marais set',
+    names: {
+      en: 'house marais set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/House+Marais+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marais-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/House+Marais+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'marais mask',
+        names: {
+          en: 'marais mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Marais+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marais_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Marais+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'marais robe',
+        names: {
+          en: 'marais robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Marais+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marais_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Marais+Robe',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'iron set',
+    names: {
+      en: 'iron set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'iron helmet',
+        names: {
+          en: 'iron helmet',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Helmet',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_helmet_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Helmet',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'scale armor',
+        names: {
+          en: 'scale armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scale+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/scale_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scale+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'iron gauntlets',
+        names: {
+          en: 'iron gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'leather trousers',
+        names: {
+          en: 'leather trousers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Trousers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Trousers',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'juvenile scholar set',
+    names: {
+      en: 'juvenile scholar set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/juvenile-scholar-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'juvenile scholar cap',
+        names: {
+          en: 'juvenile scholar cap',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Cap',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/juvenile_scholar_cap_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Cap',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'juvenile scholar robe',
+        names: {
+          en: 'juvenile scholar robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/juvenile_scholar_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Juvenile+Scholar+Robe',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'kaiden set',
+    names: {
+      en: 'kaiden set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Kaiden+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/kaiden_set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Kaiden+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'kaiden helm',
+        names: {
+          en: 'kaiden helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Kaiden+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/kaiden_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Kaiden+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'kaiden armor',
+        names: {
+          en: 'kaiden armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Kaiden+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/kaiden_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Kaiden+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'kaiden gauntlets',
+        names: {
+          en: 'kaiden gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Kaiden+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/kaiden_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Kaiden+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'kaiden trousers',
+        names: {
+          en: 'kaiden trousers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Kaiden+Trousers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/kaiden_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Kaiden+Trousers',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'knight set',
+    names: {
+      en: 'knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/knight-set-elden-ring-wiki-200px.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'knight helm',
+        names: {
+          en: 'knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'knight armor',
+        names: {
+          en: 'knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'knight gauntlets',
+        names: {
+          en: 'knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Knight+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/knight_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Knight+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'knight greaves',
+        names: {
+          en: 'knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Knight+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/knight_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Knight+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'land of reeds set',
+    names: {
+      en: 'land of reeds set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Land+of+Reeds+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/samurai-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Land+of+Reeds+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'land of reeds helm',
+        names: {
+          en: 'land of reeds helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Land+of+Reeds+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/land_of_reeds_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Land+of+Reeds+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'land of reeds armor',
+        names: {
+          en: 'land of reeds armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Land+of+Reeds+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/land_of_reeds_armor_(altered)_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Land+of+Reeds+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'land of reeds gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/land_of_reeds_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'land of reeds gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Land+of+Reeds+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/land_of_reeds_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'land of reeds greaves',
+        names: {
+          en: 'land of reeds greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Land+of+Reeds+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/land_of_reeds_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Land+of+Reeds+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'lazuli sorcerer set',
+    names: {
+      en: 'lazuli sorcerer set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Lazuli+Sorcerer+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lazuli_sorcerer_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Lazuli+Sorcerer+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'lazuli glintstone crown',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lazuli_glintstone_crown_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'lazuli glintstone crown',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Lazuli+Glintstone+Crown',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lazuli_glintstone_crown_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'lazuli robe',
+        names: {
+          en: 'lazuli robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Lazuli+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lazuli_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Lazuli+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'sorcerer manchettes',
+        names: {
+          en: 'sorcerer manchettes',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sorcerer+Manchettes',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sorcerer_manchettes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sorcerer+Manchettes',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'sorcerer leggings',
+        names: {
+          en: 'sorcerer leggings',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sorcerer+Leggings',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sorcerer_leggings_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sorcerer+Leggings',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'leather set',
+    names: {
+      en: 'leather set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'black hood',
+        names: {
+          en: 'black hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'leather armor',
+        names: {
+          en: 'leather armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'leather gloves',
+        names: {
+          en: 'leather gloves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Gloves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather_gloves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Gloves',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'leather boots',
+        names: {
+          en: 'leather boots',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Boots',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather_boots_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Boots',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'leyndell foot soldier set',
+    names: {
+      en: 'leyndell foot soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Foot+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_foot_soldier_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Foot+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'gilded foot soldier cap',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gilded_foot_soldier_cap_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'gilded foot soldier cap',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Gilded+Foot+Soldier+Cap',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gilded_foot_soldier_cap_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'leather-draped tabard',
+        names: {
+          en: 'leather-draped tabard',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather-Draped+Tabard',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather-draped_tabard_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather-Draped+Tabard',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier gauntlets',
+        names: {
+          en: 'foot soldier gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier greaves',
+        names: {
+          en: 'foot soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'leyndell knight set',
+    names: {
+      en: 'leyndell knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_knight_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'leyndell knight helm',
+        names: {
+          en: 'leyndell knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'leyndell knight armor',
+        names: {
+          en: 'leyndell knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'leyndell knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_knight_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'leyndell knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Leyndell+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_knight_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'leyndell knight greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_knight_greaves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'leyndell knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Leyndell+Knight+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_knight_greaves_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'leyndell soldier set',
+    names: {
+      en: 'leyndell soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_soldier_armor.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'leyndell soldier helm',
+        names: {
+          en: 'leyndell soldier helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Soldier+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_soldier_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leyndell+Soldier+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'erdtree surcoat',
+        names: {
+          en: 'erdtree surcoat',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Surcoat',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree_surcoat_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Erdtree+Surcoat',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'leyndell soldier gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'leyndell soldier gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Leyndell+Soldier+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'leyndell soldier greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_soldier_greaves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'leyndell soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Leyndell+Soldier+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leyndell_soldier_greaves_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: "lionel's set",
+    names: {
+      en: "lionel's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Lionel's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lionel-set-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Lionel's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "lionel's helm",
+        names: {
+          en: "lionel's helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Lionel's+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lionels_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Lionel's+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "lionel's armor",
+        names: {
+          en: "lionel's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Lionel's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lionels_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Lionel's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "lionel's gauntlets",
+        names: {
+          en: "lionel's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Lionel's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lionels_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Lionel's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "lionel's greaves",
+        names: {
+          en: "lionel's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Lionel's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lionels_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Lionel's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "lusat's set",
+    names: {
+      en: "lusat's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Lusat's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lusat%27s_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Lusat's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "lusat's glintstone crown",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lusats_glintstone_crown_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: "lusat's glintstone crown",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Lusat's+Glintstone+Crown",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lusats_glintstone_crown_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: "lusat's robe",
+        names: {
+          en: "lusat's robe",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Lusat's+Robe",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lusats_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Lusat's+Robe",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "lusat's manchettes",
+        names: {
+          en: "lusat's manchettes",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Lusat's+Manchettes",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/lusats_manchettes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Lusat's+Manchettes",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "old sorcerer's legwraps",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/old_sorcerers_legwraps_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: "old sorcerer's legwraps",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Old+Sorcerer's+Legwraps",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/old_sorcerers_legwraps_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: "malenia's set",
+    names: {
+      en: "malenia's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Malenia's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malenia_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Malenia's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "malenia's winged helm",
+        names: {
+          en: "malenia's winged helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Malenia's+Winged+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malenias_winged_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Malenia's+Winged+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "malenia's armor",
+        names: {
+          en: "malenia's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Malenia's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malenias_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Malenia's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "malenia's gauntlet",
+        names: {
+          en: "malenia's gauntlet",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Malenia's+Gauntlet",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malenias_gauntlet_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Malenia's+Gauntlet",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "malenia's greaves",
+        names: {
+          en: "malenia's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Malenia's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malenias_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Malenia's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'malformed dragon set',
+    names: {
+      en: 'malformed dragon set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Malformed+Dragon+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malformed-dragon-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Malformed+Dragon+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'malformed dragon helm',
+        names: {
+          en: 'malformed dragon helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Malformed+Dragon+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malformed_dragon_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Malformed+Dragon+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'malformed dragon armor',
+        names: {
+          en: 'malformed dragon armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Malformed+Dragon+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malformed_dragon_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Malformed+Dragon+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'malformed dragon gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malformed_dragon_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'malformed dragon gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Malformed+Dragon+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malformed_dragon_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'malformed dragon greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malformed_dragon_greaves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'malformed dragon greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Malformed+Dragon+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malformed_dragon_greaves_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: "maliketh's set",
+    names: {
+      en: "maliketh's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Maliketh's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/maliketh_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Maliketh's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "maliketh's helm",
+        names: {
+          en: "maliketh's helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Maliketh's+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malikeths_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Maliketh's+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "maliketh's armor",
+        names: {
+          en: "maliketh's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Maliketh's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malikeths_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Maliketh's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "maliketh's gauntlets",
+        names: {
+          en: "maliketh's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Maliketh's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malikeths_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Maliketh's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "maliketh's greaves",
+        names: {
+          en: "maliketh's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Maliketh's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/malikeths_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Maliketh's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'marionette soldier set',
+    names: {
+      en: 'marionette soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Marionette+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marionette_soldier_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Marionette+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'marionette soldier helm',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marionette_soldier_helm_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'marionette soldier helm',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Marionette+Soldier+Helm',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marionette_soldier_helm_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'marionette soldier armor',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marionette_soldier_armor_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'marionette soldier armor',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Marionette+Soldier+Armor',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/marionette_soldier_armor_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'mausoleum foot soldier set',
+    names: {
+      en: 'mausoleum foot soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Foot+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_foot_soldier_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Foot+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'bloodsoaked tabard',
+        names: {
+          en: 'bloodsoaked tabard',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodsoaked+Tabard',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodsoaked_tabard_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bloodsoaked+Tabard',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier gauntlets',
+        names: {
+          en: 'foot soldier gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier greaves',
+        names: {
+          en: 'foot soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'mausoleum knight set',
+    names: {
+      en: 'mausoleum knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_knight_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'mausoleum knight armor',
+        names: {
+          en: 'mausoleum knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'mausoleum knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_knight_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'mausoleum knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Mausoleum+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_knight_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'mausoleum knight greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_knight_greaves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'mausoleum knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Mausoleum+Knight+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_knight_greaves_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'mausoleum soldier set',
+    names: {
+      en: 'mausoleum soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_soldier_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'mausoleum surcoat',
+        names: {
+          en: 'mausoleum surcoat',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Surcoat',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_surcoat_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Surcoat',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'mausoleum gauntlets',
+        names: {
+          en: 'mausoleum gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'mausoleum greaves',
+        names: {
+          en: 'mausoleum greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mausoleum_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mausoleum+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'mushroom set',
+    names: {
+      en: 'mushroom set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mushroom+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mushroom-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mushroom+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'mushroom head',
+        names: {
+          en: 'mushroom head',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mushroom+Head',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mushroom_head_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mushroom+Head',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'mushroom body',
+        names: {
+          en: 'mushroom body',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mushroom+Body',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mushroom_body_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mushroom+Body',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'mushroom arms',
+        names: {
+          en: 'mushroom arms',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mushroom+Arms',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mushroom_arms_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mushroom+Arms',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'mushroom legs',
+        names: {
+          en: 'mushroom legs',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mushroom+Legs',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mushroom_legs_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Mushroom+Legs',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'night maiden set',
+    names: {
+      en: 'night maiden set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Night+Maiden+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/night_maiden_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Night+Maiden+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'night maiden twin crown',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/night_maiden_twin_crown_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'night maiden twin crown',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Night+Maiden+Twin+Crown',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/night_maiden_twin_crown_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'night maiden armor',
+        names: {
+          en: 'night maiden armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Night+Maiden+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/night_maiden_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Night+Maiden+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'nox bracelets',
+        names: {
+          en: 'nox bracelets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Bracelets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_monk_bracelets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Bracelets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'nox greaves',
+        names: {
+          en: 'nox greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_monk_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "night's cavalry set",
+    names: {
+      en: "night's cavalry set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Night's+Cavalry+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/night%27s_cavalry_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Night's+Cavalry+Set",
     elements: [
       {
-        type: 'armor',
-        name: "night's cavalry helm",
+        names: {
+          en: "night's cavalry helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Night's+Cavalry+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights_cavalry_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Night's+Cavalry+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "night's cavalry armor",
+        names: {
+          en: "night's cavalry armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Night's+Cavalry+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights_cavalry_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Night's+Cavalry+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "night's cavalry gauntlets",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights_cavalry_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: "night's cavalry gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Night's+Cavalry+Gauntlets",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights_cavalry_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: "night's cavalry greaves",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights_cavalry_greaves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: "night's cavalry greaves",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Night's+Cavalry+Greaves",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights_cavalry_greaves_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: "noble's set",
+    names: {
+      en: "noble's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Noble's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/noble-set-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Noble's+Set",
     elements: [
       {
-        type: 'armor',
-        name: 'navy hood',
+        names: {
+          en: 'navy hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Navy+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/navy_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Navy+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "noble's traveling garb",
+        names: {
+          en: "noble's traveling garb",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Noble's+Traveling+Garb",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nobles_traveling_garb_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Noble's+Traveling+Garb",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "noble's gloves",
+        names: {
+          en: "noble's gloves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Noble's+Gloves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nobles_gloves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Noble's+Gloves",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "noble's trousers",
+        names: {
+          en: "noble's trousers",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Noble's+Trousers",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nobles_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Noble's+Trousers",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "nomadic merchant's set",
+    names: {
+      en: "nomadic merchant's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchant%27s_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Nomadic+Merchant's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "nomadic merchant's chapeau",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchants_chapeau_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: "nomadic merchant's chapeau",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Nomadic+Merchant's+Chapeau",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchants_chapeau_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: "nomadic merchant's finery",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchants_finery_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: "nomadic merchant's finery",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Nomadic+Merchant's+Finery",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchants_finery_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: "nomadic merchant's trousers",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchants_trousers_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: "nomadic merchant's trousers",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Nomadic+Merchant's+Trousers",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchants_trousers_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'nox monk set',
+    names: {
+      en: 'nox monk set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Monk+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_monk_set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Monk+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'nox monk hood',
+        names: {
+          en: 'nox monk hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Monk+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_monk_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Monk+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'nox monk armor',
+        names: {
+          en: 'nox monk armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Monk+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_monk_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Monk+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'nox bracelets',
+        names: {
+          en: 'nox bracelets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Bracelets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_monk_bracelets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Bracelets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'nox greaves',
+        names: {
+          en: 'nox greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_monk_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'nox swordstress set',
+    names: {
+      en: 'nox swordstress set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Swordstress+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_swordstress_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Swordstress+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'nox swordstress crown',
+        names: {
+          en: 'nox swordstress crown',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Swordstress+Crown',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_swordstress_crown_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Swordstress+Crown',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'nox swordstress armor',
+        names: {
+          en: 'nox swordstress armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Swordstress+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_swordstress_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Swordstress+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'nox bracelets',
+        names: {
+          en: 'nox bracelets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Bracelets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_monk_bracelets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Bracelets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'nox greaves',
+        names: {
+          en: 'nox greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_monk_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Nox+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'old aristocrat set',
+    names: {
+      en: 'old aristocrat set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Old+Aristocrat+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/old_aristocrat_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Old+Aristocrat+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'old aristocrat cowl',
+        names: {
+          en: 'old aristocrat cowl',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Old+Aristocrat+Cowl',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/old_aristocrat_cowl_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Old+Aristocrat+Cowl',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'old aristocrat gown',
+        names: {
+          en: 'old aristocrat gown',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Old+Aristocrat+Gown',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/old_aristocrat_gown_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Old+Aristocrat+Gown',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'old aristocrat shoes',
+        names: {
+          en: 'old aristocrat shoes',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Old+Aristocrat+Shoes',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/old_aristocrat_shoes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Old+Aristocrat+Shoes',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'omen set',
+    names: {
+      en: 'omen set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Omen+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omen_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Omen+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'omen helm',
+        names: {
+          en: 'omen helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omen+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omen_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omen+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'omen armor',
+        names: {
+          en: 'omen armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omen+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omen_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omen+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'omen gauntlets',
+        names: {
+          en: 'omen gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omen+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omen_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omen+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'omen greaves',
+        names: {
+          en: 'omen greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omen+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omen_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omen+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'omenkiller set',
+    names: {
+      en: 'omenkiller set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Omenkiller+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Omenkiller+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'omensmirk mask',
+        names: {
+          en: 'omensmirk mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omensmirk+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omensmirk_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omensmirk+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'omenkiller robe',
+        names: {
+          en: 'omenkiller robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omenkiller+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omenkiller+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'omenkiller long gloves',
+        names: {
+          en: 'omenkiller long gloves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omenkiller+Long+Gloves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller_long_gloves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omenkiller+Long+Gloves',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'omenkiller boots',
+        names: {
+          en: 'omenkiller boots',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omenkiller+Boots',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller_boots_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Omenkiller+Boots',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'page set',
+    names: {
+      en: 'page set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Page+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/page-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Page+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'page hood',
+        names: {
+          en: 'page hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Page+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/page_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Page+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'page garb',
+        names: {
+          en: 'page garb',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Page+Garb',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/page_garb_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Page+Garb',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'page trousers',
+        names: {
+          en: 'page trousers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Page+Trousers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/page_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Page+Trousers',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'perfumer set',
+    names: {
+      en: 'perfumer set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'perfumer hood',
+        names: {
+          en: 'perfumer hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'perfumer robe',
+        names: {
+          en: 'perfumer robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'perfumer gloves',
+        names: {
+          en: 'perfumer gloves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Gloves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer_gloves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Gloves',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'perfumer sarong',
+        names: {
+          en: 'perfumer sarong',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Sarong',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer_sarong_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Perfumer+Sarong',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "perfumer traveler's set",
+    names: {
+      en: "perfumer traveler's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Perfumer+Traveler's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/traveler-set-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Perfumer+Traveler's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "traveler's hat",
+        names: {
+          en: "traveler's hat",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Hat",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/travelers-hat-armor-elden-ring-wiki-guide.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Hat",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "perfumer's traveling garb",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumers-traveling-garb-armor-elden-ring-wiki-guide.png',
+        names: {
+          en: "perfumer's traveling garb",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Perfumer's+Traveling+Garb",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumers-traveling-garb-armor-elden-ring-wiki-guide.png',
       },
       {
-        type: 'armor',
-        name: "traveler's gloves",
+        names: {
+          en: "traveler's gloves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Gloves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/travelers_gloves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Gloves",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "traveler's slops",
+        names: {
+          en: "traveler's slops",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Slops",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/travelers-slops-armor-elden-ring-wiki-guide.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Slops",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "preceptor's set",
+    names: {
+      en: "preceptor's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Preceptor's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/preceptor-set-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Preceptor's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "preceptor's big hat",
+        names: {
+          en: "preceptor's big hat",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Preceptor's+Big+Hat",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/preceptors_big_hat_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Preceptor's+Big+Hat",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "preceptor's long gown",
+        names: {
+          en: "preceptor's long gown",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Preceptor's+Long+Gown",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/preceptors_long_gown_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Preceptor's+Long+Gown",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "preceptor's gloves",
+        names: {
+          en: "preceptor's gloves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Preceptor's+Gloves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/preceptors_gloves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Preceptor's+Gloves",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "preceptor's trousers",
+        names: {
+          en: "preceptor's trousers",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Preceptor's+Trousers",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/preceptors_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Preceptor's+Trousers",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'prisoner set',
+    names: {
+      en: 'prisoner set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Prisoner+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/prisoner-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Prisoner+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'prisoner iron mask',
+        names: {
+          en: 'prisoner iron mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prisoner+Iron+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/prisoner_iron_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prisoner+Iron+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'prisoner clothing',
+        names: {
+          en: 'prisoner clothing',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prisoner+Clothing',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/prisoner_clothing_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prisoner+Clothing',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'prisoner trousers',
+        names: {
+          en: 'prisoner trousers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prisoner+Trousers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/prisoner_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prisoner+Trousers',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'prophet set',
+    names: {
+      en: 'prophet set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Prophet+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/prophet-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Prophet+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'prophet blindfold',
+        names: {
+          en: 'prophet blindfold',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prophet+Blindfold',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/prophet_blindfold_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prophet+Blindfold',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'prophet robe',
+        names: {
+          en: 'prophet robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prophet+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/prophet_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prophet+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'prophet trousers',
+        names: {
+          en: 'prophet trousers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prophet+Trousers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/prophet_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Prophet+Trousers',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'queen of the full moon set',
+    names: {
+      en: 'queen of the full moon set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Queen+of+the+Full+Moon+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/queen-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Queen+of+the+Full+Moon+Set',
     elements: [
       {
-        type: 'armor',
-        name: "queen's crescent crown",
+        names: {
+          en: "queen's crescent crown",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Queen's+Crescent+Crown",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/queens_crescent_crown_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Queen's+Crescent+Crown",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "queen's robe",
+        names: {
+          en: "queen's robe",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Queen's+Robe",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/queens_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Queen's+Robe",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "queen's bracelets",
+        names: {
+          en: "queen's bracelets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Queen's+Bracelets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/queens_bracelets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Queen's+Bracelets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "queen's leggings",
+        names: {
+          en: "queen's leggings",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Queen's+Leggings",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/queens_leggings_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Queen's+Leggings",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'radahn foot soldier set',
+    names: {
+      en: 'radahn foot soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Radahn+Foot+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn_foot_soldier_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Radahn+Foot+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'foot soldier helm',
+        names: {
+          en: 'foot soldier helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'scarlet tabard',
+        names: {
+          en: 'scarlet tabard',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scarlet+Tabard',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/scarlet_tabard_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scarlet+Tabard',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier gauntlets',
+        names: {
+          en: 'foot soldier gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier greaves',
+        names: {
+          en: 'foot soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'radahn soldier set',
+    names: {
+      en: 'radahn soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Radahn+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn_soldier_set_fixed.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Radahn+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'radahn soldier helm',
+        names: {
+          en: 'radahn soldier helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Radahn+Soldier+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn_soldier_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Radahn+Soldier+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'redmane surcoat',
+        names: {
+          en: 'redmane surcoat',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Redmane+Surcoat',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/redmane_surcoat_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Redmane+Surcoat',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'radahn soldier gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'radahn soldier gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Radahn+Soldier+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'radahn soldier greaves',
+        names: {
+          en: 'radahn soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Radahn+Soldier+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn_soldier_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Radahn+Soldier+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'raging wolf set',
+    names: {
+      en: 'raging wolf set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Raging+Wolf+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloody-wolf-armor-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Raging+Wolf+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'raging wolf helm',
+        names: {
+          en: 'raging wolf helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raging+Wolf+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raging_wolf_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raging+Wolf+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'raging wolf armor',
+        names: {
+          en: 'raging wolf armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raging+Wolf+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raging_wolf_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raging+Wolf+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'raging wolf gauntlets',
+        names: {
+          en: 'raging wolf gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raging+Wolf+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raging_wolf_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raging+Wolf+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'raging wolf greaves',
+        names: {
+          en: 'raging wolf greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raging+Wolf+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raging_wolf_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raging+Wolf+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "raptor's set",
+    names: {
+      en: "raptor's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Raptor's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raptor%27s_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Raptor's+Set",
     elements: [
       {
-        type: 'armor',
-        name: 'skeletal mask',
+        names: {
+          en: 'skeletal mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Skeletal+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/skeletal_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Skeletal+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "raptor's black feathers",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raptors_black_feathers_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: "raptor's black feathers",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Raptor's+Black+Feathers",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raptors_black_feathers_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'bandit manchettes',
+        names: {
+          en: 'bandit manchettes',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Manchettes',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bandit_manchettes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Manchettes',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'bandit boots',
+        names: {
+          en: 'bandit boots',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Boots',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/bandit_boots_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Bandit+Boots',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'raya lucarian foot soldier set',
-    imageUrl:
-      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raya_lucarian_foot_soldier_set.png',
+    names: {
+      en: 'raya lucarian foot soldier set',
+      fr: '',
+    },
     wikiUrl:
       'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Foot+Soldier+Set',
+    imageUrl:
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raya_lucarian_foot_soldier_set.png',
     elements: [
       {
-        type: 'armor',
-        name: 'foot soldier helmet',
+        names: {
+          en: 'foot soldier helmet',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Helmet',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_helmet_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Helmet',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier tabard',
+        names: {
+          en: 'foot soldier tabard',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Tabard',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_tabard_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Tabard',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier gauntlets',
+        names: {
+          en: 'foot soldier gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'foot soldier greaves',
+        names: {
+          en: 'foot soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/foot_soldier_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Foot+Soldier+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'raya lucarian soldier set',
+    names: {
+      en: 'raya lucarian soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raya_lucarian_soldier_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'raya lucarian helm',
+        names: {
+          en: 'raya lucarian helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raya_lucarian_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'cuckoo surcoat',
+        names: {
+          en: 'cuckoo surcoat',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cuckoo+Surcoat',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cuckoo_surcoat_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Cuckoo+Surcoat',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'raya lucarian gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raya_lucarian_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'raya lucarian gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raya_lucarian_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'raya lucarian greaves',
+        names: {
+          en: 'raya lucarian greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raya_lucarian_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'raya lucarian sorcerer set',
+    names: {
+      en: 'raya lucarian sorcerer set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Sorcerer+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raya_lucarian_sorcerer_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Sorcerer+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'karolos glintstone crown',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/karolos_glintstone_crown_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'karolos glintstone crown',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Karolos+Glintstone+Crown',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/karolos_glintstone_crown_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'raya lucarian robe',
+        names: {
+          en: 'raya lucarian robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/raya_lucarian_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Raya+Lucarian+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'sorcerer manchettes',
+        names: {
+          en: 'sorcerer manchettes',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sorcerer+Manchettes',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sorcerer_manchettes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sorcerer+Manchettes',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'sorcerer leggings',
+        names: {
+          en: 'sorcerer leggings',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sorcerer+Leggings',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sorcerer_leggings_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sorcerer+Leggings',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'redmane knight set',
+    names: {
+      en: 'redmane knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Redmane+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/redmane_knight_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Redmane+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'redmane knight helm',
+        names: {
+          en: 'redmane knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Redmane+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/redmane_knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Redmane+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'redmane knight armor',
+        names: {
+          en: 'redmane knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Redmane+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/redmane_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Redmane+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'redmane knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/redmane_knight_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'redmane knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Redmane+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/redmane_knight_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'redmane knight greaves',
+        names: {
+          en: 'redmane knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Redmane+Knight+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/redmane_knight_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Redmane+Knight+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "ronin's set",
+    names: {
+      en: "ronin's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Ronin's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ronin%27s_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ronin's+Set",
     elements: [
       {
-        type: 'armor',
-        name: 'iron kasa',
+        names: {
+          en: 'iron kasa',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Kasa',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_kasa_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Kasa',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "ronin's armor",
+        names: {
+          en: "ronin's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Ronin's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ronins_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Ronin's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "ronin's gauntlets",
+        names: {
+          en: "ronin's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Ronin's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ronins_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Ronin's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "ronin's greaves",
+        names: {
+          en: "ronin's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Ronin's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ronins_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Ronin's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'rotten duelist set',
+    names: {
+      en: 'rotten duelist set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Rotten+Duelist+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_duelist_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Rotten+Duelist+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'rotten duelist helm',
+        names: {
+          en: 'rotten duelist helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rotten+Duelist+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_duelist_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rotten+Duelist+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'rotten gravekeeper cloak',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_gravekeeper_cloak_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'rotten gravekeeper cloak',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Rotten+Gravekeeper+Cloak',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_gravekeeper_cloak_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'rotten duelist greaves',
+        names: {
+          en: 'rotten duelist greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rotten+Duelist+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_duelist_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rotten+Duelist+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'royal knight set',
+    names: {
+      en: 'royal knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_knight.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'royal knight helm',
+        names: {
+          en: 'royal knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'royal knight armor',
+        names: {
+          en: 'royal knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'royal knight gauntlets',
+        names: {
+          en: 'royal knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Knight+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_knight_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Knight+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'royal knight greaves',
+        names: {
+          en: 'royal knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Knight+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_knight_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Knight+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'royal remains set',
+    names: {
+      en: 'royal remains set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Remains+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_remains_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Remains+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'royal remains helm',
+        names: {
+          en: 'royal remains helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Remains+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_remains_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Remains+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'royal remains armor',
+        names: {
+          en: 'royal remains armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Remains+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_remains_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Remains+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'royal remains gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_remains_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'royal remains gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Royal+Remains+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_remains_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'royal remains greaves',
+        names: {
+          en: 'royal remains greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Remains+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_remains_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Royal+Remains+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "ruler's set",
+    names: {
+      en: "ruler's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Ruler's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ruler-set-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ruler's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "ruler's mask",
+        names: {
+          en: "ruler's mask",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Ruler's+Mask",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rulers_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Ruler's+Mask",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "ruler's robe",
+        names: {
+          en: "ruler's robe",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Ruler's+Robe",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rulers_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Ruler's+Robe",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'sage set',
+    names: {
+      en: 'sage set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Sage+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sage-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Sage+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'sage hood',
+        names: {
+          en: 'sage hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sage+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sage_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sage+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'sage robe',
+        names: {
+          en: 'sage robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sage+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sage_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sage+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'sage trousers',
+        names: {
+          en: 'sage trousers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sage+Trousers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sage_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sage+Trousers',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'sanguine noble set',
+    names: {
+      en: 'sanguine noble set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Sanguine+Noble+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sanguine_noble_armor_set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Sanguine+Noble+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'sanguine noble hood',
+        names: {
+          en: 'sanguine noble hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sanguine+Noble+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sanguine_noble_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sanguine+Noble+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'sanguine noble robe',
+        names: {
+          en: 'sanguine noble robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sanguine+Noble+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sanguine_noble_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Sanguine+Noble+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'sanguine noble waistcloth',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sanguine_noble_waistcloth_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'sanguine noble waistcloth',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Sanguine+Noble+Waistcloth',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/sanguine_noble_waistcloth_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'scaled set',
+    names: {
+      en: 'scaled set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaled+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/scaled-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaled+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'scaled helm',
+        names: {
+          en: 'scaled helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaled+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/scaled_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaled+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'scaled armor',
+        names: {
+          en: 'scaled armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaled+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/scaled_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaled+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'scaled gauntlets',
+        names: {
+          en: 'scaled gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaled+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/scaled_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaled+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'scaled greaves',
+        names: {
+          en: 'scaled greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaled+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/scaled_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Scaled+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'shaman set',
+    names: {
+      en: 'shaman set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Shaman+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shaman_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Shaman+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'shining horned headband',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shining_horned_headband_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'shining horned headband',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Shining+Horned+Headband',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shining_horned_headband_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'shaman furs',
+        names: {
+          en: 'shaman furs',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Shaman+Furs',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shaman_furs_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Shaman+Furs',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'shaman leggings',
+        names: {
+          en: 'shaman leggings',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Shaman+Leggings',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shaman_leggings_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Shaman+Leggings',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'snow witch set',
+    names: {
+      en: 'snow witch set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Snow+Witch+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/snowwitch-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Snow+Witch+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'snow witch hat',
+        names: {
+          en: 'snow witch hat',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Snow+Witch+Hat',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/snow_witch_hat_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Snow+Witch+Hat',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'snow witch robe',
+        names: {
+          en: 'snow witch robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Snow+Witch+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/snow_witch_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Snow+Witch+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'snow witch skirt',
+        names: {
+          en: 'snow witch skirt',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Snow+Witch+Skirt',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/snow_witch_skirt_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Snow+Witch+Skirt',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'spellblade set',
+    names: {
+      en: 'spellblade set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Spellblade+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spellblade-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Spellblade+Set',
     elements: [
       {
-        type: 'armor',
-        name: "spellblade's pointed hat",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spellblades_pointed_hat-elden-ring-wiki-guide.png',
+        names: {
+          en: "spellblade's pointed hat",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Spellblade's+Pointed+Hat",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spellblades_pointed_hat-elden-ring-wiki-guide.png',
       },
       {
-        type: 'armor',
-        name: "spellblade's traveling attire",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spellblades_traveling_attire-elden-ring-wiki-guide.png',
+        names: {
+          en: "spellblade's traveling attire",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Spellblade's+Traveling+Attire",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spellblades_traveling_attire-elden-ring-wiki-guide.png',
       },
       {
-        type: 'armor',
-        name: "spellblade's gloves",
+        names: {
+          en: "spellblade's gloves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Spellblade's+Gloves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spellblades_gloves-elden-ring-wiki-guide.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Spellblade's+Gloves",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "spellblade's trousers",
+        names: {
+          en: "spellblade's trousers",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Spellblade's+Trousers",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spellblades_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Spellblade's+Trousers",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "traveler's set",
+    names: {
+      en: "traveler's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Melina's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/melinas_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Melina's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "traveler's clothes",
+        names: {
+          en: "traveler's clothes",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Clothes",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/travelers_clothes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Clothes",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "traveler's manchettes",
+        names: {
+          en: "traveler's manchettes",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Manchettes",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/travelers_manchettes_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Manchettes",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "traveler's boots",
+        names: {
+          en: "traveler's boots",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Boots",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/travelers_boots_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Traveler's+Boots",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'traveling maiden set',
+    names: {
+      en: 'traveling maiden set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Traveling+Maiden+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/travelling_maiden_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Traveling+Maiden+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'traveling maiden hood',
+        names: {
+          en: 'traveling maiden hood',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Traveling+Maiden+Hood',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/traveling_maiden_hood_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Traveling+Maiden+Hood',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'traveling maiden robe',
+        names: {
+          en: 'traveling maiden robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Traveling+Maiden+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/traveling_maiden_robe_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Traveling+Maiden+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'traveling maiden gloves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/traveling_maiden_gloves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'traveling maiden gloves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Traveling+Maiden+Gloves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/traveling_maiden_gloves_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'traveling maiden boots',
+        names: {
+          en: 'traveling maiden boots',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Traveling+Maiden+Boots',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/traveling_maiden_boots_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Traveling+Maiden+Boots',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'tree sentinel armor set',
+    names: {
+      en: 'tree sentinel armor set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree_sentinel_set_pose.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'tree sentinel helm',
+        names: {
+          en: 'tree sentinel helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree_sentinel_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'tree sentinel armor',
+        names: {
+          en: 'tree sentinel armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree_sentinel_armor_(altered)_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'tree sentinel gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree_sentinel_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'tree sentinel gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Tree+Sentinel+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree_sentinel_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'tree sentinel greaves',
+        names: {
+          en: 'tree sentinel greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree_sentinel_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Tree+Sentinel+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'twinned set',
+    names: {
+      en: 'twinned set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Twinned+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/twinned-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Twinned+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'twinned helm',
+        names: {
+          en: 'twinned helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Twinned+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/twinned_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Twinned+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'twinned armor',
+        names: {
+          en: 'twinned armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Twinned+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/twinned_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Twinned+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'twinned gauntlets',
+        names: {
+          en: 'twinned gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Twinned+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/twinned_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Twinned+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'twinned greaves',
+        names: {
+          en: 'twinned greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Twinned+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/twinned_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Twinned+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'vagabond knight set',
+    names: {
+      en: 'vagabond knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Vagabond+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vagabond-knight-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Vagabond+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'vagabond knight helm',
+        names: {
+          en: 'vagabond knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Vagabond+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vagabond_knight_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Vagabond+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'vagabond knight armor',
+        names: {
+          en: 'vagabond knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Vagabond+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vagabond_knight_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Vagabond+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'vagabond knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vagabond_knight_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'vagabond knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Vagabond+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vagabond_knight_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'vagabond knight greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vagabond_knight_greaves_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'vagabond knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Vagabond+Knight+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vagabond_knight_greaves_elden_ring_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: "veteran's set",
+    names: {
+      en: "veteran's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Veteran's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/veteran_set.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Veteran's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "veteran's helm",
+        names: {
+          en: "veteran's helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Veteran's+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/veterans_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Veteran's+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "veteran's armor",
+        names: {
+          en: "veteran's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Veteran's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/veterans_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Veteran's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "veteran's gauntlets",
+        names: {
+          en: "veteran's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Veteran's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/veterans_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Veteran's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "veteran's greaves",
+        names: {
+          en: "veteran's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Veteran's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/veterans_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Veteran's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'vulgar militia set',
+    names: {
+      en: 'vulgar militia set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Vulgar+Militia+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vulgar_militia_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Vulgar+Militia+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'vulgar militia helm',
+        names: {
+          en: 'vulgar militia helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Vulgar+Militia+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vulgar_militia_helm_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Vulgar+Militia+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'vulgar militia armor',
+        names: {
+          en: 'vulgar militia armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Vulgar+Militia+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vulgar_militia_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Vulgar+Militia+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'vulgar militia gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vulgar_militia_gauntlets_elden_ring_wiki_guide_200px.png',
+        names: {
+          en: 'vulgar militia gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Vulgar+Militia+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vulgar_militia_gauntlets_elden_ring_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'vulgar militia greaves',
+        names: {
+          en: 'vulgar militia greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Vulgar+Militia+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/vulgar_militia_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Vulgar+Militia+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'war surgeon set',
+    names: {
+      en: 'war surgeon set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/War+Surgeon+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/war_surgeon_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/War+Surgeon+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'white mask',
+        names: {
+          en: 'white mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/White+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/white_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/White+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'war surgeon gown',
+        names: {
+          en: 'war surgeon gown',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/War+Surgeon+Gown',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/war_surgeon_gown_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/War+Surgeon+Gown',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'war surgeon gloves',
+        names: {
+          en: 'war surgeon gloves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/War+Surgeon+Gloves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/war_surgeon_gloves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/War+Surgeon+Gloves',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'war surgeon trousers',
+        names: {
+          en: 'war surgeon trousers',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/War+Surgeon+Trousers',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/war_surgeon_trousers_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/War+Surgeon+Trousers',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'white reed set',
+    names: {
+      en: 'white reed set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/White+Reed+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/white_reed_set.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/White+Reed+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'okina mask',
+        names: {
+          en: 'okina mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Okina+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/okina_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Okina+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'white reed armor',
+        names: {
+          en: 'white reed armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/White+Reed+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/white_reed_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/White+Reed+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'white reed gauntlets',
+        names: {
+          en: 'white reed gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/White+Reed+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/white_reed_gauntlets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/White+Reed+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'white reed greaves',
+        names: {
+          en: 'white reed greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/White+Reed+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/white_reed_greaves_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/White+Reed+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'zamor set',
+    names: {
+      en: 'zamor set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Zamor+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/zamor-set-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Zamor+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'zamor mask',
+        names: {
+          en: 'zamor mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Zamor+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/zamor_mask_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Zamor+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'zamor armor',
+        names: {
+          en: 'zamor armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Zamor+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/zamor_armor_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Zamor+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'zamor bracelets',
+        names: {
+          en: 'zamor bracelets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Zamor+Bracelets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/zamor_bracelets_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Zamor+Bracelets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'zamor legwraps',
+        names: {
+          en: 'zamor legwraps',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Zamor+Legwraps',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/zamor_legwraps_elden_ring_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Zamor+Legwraps',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "ansbach's set",
+    names: {
+      en: "ansbach's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Ansbach's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ansbach-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ansbach's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "wise man's mask",
+        names: {
+          en: "wise man's mask",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Wise+Man's+Mask",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/wise_mans_mask_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Wise+Man's+Mask",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "ansbach's attire",
+        names: {
+          en: "ansbach's attire",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Ansbach's+Attire",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ansbachs_attire_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Ansbach's+Attire",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "ansbach's manchettes",
+        names: {
+          en: "ansbach's manchettes",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Ansbach's+Manchettes",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ansbachs_manchettes_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Ansbach's+Manchettes",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "ansbach's boots",
+        names: {
+          en: "ansbach's boots",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Ansbach's+Boots",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ansbachs_boots_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Ansbach's+Boots",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "ascetic's set",
+    names: {
+      en: "ascetic's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Ascetic's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ascetic-set-sote-elden-ring-wiki-guide-removebg-preview.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Ascetic's+Set",
     elements: [
       {
-        type: 'armor',
-        name: 'curseblade mask',
+        names: {
+          en: 'curseblade mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Curseblade+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/curseblade_mask_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Curseblade+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "ascetic's ankle guards",
+        names: {
+          en: "ascetic's ankle guards",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Ascetic's+Ankle+Guards",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ascetics_ankle_guards_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Ascetic's+Ankle+Guards",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "ascetic's wrist guards",
+        names: {
+          en: "ascetic's wrist guards",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Ascetic's+Wrist+Guards",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ascetics_wrist_guards_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Ascetic's+Wrist+Guards",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "ascetic's loincloth",
+        names: {
+          en: "ascetic's loincloth",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Ascetic's+Loincloth",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/ascetics_loincloth_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Ascetic's+Loincloth",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'black knight set',
+    names: {
+      en: 'black knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knight-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'black knight helm',
+        names: {
+          en: 'black knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knight_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'black knight armor',
+        names: {
+          en: 'black knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knight_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'black knight gauntlets',
+        names: {
+          en: 'black knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knight+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knight_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knight+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'black knight greaves',
+        names: {
+          en: 'black knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knight+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knight_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Black+Knight+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'common soldier set',
+    names: {
+      en: 'common soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Common+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/common-soldier-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Common+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'common soldier helm',
+        names: {
+          en: 'common soldier helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Common+Soldier+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/common_soldier_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Common+Soldier+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'common soldier cloth armor',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/common_soldier_cloth_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'common soldier cloth armor',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Common+Soldier+Cloth+Armor',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/common_soldier_cloth_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'common soldier gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/common_soldier_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'common soldier gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Common+Soldier+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/common_soldier_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'common soldier greaves',
+        names: {
+          en: 'common soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Common+Soldier+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/common_soldier_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Common+Soldier+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "dancer's set",
+    names: {
+      en: "dancer's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Dancer's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dancer-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Dancer's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "dancer's hood",
+        names: {
+          en: "dancer's hood",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Dancer's+Hood",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dancers_hood_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Dancer's+Hood",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "dancer's dress",
+        names: {
+          en: "dancer's dress",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Dancer's+Dress",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dancers_dress_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Dancer's+Dress",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "dancer's bracer",
+        names: {
+          en: "dancer's bracer",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Dancer's+Bracer",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dancers_bracer_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Dancer's+Bracer",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "dancer's trousers",
+        names: {
+          en: "dancer's trousers",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Dancer's+Trousers",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dancers_trousers_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Dancer's+Trousers",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "dane's set",
+    names: {
+      en: "dane's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Dane's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/danes-set-sote-elden-ring-wiki-guide-removebg-preview.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Dane's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "dane's hat",
+        names: {
+          en: "dane's hat",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Dane's+Hat",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/danes_hat_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Dane's+Hat",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'dryleaf robe',
+        names: {
+          en: 'dryleaf robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Dryleaf+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dryleaf_robe_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Dryleaf+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'dryleaf arm wraps',
+        names: {
+          en: 'dryleaf arm wraps',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Dryleaf+Arm+Wraps',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dryleaf_arm_wraps_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Dryleaf+Arm+Wraps',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'dryleaf cuissardes',
+        names: {
+          en: 'dryleaf cuissardes',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Dryleaf+Cuissardes',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dryleaf_cuissardes_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Dryleaf+Cuissardes',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'death knight set',
+    names: {
+      en: 'death knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-knight-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'death knight helm',
+        names: {
+          en: 'death knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death_knight_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'death knight armor',
+        names: {
+          en: 'death knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death_knight_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'death knight gauntlets',
+        names: {
+          en: 'death knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Knight+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death_knight_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Knight+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'death knight greaves',
+        names: {
+          en: 'death knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Knight+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/death_knight_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Death+Knight+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'divine beast set',
+    names: {
+      en: 'divine beast set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Divine+Beast+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine-beast-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Divine+Beast+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'divine beast helm',
+        names: {
+          en: 'divine beast helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Divine+Beast+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_beast_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Divine+Beast+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'divine beast warrior armor',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_beast_warrior_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'divine beast warrior armor',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Divine+Beast+Warrior+Armor',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_beast_warrior_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'divine bird set',
+    names: {
+      en: 'divine bird set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Divine+Bird+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine-bird-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Divine+Bird+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'divine bird helm',
+        names: {
+          en: 'divine bird helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Divine+Bird+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_bird_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Divine+Bird+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'divine bird warrior armor',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_bird_warrior_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'divine bird warrior armor',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Divine+Bird+Warrior+Armor',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_bird_warrior_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'divine bird warrior gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_bird_warrior_gauntlets_gauntlets_shadow_of_the_erdtree_wiki_guide_200px.png',
+        names: {
+          en: 'divine bird warrior gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Divine+Bird+Warrior+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_bird_warrior_gauntlets_gauntlets_shadow_of_the_erdtree_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'divine bird warrior greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_bird_warrior_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'divine bird warrior greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Divine+Bird+Warrior+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_bird_warrior_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'fire knight set',
+    names: {
+      en: 'fire knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire-knight-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'fire knight helm',
+        names: {
+          en: 'fire knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knight_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fire knight armor',
+        names: {
+          en: 'fire knight armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Knight+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knight_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Knight+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fire knight gauntlets',
+        names: {
+          en: 'fire knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Knight+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knight_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Knight+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'fire knight greaves',
+        names: {
+          en: 'fire knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Knight+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_knight_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fire+Knight+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "freyja's set",
+    names: {
+      en: "freyja's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Freyja's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/frejas-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Freyja's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "freyja's helm",
+        names: {
+          en: "freyja's helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Freyja's+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/freyjas_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Freyja's+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "freyja's armor",
+        names: {
+          en: "freyja's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Freyja's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/freyjas_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Freyja's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "freyja's gauntlets",
+        names: {
+          en: "freyja's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Freyja's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/freyjas_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Freyja's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "freyja's greaves",
+        names: {
+          en: "freyja's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Freyja's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/freyjas_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Freyja's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "gaius's set",
+    names: {
+      en: "gaius's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Gaius's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gaius-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Gaius's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "gaius's helm",
+        names: {
+          en: "gaius's helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Gaius's+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gaiuss_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Gaius's+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "gaius's armor",
+        names: {
+          en: "gaius's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Gaius's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gaiuss_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Gaius's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "gaius's gauntlets",
+        names: {
+          en: "gaius's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Gaius's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gaiuss_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Gaius's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "gaius's greaves",
+        names: {
+          en: "gaius's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Gaius's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gaiuss_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Gaius's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'gravebird set',
+    names: {
+      en: 'gravebird set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Gravebird+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-bird-full-set-sote-elden-ring-wiki-guide-removebg-preview.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Gravebird+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'gravebird helm',
+        names: {
+          en: 'gravebird helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gravebird+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gravebird_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gravebird+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "gravebird's blackquill armor",
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gravebirds_blackquill_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: "gravebird's blackquill armor",
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           "https://eldenring.wiki.fextralife.com/Gravebird's+Blackquill+Armor",
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gravebirds_blackquill_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'gravebird bracelets',
+        names: {
+          en: 'gravebird bracelets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gravebird+Bracelets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gravebird_bracelets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gravebird+Bracelets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'gravebird anklets',
+        names: {
+          en: 'gravebird anklets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gravebird+Anklets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gravebird_anklets_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gravebird+Anklets',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'high priest set',
+    names: {
+      en: 'high priest set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Priest+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/priest-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Priest+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'high priest hat',
+        names: {
+          en: 'high priest hat',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Priest+Hat',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/high_priest_hat_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Priest+Hat',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'high priest robe',
+        names: {
+          en: 'high priest robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Priest+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/high_priest_robe_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Priest+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'high priest gloves',
+        names: {
+          en: 'high priest gloves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Priest+Gloves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/high_priest_gloves_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/High+Priest+Gloves',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'high priest undergarments',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/high_priest_undergarments_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'high priest undergarments',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/High+Priest+Undergarments',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/high_priest_undergarments_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'horned warrior set',
+    names: {
+      en: 'horned warrior set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Horned+Warrior+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/horned-warrior-set-sote-elden-ring-wiki-guide-removebg-preview.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Horned+Warrior+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'horned warrior helm',
+        names: {
+          en: 'horned warrior helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Horned+Warrior+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/horned_warrior_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Horned+Warrior+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'horned warrior armor',
+        names: {
+          en: 'horned warrior armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Horned+Warrior+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/horned_warrior_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Horned+Warrior+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'horned warrior gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/horned_warrior_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'horned warrior gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Horned+Warrior+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/horned_warrior_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'horned warrior greaves',
+        names: {
+          en: 'horned warrior greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Horned+Warrior+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/horned_warrior_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Horned+Warrior+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'hornsent set',
+    names: {
+      en: 'hornsent set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Hornsent+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/hornsent-set-sote-elden-ring-wiki-guide-removebg-preview.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Hornsent+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'caterpillar mask',
+        names: {
+          en: 'caterpillar mask',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Caterpillar+Mask',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/caterpillar_mask_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Caterpillar+Mask',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'braided cord robe',
+        names: {
+          en: 'braided cord robe',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Braided+Cord+Robe',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/braided_cord_robe_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Braided+Cord+Robe',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'braided arm wraps',
+        names: {
+          en: 'braided arm wraps',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Braided+Arm+Wraps',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/braided_arm_wraps_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Braided+Arm+Wraps',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "igon's set",
+    names: {
+      en: "igon's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/igons-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "igon's helm",
+        names: {
+          en: "igon's helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/igons_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "igon's armor",
+        names: {
+          en: "igon's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/igons_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "igon's gauntlets",
+        names: {
+          en: "igon's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/igons_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "igon's loincloth",
+        names: {
+          en: "igon's loincloth",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Loincloth",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/igons_loincloth_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Igon's+Loincloth",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'iron rivet set',
+    names: {
+      en: 'iron rivet set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Rivet+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_rivet_set-b-shadow-of-erdtree-set-elding-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Rivet+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'fang helm',
+        names: {
+          en: 'fang helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fang+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/fang_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Fang+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'iron rivet armor',
+        names: {
+          en: 'iron rivet armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Rivet+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_rivet_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Rivet+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'iron rivet gauntlets',
+        names: {
+          en: 'iron rivet gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Rivet+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_rivet_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Rivet+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'iron rivet greaves',
+        names: {
+          en: 'iron rivet greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Rivet+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/iron_rivet_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Iron+Rivet+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'highland warrior set',
+    names: {
+      en: 'highland warrior set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Highland+Warrior+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/highland_warrior-set-a-shadow-of-erdtree-set-elding-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Highland+Warrior+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'leather headband',
+        names: {
+          en: 'leather headband',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Headband',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather_headband_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Headband',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'gloried attire',
+        names: {
+          en: 'gloried attire',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gloried+Attire',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gloried_attire_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gloried+Attire',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'leather arm wraps',
+        names: {
+          en: 'leather arm wraps',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Arm+Wraps',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather_arm_wraps_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Arm+Wraps',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'leather leg wraps',
+        names: {
+          en: 'leather leg wraps',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Leg+Wraps',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather_leg_wraps_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Leg+Wraps',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'highland attire',
+        names: {
+          en: 'highland attire',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Highland+Attire',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/highland_attire_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Highland+Attire',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'leather crown',
+        names: {
+          en: 'leather crown',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Crown',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather_crown_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Leather+Crown',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'messmer soldier set',
+    names: {
+      en: 'messmer soldier set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Messmer+Soldier+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer-soldier-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Messmer+Soldier+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'messmer soldier helm',
+        names: {
+          en: 'messmer soldier helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Messmer+Soldier+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Messmer+Soldier+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'messmer soldier armor',
+        names: {
+          en: 'messmer soldier armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Messmer+Soldier+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Messmer+Soldier+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'messmer soldier gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'messmer soldier gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Messmer+Soldier+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'messmer soldier greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'messmer soldier greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Messmer+Soldier+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_soldier_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: "messmer's set",
+    names: {
+      en: "messmer's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Messmer's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Messmer's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "messmer's helm",
+        names: {
+          en: "messmer's helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Messmer's+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmers_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Messmer's+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "messmer's armor",
+        names: {
+          en: "messmer's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Messmer's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmers_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Messmer's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "messmer's gauntlets",
+        names: {
+          en: "messmer's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Messmer's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmers_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Messmer's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "messmer's greaves",
+        names: {
+          en: "messmer's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Messmer's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmers_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Messmer's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'night set',
+    names: {
+      en: 'night set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Night+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/night-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Night+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'helm of night',
+        names: {
+          en: 'helm of night',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Helm+of+Night',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/helm_of_night_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Helm+of+Night',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'armor of night',
+        names: {
+          en: 'armor of night',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Armor+of+Night',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/armor_of_night_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Armor+of+Night',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'gauntlets of night',
+        names: {
+          en: 'gauntlets of night',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gauntlets+of+Night',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gauntlets_of_night_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gauntlets+of+Night',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'greaves of night',
+        names: {
+          en: 'greaves of night',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Greaves+of+Night',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/greaves_of_night_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Greaves+of+Night',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'oathseeker knight set',
+    names: {
+      en: 'oathseeker knight set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/oathseeker-knight-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'oathseeker knight helm',
+        names: {
+          en: 'oathseeker knight helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/oathseeker_knight_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'oathseeker knight armor',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/oathseeker_knight_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'oathseeker knight armor',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Armor',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/oathseeker_knight_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'oathseeker knight gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/oathseeker_knight_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'oathseeker knight gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/oathseeker_knight_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'oathseeker knight greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/oathseeker_knight_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'oathseeker knight greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Oathseeker+Knight+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/oathseeker_knight_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'rakshasa set',
+    names: {
+      en: 'rakshasa set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Rakshasa+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rakshasa-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Rakshasa+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'rakshasa helm',
+        names: {
+          en: 'rakshasa helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rakshasa+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rakshasa_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rakshasa+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'rakshasa armor',
+        names: {
+          en: 'rakshasa armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rakshasa+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rakshasa_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rakshasa+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'rakshasa gauntlets',
+        names: {
+          en: 'rakshasa gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rakshasa+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rakshasa_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rakshasa+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'rakshasa greaves',
+        names: {
+          en: 'rakshasa greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rakshasa+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rakshasa_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Rakshasa+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "rellana's set",
+    names: {
+      en: "rellana's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Rellana's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rellanas-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Rellana's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "rellana's helm",
+        names: {
+          en: "rellana's helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Rellana's+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rellanas_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Rellana's+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "rellana's armor",
+        names: {
+          en: "rellana's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Rellana's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rellanas_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Rellana's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "rellana's gloves",
+        names: {
+          en: "rellana's gloves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Rellana's+Gloves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rellanas_gloves_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Rellana's+Gloves",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "rellana's greaves",
+        names: {
+          en: "rellana's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Rellana's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/rellanas_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Rellana's+Greaves",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'shadow militiaman set',
+    names: {
+      en: 'shadow militiaman set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shadow-militiaman-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'shadow militiaman helm',
+        names: {
+          en: 'shadow militiaman helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shadow_militiaman_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'shadow militiaman armor',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shadow_militiaman_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'shadow militiaman armor',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Armor',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shadow_militiaman_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'shadow militiaman gauntlets',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shadow_militiaman_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'shadow militiaman gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Gauntlets',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shadow_militiaman_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
       {
-        type: 'armor',
-        name: 'shadow militiaman greaves',
-        imageUrl:
-          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shadow_militiaman_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
+        names: {
+          en: 'shadow militiaman greaves',
+          fr: '',
+        },
+        locationUrl: '',
         wikiUrl:
           'https://eldenring.wiki.fextralife.com/Shadow+Militiaman+Greaves',
-        locationUrl: '',
+        imageUrl:
+          'https://eldenring.wiki.fextralife.com/file/Elden-Ring/shadow_militiaman_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
       },
     ],
   },
   {
-    name: 'solitude set',
+    names: {
+      en: 'solitude set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Solitude+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/solitude-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Solitude+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'helm of solitude',
+        names: {
+          en: 'helm of solitude',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Helm+of+Solitude',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/helm_of_solitude_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Helm+of+Solitude',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'armor of solitude',
+        names: {
+          en: 'armor of solitude',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Armor+of+Solitude',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/armor_of_solitude_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Armor+of+Solitude',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'gauntlets of solitude',
+        names: {
+          en: 'gauntlets of solitude',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gauntlets+of+Solitude',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/gauntlets_of_solitude_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Gauntlets+of+Solitude',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'greaves of solitude',
+        names: {
+          en: 'greaves of solitude',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Greaves+of+Solitude',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/greaves_of_solitude_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Greaves+of+Solitude',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "thiollier's set",
+    names: {
+      en: "thiollier's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Thiollier's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/thiollier-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Thiollier's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "thiollier's mask",
+        names: {
+          en: "thiollier's mask",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Thiollier's+Mask",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/thiolliers_mask_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Thiollier's+Mask",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "thiollier's garb",
+        names: {
+          en: "thiollier's garb",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Thiollier's+Garb",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/thiolliers_garb_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Thiollier's+Garb",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "thiollier's gloves",
+        names: {
+          en: "thiollier's gloves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Thiollier's+Gloves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/thiolliers_gloves_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Thiollier's+Gloves",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "thiollier's trousers",
+        names: {
+          en: "thiollier's trousers",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Thiollier's+Trousers",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/thiolliers_trousers_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Thiollier's+Trousers",
-        locationUrl: '',
       },
     ],
   },
   {
-    name: 'verdigris set',
+    names: {
+      en: 'verdigris set',
+      fr: '',
+    },
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Verdigris+Set',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/verdigris-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Verdigris+Set',
     elements: [
       {
-        type: 'armor',
-        name: 'verdigris helm',
+        names: {
+          en: 'verdigris helm',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Verdigris+Helm',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/verdigris_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Verdigris+Helm',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'verdigris armor',
+        names: {
+          en: 'verdigris armor',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Verdigris+Armor',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/verdigris_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Verdigris+Armor',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'verdigris gauntlets',
+        names: {
+          en: 'verdigris gauntlets',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Verdigris+Gauntlets',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/verdigris_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Verdigris+Gauntlets',
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: 'verdigris greaves',
+        names: {
+          en: 'verdigris greaves',
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: 'https://eldenring.wiki.fextralife.com/Verdigris+Greaves',
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/verdigris_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: 'https://eldenring.wiki.fextralife.com/Verdigris+Greaves',
-        locationUrl: '',
       },
     ],
   },
   {
-    name: "young lion's set",
+    names: {
+      en: "young lion's set",
+      fr: '',
+    },
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Young+Lion's+Set",
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/young-lions-set-sote-elden-ring-wiki-guide.png',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Young+Lion's+Set",
     elements: [
       {
-        type: 'armor',
-        name: "young lion's helm",
+        names: {
+          en: "young lion's helm",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Young+Lion's+Helm",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/young_lions_helm_helm_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Young+Lion's+Helm",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "young lion's armor",
+        names: {
+          en: "young lion's armor",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Young+Lion's+Armor",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/young_lions_armor_chest_armor_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Young+Lion's+Armor",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "young lion's gauntlets",
+        names: {
+          en: "young lion's gauntlets",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Young+Lion's+Gauntlets",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/young_lions_gauntlets_gauntlets_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Young+Lion's+Gauntlets",
-        locationUrl: '',
       },
       {
-        type: 'armor',
-        name: "young lion's greaves",
+        names: {
+          en: "young lion's greaves",
+          fr: '',
+        },
+        locationUrl: '',
+        wikiUrl: "https://eldenring.wiki.fextralife.com/Young+Lion's+Greaves",
         imageUrl:
           'https://eldenring.wiki.fextralife.com/file/Elden-Ring/young_lions_greaves_legs_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
-        wikiUrl: "https://eldenring.wiki.fextralife.com/Young+Lion's+Greaves",
-        locationUrl: '',
       },
     ],
   },

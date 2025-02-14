@@ -1,12 +1,9 @@
 import prisma from '@/lib/prisma';
 import { auth } from '@/lib/utils/auth-utils';
 import { HomePageClient } from './HomePageClient';
-import { changeData } from './tmp';
 
 const HomePage = async () => {
   const session = await auth();
-
-  // changeData(); // DELETE
 
   const bosses = await prisma.boss.findMany({
     include: {
