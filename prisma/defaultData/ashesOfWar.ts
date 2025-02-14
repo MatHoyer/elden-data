@@ -1,14 +1,7 @@
+import { TDefaultDataItem } from './defaultDataType';
+
 type TAshesOfWar = {
-  ashesOfWar: {
-    name: {
-      en: string;
-      fr: string;
-    };
-    locationUrl: string;
-    wikiUrl: string;
-    imageUrl: string;
-    inDlc?: boolean;
-  }[];
+  ashesOfWar: TDefaultDataItem[];
 };
 
 export const ashesOfWar = [

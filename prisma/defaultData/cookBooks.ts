@@ -1,14 +1,7 @@
+import { TDefaultDataItem } from './defaultDataType';
+
 type TCookBooks = {
-  cookBooks: {
-    name: {
-      en: string;
-      fr: string;
-    };
-    locationUrl: string;
-    wikiUrl: string;
-    imageUrl: string;
-    inDlc?: boolean;
-  }[];
+  cookBooks: TDefaultDataItem[];
 };
 
 export const cookBooks = [

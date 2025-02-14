@@ -1,14 +1,7 @@
+import { TDefaultDataItem } from './defaultDataType';
+
 type TTalismans = {
-  talismans: {
-    name: {
-      en: string;
-      fr: string;
-    };
-    locationUrl: string;
-    wikiUrl: string;
-    imageUrl: string;
-    inDlc?: boolean;
-  }[];
+  talismans: TDefaultDataItem[];
 };
 
 export const talismans = [

@@ -1,3 +1,5 @@
+import { TDefaultDataItem } from './defaultDataType';
+
 type TArmors = {
   armors: {
     name: {
@@ -8,30 +10,10 @@ type TArmors = {
     imageUrl: string;
     inDlc?: boolean;
     elements: {
-      helms?: {
-        name: { en: string; fr: string };
-        locationUrl: string;
-        wikiUrl: string;
-        imageUrl: string;
-      };
-      chestsArmor?: {
-        name: { en: string; fr: string };
-        locationUrl: string;
-        wikiUrl: string;
-        imageUrl: string;
-      };
-      gauntlets?: {
-        name: { en: string; fr: string };
-        locationUrl: string;
-        wikiUrl: string;
-        imageUrl: string;
-      };
-      legs?: {
-        name: { en: string; fr: string };
-        locationUrl: string;
-        wikiUrl: string;
-        imageUrl: string;
-      };
+      helms?: TDefaultDataItem;
+      chestsArmor?: TDefaultDataItem;
+      gauntlets?: TDefaultDataItem;
+      legs?: TDefaultDataItem;
     };
   }[];
 };
