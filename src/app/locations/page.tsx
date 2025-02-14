@@ -1,7 +1,19 @@
 import prisma from '@/lib/prisma';
+import { notFound } from 'next/navigation';
+import { z } from 'zod';
 import { Locations } from './Locations';
 
-const HomePage = async () => {
+const searchParamsSchema = z.object({
+  filter: z.enum(['normal', 'dlc']).optional(),
+});
+
+const HomePage: React.FC<PageParams> = async (props) => {
+  const searchParams = await props.searchParams;
+  const spResult = searchParamsSchema.safeParse(searchParams);
+  if (!spResult.success) notFound();
+  const sp = spResult.data;
+  console.log(sp);
+
   const locations = await prisma.location.findMany({
     include: {
       names: { select: { fr: true, en: true } },
