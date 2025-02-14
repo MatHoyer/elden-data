@@ -1,14 +1,7 @@
+import { TDefaultDataItem } from './defaultDataType';
+
 type TCrystalTears = {
-  crystalTears: {
-    names: {
-      en: string;
-      fr: string;
-    };
-    locationUrl: string;
-    wikiUrl: string;
-    imageUrl: string;
-    inDlc?: boolean;
-  }[];
+  crystalTears: TDefaultDataItem[];
 };
 
 export const crystalTears: TCrystalTears = {

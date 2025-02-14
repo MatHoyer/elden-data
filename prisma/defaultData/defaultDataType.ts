@@ -1,5 +1,5 @@
 export type TDefaultDataItem = {
-  name: {
+  names: {
     en: string;
     fr: string;
   };

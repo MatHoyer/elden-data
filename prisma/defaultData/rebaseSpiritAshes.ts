@@ -1,14 +1,7 @@
+import { TDefaultDataItem } from './defaultDataType';
+
 type TSpiritAshes = {
-  spiritAshes: {
-    names: {
-      en: string;
-      fr: string;
-    };
-    locationUrl: string;
-    wikiUrl: string;
-    imageUrl: string;
-    inDlc?: boolean;
-  }[];
+  spiritAshes: TDefaultDataItem[];
 };
 
 export const spiritAshes: TSpiritAshes = {

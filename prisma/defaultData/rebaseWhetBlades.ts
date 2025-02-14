@@ -1,13 +1,7 @@
+import { TDefaultDataItem } from './defaultDataType';
+
 type TWhetBlades = {
-  whetBlades: {
-    names: {
-      en: string;
-      fr: string;
-    };
-    locationUrl: string;
-    wikiUrl: string;
-    imageUrl: string;
-  }[];
+  whetBlades: TDefaultDataItem[];
 };
 
 export const whetBlades: TWhetBlades = {

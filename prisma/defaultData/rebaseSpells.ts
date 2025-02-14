@@ -1,19 +1,12 @@
+import { TDefaultDataItem } from './defaultDataType';
+
 type TSpells = {
   types: {
     names: {
       en: string;
       fr: string;
     };
-    spells: {
-      names: {
-        en: string;
-        fr: string;
-      };
-      locationUrl: string;
-      wikiUrl: string;
-      imageUrl: string;
-      inDlc?: boolean;
-    }[];
+    spells: TDefaultDataItem[];
   }[];
 };
 
