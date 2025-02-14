@@ -1,12 +1,12 @@
 'use client';
 
 import { Languages } from 'lucide-react';
+import { DisplayText } from '../language/DisplayText';
 import { useLanguage } from '../language/language-provider';
 import { DropdownMenuItem } from '../ui/dropdown-menu';
-import { Typography } from '../ui/typography';
 
 export const LanguageSwitcher = () => {
-  const { language, toggleLanguage } = useLanguage();
+  const { toggleLanguage } = useLanguage();
 
   return (
     <DropdownMenuItem
@@ -17,9 +17,12 @@ export const LanguageSwitcher = () => {
       }}
     >
       <Languages className="h-[1.2rem] w-[1.2rem]" />
-      <Typography>
-        {language === 'fr' ? 'Changer de langue' : 'Switch language'}
-      </Typography>
+      <DisplayText
+        values={{
+          fr: 'Changer de langue',
+          en: 'Switch language',
+        }}
+      />
     </DropdownMenuItem>
   );
 };

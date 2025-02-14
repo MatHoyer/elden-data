@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils/utils';
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
-import { useLanguage } from '../language/language-provider';
+import { DisplayText } from '../language/DisplayText';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -16,7 +16,6 @@ import { ThemeSwitcher } from './theme-switcher';
 
 export const Settings = () => {
   const [topSidebarOpen, setTopSidebarOpen] = useState(false);
-  const { language } = useLanguage();
 
   return (
     <DropdownMenu open={topSidebarOpen} onOpenChange={setTopSidebarOpen}>
@@ -31,7 +30,12 @@ export const Settings = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent side="right" className="mt-2 ml-3">
         <DropdownMenuLabel>
-          {language === 'fr' ? 'Paramètres' : 'Settings'}
+          <DisplayText
+            values={{
+              fr: 'Paramètres',
+              en: 'Settings',
+            }}
+          />
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
