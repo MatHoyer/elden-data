@@ -1,5 +1,6 @@
 'use client';
 
+import { DisplayText } from '@/components/language/DisplayText';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import {
@@ -10,31 +11,42 @@ import {
 } from '@/components/ui/tooltip';
 import { checkBoss } from '@/features/bosses/actions/check-boss.action';
 import { defaultMutationEnding } from '@/lib/utils/action-utils';
-import { getUrl } from '@/lib/utils/url-utils';
+import { getUrl, TGetUrlArgs, TRoute } from '@/lib/utils/url-utils';
 import { cn } from '@/lib/utils/utils';
 import { useMutation } from '@tanstack/react-query';
 import { useSession } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 
-const ProgressBar: React.FC<{
-  title: string;
+const ProgressBarTitle: React.FC<{
+  title: { en: string; fr: string };
   progress: number;
   total: number;
-}> = ({ title, progress, total }) => {
+  url: TRoute;
+  urlParams?: TGetUrlArgs<TRoute>;
+}> = ({ title, progress, total, url, urlParams }) => {
+  const router = useRouter();
+
   return (
-    <div>
-      <h1 className="text-3xl p-5">{title}</h1>
-      <div className="relative w-full h-6 bg-card rounded-full overflow-hidden">
-        <p className="absolute w-full text-black">
-          {progress >= 0 && `${progress}/`}
-          {total}
-        </p>
-        <div
-          className="h-6 bg-primary"
-          style={{
-            width: progress >= 0 ? `${(progress / total) * 100}%` : '100%',
-          }}
-        />
+    <div
+      className="flex h-full items-center justify-center group cursor-pointer"
+      onClick={() => router.push(getUrl(url, urlParams))}
+    >
+      <div className="w-full px-10 py-3">
+        <h2 className="text-4xl group-hover:underline group-hover:text-primary transition-colors duration-200 p-5">
+          <DisplayText values={title} />
+        </h2>
+        <div className="relative w-full h-6 bg-card rounded-full overflow-hidden">
+          <p className="absolute w-full text-black">
+            {progress >= 0 && `${progress}/`}
+            {total}
+          </p>
+          <div
+            className="h-6 bg-primary"
+            style={{
+              width: progress >= 0 ? `${(progress / total) * 100}%` : '100%',
+            }}
+          />
+        </div>
       </div>
     </div>
   );
@@ -42,10 +54,10 @@ const ProgressBar: React.FC<{
 
 const RemembrancesCard: React.FC<{
   id: string;
-  name: string;
+  names: { en: string; fr: string };
   image: string;
   isDone: boolean;
-}> = ({ id, name, image, isDone }) => {
+}> = ({ id, names, image, isDone }) => {
   const router = useRouter();
   const session = useSession();
 
@@ -105,7 +117,7 @@ const RemembrancesCard: React.FC<{
           side="bottom"
           className="text-2xl"
         >
-          <p>{name}</p>
+          <DisplayText values={names} />
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
@@ -117,7 +129,7 @@ export const HomePageClient: React.FC<{
     normal: {
       remembrances: {
         id: string;
-        name: string;
+        names: { en: string; fr: string };
         image: string;
         isDone: boolean;
       }[];
@@ -127,7 +139,7 @@ export const HomePageClient: React.FC<{
     dlc: {
       remembrances: {
         id: string;
-        name: string;
+        names: { en: string; fr: string };
         image: string;
         isDone: boolean;
       }[];
@@ -135,7 +147,7 @@ export const HomePageClient: React.FC<{
       total: number;
     };
   };
-  items: { name: string; taken: number; total: number }[];
+  items: { names: { en: string; fr: string }; taken: number; total: number }[];
 }> = ({ boss, items }) => {
   const router = useRouter();
 
@@ -152,43 +164,21 @@ export const HomePageClient: React.FC<{
             </h1>
           </div>
           <Separator className="h-1" />
-          <div
-            className="flex h-full items-center justify-center group cursor-pointer"
-            onClick={() =>
-              router.push(
-                getUrl('locations', { urlParams: { filter: 'normal' } })
-              )
-            }
-          >
-            <div className="w-full px-10 py-3">
-              <h2 className="text-4xl group-hover:underline group-hover:text-primary transition-colors duration-200">
-                Jeu de Base
-              </h2>
-              <ProgressBar
-                title={''}
-                progress={boss.normal.killed}
-                total={boss.normal.total}
-              />
-            </div>
-          </div>
+          <ProgressBarTitle
+            title={{ en: 'Main Game', fr: 'Jeu Principal' }}
+            progress={boss.normal.killed}
+            total={boss.normal.total}
+            url="locations"
+            urlParams={{ locationName: '', urlParams: { filter: 'normal' } }}
+          />
           <Separator className="h-1 mb-[5px]" />
-          <div
-            className="flex h-full items-center justify-center group cursor-pointer"
-            onClick={() =>
-              router.push(getUrl('locations', { urlParams: { filter: 'dlc' } }))
-            }
-          >
-            <div className="w-full px-10 py-3">
-              <h2 className="text-4xl group-hover:underline group-hover:text-primary transition-colors duration-200">
-                DLC
-              </h2>
-              <ProgressBar
-                title={''}
-                progress={boss.dlc.killed}
-                total={boss.dlc.total}
-              />
-            </div>
-          </div>
+          <ProgressBarTitle
+            title={{ en: 'DLC', fr: 'Extension' }}
+            progress={boss.dlc.killed}
+            total={boss.dlc.total}
+            url="locations"
+            urlParams={{ locationName: '', urlParams: { filter: 'dlc' } }}
+          />
         </Card>
         <div className="grid grid-rows-[3fr_0fr_2fr] gap-2">
           <div className="grid grid-cols-5 grid-rows-3 gap-2 px-2 select-none">
@@ -204,14 +194,18 @@ export const HomePageClient: React.FC<{
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 text-center items-center gap-2">
+      <div className="grid grid-cols-3 text-center gap-2">
         {items.map((item, i) => {
+          const url = item.names.en
+            .replace(/\b\w/g, (char) => char.toUpperCase())
+            .replace(/\s+/g, '');
           return (
-            <Card key={i} className="px-10 py-3">
-              <ProgressBar
-                title={item.name}
+            <Card key={i}>
+              <ProgressBarTitle
+                title={item.names}
                 progress={item.taken}
                 total={item.total}
+                url={(url.charAt(0).toLowerCase() + url.slice(1)) as TRoute}
               />
             </Card>
           );

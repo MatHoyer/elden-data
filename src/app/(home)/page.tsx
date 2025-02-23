@@ -25,7 +25,7 @@ const HomePage = async () => {
       parentCategory: null,
     },
     include: {
-      names: true,
+      names: { select: { en: true, fr: true } },
       subCategories: {
         include: {
           names: true,
@@ -81,7 +81,7 @@ const HomePage = async () => {
           normal: {
             remembrances: remembranceBosses.normal!.map((boss) => ({
               id: boss.id,
-              name: boss.remembrance!.names.fr,
+              names: boss.remembrance!.names,
               image: boss.remembrance!.imageUrl,
               isDone: boss.users[0]?.isDone || false,
             })),
@@ -91,7 +91,7 @@ const HomePage = async () => {
           dlc: {
             remembrances: remembranceBosses.dlc!.map((boss) => ({
               id: boss.id,
-              name: boss.remembrance!.names.fr,
+              names: boss.remembrance!.names,
               image: boss.remembrance!.imageUrl,
               isDone: boss.users[0]?.isDone || false,
             })),
@@ -100,7 +100,7 @@ const HomePage = async () => {
           },
         }}
         items={itemCategories.map((itemCategory) => ({
-          name: itemCategory.names.fr,
+          names: itemCategory.names,
           taken: session?.id
             ? itemCategory.items.length === 0
               ? itemCategory.subCategories.reduce(

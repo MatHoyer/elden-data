@@ -7,10 +7,13 @@ type TRouteDataRequirements = {
   weapons: undefined;
   shields: undefined;
   armors: undefined;
-  sorceries: undefined;
-  invocations: undefined;
+  spells: undefined;
+  spiritAshes: undefined;
   ashesOfWar: undefined;
   talismans: undefined;
+  whetBlades: undefined;
+  crystalTears: undefined;
+  cookBooks: undefined;
 };
 
 export type TRoute = keyof TRouteDataRequirements;
@@ -27,11 +30,14 @@ const routes: {
   'location-name': ({ locationName }) => `/locations/${locationName}`,
   weapons: () => '/weapons',
   shields: () => '/shields',
-  talismans: () => 'talismans',
   armors: () => '/armors',
-  sorceries: () => '/sorceries',
-  invocations: () => '/invocations',
+  spells: () => '/spells',
+  spiritAshes: () => '/spiritAshes',
   ashesOfWar: () => '/ashes-of-war',
+  talismans: () => 'talismans',
+  whetBlades: () => '/whet-blades',
+  crystalTears: () => '/crystal-tears',
+  cookBooks: () => '/cook-books',
 };
 
 type TUrlParams =
@@ -40,7 +46,7 @@ type TUrlParams =
   | string
   | URLSearchParams;
 
-type TGetUrlArgs<T extends TRoute> = TRouteDataMap<T> extends undefined
+export type TGetUrlArgs<T extends TRoute> = TRouteDataMap<T> extends undefined
   ? { withServerUrl?: boolean; urlParams?: TUrlParams }
   : TRouteDataMap<T> & {
       withServerUrl?: boolean;
