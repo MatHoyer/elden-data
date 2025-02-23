@@ -3,7 +3,7 @@ import { TDefaultDataItem } from './defaultDataType';
 export const cookBooks: TDefaultDataItem[] = [
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (1)",
       fr: 'Manuel de guerrier nomade (1)',
     },
     locationUrl:
@@ -15,7 +15,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (2)",
       fr: 'Manuel de guerrier nomade (2)',
     },
     locationUrl:
@@ -27,7 +27,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (3)",
       fr: 'Manuel de guerrier nomade (3)',
     },
     locationUrl:
@@ -39,8 +39,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: 'Manuel de guerrier nomade (4)',
+      en: "Nomadic Warrior's Cookbook (4)",
+      fr: 'Manuel de guerrier nomade (4)',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165111',
@@ -51,8 +51,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: 'Manuel de guerrier nomade (5)',
+      en: "Nomadic Warrior's Cookbook (5)",
+      fr: 'Manuel de guerrier nomade (5)',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167363',
@@ -63,7 +63,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (6)",
       fr: 'Manuel de guerrier nomade (6)',
     },
     locationUrl:
@@ -75,7 +75,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (7)",
       fr: 'Manuel de guerrier nomade (7)',
     },
     locationUrl:
@@ -87,7 +87,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (8)",
       fr: 'Manuel de guerrier nomade (8)',
     },
     locationUrl:
@@ -99,8 +99,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: 'Manuel de guerrier nomade (9)',
+      en: "Nomadic Warrior's Cookbook (9)",
+      fr: 'Manuel de guerrier nomade (9)',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165320',
@@ -111,7 +111,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (10)",
       fr: 'Manuel de guerrier nomade (10)',
     },
     locationUrl:
@@ -123,8 +123,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: 'Manuel de guerrier nomade (11)',
+      en: "Nomadic Warrior's Cookbook (11)",
+      fr: 'Manuel de guerrier nomade (11)',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167443',
@@ -135,8 +135,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: 'Manuel de guerrier nomade (12)',
+      en: "Nomadic Warrior's Cookbook (12)",
+      fr: 'Manuel de guerrier nomade (12)',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166508',
@@ -147,7 +147,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (13)",
       fr: 'Manuel de guerrier nomade (13)',
     },
     locationUrl:
@@ -159,8 +159,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: 'Manuel de guerrier nomade (14)',
+      en: "Nomadic Warrior's Cookbook (14)",
+      fr: 'Manuel de guerrier nomade (14)',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165612',
@@ -171,7 +171,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (15)",
       fr: 'Manuel de guerrier nomade (15)',
     },
     locationUrl:
@@ -183,7 +183,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (16)",
       fr: 'Manuel de guerrier nomade (16)',
     },
     locationUrl:
@@ -195,7 +195,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (17)",
       fr: 'Manuel de guerrier nomade (17)',
     },
     locationUrl:
@@ -207,7 +207,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (18)",
       fr: 'Manuel de guerrier nomade (18)',
     },
     locationUrl:
@@ -219,7 +219,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (19)",
       fr: 'Manuel de guerrier nomade (19)',
     },
     locationUrl:
@@ -231,7 +231,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (20)",
       fr: 'Manuel de guerrier nomade (20)',
     },
     locationUrl:
@@ -243,7 +243,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (21)",
       fr: 'Manuel de guerrier nomade (21)',
     },
     locationUrl:
@@ -255,7 +255,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (22)",
       fr: 'Manuel de guerrier nomade (22)',
     },
     locationUrl:
@@ -267,7 +267,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (23)",
       fr: 'Manuel de guerrier nomade (23)',
     },
     locationUrl:
@@ -279,7 +279,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Nomadic Warrior's Cookbook (24)",
       fr: 'Manuel de guerrier nomade (24)',
     },
     locationUrl:
@@ -291,8 +291,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: "Manuel d'armurier (1)",
+      en: "Armorer's Cookbook (1)",
+      fr: "Manuel d'armurier (1)",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164095',
@@ -302,7 +302,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Armorer's Cookbook (2)",
       fr: "Manuel d'armurier (2)",
     },
     locationUrl:
@@ -313,7 +313,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Armorer's Cookbook (3)",
       fr: "Manuel d'armurier (3)",
     },
     locationUrl:
@@ -324,7 +324,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Armorer's Cookbook (4)",
       fr: "Manuel d'armurier (4)",
     },
     locationUrl:
@@ -335,7 +335,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Armorer's Cookbook (5)",
       fr: "Manuel d'armurier (5)",
     },
     locationUrl:
@@ -346,7 +346,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Armorer's Cookbook (6)",
       fr: "Manuel d'armurier (6)",
     },
     locationUrl:
@@ -357,8 +357,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: "Manuel d'armurier (7)",
+      en: "Armorer's Cookbook (7)",
+      fr: "Manuel d'armurier (7)",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167525',
@@ -368,8 +368,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: "Manuel d'artisan des p. d'éclat (1)",
+      en: "Glintstone Craftsman's Cookbook (1)",
+      fr: "Manuel d'artisan des p. d'éclat (1)",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166061',
@@ -380,7 +380,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Glintstone Craftsman's Cookbook (2)",
       fr: "Glintstone Craftsman'sCookbook (2)",
     },
     locationUrl:
@@ -392,8 +392,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: "Manuel d'artisan des p. d'éclat (3)",
+      en: "Glintstone Craftsman's Cookbook (3)",
+      fr: "Manuel d'artisan des p. d'éclat (3)",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166531',
@@ -404,7 +404,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Glintstone Craftsman's Cookbook (4)",
       fr: "Manuel d'artisan des p. d'éclat (4)",
     },
     locationUrl:
@@ -416,7 +416,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Glintstone Craftsman's Cookbook (5)",
       fr: "Manuel d'artisan des p. d'éclat (5)",
     },
     locationUrl:
@@ -428,7 +428,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Glintstone Craftsman's Cookbook (6)",
       fr: "Manuel d'artisan des p. d'éclat (6)",
     },
     locationUrl:
@@ -440,7 +440,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Glintstone Craftsman's Cookbook (7)",
       fr: "Manuel d'artisan des p. d'éclat (7)",
     },
     locationUrl:
@@ -452,7 +452,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Glintstone Craftsman's Cookbook (8)",
       fr: "Manuel d'artisan des p. d'éclat (8)",
     },
     locationUrl:
@@ -464,7 +464,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Missionary's Cookbook (1)",
       fr: 'Manuel de missionnaire (1)',
     },
     locationUrl:
@@ -475,7 +475,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Missionary's Cookbook (2)",
       fr: 'Manuel de missionnaire (2)',
     },
     locationUrl:
@@ -486,8 +486,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: 'Manuel de missionnaire (3)',
+      en: "Missionary's Cookbook (3)",
+      fr: 'Manuel de missionnaire (3)',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166223',
@@ -497,8 +497,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: 'Manuel de missionnaire (4)',
+      en: "Missionary's Cookbook (4)",
+      fr: 'Manuel de missionnaire (4)',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168148',
@@ -508,8 +508,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: 'Manuel de missionnaire (5)',
+      en: "Missionary's Cookbook (5)",
+      fr: 'Manuel de missionnaire (5)',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168627',
@@ -519,7 +519,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Missionary's Cookbook (6)",
       fr: 'Manuel de missionnaire (6)',
     },
     locationUrl:
@@ -530,8 +530,8 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: 'Manuel de missionnaire (7)',
+      en: "Missionary's Cookbook (7)",
+      fr: 'Manuel de missionnaire (7)',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170154',
@@ -541,7 +541,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Ancient Dragon Apostle's Cookbook (1)",
       fr: "Manuel d'apôtre des drag. anciens (1)",
     },
     locationUrl:
@@ -553,7 +553,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Ancient Dragon Apostle's Cookbook (2)",
       fr: "Manuel d'apôtre des drag. anciens (2)",
     },
     locationUrl:
@@ -565,7 +565,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Ancient Dragon Apostle's Cookbook (3)",
       fr: "Manuel d'apôtre des drag. anciens (3)",
     },
     locationUrl:
@@ -577,7 +577,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Ancient Dragon Apostle's Cookbook (4)",
       fr: "Manuel d'apôtre des drag. anciens (4)",
     },
     locationUrl:
@@ -589,7 +589,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Perfumer's Cookbook (1)",
       fr: 'Manuel de Parfumeur (1)',
     },
     locationUrl:
@@ -600,7 +600,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Perfumer's Cookbook (2)",
       fr: 'Manuel de Parfumeur (2)',
     },
     locationUrl:
@@ -611,7 +611,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Perfumer's Cookbook (3)",
       fr: 'Manuel de Parfumeur (3)',
     },
     locationUrl:
@@ -622,7 +622,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Perfumer's Cookbook (4)",
       fr: 'Manuel de Parfumeur (4)',
     },
     locationUrl:
@@ -633,7 +633,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Fevor's Cookbook (1)",
       fr: 'Manuel de Fevor (1)',
     },
     locationUrl:
@@ -644,7 +644,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Fevor's Cookbook (2)",
       fr: 'Manuel de Fevor (2)',
     },
     locationUrl:
@@ -655,7 +655,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Fevor's Cookbook (3)",
       fr: 'Manuel de Fevor (3)',
     },
     locationUrl:
@@ -666,7 +666,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Frenzied's Cookbook (1)",
       fr: "Manuel d'exalté (1)",
     },
     locationUrl:
@@ -677,7 +677,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Frenzied's Cookbook (2)",
       fr: "Manuel d'exalté (2)",
     },
     locationUrl:
@@ -688,7 +688,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (1)",
       fr: 'Manuel de grand potentat (1)',
     },
     locationUrl:
@@ -701,7 +701,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (2)",
       fr: 'Manuel de grand potentat (2)',
     },
     locationUrl:
@@ -714,7 +714,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (3)",
       fr: 'Manuel de grand potentat (3)',
     },
     locationUrl:
@@ -727,7 +727,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (4)",
       fr: 'Manuel de grand potentat (4)',
     },
     locationUrl:
@@ -740,7 +740,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (5)",
       fr: 'Manuel de grand potentat (5)',
     },
     locationUrl:
@@ -753,7 +753,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (6)",
       fr: 'Manuel de grand potentat (6)',
     },
     locationUrl:
@@ -766,7 +766,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (7)",
       fr: 'Manuel de grand potentat (7)',
     },
     locationUrl:
@@ -779,7 +779,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (8)",
       fr: 'Manuel de grand potentat (8)',
     },
     locationUrl:
@@ -792,7 +792,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (9)",
       fr: 'Manuel de grand potentat (9)',
     },
     locationUrl:
@@ -805,7 +805,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (10)",
       fr: 'Manuel de grand potentat (10)',
     },
     locationUrl:
@@ -818,7 +818,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (11)",
       fr: 'Manuel de grand potentat (11)',
     },
     locationUrl:
@@ -831,7 +831,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (12)",
       fr: 'Manuel de grand potentat (12)',
     },
     locationUrl:
@@ -844,7 +844,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (13)",
       fr: 'Manuel de grand potentat (13)',
     },
     locationUrl:
@@ -857,7 +857,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Greater Potentate's Cookbook (14)",
       fr: 'Manuel de grand potentat (14)',
     },
     locationUrl:
@@ -870,7 +870,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Loyal Knight's Cookbook",
       fr: 'Manuel de chevalier loyal',
     },
     locationUrl:
@@ -882,7 +882,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Fire Knight's Cookbook (1)",
       fr: 'Manuel du chevalier de Feu (1)',
     },
     locationUrl:
@@ -894,7 +894,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Fire Knight's Cookbook (2)",
       fr: 'Manuel du chevalier de Feu (2)',
     },
     locationUrl:
@@ -906,7 +906,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Battlefield Priest's Cookbook (1)",
       fr: 'Manuel de prêtre de bataille (1)',
     },
     locationUrl:
@@ -919,7 +919,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Battlefield Priest's Cookbook (2)",
       fr: 'Manuel de prêtre de bataille (2)',
     },
     locationUrl:
@@ -932,7 +932,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Battlefield Priest's Cookbook (3)",
       fr: 'Manuel de prêtre de bataille (3)',
     },
     locationUrl:
@@ -945,7 +945,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Battlefield Priest's Cookbook (4)",
       fr: 'Manuel de prêtre de bataille (4)',
     },
     locationUrl:
@@ -958,7 +958,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Ancient Dragon Knight's Cookbook (1)",
       fr: 'Manuel du chev. des dragons anc. (1)',
     },
     locationUrl:
@@ -971,7 +971,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Ancient Dragon Knight's Cookbook (2)",
       fr: 'Manuel du chev. des dragons anc. (2)',
     },
     locationUrl:
@@ -984,7 +984,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "St. Trina Disciple's Cookbook (1)",
       fr: 'Manuel de disciple de sainte Trina (1)',
     },
     locationUrl:
@@ -997,7 +997,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "St. Trina Disciple's Cookbook (2)",
       fr: 'Manuel de disciple de sainte Trina (2)',
     },
     locationUrl:
@@ -1010,7 +1010,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "St. Trina Disciple's Cookbook (3)",
       fr: 'Manuel de disciple de sainte Trina (3)',
     },
     locationUrl:
@@ -1023,7 +1023,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Mad Craftsman's Cookbook (1)",
       fr: "Manuel d'artisan fou (1)",
     },
     locationUrl:
@@ -1036,7 +1036,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Mad Craftsman's Cookbook (2)",
       fr: "Manuel d'artisan fou (2)",
     },
     locationUrl:
@@ -1049,7 +1049,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Mad Craftsman's Cookbook (3)",
       fr: "Manuel d'artisan fou (3)",
     },
     locationUrl:
@@ -1062,7 +1062,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Grave Keeper's Cookbook (1)",
       fr: 'Manuel de gardien des tombes (1)',
     },
     locationUrl:
@@ -1075,7 +1075,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Grave Keeper's Cookbook (2)",
       fr: 'Manuel de gardien des tombes (2)',
     },
     locationUrl:
@@ -1088,7 +1088,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Tibia's Cookbook",
       fr: 'Manuel des os',
     },
     locationUrl:
@@ -1100,7 +1100,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Finger-Weaver's Cookbook (1)",
       fr: 'Manuel de digitomancien (1)',
     },
     locationUrl:
@@ -1113,7 +1113,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Finger-Weaver's Cookbook (2)",
       fr: 'Manuel de digitomancien (2)',
     },
     locationUrl:
@@ -1126,7 +1126,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Antiquity Scholar's Cookbook (1)",
       fr: "Manuel d'expert en antiquités (1)",
     },
     locationUrl:
@@ -1139,7 +1139,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Antiquity Scholar's Cookbook (2)",
       fr: "Manuel d'expert en antiquités (2)",
     },
     locationUrl:
@@ -1152,7 +1152,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Forager Brood Cookbook (1)',
       fr: 'Manuel de la nuée glaneuse (1)',
     },
     locationUrl:
@@ -1164,7 +1164,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Forager Brood Cookbook (2)',
       fr: 'Manuel de la nuée glaneuse (2)',
     },
     locationUrl:
@@ -1176,7 +1176,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Forager Brood Cookbook (3)',
       fr: 'Manuel de la nuée glaneuse (3)',
     },
     locationUrl:
@@ -1188,7 +1188,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Forager Brood Cookbook (4)',
       fr: 'Manuel de la nuée glaneuse (4)',
     },
     locationUrl:
@@ -1200,7 +1200,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Forager Brood Cookbook (5)',
       fr: 'Manuel de la nuée glaneuse (5)',
     },
     locationUrl:
@@ -1212,7 +1212,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Forager Brood Cookbook (6)',
       fr: 'Manuel de la nuée glaneuse (6)',
     },
     locationUrl:
@@ -1224,7 +1224,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Forager Brood Cookbook (7)',
       fr: 'Manuel de la nuée glaneuse (7)',
     },
     locationUrl:
@@ -1236,7 +1236,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Igon's Cookbook (1)",
       fr: "Manuel d'Igon (1)",
     },
     locationUrl:
@@ -1248,7 +1248,7 @@ export const cookBooks: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Igon's Cookbook (2)",
       fr: "Manuel d'Igon (2)",
     },
     locationUrl:

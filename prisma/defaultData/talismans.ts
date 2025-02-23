@@ -3,7 +3,7 @@ import { TDefaultDataItem } from './defaultDataType';
 export const talismans: TDefaultDataItem[] = [
   {
     names: {
-      en: '',
+      en: 'Crimson Amber Medallion',
       fr: "Médaillon d'ambre pourpre",
     },
     locationUrl:
@@ -14,41 +14,41 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crimson Amber Medallion +1',
       fr: "Médaillon d'ambre pourpre +1",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168612',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Amber+Medallion',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Amber+Medallion+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/1/10/ER_Icon_Talisman_Crimson_Amber_Medallion_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_amber_medallion__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Crimson Amber Medallion +2',
       fr: "Médaillon d'ambre pourpre +2",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176112',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Amber+Medallion',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Amber+Medallion+2',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/e/e1/ER_Icon_Talisman_Crimson_Amber_Medallion_%2B2.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson-amber-medallion-2-tools-elden-ring-wiki-guide.png',
   },
   {
     names: {
-      en: '',
+      en: 'Crimson Amber Medallion +3',
       fr: "Médaillon d'ambre pourpre +3",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381927',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Amber+Medallion',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Amber+Medallion+3',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_amber_medallion_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Crimson Seed Talisman',
       fr: 'Talisman de la graine pourpre',
     },
     locationUrl:
@@ -59,19 +59,19 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crimson Seed Talisman +1',
       fr: 'Talisman de la graine pourpre +1',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382545',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Seed+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Crimson+Seed+Talisman+1',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_seed_talisman_1_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Blessed Dew Talisman',
       fr: 'Talisman de la larme bénie',
     },
     locationUrl:
@@ -82,7 +82,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Cerulean Amber Medallion',
       fr: "Médaillon d'ambre céruléen",
     },
     locationUrl:
@@ -93,41 +93,41 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Cerulean Amber Medallion +1',
       fr: "Médaillon d'ambre céruléen +1",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168013',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Amber+Medallion',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Amber+Medallion+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/f/f5/ER_Icon_Talisman_Cerulean_Amber_Medallion_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_amber_medallion__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Cerulean Amber Medallion +2',
       fr: "Médaillon d'ambre céruléen +2",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168159',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Amber+Medallion',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Amber+Medallion+2',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/d/d5/ER_Icon_Talisman_Cerulean_Amber_Medallion_%2B2.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean-amber-medallion-2-talisman-elden-ring-wiki-guide.png',
   },
   {
     names: {
-      en: '',
+      en: 'Cerulean Amber Medallion +3',
       fr: "Médaillon d'ambre céruléen +3",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381986',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Amber+Medallion',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Amber+Medallion+3',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_amber_medallion_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Cerulean Seed Talisman',
       fr: 'Talisman de la graine céruléenne',
     },
     locationUrl:
@@ -138,19 +138,19 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Cerulean Seed Talisman +1',
       fr: 'Talisman de la graine céruléenne +1',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382248',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Seed+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Cerulean+Seed+Talisman+1',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_seed_talisman_1_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Blessed Blue Dew Talisman',
       fr: 'Talisman de la larme bleue bénie',
     },
     locationUrl:
@@ -162,7 +162,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Talisman of Lord's Bestowal",
       fr: 'Talisman du don du seigneur',
     },
     locationUrl:
@@ -175,7 +175,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Viridian Amber Medallion',
       fr: "Médaillon d'ambre vert émeraude",
     },
     locationUrl:
@@ -186,41 +186,41 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Viridian Amber Medallion +1',
       fr: "Médaillon d'ambre vert émeraude +1",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168000',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Viridian+Amber+Medallion',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Viridian+Amber+Medallion+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/2/24/ER_Icon_Talisman_Viridian_Amber_Medallion_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/viridian_amber_medallion__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Viridian Amber Medallion +2',
       fr: "Médaillon d'ambre vert émeraude +2",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168227',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Viridian+Amber+Medallion',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Viridian+Amber+Medallion+2',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/4/4d/ER_Icon_Talisman_Viridian_Amber_Medallion_%2B2.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/viridian_amber_medallion__2_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Viridian Amber Medallion +3',
       fr: "Médaillon d'ambre vert émeraude +3",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382547',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Viridian+Amber+Medallion',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Viridian+Amber+Medallion+3',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/viridian_amber_medallion_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Green Turtle Talisman',
       fr: 'Talisman de tortue verte',
     },
     locationUrl:
@@ -231,19 +231,19 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Two-Headed Turtle Talisman',
       fr: 'Talisman de tortue à deux têtes',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380992',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Green+Turtle+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Two-Headed+Turtle+Talisman',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/two-headed_turtle_talisman_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Arsenal Charm',
       fr: "Talisman d'arsenal",
     },
     locationUrl:
@@ -254,18 +254,18 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Arsenal Charm +1',
       fr: "Talisman d'arsenal +1",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168082',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Arsenal+Charm',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Arsenal+Charm+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/8/83/ER_Icon_Talisman_Arsenal_Charm_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/arsenal_charm__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: "Great-Jar's Arsenal",
       fr: 'Arsenal de la Grande jarre',
     },
     locationUrl:
@@ -276,7 +276,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Erdtree's Favor",
       fr: "Faveur de l'Arbre-Monde",
     },
     locationUrl:
@@ -287,29 +287,29 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Erdtree's Favor +1",
       fr: "Faveur de l'Arbre-Monde +1",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170251',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Erdtree's+Favor",
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Erdtree's+Favor+1",
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/c/cd/ER_Icon_Talisman_Erdtree%27s_Favor_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtrees_favor__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: "Erdtree's Favor +2",
       fr: "Faveur de l'Arbre-Monde +2",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168184',
-    wikiUrl: "https://eldenring.wiki.fextralife.com/Erdtree's+Favor",
+    wikiUrl: "https://eldenring.wiki.fextralife.com/Erdtree's+Favor+2",
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/4/4c/ER_Icon_Talisman_Erdtree%27s_Favor_%2B2.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtrees_favor__2_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: "Radagon's Scarseal",
       fr: 'Sceau scarifié de Radagon',
     },
     locationUrl:
@@ -320,7 +320,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Radagon's Soreseal",
       fr: 'Sceau meurtri de Radagon',
     },
     locationUrl:
@@ -331,7 +331,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Marika's Scarseal",
       fr: 'Sceau scarifié de Marika',
     },
     locationUrl:
@@ -342,7 +342,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Marika's Soreseal",
       fr: 'Sceau meurtri de Marika',
     },
     locationUrl:
@@ -353,7 +353,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Starscourge Heirloom',
       fr: 'Héritage du Fléau des astres',
     },
     locationUrl:
@@ -364,7 +364,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Prosthesis-Wearer Heirloom',
       fr: "Héritage de l'épéiste amputée",
     },
     locationUrl:
@@ -375,7 +375,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Stargazer Heirloom',
       fr: "Héritage de l'astrologue",
     },
     locationUrl:
@@ -386,7 +386,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Two Fingers Heirloom',
       fr: 'Héritage des Deux Doigts',
     },
     locationUrl:
@@ -397,7 +397,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Outer God Heirloom',
       fr: 'Héritage de la Divinité extérieure',
     },
     locationUrl:
@@ -409,7 +409,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Dragoncrest Shield Talisman',
       fr: 'Talisman de bouclier draconique',
     },
     locationUrl:
@@ -421,31 +421,31 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Dragoncrest Shield Talisman +1',
       fr: 'Talisman de bouclier draconique +1',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166856',
     wikiUrl:
-      'https://eldenring.wiki.fextralife.com/Dragoncrest+Shield+Talisman',
+      'https://eldenring.wiki.fextralife.com/Dragoncrest+Shield+Talisman+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/4/4a/ER_Icon_Talisman_Dragoncrest_Shield_Talisman_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragoncrest_shield_talisman__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Dragoncrest Shield Talisman +2',
       fr: 'Talisman de bouclier draconique +2',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170201',
     wikiUrl:
-      'https://eldenring.wiki.fextralife.com/Dragoncrest+Shield+Talisman',
+      'https://eldenring.wiki.fextralife.com/Dragoncrest+Shield+Talisman+2',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/4/40/ER_Icon_Talisman_Dragoncrest_Shield_Talisman_%2B2.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragoncrest_shield_talisman__2_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Dragoncrest Greatshield Talisman',
       fr: 'Talisman de pavois draconique',
     },
     locationUrl:
@@ -457,7 +457,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Spelldrake Talisman',
       fr: 'Talisman de dragon magique',
     },
     locationUrl:
@@ -468,41 +468,41 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Spelldrake Talisman +1',
       fr: 'Talisman de dragon magique +1',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167984',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Spelldrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Spelldrake+Talisman+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/8/86/ER_Icon_Talisman_Spelldrake_Talisman_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spelldrake_talisman__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Spelldrake Talisman +2',
       fr: 'Talisman de dragon magique +2',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169800',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Spelldrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Spelldrake+Talisman+2',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/a/a8/ER_Icon_Talisman_Spelldrake_Talisman_%2B2.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spelldrake_talisman__2_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Spelldrake Talisman +3',
       fr: 'Talisman de dragon magique +3',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381177',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Spelldrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Spelldrake+Talisman+3',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/spelldrake_talisman_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Flamedrake Talisman',
       fr: 'Talisman de dragon de feu',
     },
     locationUrl:
@@ -513,41 +513,41 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Flamedrake Talisman +1',
       fr: 'Talisman de dragon de feu +1',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167175',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Flamedrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Flamedrake+Talisman+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/f/f8/ER_Icon_Talisman_Flamedrake_Talisman_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flamedrake_talisman__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Flamedrake Talisman +2',
       fr: 'Talisman de dragon de feu +2',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167917',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Flamedrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Flamedrake+Talisman+2',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/c/cc/ER_Icon_Talisman_Flamedrake_Talisman_%2B2.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flamedrake_talisman__2_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Flamedrake Talisman +3',
       fr: 'Talisman de dragon de feu +3',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381864',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Flamedrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Flamedrake+Talisman+3',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/flamedrake_talisman_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Boltdrake Talisman',
       fr: 'Talisman de dragon de foudre',
     },
     locationUrl:
@@ -558,41 +558,41 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Boltdrake Talisman +1',
       fr: 'Talisman de dragon de foudre +1',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168762',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Boltdrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Boltdrake+Talisman+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/8/85/ER_Icon_Talisman_Boltdrake_Talisman_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/boltdrake_talisman_1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Boltdrake Talisman +2',
       fr: 'Talisman de dragon de foudre +2',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=170205',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Boltdrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Boltdrake+Talisman+2',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/c/c4/ER_Icon_Talisman_Boltdrake_Talisman_%2B2.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/boltdrake_talisman_2_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Boltdrake Talisman +3',
       fr: 'Talisman de dragon de foudre +3',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381796',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Boltdrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Boltdrake+Talisman+3',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/boltdrake_talisman_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Haligdrake Talisman',
       fr: 'Talisman de dragon sacré',
     },
     locationUrl:
@@ -603,29 +603,29 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Haligdrake Talisman +1',
       fr: 'Talisman de dragon sacré +1',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175357',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligdrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligdrake+Talisman+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/0/0e/ER_Icon_Talisman_Haligdrake_Talisman_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligdrake_talisman__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Haligdrake Talisman +2',
       fr: 'Talisman de dragon sacré +2',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169447',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligdrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Haligdrake+Talisman+2',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/1/10/ER_Icon_Talisman_Haligdrake_Talisman_%2B2.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligdrake_talisman__2_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Golden Braid',
       fr: 'Tresse dorée',
     },
     locationUrl:
@@ -637,7 +637,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Pearldrake Talisman',
       fr: 'Talisman de dragon de perle',
     },
     locationUrl:
@@ -648,41 +648,41 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Pearldrake Talisman +1',
       fr: 'Talisman de dragon de perle +1',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168165',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Pearldrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Pearldrake+Talisman+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/8/83/ER_Icon_Talisman_Pearldrake_Talisman_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pearldrake-talisman-+1-talisman-elden-ring-wiki-guide-200.png',
   },
   {
     names: {
-      en: '',
+      en: 'Pearldrake Talisman +2',
       fr: 'Talisman de dragon de perle +2',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169354',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Pearldrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Pearldrake+Talisman+2',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/9/97/ER_Icon_Talisman_Pearldrake_Talisman_%2B2.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pearldrake_talisman__2_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Pearldrake Talisman +3',
       fr: 'Talisman de dragon de perle +3',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381734',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Pearldrake+Talisman',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Pearldrake+Talisman+3',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/pearldrake_talisman_3_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Immunizing Horn Charm',
       fr: "Corne d'immunité",
     },
     locationUrl:
@@ -693,30 +693,30 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Immunizing Horn Charm +1',
       fr: "Corne d'immunité +1",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168545',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Immunizing+Horn+Charm',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Immunizing+Horn+Charm+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/a/a7/ER_Icon_Talisman_Immunizing_Horn_Charm_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/immunizing_horn_charm__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Immunizing Horn Charm +2',
       fr: "Corne d'immunité +2",
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380834',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Immunizing+Horn+Charm',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Immunizing+Horn+Charm+2',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/immunizing_horn_charm_2_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Stalwart Horn Charm',
       fr: 'Corne de robustesse',
     },
     locationUrl:
@@ -727,30 +727,30 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Stalwart Horn Charm +1',
       fr: 'Corne de robustesse +1',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168183',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Stalwart+Horn+Charm',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Stalwart+Horn+Charm+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/c/c5/ER_Icon_Talisman_Stalwart_Horn_Charm_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stalwart_horn_charm__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Stalwart Horn Charm +2',
       fr: 'Corne de robustesse +2',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381236',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Stalwart+Horn+Charm',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Stalwart+Horn+Charm+2',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/stalwart_horn_charm_2_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Clarifying Horn Charm',
       fr: 'Corne de focalisation',
     },
     locationUrl:
@@ -761,30 +761,30 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Clarifying Horn Charm +1',
       fr: 'Corne de focalisation +1',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169449',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Clarifying+Horn+Charm',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Clarifying+Horn+Charm+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/e/e0/ER_Icon_Talisman_Clarifying_Horn_Charm_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/clarifying-horn-charm-1-talisman-elden-ring-wiki-guide.png',
   },
   {
     names: {
-      en: '',
+      en: 'Clarifying Horn Charm +2',
       fr: 'Corne de focalisation +2',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382535',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Clarifying+Horn+Charm',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Clarifying+Horn+Charm+2',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/clarifying_horn_charm_2_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: 'Mottled Necklace',
       fr: 'Pendentif bariolé',
     },
     locationUrl:
@@ -795,30 +795,30 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Mottled Necklace +1',
       fr: 'Pendentif bariolé +1',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168201',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mottled+Necklace',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mottled+Necklace+1',
     imageUrl:
-      'https://static.wikia.nocookie.net/eldenring/images/a/a3/ER_Icon_Talisman_Mottled_Necklace_%2B1.png',
+      'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mottled_necklace__1_talisman_elden_ring_wiki_guide_200px.png',
   },
   {
     names: {
-      en: '',
+      en: 'Mottled Necklace +2',
       fr: 'Pendentif bariolé +2',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382540',
-    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mottled+Necklace',
+    wikiUrl: 'https://eldenring.wiki.fextralife.com/Mottled+Necklace+2',
     imageUrl:
       'https://eldenring.wiki.fextralife.com/file/Elden-Ring/mottled_necklace_2_talisman_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png',
     inDlc: true,
   },
   {
     names: {
-      en: '',
+      en: "Prince of Death's Pustule",
       fr: 'Excroissance du Prince de la Mort',
     },
     locationUrl:
@@ -829,7 +829,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Prince of Death's Cyst",
       fr: 'Kyste du Prince de la Mort',
     },
     locationUrl:
@@ -840,7 +840,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Ailment Talisman',
       fr: "Talisman d'altération",
     },
     locationUrl:
@@ -852,7 +852,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Dagger Talisman',
       fr: 'Talisman de la dague',
     },
     locationUrl:
@@ -863,7 +863,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Curved Sword Talisman',
       fr: "Talisman d'épée courbée",
     },
     locationUrl:
@@ -874,7 +874,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Twinblade Talisman',
       fr: 'Talisman de la lame double',
     },
     locationUrl:
@@ -885,7 +885,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Axe Talisman',
       fr: 'Talisman de la hache',
     },
     locationUrl:
@@ -896,7 +896,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Hammer Talisman',
       fr: 'Talisman du marteau',
     },
     locationUrl:
@@ -907,7 +907,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Spear Talisman',
       fr: 'Talisman de la lance',
     },
     locationUrl:
@@ -918,7 +918,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Lance Talisman',
       fr: 'Talisman de la lance de cavalerie',
     },
     locationUrl:
@@ -929,7 +929,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Claw Talisman',
       fr: 'Talisman de la griffe',
     },
     locationUrl:
@@ -940,7 +940,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Two-Handed Sword Talisman',
       fr: "Talisman d'épée à deux mains",
     },
     locationUrl:
@@ -952,7 +952,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Greatshield Talisman',
       fr: 'Talisman de pavois',
     },
     locationUrl:
@@ -963,7 +963,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Pearl Shield Talisman',
       fr: 'Talisman du bouclier perlé',
     },
     locationUrl:
@@ -975,7 +975,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Retaliatory Crossed-Tree',
       fr: 'Enchevêtrement de riposte',
     },
     locationUrl:
@@ -987,7 +987,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Lacerating Crossed-Tree',
       fr: 'Enchevêtrement de lacération',
     },
     locationUrl:
@@ -999,7 +999,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Arrow's Sting Talisman",
       fr: 'Talisman des flèches mordantes',
     },
     locationUrl:
@@ -1010,7 +1010,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Arrow's Reach Talisman",
       fr: 'Talisman des flèches filantes',
     },
     locationUrl:
@@ -1021,8 +1021,8 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
-      fr: 'Talisman des flèches mordantes (DLC)',
+      en: "Arrow's Soaring Sting Talisman",
+      fr: 'Talisman des flèches mordantes',
     },
     locationUrl:
       'https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381562',
@@ -1034,7 +1034,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Sharpshot Talisman',
       fr: 'Talisman de tir précis',
     },
     locationUrl:
@@ -1046,7 +1046,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Graven-School Talisman',
       fr: "Talisman de l'amalgame sculpté",
     },
     locationUrl:
@@ -1057,7 +1057,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Graven-Mass Talisman',
       fr: "Talisman de l'amas sculpté",
     },
     locationUrl:
@@ -1068,7 +1068,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Faithful's Canvas Talisman",
       fr: 'Talisman en toile des fidèles',
     },
     locationUrl:
@@ -1079,7 +1079,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Flock's Canvas Talisman",
       fr: 'Talisman en toile des ouailles',
     },
     locationUrl:
@@ -1090,7 +1090,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Primal Glintstone Blade',
       fr: "Lame de pierre d'éclat primordiale",
     },
     locationUrl:
@@ -1101,7 +1101,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Moon of Nokstella',
       fr: 'Lune de Nokstella',
     },
     locationUrl:
@@ -1112,7 +1112,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Old Lord's Talisman",
       fr: "Talisman d'ancien seigneur",
     },
     locationUrl:
@@ -1123,7 +1123,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Radagon Icon',
       fr: 'Icône de Radagon',
     },
     locationUrl:
@@ -1134,7 +1134,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Beloved Stardust',
       fr: "Poussière d'étoiles chérie",
     },
     locationUrl:
@@ -1146,7 +1146,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Roar Medallion',
       fr: 'Médaillon de cri',
     },
     locationUrl:
@@ -1157,7 +1157,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Companion Jar',
       fr: 'Jarre de compagnie',
     },
     locationUrl:
@@ -1168,7 +1168,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Perfumer's Talisman",
       fr: 'Talisman de Parfumeur',
     },
     locationUrl:
@@ -1179,7 +1179,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Carian Filigreed Crest',
       fr: 'Emblème de Caria à filigrane',
     },
     locationUrl:
@@ -1190,7 +1190,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Warrior Jar Shard',
       fr: 'Fragment de guerrier-jarre',
     },
     locationUrl:
@@ -1201,7 +1201,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Shard of Alexander',
       fr: "Fragment d'Alexander",
     },
     locationUrl:
@@ -1212,7 +1212,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Godfrey Icon',
       fr: 'Icône de Godfrey',
     },
     locationUrl:
@@ -1223,7 +1223,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Rellana's Cameo",
       fr: 'Camée de Rellana',
     },
     locationUrl:
@@ -1235,7 +1235,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Shattered Stone Talisman',
       fr: 'Talisman de pierre brisée',
     },
     locationUrl:
@@ -1247,7 +1247,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Smithing Talisman',
       fr: 'Talisman de forgeron',
     },
     locationUrl:
@@ -1259,7 +1259,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Enraged Divine Beast',
       fr: 'Talisman de la bête divine enragée',
     },
     locationUrl:
@@ -1271,7 +1271,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Talisman of the Dread',
       fr: "Talisman de l'Effroyable",
     },
     locationUrl:
@@ -1283,7 +1283,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Bull-Goat's Talisman",
       fr: 'Talisman du mouflon',
     },
     locationUrl:
@@ -1294,7 +1294,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Blue Dancer Charm',
       fr: 'Talisman de la danseuse bleue',
     },
     locationUrl:
@@ -1305,7 +1305,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Verdigris Discus',
       fr: 'Disque vert-de-gris',
     },
     locationUrl:
@@ -1317,7 +1317,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Magic Scorpion Charm',
       fr: 'Talisman du scorpion magique',
     },
     locationUrl:
@@ -1328,7 +1328,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Fire Scorpion Charm',
       fr: 'Talisman du scorpion de feu',
     },
     locationUrl:
@@ -1339,7 +1339,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Lightning Scorpion Charm',
       fr: 'Talisman du scorpion de foudre',
     },
     locationUrl:
@@ -1350,7 +1350,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Sacred Scorpion Charm',
       fr: 'Talisman du scorpion sacré',
     },
     locationUrl:
@@ -1361,7 +1361,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crucible Scale Talisman',
       fr: 'Talisman à écaille du Creuset',
     },
     locationUrl:
@@ -1372,7 +1372,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crucible Feather Talisman',
       fr: 'Talisman à plume du Creuset',
     },
     locationUrl:
@@ -1383,7 +1383,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crucible Knot Talisman',
       fr: 'Talisman à noeud du Creuset',
     },
     locationUrl:
@@ -1394,7 +1394,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Fine Crucible Feather Talisman',
       fr: 'Talisman à plume raffiné du Creuset',
     },
     locationUrl:
@@ -1407,7 +1407,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Talisman of All Crucibles',
       fr: 'Talisman de tous les Creusets',
     },
     locationUrl:
@@ -1419,7 +1419,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Red-Feathered Branchsword',
       fr: 'Lame cornue aux plumes rouges',
     },
     locationUrl:
@@ -1430,7 +1430,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Blue-Feathered Branchsword',
       fr: 'Lame cornue aux plumes bleues',
     },
     locationUrl:
@@ -1441,7 +1441,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Ritual Sword Talisman',
       fr: "Talisman d'épée rituelle",
     },
     locationUrl:
@@ -1452,7 +1452,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Ritual Shield Talisman',
       fr: 'Talisman de bouclier rituel',
     },
     locationUrl:
@@ -1463,7 +1463,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Assassin's Crimson Dagger",
       fr: "Dague pourpre de l'assassin",
     },
     locationUrl:
@@ -1474,7 +1474,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Assassin's Cerulean Dagger",
       fr: "Dague céruléenne de l'assassin",
     },
     locationUrl:
@@ -1485,7 +1485,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Winged Sword Insignia',
       fr: "Insigne d'épée ailée",
     },
     locationUrl:
@@ -1496,7 +1496,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Rotten Winged Sword Insignia',
       fr: "Insigne d'épée ailée putréfiée",
     },
     locationUrl:
@@ -1508,7 +1508,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Millicent's Prosthesis",
       fr: 'Prothèse de Milicent',
     },
     locationUrl:
@@ -1519,7 +1519,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Godskin Swaddling Cloth',
       fr: 'Lange sanctechair',
     },
     locationUrl:
@@ -1530,7 +1530,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Kindred of Rot's Exultation",
       fr: 'Exultation des adptes de la putréfaction',
     },
     locationUrl:
@@ -1542,7 +1542,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Lord of Blood's Exultation",
       fr: 'Exultation du seigneur du sang',
     },
     locationUrl:
@@ -1553,7 +1553,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Aged One's Exultation",
       fr: "Exultation de l'ancien",
     },
     locationUrl:
@@ -1565,7 +1565,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "St. Trina's Smile",
       fr: 'Sourire de sainte Trina',
     },
     locationUrl:
@@ -1577,7 +1577,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Blade of Mercy',
       fr: 'Lame de miséricorde',
     },
     locationUrl:
@@ -1589,7 +1589,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Taker's Cameo",
       fr: 'Camée de pillard',
     },
     locationUrl:
@@ -1600,7 +1600,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Ancestral Spirit's Horn",
       fr: "Corne de l'esprit ancestral",
     },
     locationUrl:
@@ -1611,7 +1611,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crusade Insignia',
       fr: 'Insigne de croisade',
     },
     locationUrl:
@@ -1623,7 +1623,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Dried Bouquet',
       fr: 'Bouquet séché',
     },
     locationUrl:
@@ -1635,7 +1635,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Gold Scarab',
       fr: "Scarabée d'or",
     },
     locationUrl:
@@ -1646,7 +1646,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Silver Scarab',
       fr: "Scarabée d'argent",
     },
     locationUrl:
@@ -1657,7 +1657,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Crepus's Vial",
       fr: 'Fiole de Crepus',
     },
     locationUrl:
@@ -1668,7 +1668,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Concealing Veil',
       fr: 'Cape dissimulatrice',
     },
     locationUrl:
@@ -1679,7 +1679,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Longtail Cat Talisman',
       fr: 'Talisman du chat à longue queue',
     },
     locationUrl:
@@ -1690,7 +1690,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Furled Finger's Trick-Mirror",
       fr: 'Miroir retors de Doigt crochu',
     },
     locationUrl:
@@ -1702,7 +1702,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Host's Trick-Mirror",
       fr: "Miroir retors d'hôte",
     },
     locationUrl:
@@ -1713,7 +1713,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Shabriri's Woe",
       fr: 'Malheur de Shabiri',
     },
     locationUrl:
@@ -1724,7 +1724,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: "Daedicar's Woe",
       fr: 'Malheur de Daedicar',
     },
     locationUrl:
@@ -1735,7 +1735,7 @@ export const talismans: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Sacrificial Twig',
       fr: 'Branche sacrificielle',
     },
     locationUrl:

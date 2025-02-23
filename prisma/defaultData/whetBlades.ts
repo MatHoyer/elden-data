@@ -3,7 +3,7 @@ import { TDefaultDataItem } from './defaultDataType';
 export const whetBlades: TDefaultDataItem[] = [
   {
     names: {
-      en: '',
+      en: 'Whetstone Knife',
       fr: 'Couteau à aiguiser',
     },
     locationUrl:
@@ -14,7 +14,7 @@ export const whetBlades: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Iron Whetblade',
       fr: "Lame d'affûtage en fer",
     },
     locationUrl:
@@ -25,7 +25,7 @@ export const whetBlades: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Glintstone Whetblade',
       fr: "Lame d'affûtage en pierre d'éclat",
     },
     locationUrl:
@@ -36,7 +36,7 @@ export const whetBlades: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Red-Hot Whetblade',
       fr: "Lame d'affûtage incandescente",
     },
     locationUrl:
@@ -47,7 +47,7 @@ export const whetBlades: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Sanctified Whetblade',
       fr: "Lame d'affûtage sanctifiée",
     },
     locationUrl:
@@ -58,7 +58,7 @@ export const whetBlades: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Black Whetblade',
       fr: "Lame d'affûtage noire",
     },
     locationUrl:

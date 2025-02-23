@@ -3,7 +3,7 @@ import { TDefaultDataItem } from './defaultDataType';
 export const crystalTears: TDefaultDataItem[] = [
   {
     names: {
-      en: '',
+      en: 'Crimson Crystal Tear (1)',
       fr: 'Larme de cristal pourpre (1)',
     },
     locationUrl:
@@ -14,7 +14,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crimson Crystal Tear (2)',
       fr: 'Larme de cristal pourpre (2)',
     },
     locationUrl:
@@ -25,7 +25,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crimsonspill Crystal Tear',
       fr: 'Larme de cristal pourpre fendue',
     },
     locationUrl:
@@ -36,7 +36,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crimsonburst Crystal Tear',
       fr: 'Larme de cristal pourpre fissurée',
     },
     locationUrl:
@@ -47,7 +47,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crimsonburst Dried Tear',
       fr: 'Larme séchée pourpre fendue',
     },
     locationUrl:
@@ -59,7 +59,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Cerulean Crystal Tear (1)',
       fr: 'Larme de cristal céruléenne (1)',
     },
     locationUrl:
@@ -70,7 +70,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Cerulean Crystal Tear (2)',
       fr: 'Larme de cristal céruléenne (2)',
     },
     locationUrl:
@@ -81,7 +81,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Greenspill Crystal Tear',
       fr: 'Larme de cristal verte fendue',
     },
     locationUrl:
@@ -92,7 +92,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Greenburst Crystal Tear',
       fr: 'Larme de cristal verte fissurée',
     },
     locationUrl:
@@ -103,7 +103,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Strength-knot Crystal Tear',
       fr: 'Larme de cristal noueuse de force',
     },
     locationUrl:
@@ -114,7 +114,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Dexterity-knot Crystal Tear',
       fr: 'Larme de cristal noueuse de dextérité',
     },
     locationUrl:
@@ -126,7 +126,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Intelligence-knot Crystal Tear',
       fr: "Larme de cristal noueuse d'intelligence",
     },
     locationUrl:
@@ -138,7 +138,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Faith-knot Crystal Tear',
       fr: 'Larme de cristal noueuse de foi',
     },
     locationUrl:
@@ -149,7 +149,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Opaline Hardtear',
       fr: 'Larme solidifiée opaline',
     },
     locationUrl:
@@ -160,7 +160,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Speckled Hardtear',
       fr: 'Larme solidifiée tachetée',
     },
     locationUrl:
@@ -171,7 +171,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Leaden Hardtear',
       fr: 'Larme solidifiée grise',
     },
     locationUrl:
@@ -182,7 +182,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Deflecting Hardtear',
       fr: 'Larme solidifiée de déviation',
     },
     locationUrl:
@@ -194,7 +194,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Magic-Shrouding Cracked Tear',
       fr: 'Larme fissurée voilée de magie',
     },
     locationUrl:
@@ -206,7 +206,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Flame-Shrouding Cracked Tear',
       fr: 'Larme fissurée voilée de flammes',
     },
     locationUrl:
@@ -218,7 +218,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Lightning-Shrouding Cracked Tear',
       fr: 'Larme fissurée voilée de foudre',
     },
     locationUrl:
@@ -230,7 +230,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Holy-Shrouding Cracked Tear',
       fr: 'Larme fissurée voilée de sacre',
     },
     locationUrl:
@@ -242,7 +242,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Stonebarb Cracked Tear',
       fr: 'Larme fissurée à aiguillons de pierre',
     },
     locationUrl:
@@ -253,7 +253,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Spiked Cracked Tear',
       fr: 'Larme fissurée à pointes',
     },
     locationUrl:
@@ -264,7 +264,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Thorny Cracked Tear',
       fr: 'Larme fissurée épineuse',
     },
     locationUrl:
@@ -275,7 +275,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crimson-Sapping Cracked Tear',
       fr: 'Larme pourpre fissurée de drain',
     },
     locationUrl:
@@ -288,7 +288,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Cerulean-Sapping Cracked Tear',
       fr: 'Larme céruléenne fissurée de drain',
     },
     locationUrl:
@@ -301,7 +301,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Bloodsucking Cracked Tear',
       fr: 'Larme fissurée buveuse de sang',
     },
     locationUrl:
@@ -313,7 +313,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Twiggy Cracked Tear',
       fr: 'Larme fissurée à rameaux',
     },
     locationUrl:
@@ -324,7 +324,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Winged Crystal Tear',
       fr: 'Larme de cristal ailée',
     },
     locationUrl:
@@ -335,7 +335,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Windy Crystal Tear',
       fr: 'Larme de Cristal Venteuse',
     },
     locationUrl:
@@ -346,7 +346,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Glovewort Crystal Tear',
       fr: 'Larme de cristal en forme de muguet',
     },
     locationUrl:
@@ -358,7 +358,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crimson Bubbletear',
       fr: 'Perle de cristal pourpre',
     },
     locationUrl:
@@ -369,7 +369,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Crimsonwhorl Bubbletear',
       fr: 'Perle de cristal aux volutes pourpres',
     },
     locationUrl:
@@ -380,7 +380,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Opaline Bubbletear',
       fr: 'Perle de cristal opaline',
     },
     locationUrl:
@@ -391,7 +391,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Cerulean Hidden Tear',
       fr: 'Larme secrète céruléenne',
     },
     locationUrl:
@@ -402,7 +402,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Viridian Hidden Tear',
       fr: 'Larme secrète vert émeraude',
     },
     locationUrl:
@@ -414,7 +414,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Purifying Crystal Tear',
       fr: 'Larme de cristal purificatrice',
     },
     locationUrl:
@@ -425,7 +425,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Ruptured Crystal Tear (1)',
       fr: 'Larme de cristal fissurée (1)',
     },
     locationUrl:
@@ -436,7 +436,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Ruptured Crystal Tear (2)',
       fr: 'Larme de cristal fissurée (2)',
     },
     locationUrl:
@@ -447,7 +447,7 @@ export const crystalTears: TDefaultDataItem[] = [
   },
   {
     names: {
-      en: '',
+      en: 'Oil-Soaked Tear',
       fr: 'Larme huileuse',
     },
     locationUrl:
