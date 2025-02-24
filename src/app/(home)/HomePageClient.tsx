@@ -1,5 +1,3 @@
-'use client';
-
 import { DisplayText } from '@/components/language/DisplayText';
 import { Card } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -9,13 +7,9 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { checkBoss } from '@/features/bosses/actions/check-boss.action';
-import { defaultMutationEnding } from '@/lib/utils/action-utils';
 import { getUrl, TGetUrlArgs, TRoute } from '@/lib/utils/url-utils';
 import { cn } from '@/lib/utils/utils';
-import { useMutation } from '@tanstack/react-query';
-import { useSession } from 'next-auth/react';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const ProgressBarTitle: React.FC<{
   title: { en: string; fr: string };
@@ -24,30 +18,27 @@ const ProgressBarTitle: React.FC<{
   url: TRoute;
   urlParams?: TGetUrlArgs<TRoute>;
 }> = ({ title, progress, total, url, urlParams }) => {
-  const router = useRouter();
-
   return (
-    <div
-      className="flex h-full items-center justify-center group cursor-pointer"
-      onClick={() => router.push(getUrl(url, urlParams))}
-    >
-      <div className="w-full px-10 py-3">
-        <h2 className="text-4xl group-hover:underline group-hover:text-primary transition-colors duration-200 p-5">
-          <DisplayText values={title} />
-        </h2>
-        <div className="relative w-full h-6 bg-card rounded-full overflow-hidden">
-          <p className="absolute w-full text-black">
-            {progress >= 0 && `${progress}/`}
-            {total}
-          </p>
-          <div
-            className="h-6 bg-primary"
-            style={{
-              width: progress >= 0 ? `${(progress / total) * 100}%` : '100%',
-            }}
-          />
+    <div className="flex h-full items-center justify-center group cursor-pointer">
+      <Link href={getUrl(url, urlParams)} className="w-full">
+        <div className="w-full px-10 py-3">
+          <h2 className="text-4xl group-hover:underline group-hover:text-primary transition-colors duration-200 p-5">
+            <DisplayText values={title} />
+          </h2>
+          <div className="relative w-full h-6 bg-card rounded-full overflow-hidden">
+            <p className="absolute w-full text-black">
+              {progress >= 0 && `${progress}/`}
+              {total}
+            </p>
+            <div
+              className="h-6 bg-primary"
+              style={{
+                width: progress >= 0 ? `${(progress / total) * 100}%` : '100%',
+              }}
+            />
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };
@@ -58,48 +49,48 @@ const RemembrancesCard: React.FC<{
   image: string;
   isDone: boolean;
 }> = ({ id, names, image, isDone }) => {
-  const router = useRouter();
-  const session = useSession();
+  // const router = useRouter();
+  // const session = useSession();
 
-  const toggleMutation = useMutation({
-    mutationFn: async () => {
-      const res = await checkBoss({
-        boss: {
-          id,
-        },
-      });
+  // const toggleMutation = useMutation({
+  //   mutationFn: async () => {
+  //     const res = await checkBoss({
+  //       boss: {
+  //         id,
+  //       },
+  //     });
 
-      return defaultMutationEnding({
-        res,
-        successMessage: 'Boss mis à jour',
-        cb: () => {
-          router.refresh();
-        },
-      });
-    },
-    onSuccess: () => {
-      router.refresh();
-    },
-  });
+  //     return defaultMutationEnding({
+  //       res,
+  //       successMessage: 'Boss mis à jour',
+  //       cb: () => {
+  //         router.refresh();
+  //       },
+  //     });
+  //   },
+  //   onSuccess: () => {
+  //     router.refresh();
+  //   },
+  // });
 
   return (
     <TooltipProvider>
       <Tooltip delayDuration={0}>
         <TooltipTrigger
-          onClick={(e) => {
-            e.preventDefault();
-          }}
+        // onClick={(e) => {
+        //   e.preventDefault();
+        // }}
         >
           <Card
-            onClick={
-              session.data?.user
-                ? () => {
-                    toggleMutation.mutate();
-                  }
-                : undefined
-            }
+            // onClick={
+            //   session.data?.user
+            //     ? () => {
+            //         toggleMutation.mutate();
+            //       }
+            //     : undefined
+            // }
             className={cn(
-              'flex justify-center items-center',
+              'flex justify-center items-center cursor-default',
               isDone ? 'bg-primary' : 'opacity-80'
             )}
           >
@@ -111,9 +102,9 @@ const RemembrancesCard: React.FC<{
           </Card>
         </TooltipTrigger>
         <TooltipContent
-          onPointerDownOutside={(e) => {
-            e.preventDefault();
-          }}
+          // onPointerDownOutside={(e) => {
+          //   e.preventDefault();
+          // }}
           side="bottom"
           className="text-2xl"
         >
@@ -149,19 +140,16 @@ export const HomePageClient: React.FC<{
   };
   items: { names: { en: string; fr: string }; taken: number; total: number }[];
 }> = ({ boss, items }) => {
-  const router = useRouter();
-
   return (
     <div className="space-y-5">
       <div className="grid grid-cols-[1fr_3fr]">
         <Card className="grid grid-rows-[1fr_0fr_2fr_0fr_2fr] text-center items-center w-full">
-          <div
-            className="flex h-full items-center justify-center group cursor-pointer"
-            onClick={() => router.push(getUrl('locations'))}
-          >
-            <h1 className="text-6xl p-5 group-hover:underline group-hover:text-primary transition-colors duration-200">
-              Boss
-            </h1>
+          <div className="flex h-full items-center justify-center group cursor-pointer">
+            <Link href={getUrl('locations')}>
+              <h1 className="text-6xl p-5 group-hover:underline group-hover:text-primary transition-colors duration-200">
+                Boss
+              </h1>
+            </Link>
           </div>
           <Separator className="h-1" />
           <ProgressBarTitle
