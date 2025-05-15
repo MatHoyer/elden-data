@@ -7,14 +7,16 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
+import { getUrl } from '@/lib/utils/url-utils';
 import { useMutation } from '@tanstack/react-query';
-import { BadgeCheck, Bell, CreditCard, LogOut, Sparkles } from 'lucide-react';
-import { signOut, useSession } from 'next-auth/react';
+import { BadgeCheck, LogOut, Sparkles } from 'lucide-react';
+import { signOut } from 'next-auth/react';
+import { useRouter } from 'next/navigation';
 import { PropsWithChildren } from 'react';
 import { Loader } from '../ui/loader';
 
 const UserDropdown: React.FC<PropsWithChildren> = ({ children }) => {
-  const session = useSession();
+  const router = useRouter();
 
   const mutation = useMutation({
     mutationFn: async () => {
@@ -39,17 +41,14 @@ const UserDropdown: React.FC<PropsWithChildren> = ({ children }) => {
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuItem className="cursor-pointer">
+          <DropdownMenuItem
+            className="cursor-pointer"
+            onClick={() => {
+              router.push(getUrl('account'));
+            }}
+          >
             <BadgeCheck />
             Account
-          </DropdownMenuItem>
-          <DropdownMenuItem className="cursor-pointer">
-            <CreditCard />
-            Billing
-          </DropdownMenuItem>
-          <DropdownMenuItem className="cursor-pointer">
-            <Bell />
-            Notifications
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />

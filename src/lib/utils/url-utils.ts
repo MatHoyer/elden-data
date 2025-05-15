@@ -14,6 +14,7 @@ type TRouteDataRequirements = {
   whetBlades: undefined;
   crystalTears: undefined;
   cookBooks: undefined;
+  account: undefined;
 };
 
 export type TRoute = keyof TRouteDataRequirements;
@@ -38,6 +39,7 @@ const routes: {
   whetBlades: () => '/whet-blades',
   crystalTears: () => '/crystal-tears',
   cookBooks: () => '/cook-books',
+  account: () => `/account`,
 };
 
 type TUrlParams =

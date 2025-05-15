@@ -7,7 +7,7 @@ const searchParamsSchema = z.object({
   filter: z.enum(['normal', 'dlc']).optional(),
 });
 
-const HomePage: React.FC<PageParams> = async (props) => {
+const LocationsPage: React.FC<PageParams> = async (props) => {
   const searchParams = await props.searchParams;
   const spResult = searchParamsSchema.safeParse(searchParams);
   if (!spResult.success) notFound();
@@ -41,4 +41,4 @@ const HomePage: React.FC<PageParams> = async (props) => {
   );
 };
 
-export default HomePage;
+export default LocationsPage;
