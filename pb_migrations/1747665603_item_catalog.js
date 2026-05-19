@@ -2,15 +2,6 @@
 
 migrate(
   (app) => {
-    const itemCategories = new Collection({
-      type: "base",
-      name: "item_categories",
-      listRule: "",
-      viewRule: "",
-      fields: [{ name: "inDlc", type: "bool" }],
-    });
-    app.save(itemCategories);
-
     const itemCategory = new Collection({
       type: "base",
       name: "item_category",
@@ -42,6 +33,7 @@ migrate(
         { name: "imageUrl", type: "text", required: true },
         { name: "wikiUrl", type: "text", required: true },
         { name: "locationUrl", type: "text", required: true },
+        { name: "inDlc", type: "bool" },
         {
           name: "category",
           type: "relation",
@@ -49,23 +41,12 @@ migrate(
           collectionId: itemCategory.id,
           maxSelect: 1,
         },
-        {
-          name: "categories",
-          type: "relation",
-          required: true,
-          collectionId: itemCategories.id,
-          maxSelect: 1,
-          cascadeDelete: true,
-        },
-      ],
-      indexes: [
-        "CREATE UNIQUE INDEX idx_items_categories ON items (categories)",
       ],
     });
     app.save(items);
   },
   (app) => {
-    for (const name of ["items", "item_category", "item_categories"]) {
+    for (const name of ["items", "item_category"]) {
       app.delete(app.findCollectionByNameOrId(name));
     }
   }
