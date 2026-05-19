@@ -2,3 +2,4 @@ pb_data/
 .tmp/
 node_modules/
 .pnpm-store/
+dist/
