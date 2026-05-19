@@ -29,7 +29,6 @@ migrate(
 
     const collections = {
       itemCategory: app.findCollectionByNameOrId("item_category"),
-      itemCategories: app.findCollectionByNameOrId("item_categories"),
       items: app.findCollectionByNameOrId("items"),
     };
 
@@ -44,14 +43,10 @@ migrate(
     };
 
     const createItem = (item, categoryId) => {
-      const flagsRecord = new Record(collections.itemCategories);
-      flagsRecord.set("inDlc", item.inDlc === true);
-      app.save(flagsRecord);
-
       const itemRecord = new Record(collections.items);
       itemRecord.set("slug", item.slug);
       itemRecord.set("category", categoryId);
-      itemRecord.set("categories", flagsRecord.get("id"));
+      itemRecord.set("inDlc", item.inDlc === true);
       itemRecord.set("imageUrl", item.imageUrl || "-");
       itemRecord.set("wikiUrl", item.wikiUrl || "-");
       itemRecord.set("locationUrl", item.locationUrl || "-");
@@ -119,7 +114,7 @@ migrate(
     }
   },
   (app) => {
-    for (const name of ["items", "item_category", "item_categories"]) {
+    for (const name of ["items", "item_category"]) {
       const collection = app.findCollectionByNameOrId(name);
       const records = app.findAllRecords(collection);
       for (const record of records) {
