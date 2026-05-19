@@ -1,0 +1,22 @@
+{
+  "app": {
+    "title": "Get started",
+    "editHint": "Edit <1>src/App.tsx</1> and save to test <3>HMR</3>",
+    "counter": "Count is {{count}}"
+  },
+  "docs": {
+    "title": "Documentation",
+    "subtitle": "Your questions, answered",
+    "exploreVite": "Explore Vite",
+    "learnMore": "Learn more"
+  },
+  "social": {
+    "title": "Connect with us",
+    "subtitle": "Join the Vite community"
+  },
+  "language": {
+    "switch": "Switch language",
+    "en": "English",
+    "fr": "French"
+  }
+}
