@@ -1,1078 +1,727 @@
 [
   {
-    "names": {
-      "en": "Ash of War Dryleaf Whirlwind",
-      "fr": ""
-    },
+    "slug": "ash_of_war_dryleaf_whirlwind",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Dryleaf+Whirlwind",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_dryleaf_whirlwind_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Aspects of the Crucible: Wings",
-      "fr": ""
-    },
+    "slug": "ash_of_war_aspects_of_the_crucible_wings",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Aspects+of+the+Crucible:+Wings",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_aspects_of_the_crucible_wings_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Spinning Gravity Thrust",
-      "fr": ""
-    },
+    "slug": "ash_of_war_spinning_gravity_thrust",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Spinning+Gravity+Thrust",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spinning_gravity_thrust_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Palm Blast",
-      "fr": ""
-    },
+    "slug": "ash_of_war_palm_blast",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Palm+Blast",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_palm_blast_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Piercing Throw",
-      "fr": ""
-    },
+    "slug": "ash_of_war_piercing_throw",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Piercing+Throw",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_piercing_throw_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Scattershot Throw",
-      "fr": ""
-    },
+    "slug": "ash_of_war_scattershot_throw",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Scattershot+Throw",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_scattershot_throw_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Wall of Sparks",
-      "fr": ""
-    },
+    "slug": "ash_of_war_wall_of_sparks",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Wall+of+Sparks",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_wall_of_sparks_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Rolling Sparks",
-      "fr": ""
-    },
+    "slug": "ash_of_war_rolling_sparks",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Rolling+Sparks",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_rolling_sparks_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Raging Beast",
-      "fr": ""
-    },
+    "slug": "ash_of_war_raging_beast",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Raging+Beast",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_raging_beast_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Savage Claws",
-      "fr": ""
-    },
+    "slug": "ash_of_war_savage_claws",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Savage+Claws",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_savage_claws_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Blind Spot",
-      "fr": ""
-    },
+    "slug": "ash_of_war_blind_spot",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Blind+Spot",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_blind_spot_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Swift Slash",
-      "fr": ""
-    },
+    "slug": "ash_of_war_swift_slash",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Swift+Slash",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_swift_slash_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Overhead Stance",
-      "fr": ""
-    },
+    "slug": "ash_of_war_overhead_stance",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Overhead+Stance",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_overhead_stance_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Wing Stance",
-      "fr": ""
-    },
+    "slug": "ash_of_war_wing_stance",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Wing+Stance",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_wing_stance_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Blinkbolt",
-      "fr": ""
-    },
+    "slug": "ash_of_war_blinkbolt",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Blinkbolt",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_blinkbolt_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Flame Skewer",
-      "fr": ""
-    },
+    "slug": "ash_of_war_flame_skewer",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Flame+Skewer",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_flame_skewer_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Savage Lion's Claw",
-      "fr": ""
-    },
+    "slug": "ash_of_war_savage_lions_claw",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Savage+Lion's+Claw",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_savage_lions_claw_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Divine Beast Frost Stomp",
-      "fr": ""
-    },
+    "slug": "ash_of_war_divine_beast_frost_stomp",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Divine+Beast+Frost+Stomp",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_divine_beast_frost_stomp_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Flame Spear",
-      "fr": ""
-    },
+    "slug": "ash_of_war_flame_spear",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Flame+Spear",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_flame_spear_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Carian Sovereignty",
-      "fr": ""
-    },
+    "slug": "ash_of_war_carian_sovereignty",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Carian+Sovereignty",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_sovereignty_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Shriek of Sorrow",
-      "fr": ""
-    },
+    "slug": "ash_of_war_shriek_of_sorrow",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Shriek+of+Sorrow",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_shriek_of_sorrow_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Ghostflame Call",
-      "fr": ""
-    },
+    "slug": "ash_of_war_ghostflame_call",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War%3A+Ghostflame+Call",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_ghostflame_call_1_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War The Poison Flower Blooms Twice",
-      "fr": ""
-    },
+    "slug": "ash_of_war_the_poison_flower_blooms_twice",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War%3A+The+Poison+Flower+Blooms+Twice",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_the_poison_flower_blooms_twice_1_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Igon's Drake Hunt",
-      "fr": ""
-    },
+    "slug": "ash_of_war_igons_drake_hunt",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War+Igon's+Drake+Hunt",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_igons_drake_hunt_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War Shield Strike",
-      "fr": ""
-    },
+    "slug": "ash_of_war_shield_strike",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War%3A+Shield+Strike",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_shield_strike_3_ashes_of_war_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png",
     "inDlc": true
   },
   {
-    "names": {
-      "en": "Ash of War: Storm Stomp",
-      "fr": ""
-    },
+    "slug": "ash_of_war_storm_stomp",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Storm+Stomp",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_storm_stomp_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Repeating Thrust",
-      "fr": ""
-    },
+    "slug": "ash_of_war_repeating_thrust",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Repeating+Thrust",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_repeating_thrust_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Gravitas",
-      "fr": ""
-    },
+    "slug": "ash_of_war_gravitas",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Gravitas",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_gravitas_elden_ring_wiki_guide_200.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Stamp (Sweep)",
-      "fr": ""
-    },
+    "slug": "ash_of_war_stamp_sweep",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Stamp+(Sweep)",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_stamp_sweep_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Unsheathe",
-      "fr": ""
-    },
+    "slug": "ash_of_war_unsheathe",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Unsheathe",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_unsheathe_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Mighty Shot",
-      "fr": ""
-    },
+    "slug": "ash_of_war_mighty_shot",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Mighty+Shot",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_mighty_shot_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Golden Vow",
-      "fr": ""
-    },
+    "slug": "ash_of_war_golden_vow",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Golden+Vow",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_golden_vow_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Sacred Blade",
-      "fr": ""
-    },
+    "slug": "ash_of_war_sacred_blade",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Sacred+Blade",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_sacred_blade_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Stamp (Upward Cut)",
-      "fr": ""
-    },
+    "slug": "ash_of_war_stamp_upward_cut",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Stamp+(Upward+Cut)",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_stamp_upward_%20cut_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Kick",
-      "fr": ""
-    },
+    "slug": "ash_of_war_kick",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Kick",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_kick_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Endure",
-      "fr": ""
-    },
+    "slug": "ash_of_war_endure",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Endure",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_endure_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: War Cry",
-      "fr": ""
-    },
+    "slug": "ash_of_war_war_cry",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+War+Cry",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_war_cry_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Spinning Slash",
-      "fr": ""
-    },
+    "slug": "ash_of_war_spinning_slash",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Slash",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spinning_slash_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Impaling Thrust",
-      "fr": ""
-    },
+    "slug": "ash_of_war_impaling_thrust",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Impaling+Thrust",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_impaling_thrust_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Quickstep",
-      "fr": ""
-    },
+    "slug": "ash_of_war_quickstep",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Quickstep",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_quickstep_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Storm Blade",
-      "fr": ""
-    },
+    "slug": "ash_of_war_storm_blade",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Storm+Blade",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_storm_blade_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Parry",
-      "fr": ""
-    },
+    "slug": "ash_of_war_parry",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Parry",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_parry_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: No Skill",
-      "fr": ""
-    },
+    "slug": "ash_of_war_no_skill",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+No+Skill",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_no_skill_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Glintstone Pebble",
-      "fr": ""
-    },
+    "slug": "ash_of_war_glintstone_pebble",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Glintstone+Pebble",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_glintstone_pebble_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Spinning Weapon",
-      "fr": ""
-    },
+    "slug": "ash_of_war_spinning_weapon",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Weapon",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spinning_weapon_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Wild Strikes",
-      "fr": ""
-    },
+    "slug": "ash_of_war_wild_strikes",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Wild+Strikes",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_wild_strikes_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Storm Wall",
-      "fr": ""
-    },
+    "slug": "ash_of_war_storm_wall",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Storm+Wall",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_storm_wall_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Bloody Slash",
-      "fr": ""
-    },
+    "slug": "ash_of_war_bloody_slash",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Bloody+Slash",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_bloody_slash_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Ground Slam",
-      "fr": ""
-    },
+    "slug": "ash_of_war_ground_slam",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Ground+Slam",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_ground_slam_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Spectral Lance",
-      "fr": ""
-    },
+    "slug": "ash_of_war_spectral_lance",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Spectral+Lance",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spectral_lance_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Charge Forth",
-      "fr": ""
-    },
+    "slug": "ash_of_war_charge_forth",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Charge+Forth",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_charge_forth_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Square Off",
-      "fr": ""
-    },
+    "slug": "ash_of_war_square_off",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Square+Off",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_square_off_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Sacred Order",
-      "fr": ""
-    },
+    "slug": "ash_of_war_sacred_order",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Sacred+Order",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_sacred_order_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Lifesteal Fist",
-      "fr": ""
-    },
+    "slug": "ash_of_war_lifesteal_fist",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Lifesteal+Fist",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lifesteal_fist_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Barrage",
-      "fr": ""
-    },
+    "slug": "ash_of_war_barrage",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Barrage",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_barrage_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Prayerful Strike",
-      "fr": ""
-    },
+    "slug": "ash_of_war_prayerful_strike",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Prayerful+Strike",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_prayerful_strike_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Lightning Slash",
-      "fr": ""
-    },
+    "slug": "ash_of_war_lightning_slash",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Lightning+Slash",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lightning_slash_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Giant Hunt",
-      "fr": ""
-    },
+    "slug": "ash_of_war_giant_hunt",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Giant+Hunt",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_giant_hunt_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Sword Dance",
-      "fr": ""
-    },
+    "slug": "ash_of_war_sword_dance",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Sword+Dance",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_sword_dance_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Vow of the Indomitable",
-      "fr": ""
-    },
+    "slug": "ash_of_war_vow_of_the_indomitable",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Vow+of+the+Indomitable",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_vow_of_the_indomitable_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Beast's Roar",
-      "fr": ""
-    },
+    "slug": "ash_of_war_beasts_roar",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Beast's+Roar",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_beasts_roar_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Carian Grandeur",
-      "fr": ""
-    },
+    "slug": "ash_of_war_carian_grandeur",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Grandeur",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_grandeur_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Loretta's Slash",
-      "fr": ""
-    },
+    "slug": "ash_of_war_lorettas_slash",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Loretta's+Slash",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lorettas_slash_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Hoarfrost Stomp",
-      "fr": ""
-    },
+    "slug": "ash_of_war_hoarfrost_stomp",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Hoarfrost+Stomp",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_hoarfrost_stomp_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Thops's Barrier",
-      "fr": ""
-    },
+    "slug": "ash_of_war_thopss_barrier",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Thops's+Barrier",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_thopss_barrier_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Chilling Mist",
-      "fr": ""
-    },
+    "slug": "ash_of_war_chilling_mist",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Chilling+Mist",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_chilling_mist_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Lightning Ram",
-      "fr": ""
-    },
+    "slug": "ash_of_war_lightning_ram",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Lightning+Ram",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lightning_ram_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Lion's Claw",
-      "fr": ""
-    },
+    "slug": "ash_of_war_lions_claw",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Lion's+Claw",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_lions_claw_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Flaming Strike",
-      "fr": ""
-    },
+    "slug": "ash_of_war_flaming_strike",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flaming+Strike",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_flaming_strike_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Determination",
-      "fr": ""
-    },
+    "slug": "ash_of_war_determination",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Determination",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_determination_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Lost Ashes of War",
-      "fr": ""
-    },
+    "slug": "lost_ashes_of_war",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Lost+Ashes+of+War",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lost_ashes_of_war_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Glintblade Phalanx",
-      "fr": ""
-    },
+    "slug": "ash_of_war_glintblade_phalanx",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Glintblade+Phalanx",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_glintblade_phalanx_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Poison Moth Flight",
-      "fr": ""
-    },
+    "slug": "ash_of_war_poison_moth_flight",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Poison+Moth+Flight",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_poison_moth_flight_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Poisonous Mist",
-      "fr": ""
-    },
+    "slug": "ash_of_war_poisonous_mist",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Poisonous+Mist",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_poisonous_mist_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Sacred Ring of Light",
-      "fr": ""
-    },
+    "slug": "ash_of_war_sacred_ring_of_light",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Sacred+Ring+of+Light",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_sacred_ring_of_light_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Eruption",
-      "fr": ""
-    },
+    "slug": "ash_of_war_eruption",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Eruption",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_eruption_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Assassin's Gambit",
-      "fr": ""
-    },
+    "slug": "ash_of_war_assassins_gambit",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Assassin's+Gambit",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_assassins_gambit_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Seppuku",
-      "fr": ""
-    },
+    "slug": "ash_of_war_seppuku",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Seppuku",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_seppuku_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Black Flame Tornado",
-      "fr": ""
-    },
+    "slug": "ash_of_war_black_flame_tornado",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Black+Flame+Tornado",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_black_flame_tornado_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Hoarah Loux's Earthshaker",
-      "fr": ""
-    },
+    "slug": "ash_of_war_hoarah_louxs_earthshaker",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Hoarah+Loux's+Earthshaker",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_hoarah_louxs_earthshaker_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Enchanted Shot",
-      "fr": ""
-    },
+    "slug": "ash_of_war_enchanted_shot",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Enchanted+Shot",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_enchanted_shot_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Barricade Shield",
-      "fr": ""
-    },
+    "slug": "ash_of_war_barricade_shield",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Barricade+Shield",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_barricade_shield_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Golden Land",
-      "fr": ""
-    },
+    "slug": "ash_of_war_golden_land",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Golden+Land",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_golden_land_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Carian Retaliation",
-      "fr": ""
-    },
+    "slug": "ash_of_war_carian_retaliation",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Retaliation",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_retaliation_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Waves of Darkness",
-      "fr": ""
-    },
+    "slug": "ash_of_war_waves_of_darkness",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Waves+of+Darkness",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_waves_of_darkness_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Ice Spear",
-      "fr": ""
-    },
+    "slug": "ash_of_war_ice_spear",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Ice+Spear",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_ice_spear_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Double Slash",
-      "fr": ""
-    },
+    "slug": "ash_of_war_double_slash",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Double+Slash",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_double_slash_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Vacuum Slice",
-      "fr": ""
-    },
+    "slug": "ash_of_war_vacuum_slice",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Vacuum+Slice",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_vacuum_slice_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Stormcaller",
-      "fr": ""
-    },
+    "slug": "ash_of_war_stormcaller",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Stormcaller",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_stormcaller_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Piercing Fang",
-      "fr": ""
-    },
+    "slug": "ash_of_war_piercing_fang",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Piercing+Fang",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_piercing_fang_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Blood Tax",
-      "fr": ""
-    },
+    "slug": "ash_of_war_blood_tax",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Blood+Tax",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_blood_tax_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Spinning Strikes",
-      "fr": ""
-    },
+    "slug": "ash_of_war_spinning_strikes",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Spinning+Strikes",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_spinning_strikes_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Prelate's Charge",
-      "fr": ""
-    },
+    "slug": "ash_of_war_prelates_charge",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Prelate's+Charge",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_prelates_charge_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Storm Assault",
-      "fr": ""
-    },
+    "slug": "ash_of_war_storm_assault",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Storm+Assault",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_storm_assault_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Earthshaker",
-      "fr": ""
-    },
+    "slug": "ash_of_war_earthshaker",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Earthshaker",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_earthshaker_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Thunderbolt",
-      "fr": ""
-    },
+    "slug": "ash_of_war_thunderbolt",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Thunderbolt",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_thunderbolt_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Carian Greatsword",
-      "fr": ""
-    },
+    "slug": "ash_of_war_carian_greatsword",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Carian+Greatsword",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_carian_greatsword_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Royal Knight's Resolve",
-      "fr": ""
-    },
+    "slug": "ash_of_war_royal_knights_resolve",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Royal+Knight's+Resolve",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_royal_knights_resolve_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Blood Blade",
-      "fr": ""
-    },
+    "slug": "ash_of_war_blood_blade",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Blood+Blade",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_blood_blade_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Phantom Slash",
-      "fr": ""
-    },
+    "slug": "ash_of_war_phantom_slash",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Phantom+Slash",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_phantom_slash_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Shield Bash",
-      "fr": ""
-    },
+    "slug": "ash_of_war_shield_bash",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Shield+Bash",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_shield_bash_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Golden Parry",
-      "fr": ""
-    },
+    "slug": "ash_of_war_golden_parry",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Golden+Parry",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_golden_parry_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Shield Crash",
-      "fr": ""
-    },
+    "slug": "ash_of_war_shield_crash",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Shield+Crash",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_shield_crash_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Through and Through",
-      "fr": ""
-    },
+    "slug": "ash_of_war_through_and_through",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Through+and+Through",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_through_and_through_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Sky Shot",
-      "fr": ""
-    },
+    "slug": "ash_of_war_sky_shot",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Sky+Shot",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_sky_shot_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Rain of Arrows",
-      "fr": ""
-    },
+    "slug": "ash_of_war_rain_of_arrows",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Rain+of+Arrows",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_rain_of_arrows_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Flame of the Redmanes",
-      "fr": ""
-    },
+    "slug": "ash_of_war_flame_of_the_redmanes",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Flame+of+the+Redmanes",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_flame_of_the_redmanes_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Golden Slam",
-      "fr": ""
-    },
+    "slug": "ash_of_war_golden_slam",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Golden+Slam",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_golden_slam_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Shared Order",
-      "fr": ""
-    },
+    "slug": "ash_of_war_shared_order",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Shared+Order",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_shared_order_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Cragblade",
-      "fr": ""
-    },
+    "slug": "ash_of_war_cragblade",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Cragblade",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_cragblade_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Barbaric Roar",
-      "fr": ""
-    },
+    "slug": "ash_of_war_barbaric_roar",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Barbaric+Roar",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_barbaric_roar_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Troll's Roar",
-      "fr": ""
-    },
+    "slug": "ash_of_war_trolls_roar",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Troll's+Roar",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_troll%27s_roar_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Braggart's Roar",
-      "fr": ""
-    },
+    "slug": "ash_of_war_braggarts_roar",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Braggart's+Roar",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_braggart%27s_roar_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Holy Ground",
-      "fr": ""
-    },
+    "slug": "ash_of_war_holy_ground",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Holy+Ground",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_holy_ground_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Bloodhound's Step",
-      "fr": ""
-    },
+    "slug": "ash_of_war_bloodhounds_step",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Bloodhound's+Step",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_bloodhounds_step_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: Raptor of the Mists",
-      "fr": ""
-    },
+    "slug": "ash_of_war_raptor_of_the_mists",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+Raptor+of+the+Mists",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_raptor_of_the_mists_elden_ring_wiki_guide_200px.png"
   },
   {
-    "names": {
-      "en": "Ash of War: White Shadow's Lure",
-      "fr": ""
-    },
+    "slug": "ash_of_war_white_shadows_lure",
     "locationUrl": "",
     "wikiUrl": "https://eldenring.wiki.fextralife.com/Ash+of+War:+White+Shadow's+Lure",
     "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash_of_war_white_shadows_lure_elden_ring_wiki_guide_200px.png"

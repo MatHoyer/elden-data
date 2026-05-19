@@ -1,42 +1,12 @@
 [
-  {
-    "en": "Armors",
-    "fr": "Armures"
-  },
-  {
-    "en": "Weapons",
-    "fr": "Armes"
-  },
-  {
-    "en": "Shields",
-    "fr": "Boucliers"
-  },
-  {
-    "en": "Spells",
-    "fr": "Sorts"
-  },
-  {
-    "en": "Whet blades",
-    "fr": "Lames d'affûtage"
-  },
-  {
-    "en": "Crystal tears",
-    "fr": "Larmes de cristal"
-  },
-  {
-    "en": "Spirit ashes",
-    "fr": "Invocations"
-  },
-  {
-    "en": "Cook books",
-    "fr": "Manuels"
-  },
-  {
-    "en": "Talismans",
-    "fr": "Talismans"
-  },
-  {
-    "en": "Ashes of war",
-    "fr": "Cendres de guerre"
-  }
+  { "slug": "armors" },
+  { "slug": "weapons" },
+  { "slug": "shields" },
+  { "slug": "spells" },
+  { "slug": "whet_blades" },
+  { "slug": "crystal_tears" },
+  { "slug": "spirit_ashes" },
+  { "slug": "cook_books" },
+  { "slug": "talismans" },
+  { "slug": "ashes_of_war" }
 ]

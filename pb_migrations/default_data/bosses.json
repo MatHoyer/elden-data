@@ -1,2808 +1,2367 @@
 {
   "locations": [
     {
-      "names": {
-        "en": "Chapel of Anticipation",
-        "fr": "Chapelle de l'anticipation"
-      },
+      "slug": "chapel_of_anticipation",
       "bosses": [
         {
-          "names": {
-            "en": "Grafted Scion",
-            "fr": "Rejeton greffé"
-          },
+          "slug": "grafted_scion",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164433",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Grafted+Scion",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/er_grafted_scion.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/er_grafted_scion.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Limgrave",
-        "fr": "Nécrolimbe"
-      },
+      "slug": "limgrave",
       "bosses": [
         {
-          "names": {
-            "en": "Soldier of Godrick",
-            "fr": "Soldat de Godrick"
-          },
+          "slug": "soldier_of_godrick",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164420",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Soldier+of+Godrick",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/soldier-of-godrick-boss-elden-rings.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/soldier-of-godrick-boss-elden-rings.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ulcerated Tree Spirit",
-            "fr": "Esprit d'arbre ulcéreux"
-          },
+          "slug": "ulcerated_tree_spirit",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164143",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Tree Sentinel",
-            "fr": "Sentinelle de l'Arbre"
-          },
+          "slug": "tree_sentinel",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164444",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Tree+Sentinel",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-sentinel-3.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-sentinel-3.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "2x Demi-Human Chief",
-            "fr": "2x Chef semi-humain"
-          },
+          "slug": "2x_demihuman_chief",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164457",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Demi-Human+Chief",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demihuman-chief-boss-enemy-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demihuman-chief-boss-enemy-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Erdtree Burial Watchdog",
-            "fr": "Veilleur de l'Arbre-Monde"
-          },
+          "slug": "erdtree_burial_watchdog",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164467",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Beastman of Farum Azula",
-            "fr": "Homme-bête de Farum Azula"
-          },
+          "slug": "beastman_of_farum_azula",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164472",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Beastman+of+Farum+Azula",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastman-of-farum-azula-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastman-of-farum-azula-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Flying Dragon Agheel",
-            "fr": "Agheel le dragon volant"
-          },
+          "slug": "flying_dragon_agheel",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164484",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Flying+Dragon+Agheel",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/flying_dragon_agheel_2_bosses_elden_ring_wiki_600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/flying_dragon_agheel_2_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Stonedigger Troll",
-            "fr": "Troll fouisseur"
-          },
+          "slug": "stonedigger_troll",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164478",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Stonedigger+Troll",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/stonedigger_troll_bosses_elden_ring_wiki_600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/stonedigger_troll_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Patches",
-            "fr": "Pat"
-          },
+          "slug": "patches",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164504",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Patches",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/patches-npc-photo-elden-ring-wiki-guide-300px-min.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/patches-npc-photo-elden-ring-wiki-guide-300px-min.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Grave Warden Duelist",
-            "fr": "Duelliste gardien du tombeau"
-          },
+          "slug": "grave_warden_duelist",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164499",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Grave+Warden+Duelist",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-warden-duelist-3.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-warden-duelist-3.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Night's Cavalry",
-            "fr": "Cavalier crépusculaire"
-          },
+          "slug": "nights_cavalry",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164488",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-limgrave.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-limgrave.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Mad Pumpkin Head",
-            "fr": "Tête de citrouille démente"
-          },
+          "slug": "mad_pumpkin_head",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164490",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Mad+Pumpkin+Head",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mad-pumpkin-head.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mad-pumpkin-head.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Bloodhound Knight Darriwil",
-            "fr": "Darriwil, Chevalier-limier"
-          },
+          "slug": "bloodhound_knight_darriwil",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164486",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Bloodhound+Knight+Darriwil",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound-knight-darriwil-boss-enemy-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound-knight-darriwil-boss-enemy-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Crucible Knight",
-            "fr": "Chevalier du Creuset"
-          },
+          "slug": "crucible_knight",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164476",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Crucible+Knight",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-stormhill-1.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-stormhill-1.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Bell Bearing Hunter",
-            "fr": "Chasseur de perles cinéraires"
-          },
+          "slug": "bell_bearing_hunter",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165725",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Bell+Bearing+Hunter",
-          "categories": {
-            "inNight": true,
-            "needBell": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg",
+          "inNight": true,
+          "needBell": true,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Deathbird",
-            "fr": "Rapace funeste"
-          },
+          "slug": "deathbird",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165457",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Deathbird",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-bird-limgrave.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-bird-limgrave.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Black Knife Assassin",
-            "fr": "Assassin des Couteaux noirs"
-          },
+          "slug": "black_knife_assassin",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164530",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Black+Knife+Assassin",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-limgrave-2.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-limgrave-2.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Guardian Golem",
-            "fr": "Golem gardien"
-          },
+          "slug": "guardian_golem",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164509",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Guardian+Golem",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/guardian-golem-field-boss-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/guardian-golem-field-boss-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Tibia Mariner",
-            "fr": "Nocher diaphane"
-          },
+          "slug": "tibia_mariner",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164859",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Tibia+Mariner",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibia-mariner-limgrave-small.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibia-mariner-limgrave-small.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Margit the Fell Omen",
-            "fr": "Margit le Déchu"
-          },
+          "slug": "margit_the_fell_omen",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=163938",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Margit+the+Fell+Omen",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/margit-3-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/margit-3-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Godrick the Grafted",
-            "fr": "Godrick le Greffé"
-          },
+          "slug": "godrick_the_grafted",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164421",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Godrick+the+Grafted",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_the_grafted_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Grafted",
-              "fr": "Souvenir du Greffé"
-            },
+            "slug": "remembrance_of_the_grafted",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_grafted_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godrick_the_grafted_bosses_elden_ring_wiki_600px.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Weeping Peninsula",
-        "fr": "Péninsule Larmoyante"
-      },
+      "slug": "weeping_peninsula",
       "bosses": [
         {
-          "names": {
-            "en": "Night's Cavalry",
-            "fr": "Cavalier crépusculaire"
-          },
+          "slug": "nights_cavalry",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164659",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-weeping-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-weeping-elden-ring-wiki.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Erdtree Burial Watchdog",
-            "fr": "Veilleur de l'Arbre-Monde"
-          },
+          "slug": "erdtree_burial_watchdog",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165949",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Runebear",
-            "fr": "Ours runique"
-          },
+          "slug": "runebear",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165462",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Runebear",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/runebear_bosses_elden_ring_wiki_guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/runebear_bosses_elden_ring_wiki_guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Scaly Misbegotten",
-            "fr": "Chimère écailleuse"
-          },
+          "slug": "scaly_misbegotten",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165453",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Scaly+Misbegotten",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/scaly_misbegotten.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/scaly_misbegotten.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Erdtree Avatar",
-            "fr": "Avatar de l'Arbre-Monde"
-          },
+          "slug": "erdtree_avatar",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165321",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Erdtree+Avatar",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-weeping-peninsula-elden-rink-wiki-guide-2.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-weeping-peninsula-elden-rink-wiki-guide-2.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Cemetery Shade",
-            "fr": "Ombre du cimetière"
-          },
+          "slug": "cemetery_shade",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165317",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Cemetery+Shade",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cemetery_shade_bosses_elden_ring_wiki_600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cemetery_shade_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ancient Hero of Zamor",
-            "fr": "Ancien héros de Zamor"
-          },
+          "slug": "ancient_hero_of_zamor",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165411",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ancient+Hero+of+Zamor",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient-hero-of-zamor-weeping-evergaol-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient-hero-of-zamor-weeping-evergaol-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Miranda the Blighted Bloom",
-            "fr": "Fleur de Miranda"
-          },
+          "slug": "miranda_the_blighted_bloom",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165743",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Miranda+the+Blighted+Bloom",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/miranda-the-blighted-bloom-field-boss-elden-ring-wiki-guide-300px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/miranda-the-blighted-bloom-field-boss-elden-ring-wiki-guide-300px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Deathbird",
-            "fr": "Rapace funeste"
-          },
+          "slug": "deathbird",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166054",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Deathbird",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-bird-weeping-peninsula.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-bird-weeping-peninsula.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Leonine Misbegotten",
-            "fr": "Chimère léonine"
-          },
+          "slug": "leonine_misbegotten",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164812",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Leonine+Misbegotten",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/leonine_misbegotten_bosses_elden_ring_wiki_600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/leonine_misbegotten_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         }
       ]
     },
     {
-      "names": {
-        "en": "Siofra River (Down)",
-        "fr": "La Siofra (Bas)"
-      },
+      "slug": "siofra_river_down",
       "bosses": [
         {
-          "names": {
-            "en": "Ancestor Spirit",
-            "fr": "Esprit ancestral"
-          },
+          "slug": "ancestor_spirit",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167775",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ancestor+Spirit",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancestor_spirit1-min.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancestor_spirit1-min.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         }
       ]
     },
     {
-      "names": {
-        "en": "Liurnia of the Lakes (South)",
-        "fr": "Liurnia (Sud)"
-      },
+      "slug": "liurnia_of_the_lakes_south",
       "bosses": [
         {
-          "names": {
-            "en": "Cleanrot Knight",
-            "fr": "Chevalier de la Noble putréfaction"
-          },
+          "slug": "cleanrot_knight",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166386",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Cleanrot+Knight",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot-knight-6-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot-knight-6-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Erdtree Burial Watchdog",
-            "fr": "Veilleur de l'Arbre-Monde"
-          },
+          "slug": "erdtree_burial_watchdog",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168517",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-burial-watchdog-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-burial-watchdog-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Night's Cavalry",
-            "fr": "Cavalier crépusculaire"
-          },
+          "slug": "nights_cavalry",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166181",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-4-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-4-hq-elden-ring-wiki-guide.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Tibia Mariner",
-            "fr": "Nocher diaphane"
-          },
+          "slug": "tibia_mariner",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166619",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Tibia+Mariner",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibia-mariner-liurnia.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibia-mariner-liurnia.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Bloodhound Knight",
-            "fr": "Chevalier-limier"
-          },
+          "slug": "bloodhound_knight",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168523",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Bloodhound+Knight",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhunt-knight-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhunt-knight-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Adan, Thief of Fire",
-            "fr": "Adan le Voleur du Feu"
-          },
+          "slug": "adan_thief_of_fire",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166505",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Adan,+Thief+of+Fire",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/adan-thief-of-fire-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/adan-thief-of-fire-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Deathbird",
-            "fr": "Rapace funeste"
-          },
+          "slug": "deathbird",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165597",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Deathbird",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbird-2-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbird-2-elden-ring-wiki-guide.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Omenkiller",
-            "fr": "Tueur de Réprouvés"
-          },
+          "slug": "omenkiller",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166426",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Omenkiller",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller-3-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller-3-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Erdtree Avatar",
-            "fr": "Avatar de l'Arbre-Monde"
-          },
+          "slug": "erdtree_avatar",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165594",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Erdtree+Avatar",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Spiritcaller Snail",
-            "fr": "Escargot mande-spectre"
-          },
+          "slug": "spiritcaller_snail",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166749",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Spirit-caller+Snail",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/spirit-caller-snail-2-hq-enemy-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/spirit-caller-snail-2-hq-enemy-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Bols, Carian Knight",
-            "fr": "Bols, chevalier de Caria"
-          },
+          "slug": "bols_carian_knight",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167325",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Bols,+Carian+Knight",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bols-carian-knight-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bols-carian-knight-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Glintstone Dragon Smarag",
-            "fr": "Smarag, dragon de pierre d'éclat"
-          },
+          "slug": "glintstone_dragon_smarag",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165267",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Glintstone+Dragon+Smarag",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone-dragon-smarag-2-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone-dragon-smarag-2-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Crystalian (Spear) & Crystalian (Staff)",
-            "fr": "Lancier cristalien & Sorcier cristalien"
-          },
+          "slug": "crystalian_spear_crystalian_staff",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166455",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Crystalians",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystallian-6-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystallian-6-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Death Rite Bird",
-            "fr": "Volatile funéraire"
-          },
+          "slug": "death_rite_bird",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166501",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Death+Rite+Bird",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-3-hq-elden-ring-wiki-guide.jpg?v=1664766957687"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-3-hq-elden-ring-wiki-guide.jpg?v=1664766957687",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Red Wolf of Radagon",
-            "fr": "Loup cramoisi de Radagon"
-          },
+          "slug": "red_wolf_of_radagon",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165697",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Red+Wolf+of+Radagon",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red_wolf_of_radagon_1_bosses_elden_ring_wiki_600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red_wolf_of_radagon_1_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Rennala, Queen of the Full Moon",
-            "fr": "Rennala, reine de la pleine lune"
-          },
+          "slug": "rennala_queen_of_the_full_moon",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=164430",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Rennala,+Queen+of+the+Full+Moon",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rennala_queen_of_the_full_moon_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Full Moon Queen",
-              "fr": "Souvenir de la reine de la pleine lune"
-            },
+            "slug": "remembrance_of_the_full_moon_queen",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_full_moon_queen_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rennala_queen_of_the_full_moon_bosses_elden_ring_wiki_600px.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Ainsel River",
-        "fr": "L'Ainsel"
-      },
+      "slug": "ainsel_river",
       "bosses": [
         {
-          "names": {
-            "en": "Dragonkin Soldier of Nokstella",
-            "fr": "Soldat draconide de Nokstella"
-          },
+          "slug": "dragonkin_soldier_of_nokstella",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167625",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Dragonkin+Soldier+of+Nokstella",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonkin-soldier-nokstella-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonkin-soldier-nokstella-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         }
       ]
     },
     {
-      "names": {
-        "en": "Liurnia of the Lakes (North)",
-        "fr": "Liurnia (Nord)"
-      },
+      "slug": "liurnia_of_the_lakes_north",
       "bosses": [
         {
-          "names": {
-            "en": "Crystalian",
-            "fr": "Cristalien"
-          },
+          "slug": "crystalian",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166381",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Crystalians",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystallian-4-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystallian-4-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Bell Bearing Hunter",
-            "fr": "Chasseur de perles cinéraires"
-          },
+          "slug": "bell_bearing_hunter",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165744",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Bell+Bearing+Hunter",
-          "categories": {
-            "inNight": true,
-            "needBell": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg",
+          "inNight": true,
+          "needBell": true,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Cemetery Shade",
-            "fr": "Ombre du cimetière"
-          },
+          "slug": "cemetery_shade",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166484",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Cemetery+Shade",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cemetary-shade-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cemetary-shade-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Black Knife Assassin",
-            "fr": "Assassin des Couteaux noirs"
-          },
+          "slug": "black_knife_assassin",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166482",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Black+Knife+Assassin",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-black-knife-catacombs-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-black-knife-catacombs-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Erdtree Avatar",
-            "fr": "Avatar de l'Arbre-Monde"
-          },
+          "slug": "erdtree_avatar",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165595",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Erdtree+Avatar",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-3-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-3-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Night's Cavalry",
-            "fr": "Cavalier crépusculaire"
-          },
+          "slug": "nights_cavalry",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166645",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Royal Revenant",
-            "fr": "Spectre royal"
-          },
+          "slug": "royal_revenant",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166772",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Royal+Revenant",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal-revenant-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal-revenant-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Royal Knight Loretta",
-            "fr": "Loretta, chevaleresse royale"
-          },
+          "slug": "royal_knight_loretta",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165490",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Royal+Knight+Loretta",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_knight_loretta_bosses_elden_ring_wiki_guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/royal_knight_loretta_bosses_elden_ring_wiki_guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Onyx Lord",
-            "fr": "Seigneur d'onyx"
-          },
+          "slug": "onyx_lord",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166766",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Onyx+Lord",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/onyx-lord-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/onyx-lord-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Caelid",
-        "fr": "Caelid"
-      },
+      "slug": "caelid",
       "bosses": [
         {
-          "names": {
-            "en": "Putrid Avatar",
-            "fr": "Avatar putride"
-          },
+          "slug": "putrid_avatar",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166512",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Putrid+Avatar",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Erdtree Burial Watchdog (Scepter) & Erdtree Burial Watchdog (Sword)",
-            "fr": "Veilleur sorcier de l'Arbre-Monde & Veilleur épéiste de l'Arbre-Monde"
-          },
+          "slug": "erdtree_burial_watchdog_scepter_erdtree_burial_watchdog_sword",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166671",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/burial_watchdog_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Mad Pumpkin Head (Hammer) & Mad Pumpkin Head (Flail)",
-            "fr": "Tête de citrouille démente au marteau & Tête de citrouille démente au fléau d'armes"
-          },
+          "slug": "mad_pumpkin_head_hammer_mad_pumpkin_head_flail",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166738",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Mad+Pumpkin+Head",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/boss-mad-pumpkin-heads-01-elden-ring-wiki-600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/boss-mad-pumpkin-heads-01-elden-ring-wiki-600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Magma Wyrm",
-            "fr": "Dragon du magma"
-          },
+          "slug": "magma_wyrm",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167222",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Magma+Wyrm",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/magma_wyrm_bosses_elden_ring_wiki_guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/magma_wyrm_bosses_elden_ring_wiki_guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Cleanrot Knight (Sickle) & Cleanrot Knight (Spear)",
-            "fr": "Chevalier faucheur de la Noble putréfaction & Chevalier lancier de la Noble putréfaction"
-          },
+          "slug": "cleanrot_knight_sickle_cleanrot_knight_spear",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168213",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Cleanrot+Knight",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot-knight-5-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cleanrot-knight-5-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Frenzied Duelist",
-            "fr": "Duelliste frénétique"
-          },
+          "slug": "frenzied_duelist",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168033",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Frenzied+Duelist",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/frenzied-duelist-axe-elden-ring-wiki-guide-300px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/frenzied-duelist-axe-elden-ring-wiki-guide-300px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Decaying Ekzykes",
-            "fr": "Ekzykes le Putréfié"
-          },
+          "slug": "decaying_ekzykes",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165933",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Decaying+Ekzykes",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/decaying_ekzykes_bosses_elden_ring_wiki_guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/decaying_ekzykes_bosses_elden_ring_wiki_guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Night's Cavalry",
-            "fr": "Cavalier crépusculaire"
-          },
+          "slug": "nights_cavalry",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166477",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-6-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-6-hq-elden-ring-wiki-guide.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Cemetery Shade",
-            "fr": "Ombre du cimetière"
-          },
+          "slug": "cemetery_shade",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168518",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Cemetery+Shade",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cemetery_shade_bosses_elden_ring_wiki_600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cemetery_shade_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Crucible Knight & Misbegotten Warrior",
-            "fr": "Chevalier du Creuset & Chimère léonine"
-          },
+          "slug": "crucible_knight_misbegotten_warrior",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166176",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Crucible+Knight+&+Misbegotten+Warrior",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-and-misbegotten-warrior-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-and-misbegotten-warrior-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Death Rite Bird",
-            "fr": "Volatile funéraire"
-          },
+          "slug": "death_rite_bird",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167019",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Death+Rite+Bird",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-4-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-4-hq-elden-ring-wiki-guide.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Commander O'Neil",
-            "fr": "Commandant O'Neil"
-          },
+          "slug": "commander_oneil",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166073",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Commander+O'Neil",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/commander-o-neil-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/commander-o-neil-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Fallingstar Beast",
-            "fr": "Créature stellaire"
-          },
+          "slug": "fallingstar_beast",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167582",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Fallingstar+Beast",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fallingstar-beast-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fallingstar-beast-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Nox Swordstress & Nox Monk",
-            "fr": "Épéiste nokrienne & Moine nokrien"
-          },
+          "slug": "nox_swordstress_nox_monk",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166499",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Nox+Swordstress+&+Nox+Priest",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox-swordstress-nox-monk_-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox-swordstress-nox-monk_-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Starscourge Radahn",
-            "fr": "Radahn le Fléau des astres"
-          },
+          "slug": "starscourge_radahn",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165444",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Starscourge+Radahn",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn-2-hq-enemy-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Starscourge",
-              "fr": "Souvenir du Fléau des astres"
-            },
+            "slug": "remembrance_of_the_starscourge",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_starscourge_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn-2-hq-enemy-elden-ring-wiki.jpg"
+          }
         },
         {
-          "names": {
-            "en": "Putrid Tree Spirit",
-            "fr": "Esprit d'arbre putride"
-          },
+          "slug": "putrid_tree_spirit",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167378",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Putrid+Tree+Spirit",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-tree-spirit-boss-elden-ring-wiki-guide-300px-min.jpeg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-tree-spirit-boss-elden-ring-wiki-guide-300px-min.jpeg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Greyoll's Dragonbarrow",
-        "fr": "Tertre draconique de Greyoll"
-      },
+      "slug": "greyolls_dragonbarrow",
       "bosses": [
         {
-          "names": {
-            "en": "Putrid Crystalian (Staff), Putrid Crystalian (Ringblade) & Putrid Crystalian (Spear)",
-            "fr": "Sorcier cristalien putride, Danseur cristalien putride & Lancier cristalien putride"
-          },
+          "slug": "putrid_crystalian_staff_putrid_crystalian_ringblade_putrid_crystalian_spear",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167921",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Putrid+Crystalians",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-crystallian-7-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-crystallian-7-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Battlemage Hugues",
-            "fr": "Mage de bataille Hugues"
-          },
+          "slug": "battlemage_hugues",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167402",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Battlemage+Hugues",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlemage-hugues-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlemage-hugues-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Godskin Apostle",
-            "fr": "Apôtre sanctechair"
-          },
+          "slug": "godskin_apostle",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166668",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Godskin+Apostle",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-apostle-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-apostle-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Bell Bearing Hunter",
-            "fr": "Chasseur de perles cinéraires"
-          },
+          "slug": "bell_bearing_hunter",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168044",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Bell+Bearing+Hunter",
-          "categories": {
-            "inNight": true,
-            "needBell": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg",
+          "inNight": true,
+          "needBell": true,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Beastman of Farum Azula (Throwing Knife) & Beastman of Farum Azula (Greatsword)",
-            "fr": "Homme-bête aux couteaux de Farum Azula & Homme-bête guerrier de Farum Azula"
-          },
+          "slug": "beastman_of_farum_azula_throwing_knife_beastman_of_farum_azula_greatsword",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167916",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Beastman+of+Farum+Azula",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastmen-duo-1.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/beastmen-duo-1.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Putrid Avatar",
-            "fr": "Avatar putride"
-          },
+          "slug": "putrid_avatar",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166615",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Putrid+Avatar",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Flying Dragon Greyll",
-            "fr": "Greyll le Dragon volant"
-          },
+          "slug": "flying_dragon_greyll",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166013",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Flying+Dragon+Greyll",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/flying_dragon_greyll_bosses_elden_ring_wiki_guide_300px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/flying_dragon_greyll_bosses_elden_ring_wiki_guide_300px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Night's Cavalry",
-            "fr": "Cavalier crépusculaire"
-          },
+          "slug": "nights_cavalry",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166616",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-dragonbarrow-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-dragonbarrow-elden-ring-wiki.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Black Blade Kindred",
-            "fr": "Adepte de la Lame d'ébène"
-          },
+          "slug": "black_blade_kindred",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166006",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Black+Blade+Kindred",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-blade-kindred-1-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-blade-kindred-1-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Siofra River (Up)",
-        "fr": "La Siofra (Haut)"
-      },
+      "slug": "siofra_river_up",
       "bosses": [
         {
-          "names": {
-            "en": "Mimic Tear",
-            "fr": "Larme imitatrice"
-          },
+          "slug": "mimic_tear",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168280",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Mimic+Tear",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mimic-tear-boss-enemies-elden-ring-wiki-guide-300px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mimic-tear-boss-enemies-elden-ring-wiki-guide-300px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Regal Ancestor Spirit",
-            "fr": "Esprit ancestral royal"
-          },
+          "slug": "regal_ancestor_spirit",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167929",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Regal+Ancestor+Spirit",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/regal-ancestor-spirit_map-bosses-enemies-elden-ring-wiki-guide-300px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Regal Ancestor",
-              "fr": "Souvenir de l'Esprit ancestral royal"
-            },
+            "slug": "remembrance_of_the_regal_ancestor",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_regal_ancestor_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/regal-ancestor-spirit_map-bosses-enemies-elden-ring-wiki-guide-300px.jpg"
+          }
         },
         {
-          "names": {
-            "en": "Dragonkin Soldier",
-            "fr": "Soldat draconide"
-          },
+          "slug": "dragonkin_soldier",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167928",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Dragonkin+Soldier",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonkin-soldier-boss-enemies-elden-ring-wiki-guide-300px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonkin-soldier-boss-enemies-elden-ring-wiki-guide-300px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Valiant Gargoyle (Twinblade) & Valiant Gargoyle",
-            "fr": "Gargouille vaillante à la double lame & Gargouille vaillante"
-          },
+          "slug": "valiant_gargoyle_twinblade_valiant_gargoyle",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168404",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Valiant+Gargoyle",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/gargoyle-2-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/gargoyle-2-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         }
       ]
     },
     {
-      "names": {
-        "en": "Deeproot Depths",
-        "fr": "Profondeurs de Fonderacine"
-      },
+      "slug": "deeproot_depths",
       "bosses": [
         {
-          "names": {
-            "en": "3x Fia's Champions, Sorcerer Rogier & Lionel the Lionhearted",
-            "fr": "3x Champion de Fia, Rogier le Sorcier & Lionel Cœur-de-Lion"
-          },
+          "slug": "3x_fias_champions_sorcerer_rogier_lionel_the_lionhearted",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168424",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Fia's+champions",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fias-champion-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fias-champion-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Lichdragon Fortissax",
-            "fr": "Fortissax la Liche draconique"
-          },
+          "slug": "lichdragon_fortissax",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168158",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Lichdragon+Fortissax",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lichdragon-fortissax-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Lichdragon",
-              "fr": "Souvenir de la Liche draconique"
-            },
+            "slug": "remembrance_of_the_lichdragon",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_lichdragon_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lichdragon-fortissax-2-hq-elden-ring-wiki-guide.jpg"
+          }
         },
         {
-          "names": {
-            "en": "Crucible Knight Siluria",
-            "fr": "Siluria du Creuset"
-          },
+          "slug": "crucible_knight_siluria",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168281",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Crucible+Knight+Siluria",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-siluria-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-siluria-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         }
       ]
     },
     {
-      "names": {
-        "en": "Lake of Rot",
-        "fr": "Lac putréfié"
-      },
+      "slug": "lake_of_rot",
       "bosses": [
         {
-          "names": {
-            "en": "Dragonkin Soldier",
-            "fr": "Soldat draconide"
-          },
+          "slug": "dragonkin_soldier",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168515",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Dragonkin+Soldier",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonkin_soldier_bosses_elden_ring_wiki_600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonkin_soldier_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Astel, Naturalborn of the Void",
-            "fr": "Astel le Rejeton du vide"
-          },
+          "slug": "astel_naturalborn_of_the_void",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167488",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Astel,+Naturalborn+of+the+Void",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/astel-naturalborn-of-the-void-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Naturalborn",
-              "fr": "Souvenir du Rejeton"
-            },
+            "slug": "remembrance_of_the_naturalborn",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_naturalborn_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/astel-naturalborn-of-the-void-1-hq-elden-ring-wiki-guide.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Liurnia of the Lakes (Plateau)",
-        "fr": "Liurnia (Plateau)"
-      },
+      "slug": "liurnia_of_the_lakes_plateau",
       "bosses": [
         {
-          "names": {
-            "en": "Glintstone Dragon Adula",
-            "fr": "Adula, dragon de pierre d'éclat"
-          },
+          "slug": "glintstone_dragon_adula",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167576",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Glintstone+Dragon+Adula",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_dragon_bosses_elden_ring_wiki_600px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/glintstone_dragon_bosses_elden_ring_wiki_600px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Alecto, Black Knife Ringleader",
-            "fr": "Alecto, meneuse des Couteaux noirs"
-          },
+          "slug": "alecto_black_knife_ringleader",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=171212",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Alecto,+Black+Knife+Ringleader",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/alecto-black-knife-ringleader-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/alecto-black-knife-ringleader-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Altus Plateau",
-        "fr": "Plateau Altus"
-      },
+      "slug": "altus_plateau",
       "bosses": [
         {
-          "names": {
-            "en": "Magma Wyrm Makar",
-            "fr": "Makar le Dragon du magma"
-          },
+          "slug": "magma_wyrm_makar",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166245",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Magma+Wyrm+Makar",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/magma-wyrm-3-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/magma-wyrm-3-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Perfumer Tricia & Misbegotten Warrior",
-            "fr": "Parfumeuse Tricia & Chimère léonine"
-          },
+          "slug": "perfumer_tricia_misbegotten_warrior",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167394",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Perfumer+Tricia",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer-tricia-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/perfumer-tricia-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Necromancer Garris",
-            "fr": "Garris le Nécromancien"
-          },
+          "slug": "necromancer_garris",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166675",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Necromancer+Garris",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/necromancer-garris-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/necromancer-garris-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Black Knife Assassin",
-            "fr": "Assassin des Couteaux noirs"
-          },
+          "slug": "black_knife_assassin",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166678",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Black+Knife+Assassin",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-sages-cave-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-sages-cave-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Stonedigger Troll",
-            "fr": "Troll fouisseur"
-          },
+          "slug": "stonedigger_troll",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168507",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Stonedigger+Troll",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/stonedigger-troll-2-hq-enemy-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/stonedigger-troll-2-hq-enemy-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Godefroy the Grafted",
-            "fr": "Godefroy le Greffé"
-          },
+          "slug": "godefroy_the_grafted",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167645",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Godefroy+the+Grafted",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godefroy-the-grafted-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godefroy-the-grafted-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Night's Cavalry",
-            "fr": "Cavalier crépusculaire"
-          },
+          "slug": "nights_cavalry",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167893",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Demi-Human Queen Gilika",
-            "fr": "Gilika, reine semi-humaine"
-          },
+          "slug": "demihuman_queen_gilika",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167566",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Demi-Human+Queen+Gilika",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/queen-gilika-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/queen-gilika-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Sanguine Noble",
-            "fr": "Noble sanglant"
-          },
+          "slug": "sanguine_noble",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167656",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Sanguine+Noble",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/sanguine-noble-6-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/sanguine-noble-6-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Godskin Apostle",
-            "fr": "Apôtre sanctechair"
-          },
+          "slug": "godskin_apostle",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=166231",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Godskin+Apostle",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-apostle-3-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-apostle-3-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Wormface",
-            "fr": "Face de ver"
-          },
+          "slug": "wormface",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167317",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Wormface",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/wormface-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/wormface-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Crystalian (Spear) & Crystalian (Ringblade)",
-            "fr": "Lancier cristalien & Danseur cristalien"
-          },
+          "slug": "crystalian_spear_crystalian_ringblade",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168080",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Crystalians",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystallian-5-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crystallian-5-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ancient Dragon Lansseax",
-            "fr": "Lansseax le Dragon ancien"
-          },
+          "slug": "ancient_dragon_lansseax",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168510",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Lansseax",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient-dragon-lansseax-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient-dragon-lansseax-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Black Knife Assassin",
-            "fr": "Assassin des Couteaux noirs"
-          },
+          "slug": "black_knife_assassin",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167676",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Black+Knife+Assassin",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-sainted-heros-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-knife-assassin-sainted-heros-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ancient Hero of Zamor",
-            "fr": "Ancien héros de Zamor"
-          },
+          "slug": "ancient_hero_of_zamor",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175115",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ancient+Hero+of+Zamor",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient-hero-of-zamor-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient-hero-of-zamor-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Omenkiller & Miranda the Blighted Bloom",
-            "fr": "Tueur de Réprouvés & Miranda la Fleur galeuse"
-          },
+          "slug": "omenkiller_miranda_the_blighted_bloom",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169017",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Omenkiller",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/miranda-and-omenkiller.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/miranda-and-omenkiller.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Fallingstar Beast",
-            "fr": "Créature stellaire"
-          },
+          "slug": "fallingstar_beast",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167585",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Fallingstar+Beast",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fallingstar_beast_altus_plateau_enemies_elden_ring_wiki_300px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fallingstar_beast_altus_plateau_enemies_elden_ring_wiki_300px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "2x Tree Sentinel",
-            "fr": "2x Sentinelle de l'Arbre"
-          },
+          "slug": "2x_tree_sentinel",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167584",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Tree+Sentinel",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-sentinel-duo-2-small.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-sentinel-duo-2-small.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "The Shaded Castle",
-        "fr": "Le Bastiombre"
-      },
+      "slug": "the_shaded_castle",
       "bosses": [
         {
-          "names": {
-            "en": "Elemer of the Briar",
-            "fr": "Elemer du Roncier"
-          },
+          "slug": "elemer_of_the_briar",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167323",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Elemer+of+the+Briar",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/elemer-of-the-briar-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/elemer-of-the-briar-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         }
       ]
     },
     {
-      "names": {
-        "en": "Mt Gelmir",
-        "fr": "Mont Gelmir"
-      },
+      "slug": "mt_gelmir",
       "bosses": [
         {
-          "names": {
-            "en": "Abductor Virgin (Wheel) & Abductor Virgin (Swinging Sickle)",
-            "fr": "Vierge ravisseuse aux rouets & Vierge ravisseuse aux faucilles"
-          },
+          "slug": "abductor_virgin_wheel_abductor_virgin_swinging_sickle",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168514",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Abductor+Virgins",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/abductor-virgins-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/abductor-virgins-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Tibia Mariner",
-            "fr": "Nocher diaphane"
-          },
+          "slug": "tibia_mariner",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167560",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Tibia+Mariner",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibia-manner-enemy-3-hq-big-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tibia-manner-enemy-3-hq-big-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Erdtree Burial Watchdog",
-            "fr": "Veilleur de l'Arbre-Monde"
-          },
+          "slug": "erdtree_burial_watchdog",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168513",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Erdtree+Burial+Watchdog",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-burial-watchdog-3-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-burial-watchdog-3-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "2x Kindred of Rot",
-            "fr": "2x Adepte de la putréfaction"
-          },
+          "slug": "2x_kindred_of_rot",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168512",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Kindred+of+Rot",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kindred-of-rot-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/kindred-of-rot-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Magma Wyrm",
-            "fr": "Dragon du magma"
-          },
+          "slug": "magma_wyrm",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167377",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Magma+Wyrm",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/magma-wyrm-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/magma-wyrm-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Demi-Human Queen Maggie",
-            "fr": "Maggie, reine semi-humaine"
-          },
+          "slug": "demihuman_queen_maggie",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167815",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Demi-Human+Queen+Maggie",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human-queen-maggie-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human-queen-maggie-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Red Wolf of the Champion",
-            "fr": "Loup rouge du champion"
-          },
+          "slug": "red_wolf_of_the_champion",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168140",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Red+Wolf+of+the+Champion",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red-wolf-of-radagon-3-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/red-wolf-of-radagon-3-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Demi-Human Queen Margot",
-            "fr": "Margot, reine semi-humaine"
-          },
+          "slug": "demihuman_queen_margot",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167366",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Demi-Human+Queen+Margot",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human-queen-margot-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human-queen-margot-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Full-Grown Fallingstar Beast",
-            "fr": "Créature stellaire adulte"
-          },
+          "slug": "fullgrown_fallingstar_beast",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167365",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Full-Grown+Fallingstar+Beast",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/full-grown-fallingstar-beast-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/full-grown-fallingstar-beast-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ulcerated Tree Spirit",
-            "fr": "Esprit d'arbre ulcéreux"
-          },
+          "slug": "ulcerated_tree_spirit",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167812",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/uncerated-tree-spirit-5-hq-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/uncerated-tree-spirit-5-hq-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Godskin Noble",
-            "fr": "Noble sanctechair"
-          },
+          "slug": "godskin_noble",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168177",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Godskin+Noble",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-noble-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-noble-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "God-Devouring Serpent / Rykard, Lord of Blasphemy",
-            "fr": "Serpent dévoreur de dieux / Rykard, seigneur du blasphème"
-          },
+          "slug": "goddevouring_serpent_rykard_lord_of_blasphemy",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167571",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Rykard,+Lord+of+Blasphemy",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/god-devouring-serpent-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Blasphemous",
-              "fr": "Souvenir du seigneur du blasphème"
-            },
+            "slug": "remembrance_of_the_blasphemous",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_blasphemous_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/god-devouring-serpent-1-hq-elden-ring-wiki-guide.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Capital Outskirts",
-        "fr": "Faubourgs de la capitale"
-      },
+      "slug": "capital_outskirts",
       "bosses": [
         {
-          "names": {
-            "en": "Onyx Lord",
-            "fr": "Seigneur d'onyx"
-          },
+          "slug": "onyx_lord",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168154",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Onyx+Lord",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/onyx-lord-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/onyx-lord-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Bell Bearing Hunter",
-            "fr": "Chasseur de perles cinéraires"
-          },
+          "slug": "bell_bearing_hunter",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169467",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Bell+Bearing+Hunter",
-          "categories": {
-            "inNight": true,
-            "needBell": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bell-bearing-hunter-elden-ring.jpg",
+          "inNight": true,
+          "needBell": true,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Deathbird",
-            "fr": "Rapace funeste"
-          },
+          "slug": "deathbird",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167182",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Deathbird",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbird-1-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbird-1-elden-ring-wiki-guide.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Crucible Knight & Crucible Knight Ordovis",
-            "fr": "Ordovis, chevalier du Creuset & Chevalier du Creuset"
-          },
+          "slug": "crucible_knight_crucible_knight_ordovis",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167535",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Crucible+Knight+Ordovis",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-and-ordovis-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible-knight-and-ordovis-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Grave Warden Duelist",
-            "fr": "Duelliste gardien du tombeau"
-          },
+          "slug": "grave_warden_duelist",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167018",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Grave+Warden+Duelist",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-warden-duelist-3-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/grave-warden-duelist-3-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Draconic Tree Sentinel",
-            "fr": "Sentinelle draconique de l'Arbre"
-          },
+          "slug": "draconic_tree_sentinel",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167180",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Draconic+Tree+Sentinel",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/draconic-tree-sentinel-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/draconic-tree-sentinel-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Leyndell, Royal Capital",
-        "fr": "Leyndell, Capitale Royale"
-      },
+      "slug": "leyndell_royal_capital",
       "bosses": [
         {
-          "names": {
-            "en": "Esgar, Priest of Blood",
-            "fr": "Esgar, prêtre du sang"
-          },
+          "slug": "esgar_priest_of_blood",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175359",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Esgar,+Priest+of+Blood",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/esgar_priest_of_blood_bosses_elden_ring_wiki_guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/esgar_priest_of_blood_bosses_elden_ring_wiki_guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Mohg, the Omen",
-            "fr": "Mohg le Réprouvé"
-          },
+          "slug": "mohg_the_omen",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168657",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Mohg,+the+Omen",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mogh_the_omen.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mogh_the_omen.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Godfrey, First Elden Lord",
-            "fr": "Godfrey, premier Seigneur d'Elden"
-          },
+          "slug": "godfrey_first_elden_lord",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167693",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Godfrey,+First+Elden+Lord+(Golden+Shade)",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godfrey-first-elden-lord-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godfrey-first-elden-lord-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Morgott, the Omen King",
-            "fr": "Morgott, roi Réprouvé"
-          },
+          "slug": "morgott_the_omen_king",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167374",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Morgott,+the+Omen+King",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/morgott-omen-king-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Omen King",
-              "fr": "Souvenir du Roi des Réprouvés"
-            },
+            "slug": "remembrance_of_the_omen_king",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_omen_king_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/morgott-omen-king-1-hq-elden-ring-wiki-guide.jpg"
+          }
         },
         {
-          "names": {
-            "en": "2x Fell Twin",
-            "fr": "2x Jumeau abominable"
-          },
+          "slug": "2x_fell_twin",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167171",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Fell+Twins",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fell-twin-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fell-twin-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Mountaintops of the Giants",
-        "fr": "Cimes des géants"
-      },
+      "slug": "mountaintops_of_the_giants",
       "bosses": [
         {
-          "names": {
-            "en": "Night's Cavalry",
-            "fr": "Cavalier crépusculaire"
-          },
+          "slug": "nights_cavalry",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168519",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-forbidden-lands-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-forbidden-lands-elden-ring-wiki.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Black Blade Kindred",
-            "fr": "Adepte de la Lame d'ébène"
-          },
+          "slug": "black_blade_kindred",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168016",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Black+Blade+Kindred",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-blade-kindred-2-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black-blade-kindred-2-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ulcerated Tree Spirit",
-            "fr": "Esprit d'arbre ulcéreux"
-          },
+          "slug": "ulcerated_tree_spirit",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167668",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ulcerated+Tree+Spirit",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ulcerated_tree_spirit.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Death Rite Bird",
-            "fr": "Volatile funéraire"
-          },
+          "slug": "death_rite_bird",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168010",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Death+Rite+Bird",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Commander Niall",
-            "fr": "Commandant Niall"
-          },
+          "slug": "commander_niall",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167290",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Commander+Niall",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/commander-niall-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/commander-niall-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Erdtree Avatar",
-            "fr": "Avatar de l'Arbre-Monde"
-          },
+          "slug": "erdtree_avatar",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167138",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Erdtree+Avatar",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-4-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/erdtree-avatar-4-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Godskin Apostle, Godskin Noble & Spiritcaller Snail",
-            "fr": "Apôtre sanctechair, Noble sanctechair & Escargot mande-spectre"
-          },
+          "slug": "godskin_apostle_godskin_noble_spiritcaller_snail",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169802",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Spirit-caller+Snail",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/spirit-caller-snail-1-hs-enemy-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/spirit-caller-snail-1-hs-enemy-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Borealis the Freezing Fog",
-            "fr": "Borealis la Brume glaciale"
-          },
+          "slug": "borealis_the_freezing_fog",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=165642",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Borealis+the+Freezing+Fog",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/borealis-the-freezing-fog-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/borealis-the-freezing-fog-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Roundtable Knight Vyke",
-            "fr": "Vyke, chevalier de la Table ronde"
-          },
+          "slug": "roundtable_knight_vyke",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168377",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Roundtable+Knight+Vyke",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/vyke-1-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/vyke-1-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ancient Hero of Zamor",
-            "fr": "Ancien héros de Zamor"
-          },
+          "slug": "ancient_hero_of_zamor",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167371",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ancient+Hero+of+Zamor",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_hero_of_zamor_enemies_elden_ring_wiki_300px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ancient_hero_of_zamor_enemies_elden_ring_wiki_300px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Fire Giant",
-            "fr": "Géant de feu"
-          },
+          "slug": "fire_giant",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167375",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Fire+Giant",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_giant_eye.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Fire Giant",
-              "fr": "Souvenir du Géant de feu"
-            },
+            "slug": "remembrance_of_the_fire_giant",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_fire_giant_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_giant_eye.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Consecrated Snowfield",
-        "fr": "Champs enneigés consacrés"
-      },
+      "slug": "consecrated_snowfield",
       "bosses": [
         {
-          "names": {
-            "en": "Stray Mimic Tear",
-            "fr": "Larme imitatrice égarée"
-          },
+          "slug": "stray_mimic_tear",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=169799",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Stray+Mimic+Tear",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/stray-mimic-tear-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/stray-mimic-tear-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Putrid Grave Warden Duelist",
-            "fr": "Duelliste putride gardien du tombeau"
-          },
+          "slug": "putrid_grave_warden_duelist",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168389",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Putrid+Grave+Warden+Duelist",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-grave-warden-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-grave-warden-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Night's Cavalry (Flail) & Night's Cavalry (Glaive)",
-            "fr": "Cavalier crépusculaire au fléau & Cavalier crépusculaire au glaive"
-          },
+          "slug": "nights_cavalry_flail_nights_cavalry_glaive",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168493",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Night's+Cavalry",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-5-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nights-cavalry-5-elden-ring-wiki-guide.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Astel, Stars of Darkness",
-            "fr": "Astel la Constellation des ténèbres"
-          },
+          "slug": "astel_stars_of_darkness",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168224",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Astel,+Stars+of+Darkness",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/astel-naturalborn-of-the-void-3-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/astel-naturalborn-of-the-void-3-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Misbegotten Crusader",
-            "fr": "Croisé chimérique"
-          },
+          "slug": "misbegotten_crusader",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168661",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Misbegotten+Crusader",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/misbegotten-crusader-bloom-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/misbegotten-crusader-bloom-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Great Wyrm Theodorix",
-            "fr": "Theodorix le Grand ver"
-          },
+          "slug": "great_wyrm_theodorix",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168186",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Great+Wyrm+Theodorix",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/theodorix_6.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/theodorix_6.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Putrid Avatar",
-            "fr": "Avatar putride"
-          },
+          "slug": "putrid_avatar",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168521",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Putrid+Avatar",
-          "categories": {},
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-2-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrid-avatar-2-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         },
         {
-          "names": {
-            "en": "Death Rite Bird",
-            "fr": "Volatile funéraire"
-          },
+          "slug": "death_rite_bird",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168520",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Death+Rite+Bird",
-          "categories": {
-            "inNight": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": true,
+          "needBell": false,
+          "inDlc": false,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Mohgwyn Palace",
-        "fr": "Palais Mohgwyn"
-      },
+      "slug": "mohgwyn_palace",
       "bosses": [
         {
-          "names": {
-            "en": "Mohg, Lord of Blood",
-            "fr": "Mohg, seigneur du sang"
-          },
+          "slug": "mohg_lord_of_blood",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168412",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Mohg,+Lord+of+Blood",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mohg.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Blood Lord",
-              "fr": "Souvenir du seigneur du sang"
-            },
+            "slug": "remembrance_of_the_blood_lord",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_blood_lord_item_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mohg.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Crumbling Farum Azula",
-        "fr": "Ruines de Farum Azula"
-      },
+      "slug": "crumbling_farum_azula",
       "bosses": [
         {
-          "names": {
-            "en": "Godskin Duo",
-            "fr": "Duo sanctechair"
-          },
+          "slug": "godskin_duo",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167392",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Godskin+Duo",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-duo-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-duo-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Dragonlord Placidusax",
-            "fr": "Placidusax, seigneur draconique"
-          },
+          "slug": "dragonlord_placidusax",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168522",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Dragonlord+Placidusax",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonlord-placidusax-boss-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Dragonlord",
-              "fr": "Souvenir du Seigneur draconique"
-            },
+            "slug": "remembrance_of_the_dragonlord",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_dragonlord_item_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragonlord-placidusax-boss-elden-ring-wiki-guide.jpg"
+          }
         },
         {
-          "names": {
-            "en": "Beast Clergyman / Maliketh, the Black Blade",
-            "fr": "Clerc bestial / Maliketh la Lame d'ébène"
-          },
+          "slug": "beast_clergyman_maliketh_the_black_blade",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=175509",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Maliketh,+the+Black+Blade",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/maliketh-the-black-blade-4k.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Black Blade",
-              "fr": "Souvenir de la Lame d'ébène"
-            },
+            "slug": "remembrance_of_the_black_blade",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_black_blade_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/maliketh-the-black-blade-4k.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Leyndell, Capital of Ash",
-        "fr": "Leyndell, Capitale des Cendres"
-      },
+      "slug": "leyndell_capital_of_ash",
       "bosses": [
         {
-          "names": {
-            "en": "Sir Gideon Ofnir, the All-Knowing",
-            "fr": "Sire Gideon Ofnir l'Omniscient"
-          },
+          "slug": "sir_gideon_ofnir_the_allknowing",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176583",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Sir+Gideon+Ofnir,+the+All-Knowing",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ofnir-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ofnir-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Godfrey, First Elden Lord / Hoarah Loux, Warrior",
-            "fr": "Godfrey, premier Seigneur d'Elden / Hoarah Loux le Guerrier"
-          },
+          "slug": "godfrey_first_elden_lord_hoarah_loux_warrior",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176808",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Godfrey,+First+Elden+Lord",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godfrey,hoarah.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of Hoarah Loux",
-              "fr": "Souvenir de Hoarah Loux"
-            },
+            "slug": "remembrance_of_hoarah_loux",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_hoarah_loux_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godfrey,hoarah.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Miquella's Haligtree",
-        "fr": "Arbre-Sacré de Miquella"
-      },
+      "slug": "miquellas_haligtree",
       "bosses": [
         {
-          "names": {
-            "en": "Loretta, Knight of the Haligtree",
-            "fr": "Loretta, chevaleresse de l'Arbre-Sacré"
-          },
+          "slug": "loretta_knight_of_the_haligtree",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=168228",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Loretta,+Knight+of+the+Haligtree",
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/loretta-knight-of-the-haligtree-1-hq-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/loretta-knight-of-the-haligtree-1-hq-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true
         },
         {
-          "names": {
-            "en": "Malenia, Blade of Miquella / Malenia, Goddess of Rot",
-            "fr": "Malenia, épée de Miquella / Malenia, déesse de la putréfaction"
-          },
+          "slug": "malenia_blade_of_miquella_malenia_goddess_of_rot",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=167678",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Malenia+Blade+of+Miquella",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/malenia,-blade-of-miquella.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Rot Goddess",
-              "fr": "Souvenir de la déesse de la putréfaction"
-            },
+            "slug": "remembrance_of_the_rot_goddess",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_rot_goddess_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/malenia,-blade-of-miquella.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "The Erdtree",
-        "fr": "Arbre-Monde"
-      },
+      "slug": "the_erdtree",
       "bosses": [
         {
-          "names": {
-            "en": "Radagon of the Golden Order / Elden Beast",
-            "fr": "Radagon de l'Ordre d'or / Bête d'Elden"
-          },
+          "slug": "radagon_of_the_golden_order_elden_beast",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-lands-between?locationIds=176996",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Elden+Beast",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/radagon-of-the-golden-order-boss-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": false,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Elden Remembrance",
-              "fr": "Souvenir d'Elden"
-            },
+            "slug": "elden_remembrance",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/elden_remembrance_elden_ring_wiki_guide_200px.png"
-          },
-          "categories": {
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/radagon-of-the-golden-order-boss-elden-ring-wiki-guide.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Gravesite Plain",
-        "fr": "Plaine sépulcrale"
-      },
+      "slug": "gravesite_plain",
       "bosses": [
         {
-          "names": {
-            "en": "Blackgaol Knight",
-            "fr": "Chevalier de la Geôle Solitaire"
-          },
+          "slug": "blackgaol_knight",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380578",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Blackgaol+Knight",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/blackight-gaol-boss-1-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/blackight-gaol-boss-1-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ghostflame Dragon",
-            "fr": "Dragon de flammes spectrales"
-          },
+          "slug": "ghostflame_dragon",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380856",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ghostflame+Dragon",
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghostflame-dragon-gravesite-plain-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghostflame-dragon-gravesite-plain-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true
         },
         {
-          "names": {
-            "en": "Demi-Human Swordmaster Onze",
-            "fr": "Onze, épéiste semi-humain"
-          },
+          "slug": "demihuman_swordmaster_onze",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380889",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Demi-Human+Swordmaster+Onze",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human_swordmaster_onze.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-human_swordmaster_onze.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Divine Beast Dancing Lion",
-            "fr": "Lion dansant de la bête divine"
-          },
+          "slug": "divine_beast_dancing_lion",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380798",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Divine+Beast+Dancing+Lion",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_beast_dancing_lion_bosses_elden_ring_wiki_1200px.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Dancing Lion",
-              "fr": "Souvenir du Lion dansant"
-            },
+            "slug": "remembrance_of_the_dancing_lion",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_dancing_lion_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png"
-          },
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/divine_beast_dancing_lion_bosses_elden_ring_wiki_1200px.png"
+          }
         },
         {
-          "names": {
-            "en": "Death Knight",
-            "fr": "Chevalier de la Mort"
-          },
+          "slug": "death_knight",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381925",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Death+Knight",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-knight-fog-rift-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-knight-fog-rift-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Chief Bloodfiend",
-            "fr": "Chef des démons sanglants"
-          },
+          "slug": "chief_bloodfiend",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381006",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Chief+Bloodfiend",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/chief-bloodfiend-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/chief-bloodfiend-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ancient Dragon-Man",
-            "fr": "Homme-dragon ancien"
-          },
+          "slug": "ancient_dragonman",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381039",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ancient+Dragon-Man",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragon-weeb.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dragon-weeb.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Castle Ensis",
-        "fr": "Château d'Ensis"
-      },
+      "slug": "castle_ensis",
       "bosses": [
         {
-          "names": {
-            "en": "Rellana, Twin Moon Knight",
-            "fr": "Rellana, chevaleresse des Lunes jumelles"
-          },
+          "slug": "rellana_twin_moon_knight",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380245",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Rellana,+Twin+Moon+Knight",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rellana_twin_moon_knight2.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Twin Moon Knight",
-              "fr": "Souvenir de la Chev. des Lunes jum."
-            },
+            "slug": "remembrance_of_the_twin_moon_knight",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_twin_moon_knight_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png"
-          },
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rellana_twin_moon_knight2.png"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Scadu Altus",
-        "fr": "Altus Occulte"
-      },
+      "slug": "scadu_altus",
       "bosses": [
         {
-          "names": {
-            "en": "Black Knight Garrew",
-            "fr": "Garrew, chevalier Noir"
-          },
+          "slug": "black_knight_garrew",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381539",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Black+Knight+Garrew",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/garrew.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/garrew.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ralva the Great Red Bear",
-            "fr": "Ralva, grand ours écarlate"
-          },
+          "slug": "ralva_the_great_red_bear",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380320",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ralva+the+Great+Red+Bear",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ralva.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ralva.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Dryleaf Dane",
-            "fr": "Dane Mortefeuille"
-          },
+          "slug": "dryleaf_dane",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=384468",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Dryleaf+Dane+(Boss)",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dryleaf.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dryleaf.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ghostflame Dragon",
-            "fr": "Dragon de flammes spectrales"
-          },
+          "slug": "ghostflame_dragon",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=380345",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ghostflame+Dragon",
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghostflame-dragon-moorth-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghostflame-dragon-moorth-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true
         },
         {
-          "names": {
-            "en": "Black Knight Edredd",
-            "fr": "Edredd, chevalier Noir"
-          },
+          "slug": "black_knight_edredd",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381872",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Black+Knight+Edredd",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/edreed.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/edreed.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Curseblade Labirith",
-            "fr": "Labirith l'Exécrable"
-          },
+          "slug": "curseblade_labirith",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381240",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Curseblade+Labirith",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/curseblade-labirith-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/curseblade-labirith-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Rauh Base",
-        "fr": "Base de Rauh"
-      },
+      "slug": "rauh_base",
       "bosses": [
         {
-          "names": {
-            "en": "Red Bear",
-            "fr": "Ours écarlate"
-          },
+          "slug": "red_bear",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381977",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Red+Bear",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mr-teddy.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mr-teddy.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Rugalea the Great Red Bear",
-            "fr": "Rugalea, grand ours écarlate"
-          },
+          "slug": "rugalea_the_great_red_bear",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381980",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Rugalea+the+Great+Red+Bear",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rugalea-the-great-red-bear-boss-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rugalea-the-great-red-bear-boss-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Death Knight",
-            "fr": "Chevalier de la Mort"
-          },
+          "slug": "death_knight",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381984",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Death+Knight",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-knight-scorpion-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-knight-scorpion-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Cerulean Coast",
-        "fr": "Côte céruléenne"
-      },
+      "slug": "cerulean_coast",
       "bosses": [
         {
-          "names": {
-            "en": "Demi-Human Queen Marigga",
-            "fr": "Marigga, reine semi-humaine"
-          },
+          "slug": "demihuman_queen_marigga",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381919",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Demi-Human+Queen+Marigga",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-queen.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/demi-queen.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Ghostflame Dragon",
-            "fr": "Dragon de flammes spectrales"
-          },
+          "slug": "ghostflame_dragon",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382236",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ghostflame+Dragon",
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghostflame-dragon-cerulean-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ghostflame-dragon-cerulean-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true
         },
         {
-          "names": {
-            "en": "Dancer of Ranah",
-            "fr": "Danseuse de Ranah"
-          },
+          "slug": "dancer_of_ranah",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381922",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Dancer+of+Ranah",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dancer.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dancer.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Putrescent Knight",
-            "fr": "Chevalier putride"
-          },
+          "slug": "putrescent_knight",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381961",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Putrescent+Knight",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrescent-knight-1-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of Putrescence",
-              "fr": "Souvenir de putrescence"
-            },
+            "slug": "remembrance_of_putrescence",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_putrescence_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png"
-          },
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/putrescent-knight-1-elden-ring-wiki.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Charo's Hidden Grave",
-        "fr": "Tombeau secret de Charo"
-      },
+      "slug": "charos_hidden_grave",
       "bosses": [
         {
-          "names": {
-            "en": "Death Rite Bird",
-            "fr": "Volatile funéraire"
-          },
+          "slug": "death_rite_bird",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381939",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Death+Rite+Bird",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-charos-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/death-rite-bird-charos-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Lamenter",
-            "fr": "Larmoyeur"
-          },
+          "slug": "lamenter",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381950",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Lamenter",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lamenter.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lamenter.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Shadow Keep",
-        "fr": "Château noir"
-      },
+      "slug": "shadow_keep",
       "bosses": [
         {
-          "names": {
-            "en": "Golden Hippopotamus",
-            "fr": "Hippopotame doré"
-          },
+          "slug": "golden_hippopotamus",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381323",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Golden+Hippopotamus",
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/golden-hippopotamus-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/golden-hippopotamus-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true
         },
         {
-          "names": {
-            "en": "Scadutree Avatar",
-            "fr": "Avatar de l'Arbre-Occulte"
-          },
+          "slug": "scadutree_avatar",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381991",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Scadutree+Avatar",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/scadutree_avatar_bosses_elden_ring_wiki_1200px.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Shadow Sunflower",
-              "fr": "Souvenir de l'ombreflore"
-            },
+            "slug": "remembrance_of_the_shadow_sunflower",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_shadow_sunflower_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png"
-          },
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/scadutree_avatar_bosses_elden_ring_wiki_1200px.png"
+          }
         },
         {
-          "names": {
-            "en": "Commander Gaius",
-            "fr": "Commandant Gaïus"
-          },
+          "slug": "commander_gaius",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381989",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Commander+Gaius",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/commander_gaius_bosses_elden_ring_wiki_1200px.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Wild Boar Rider",
-              "fr": "Souvenir du Chevaucheur de sanglier"
-            },
+            "slug": "remembrance_of_the_wild_boar_rider",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_wild_boar_rider_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png"
-          },
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/commander_gaius_bosses_elden_ring_wiki_1200px.png"
+          }
         },
         {
-          "names": {
-            "en": "Messmer the Impaler / Base Serpent Messmer",
-            "fr": "Messmer l'Empaleur / Messmer, serpent maléfique"
-          },
+          "slug": "messmer_the_impaler_base_serpent_messmer",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381741",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Messmer+the+Impaler",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_menacing_look.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Impaler",
-              "fr": "Souvenir de l'Empaleur"
-            },
+            "slug": "remembrance_of_the_impaler",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_impaler_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png"
-          },
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/messmer_menacing_look.jpg"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Hinterlands",
-        "fr": "Arrière-pays"
-      },
+      "slug": "hinterlands",
       "bosses": [
         {
-          "names": {
-            "en": "Tree Sentinel",
-            "fr": "Sentinelle de l'Arbre"
-          },
+          "slug": "tree_sentinel",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381995",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Tree+Sentinel",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-sentinel-boss-sote-er-wiki-guide-300px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-sentinel-boss-sote-er-wiki-guide-300px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Tree Sentinel",
-            "fr": "Sentinelle de l'Arbre"
-          },
+          "slug": "tree_sentinel",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381997",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Tree+Sentinel",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-sentinel-boss-sote-er-wiki-guide-300px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree-sentinel-boss-sote-er-wiki-guide-300px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Fallingstar Beast",
-            "fr": "Créature stellaire"
-          },
+          "slug": "fallingstar_beast",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382000",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Fallingstar+Beast",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fallingstar-beast-boss-sote-er-wiki-guide-300px.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fallingstar-beast-boss-sote-er-wiki-guide-300px.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Cathedral of Manus Metyr",
-        "fr": "Cathédrale de Manus Metyr"
-      },
+      "slug": "cathedral_of_manus_metyr",
       "bosses": [
         {
-          "names": {
-            "en": "Metyr, Mother of Fingers",
-            "fr": "Metyr, mère des Doigts"
-          },
+          "slug": "metyr_mother_of_fingers",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382002",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Metyr,+Mother+of+Fingers",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/metyr_mother_of_fingers_bosses_elden_ring_wiki_1200px.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Mother of Fingers",
-              "fr": "Souvenir de la Mère des Doigts"
-            },
+            "slug": "remembrance_of_the_mother_of_fingers",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_mother_of_fingers_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png"
-          },
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/metyr_mother_of_fingers_bosses_elden_ring_wiki_1200px.png"
+          }
         },
         {
-          "names": {
-            "en": "Count Ymir, Mother of Fingers",
-            "fr": "Comte Ymir, mère des Doigts"
-          },
+          "slug": "count_ymir_mother_of_fingers",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=386484",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Count+Ymir,+Mother+of+Fingers",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/count-ymir-mother-of-fingers-boss-elden-ring-wiki-guide.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/count-ymir-mother-of-fingers-boss-elden-ring-wiki-guide.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         }
       ]
     },
     {
-      "names": {
-        "en": "Recluse River",
-        "fr": "Rivière des reclus"
-      },
+      "slug": "recluse_river",
       "bosses": [
         {
-          "names": {
-            "en": "Rakshasa",
-            "fr": "Rakshasa"
-          },
+          "slug": "rakshasa",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382014",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Rakshasa",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rakshasa.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rakshasa.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Jori, Elder Inquisitor",
-            "fr": "Jori, inquisiteur en chef"
-          },
+          "slug": "jori_elder_inquisitor",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382021",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Jori,+Elder+Inquisitor",
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/jori-elder-inquisitor-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/jori-elder-inquisitor-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true
         }
       ]
     },
     {
-      "names": {
-        "en": "Abbysal Woods",
-        "fr": "Bois abyssaux"
-      },
+      "slug": "abbysal_woods",
       "bosses": [
         {
-          "names": {
-            "en": "Midra, Lord of Frenzied Flame",
-            "fr": "Midra, seigneur de la Flamme exaltée"
-          },
+          "slug": "midra_lord_of_frenzied_flame",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382190",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Midra+Lord+of+Frenzied+Flame",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/midra_lord_of_frenzied_flame_bosses_elden_ring_wiki_1200px.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Lord of Frenzied Flame",
-              "fr": "Souvenir du Seigneur de la Flamme exaltée"
-            },
+            "slug": "remembrance_of_the_lord_of_frenzied_flame",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_lord_of_frenzied_flame_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png"
-          },
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/midra_lord_of_frenzied_flame_bosses_elden_ring_wiki_1200px.png"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Jagged Peak",
-        "fr": "Pic déchiqueté"
-      },
+      "slug": "jagged_peak",
       "bosses": [
         {
-          "names": {
-            "en": "Jagged Peak Drake",
-            "fr": "Dragon du Pic déchiqueté"
-          },
+          "slug": "jagged_peak_drake",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381932",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Jagged+Peak+Drake",
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/jagged-peak-drake-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/jagged-peak-drake-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true
         },
         {
-          "names": {
-            "en": "Jagged Peak Drake",
-            "fr": "Dragon du Pic déchiqueté"
-          },
+          "slug": "jagged_peak_drake",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381965",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Jagged+Peak+Drake",
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/jagged-peak-drake-duo-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/jagged-peak-drake-duo-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true
         },
         {
-          "names": {
-            "en": "Ancient Dragon Senessax",
-            "fr": "Senessax, Dragon ancien"
-          },
+          "slug": "ancient_dragon_senessax",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381968",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Ancient+Dragon+Senessax",
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/senessax.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/senessax.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true
         },
         {
-          "names": {
-            "en": "Bayle the Dread",
-            "fr": "Bayle l'Effroyable"
-          },
+          "slug": "bayle_the_dread",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=381971",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Bayle+the+Dread",
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bayle_the_dread_bosses_elden_ring_wiki_1200px.png"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bayle_the_dread_bosses_elden_ring_wiki_1200px.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true
         }
       ]
     },
     {
-      "names": {
-        "en": "Ancient Ruins of Rauh",
-        "fr": "Ruines antiques de Rauh"
-      },
+      "slug": "ancient_ruins_of_rauh",
       "bosses": [
         {
-          "names": {
-            "en": "Divine Beast Dancing Lion",
-            "fr": "Lion dansant de la bête divine"
-          },
+          "slug": "divine_beast_dancing_lion",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382038",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Divine+Beast+Dancing+Lion",
-          "categories": {
-            "inDlc": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dancing-lion-rauh-elden-ring-wiki.jpg"
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dancing-lion-rauh-elden-ring-wiki.jpg",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": false
         },
         {
-          "names": {
-            "en": "Romina, Saint of the Bud",
-            "fr": "Romina, sainte du bourgeon"
-          },
+          "slug": "romina_saint_of_the_bud",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382040",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Romina,+Saint+of+the+Bud",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/romina_saint_of_the_bud_bosses_elden_ring_wiki_1200px.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of the Saint of the Bud",
-              "fr": "Souvenir de la Sainte du bourgeon"
-            },
+            "slug": "remembrance_of_the_saint_of_the_bud",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance_of_the_saint_of_the_bud_remembrances_elden_ring_shadow_of_the_erdtree_dlc_wiki_guide_200px.png"
-          },
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/romina_saint_of_the_bud_bosses_elden_ring_wiki_1200px.png"
+          }
         }
       ]
     },
     {
-      "names": {
-        "en": "Enir-Ilim",
-        "fr": "Enir-Ilim"
-      },
+      "slug": "enirilim",
       "bosses": [
         {
-          "names": {
-            "en": "Promised Consort Radahn / Radahn, Consort of Miquella",
-            "fr": "Radahn, futur consort / Radahn, consort de Miquella"
-          },
+          "slug": "promised_consort_radahn_radahn_consort_of_miquella",
           "locationUrl": "https://mapgenie.io/elden-ring/maps/the-shadow-realm?locationIds=382044",
           "wikiUrl": "https://eldenring.wiki.fextralife.com/Promised+Consort+Radahn",
+          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn_consort_of_miquella_bosses_elden_ring_wiki_1200px.png",
+          "inNight": false,
+          "needBell": false,
+          "inDlc": true,
+          "major": true,
           "remembrance": {
-            "names": {
-              "en": "Remembrance of a God and a Lord",
-              "fr": "Souvenir d'un dieu et d'un seigneur"
-            },
+            "slug": "remembrance_of_a_god_and_a_lord",
             "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/remembrance-of-a-god-and-lord-elden-ring-wiki-guide.png"
-          },
-          "categories": {
-            "inDlc": true,
-            "major": true
-          },
-          "imageUrl": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/radahn_consort_of_miquella_bosses_elden_ring_wiki_1200px.png"
+          }
         }
       ]
     }

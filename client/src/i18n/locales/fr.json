@@ -1,0 +1,22 @@
+{
+  "app": {
+    "title": "Commencer",
+    "editHint": "Modifiez <1>src/App.tsx</1> et enregistrez pour tester le <3>HMR</3>",
+    "counter": "Compteur : {{count}}"
+  },
+  "docs": {
+    "title": "Documentation",
+    "subtitle": "Vos questions, nos réponses",
+    "exploreVite": "Explorer Vite",
+    "learnMore": "En savoir plus"
+  },
+  "social": {
+    "title": "Nous rejoindre",
+    "subtitle": "Rejoignez la communauté Vite"
+  },
+  "language": {
+    "switch": "Changer de langue",
+    "en": "Anglais",
+    "fr": "Français"
+  }
+}

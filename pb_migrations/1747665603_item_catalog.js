@@ -2,8 +2,6 @@
 
 migrate(
   (app) => {
-    const names = app.findCollectionByNameOrId("names");
-
     const itemCategories = new Collection({
       type: "base",
       name: "item_categories",
@@ -18,18 +16,9 @@ migrate(
       name: "item_category",
       listRule: "",
       viewRule: "",
-      fields: [
-        {
-          name: "names",
-          type: "relation",
-          required: true,
-          collectionId: names.id,
-          maxSelect: 1,
-          cascadeDelete: true,
-        },
-      ],
+      fields: [{ name: "slug", type: "text", required: true }],
       indexes: [
-        "CREATE UNIQUE INDEX idx_item_category_names ON item_category (names)",
+        "CREATE UNIQUE INDEX idx_item_category_slug ON item_category (slug)",
       ],
     });
     app.save(itemCategory);
@@ -49,17 +38,10 @@ migrate(
       listRule: "",
       viewRule: "",
       fields: [
+        { name: "slug", type: "text", required: true },
         { name: "imageUrl", type: "text", required: true },
         { name: "wikiUrl", type: "text", required: true },
         { name: "locationUrl", type: "text", required: true },
-        {
-          name: "names",
-          type: "relation",
-          required: true,
-          collectionId: names.id,
-          maxSelect: 1,
-          cascadeDelete: true,
-        },
         {
           name: "category",
           type: "relation",
@@ -77,7 +59,6 @@ migrate(
         },
       ],
       indexes: [
-        "CREATE UNIQUE INDEX idx_items_names ON items (names)",
         "CREATE UNIQUE INDEX idx_items_categories ON items (categories)",
       ],
     });
