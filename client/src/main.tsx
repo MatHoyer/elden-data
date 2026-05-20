@@ -1,14 +1,14 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import App from "./App.tsx";
-import { UserProvider } from "./components/user/UserProvider.tsx";
+import { UserProvider } from "@/components/user/UserProvider.tsx";
+import { InnerApp } from "./InnerApp";
 import "./i18n";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <UserProvider>
-      <App />
+      <InnerApp />
     </UserProvider>
   </StrictMode>,
 );
