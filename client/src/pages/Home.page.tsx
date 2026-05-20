@@ -1,9 +1,7 @@
 import { useTranslation } from "react-i18next";
 
-const App = () => {
+export const HomePage = () => {
   const { t } = useTranslation("armors");
 
   return <div>{t("alberichs_bracers")}</div>;
 };
-
-export default App;

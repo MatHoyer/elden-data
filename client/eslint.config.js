@@ -18,5 +18,12 @@ export default defineConfig([
     languageOptions: {
       globals: globals.browser,
     },
+    rules: {
+      // TanStack Router route files export `Route`, not only components
+      'react-refresh/only-export-components': [
+        'error',
+        { allowExportNames: ['Route'] },
+      ],
+    },
   },
 ])
