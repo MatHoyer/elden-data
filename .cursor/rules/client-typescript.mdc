@@ -1,0 +1,53 @@
+---
+description: TypeScript imports, hooks, PocketBase, router, and state patterns
+globs: client/**/*.{ts,tsx}
+alwaysApply: false
+---
+
+# Client TypeScript
+
+## Imports
+
+- Path alias: `@/` → `client/src/` (never deep `../../../`).
+- `import type { … }` for type-only imports (`verbatimModuleSyntax`).
+- Zod: `import z from "zod"` (default import).
+
+## Hooks & utilities
+
+- Custom hooks: `export const useFoo = () => { … }` in `hooks/use-foo.ts` (kebab-case filename).
+- Prefer arrow `const` exports; plain `export function` only for non-React helpers when it reads clearer (`getFieldErrors`, `isLanguage`).
+
+## Types
+
+- Shared props/types exposed from modules: prefix with **`T`** when reused across files (`TDialogType`, `TDefaultDialogFormPublicProps`).
+- PocketBase records: extend `RecordModel` in `@/types/pocketbase.ts`; use `Collections` / `CollectionName` for collection ids.
+- Discriminated unions over `any`; `any` only where already established (TanStack Form instance in `Default.form.tsx`).
+
+## PocketBase
+
+```ts
+import { pb } from "@/lib/pocketbase";
+import { collection } from "@/lib/pocketbase"; // typed CRUD when possible
+
+await pb.collection("users").authWithPassword(email, password);
+await collection("bosses").getFullList();
+```
+
+- Dev API base: `VITE_PB_URL=/` (same-origin via Vite proxy) — never `""` (breaks URLs on nested routes).
+- Auth state: `pb.authStore`; app context via `UserProvider` / `useUserContext`.
+
+## Router
+
+- Route tree in `router.tsx`; route modules in `src/routes/`.
+- Auth gates in `beforeLoad` with `redirect({ to: "/login" })` and `context.isAuthenticated`.
+- Page components live in `pages/`, not inline in route files.
+
+## State & dialogs
+
+- Zustand stores: `*.store.ts`, `create<Store>(…)`, export hook + imperative helpers (`openDialog`, `closeAlertDialog`).
+- Global UI: `GlobalDialog`, `AppAlertDialog` — register dialogs in store/registry, don’t mount one-offs in random pages.
+
+## i18n
+
+- `useTranslation("namespace")` with JSON under `src/i18n/locales/{en,fr}/`.
+- User language field on `users` record; use `Language` from `@/types/language`.

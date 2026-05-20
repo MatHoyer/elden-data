@@ -1,6 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import type { Language } from "../types/language";
+import type { Language } from "@/types/language";
 import enArmors from "./locales/en/armors.json";
 import enAshesOfWar from "./locales/en/ashes_of_war.json";
 import enBosses from "./locales/en/bosses.json";

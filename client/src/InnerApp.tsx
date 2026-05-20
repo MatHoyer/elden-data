@@ -1,6 +1,6 @@
 import { RouterProvider } from "@tanstack/react-router";
 import { useUserContext } from "@/hooks/use-user";
-import { router } from "./router";
+import { router } from "@/router";
 
 export function InnerApp() {
   const { user, isAuthenticated, isLoading } = useUserContext();

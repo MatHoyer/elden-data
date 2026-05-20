@@ -1,8 +1,8 @@
 import { UserProvider } from "@/components/user/UserProvider.tsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { InnerApp } from "./InnerApp";
-import { ThemeProvider } from "./components/theme/ThemeProvider";
+import { InnerApp } from "@/InnerApp";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
 import "./i18n";
 import "./index.css";
 

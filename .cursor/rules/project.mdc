@@ -1,0 +1,13 @@
+---
+description: Elden Data monorepo layout and stack
+alwaysApply: true
+---
+
+# Elden Data
+
+- **`client/`** — Vite + React 19 + TypeScript, TanStack Router/Form, Zustand, shadcn/ui, Tailwind v4, PocketBase JS SDK, i18next (en/fr)
+- **`pb_migrations/`** — PocketBase collection migrations (JS)
+- **`Dockerfile`** — builds client → `public/`, runs PocketBase on `:8090`
+- **Dev**: `client/` → `pnpm dev` (Vite proxies `/api` → PocketBase); backend → `make dev` / `docker compose`
+
+Follow conventions in `client-react.mdc` and `client-typescript.mdc` when editing the frontend.
