@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { useNavigate } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import { Children, type ComponentPropsWithoutRef } from "react";
-import { Button } from "../ui/button";
+import { Button } from "@/components/ui/button";
 
 export const Layout: React.FC<
   ComponentPropsWithoutRef<"div"> & {

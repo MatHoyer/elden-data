@@ -2,9 +2,9 @@ import { pb } from "@/lib/pocketbase";
 import { Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import z from "zod";
-import { useAppForm } from "../form/AppForm";
-import { DefaultForm, type TDefaultDialogFormPublicProps } from "../form/Default.form";
-import { FieldGroup, FieldSet } from "../ui/field";
+import { useAppForm } from "@/components/form/AppForm";
+import { DefaultForm, type TDefaultDialogFormPublicProps } from "@/components/form/Default.form";
+import { FieldGroup, FieldSet } from "@/components/ui/field";
 
 const LoginSchema = z.object({
   email: z.email(),

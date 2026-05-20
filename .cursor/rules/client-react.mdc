@@ -1,0 +1,52 @@
+---
+description: React component conventions (arrow functions, React.FC, file layout)
+globs: client/**/*.tsx
+alwaysApply: false
+---
+
+# React components
+
+## Functions
+
+- Use **arrow functions** for components and hooks — avoid `export function` for React code.
+- Type exported components with **`React.FC<Props>`** when they accept props (see `LoginForm`, `CardContainer`, `UserProvider`).
+- Props: named `ComponentNameProps` or `T…` for shared types (`TDefaultDialogFormPublicProps`).
+- Zero-prop components may omit `React.FC` (`ThemeToggle`, simple pages).
+
+```tsx
+// ✅
+type LoginFormProps = TDefaultDialogFormPublicProps;
+export const LoginForm: React.FC<LoginFormProps> = ({ forDialog = false }) => { … };
+
+// ❌
+export function LoginForm({ forDialog }: LoginFormProps) { … }
+```
+
+## File naming & placement
+
+| Suffix / path | Purpose |
+|---------------|---------|
+| `*.page.tsx` in `pages/` | Route screens (`LoginPage`, `HomePage`) |
+| `*.layout.tsx` in `pages/` | Layout shells wired in routes (`Root.layout.tsx`) |
+| `*.form.tsx` | Feature forms (`login.form.tsx`) |
+| `*.field.tsx` in `form/fields/` | TanStack Form field components |
+| `routes/*.tsx` | Thin TanStack Router files — export `Route` only |
+| `components/ui/` | shadcn primitives — do not hand-roll duplicates |
+
+## UI & styling
+
+- Merge classes with `cn()` from `@/lib/utils`.
+- Use existing shadcn components under `@/components/ui/`.
+- Icons: `lucide-react`.
+- Router links/navigation: `Link`, `useNavigate` from `@tanstack/react-router`.
+
+## Forms (feature forms)
+
+- Zod schema: `const FooSchema = z.object({…})` with `import z from "zod"`.
+- `useAppForm` + `DefaultForm` + `form.AppField` + `FieldGroup` / `FieldSet`.
+- Submit loading: local `isPending` / `isSuccess` + `form.SubmitButton`.
+
+## Exceptions
+
+- **Generic** components may use untyped/generic arrows (`DefaultForm`, `DefaultField`) instead of `React.FC`.
+- **Route files** export `Route`; `react-refresh/only-export-components` allows this.

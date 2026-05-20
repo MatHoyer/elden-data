@@ -1,5 +1,5 @@
 import type { RecordModel } from "pocketbase";
-import type { Language } from "./language";
+import type { Language } from "@/types/language";
 
 /** Collection id → record type (for typed `pb.collection()` calls). */
 export interface PocketBaseCollections {

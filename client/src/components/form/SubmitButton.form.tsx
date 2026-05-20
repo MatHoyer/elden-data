@@ -1,4 +1,4 @@
-import { LoadingButton } from "../animated/LoadingButton";
+import { LoadingButton } from "@/components/animated/LoadingButton";
 
 type SubmitButtonFormProps = React.ComponentProps<typeof LoadingButton>;
 

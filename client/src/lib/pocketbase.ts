@@ -1,8 +1,8 @@
 import PocketBase from "pocketbase";
-import type { CollectionName, PocketBaseCollections } from "../types/pocketbase";
+import type { CollectionName, PocketBaseCollections } from "@/types/pocketbase";
 
-export { Collections } from "../types/pocketbase";
-export type { UserRecord } from "../types/pocketbase";
+export { Collections } from "@/types/pocketbase";
+export type { UserRecord } from "@/types/pocketbase";
 
 export const pb = new PocketBase(import.meta.env.VITE_PB_URL ?? "");
 
