@@ -1,14 +1,17 @@
+import { UserProvider } from "@/components/user/UserProvider.tsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { UserProvider } from "@/components/user/UserProvider.tsx";
 import { InnerApp } from "./InnerApp";
+import { ThemeProvider } from "./components/theme/ThemeProvider";
 import "./i18n";
 import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <UserProvider>
-      <InnerApp />
-    </UserProvider>
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+      <UserProvider>
+        <InnerApp />
+      </UserProvider>
+    </ThemeProvider>
   </StrictMode>,
 );
