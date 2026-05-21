@@ -1,3 +1,59 @@
 {
-  "test": "test français"
+  "appName": "Elden Data",
+  "nav": {
+    "bosses": "Bosses",
+    "items": "Objets",
+    "locations": "Lieux",
+    "menu": "Menu"
+  },
+  "cancel": "Annuler",
+  "auth": {
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "profile": "Profil",
+    "loginRequiredTitle": "Connexion requise",
+    "loginRequiredDescription": "Vous devez être connecté pour suivre votre progression.",
+    "loginConfirm": "Se connecter"
+  },
+  "catalog": {
+    "status": {
+      "bossDone": "Fait",
+      "itemCollected": "Récupéré"
+    },
+    "filters": {
+      "label": "Filtrer",
+      "clear": "Effacer les filtres",
+      "dlcOnly": "DLC uniquement"
+    },
+    "loading": "Chargement…",
+    "empty": "Rien ici pour l'instant.",
+    "badges": {
+      "dlc": "DLC",
+      "major": "Majeur",
+      "night": "Nuit",
+      "nightTooltip": "Disponible uniquement la nuit",
+      "bell": "Cloche",
+      "bellTooltip": "Nécessite un Deathroot Bell Bearing dans l'inventaire"
+    }
+  },
+  "pages": {
+    "bosses": {
+      "title": "Bosses",
+      "description": "Suivez les bosses que vous avez vaincus."
+    },
+    "items": {
+      "title": "Objets",
+      "description": "Suivez les objets collectés par catégorie."
+    },
+    "locations": {
+      "title": "Lieux",
+      "description": "Bosses regroupés par lieu."
+    },
+    "profile": {
+      "title": "Profil",
+      "description": "Paramètres du compte.",
+      "email": "E-mail",
+      "language": "Langue"
+    }
+  }
 }

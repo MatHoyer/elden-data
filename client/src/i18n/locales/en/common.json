@@ -1,3 +1,59 @@
 {
-  "test": "english test"
+  "appName": "Elden Data",
+  "nav": {
+    "bosses": "Bosses",
+    "items": "Items",
+    "locations": "Locations",
+    "menu": "Menu"
+  },
+  "cancel": "Cancel",
+  "auth": {
+    "login": "Log in",
+    "logout": "Log out",
+    "profile": "Profile",
+    "loginRequiredTitle": "Log in required",
+    "loginRequiredDescription": "You need to be logged in to track your progress.",
+    "loginConfirm": "Log in"
+  },
+  "catalog": {
+    "status": {
+      "bossDone": "Done",
+      "itemCollected": "Collected"
+    },
+    "filters": {
+      "label": "Filter",
+      "clear": "Clear filters",
+      "dlcOnly": "DLC only"
+    },
+    "loading": "Loading…",
+    "empty": "Nothing here yet.",
+    "badges": {
+      "dlc": "DLC",
+      "major": "Major",
+      "night": "Night",
+      "nightTooltip": "Only available at night",
+      "bell": "Bell",
+      "bellTooltip": "Requires a Deathroot Bell Bearing in your inventory"
+    }
+  },
+  "pages": {
+    "bosses": {
+      "title": "Bosses",
+      "description": "Track which bosses you have defeated."
+    },
+    "items": {
+      "title": "Items",
+      "description": "Track collected items by category."
+    },
+    "locations": {
+      "title": "Locations",
+      "description": "Bosses grouped by location."
+    },
+    "profile": {
+      "title": "Profile",
+      "description": "Account settings.",
+      "email": "Email",
+      "language": "Language"
+    }
+  }
 }

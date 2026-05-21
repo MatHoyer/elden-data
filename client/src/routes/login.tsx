@@ -7,7 +7,7 @@ export const Route = createRoute({
   path: "/login",
   beforeLoad: ({ context }) => {
     if (context.isAuthenticated) {
-      throw redirect({ to: "/" });
+      throw redirect({ to: "/bosses" });
     }
   },
   component: LoginPage,
