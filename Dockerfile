@@ -16,6 +16,9 @@ RUN corepack enable && corepack prepare pnpm@10.33.4 --activate
 COPY --from=deps /app/node_modules ./node_modules
 COPY client/ .
 
+ARG VITE_PB_URL=/
+ENV VITE_PB_URL=${VITE_PB_URL}
+
 RUN pnpm build
 
 FROM alpine:3.21 AS runtime
